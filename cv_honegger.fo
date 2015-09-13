@@ -1,0 +1,850 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root xmlns="http://www.w3.org/1999/XSL/Format"
+      xmlns:fn="http://www.w3.org/2005/xpa-functions">
+   <layout-master-set>
+      <simple-page-master page-height="297mm" page-width="210mm" margin="0mm 25mm 0mm 25mm"
+                          master-name="PageMaster">
+         <region-body margin="17.5mm 0mm 15mm 0mm"/>
+      </simple-page-master>
+   </layout-master-set>
+   <page-sequence master-reference="PageMaster">
+      <flow flow-name="xsl-region-body">
+         <block font-family="Nimbus Sans L" font-size="10pt">
+	           <block padding-top="1mm" padding-bottom="2mm">
+               <table background-color="#FFFFFF" border-width="2px,0px,2px,0px" border-style="solid"
+                      border-color="#DDFFE0">
+                  <table-column column-width="38.17%"/>
+                  <table-column column-width="17%"/>
+                  <table-column/>
+                  <table-body>
+                     <table-row>
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px"
+                                    display-align="center"
+                                    number-rows-spanned="2">
+                           <block>
+                              <block text-align="left">
+                                 <fo:external-graphic xmlns:fo="http://www.w3.org/1999/XSL/Format"
+                                                      src="cv_honegger_photo_3_mod2_cmp.jpg"
+                                                      content-width="42mm"
+                                                      content-height="54mm"/>
+                              </block>
+                           </block>
+                        </table-cell>
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="14px 4px 4px 4px"
+                                    display-align="center"
+                                    number-columns-spanned="2">
+                           <block>
+                              <block text-align="left">
+                                 <block padding-top="1mm" padding-bottom="2mm">
+                                    <block font-style="italic" font-weight="bold">Simon Honegger</block>
+                                 </block>
+                                 <block padding-top="1mm" padding-bottom="2mm">
+                                    <block>Bachelor of Science HES-SO in Informatik</block>
+                                    <block>5 Jahre Berufserfahrung</block>
+                                 </block>
+                              </block>
+                           </block>
+                        </table-cell>
+                     </table-row>
+                     <table-row>
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block padding-top="1mm" padding-bottom="2mm">
+                              <block padding-top="1mm" padding-bottom="2mm">
+                                 <block>Geburtsdatum</block>
+                                 <block>Heimatort</block>
+                                 <block>Zivilstand</block>
+                                 <block>Adresse</block>
+                                 <block>Telefon</block>
+                                 <block>Email</block>
+                              </block>
+                           </block>
+                        </table-cell>
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block padding-top="1mm" padding-bottom="2mm">
+                              <block padding-top="1mm" padding-bottom="2mm">
+                                 <block>22 Juli 1984</block>
+                                 <block>Niederhasli ZH</block>
+                                 <block>ledig</block>
+                                 <block>
+                                    <block>Varis 9, 1700 Fribourg</block>
+                                    <block>076 386 82 56</block>
+                                    <block>simon.honegger@edu.hefr.ch</block>
+                                 </block>
+                              </block>
+                           </block>
+                        </table-cell>
+                     </table-row>
+                  </table-body>
+               </table>
+            </block>
+	           <block font-size="14pt" font-weight="bold" space-before="10mm" space-after="5mm"
+                   keep-with-next="always"
+                   hyphenate="false">Ausbildung</block>
+            <block>
+               <table>
+                  <table-column column-width="17%"/>
+                  <table-column/>
+                  <table-body>
+                     <table-row background-color="#DDFFE0">
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block>2008 - 2011</block>
+                        </table-cell>
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block>Zweisprachiges Studium an der Ecole d'ingénieurs et d'architectes de Fribourg<block>Zertifikat: Bachelor of Science HES-SO in Informatik (bilingue Franz./Deutsch)</block>
+                           </block>
+                        </table-cell>
+                     </table-row>
+                     <table-row background-color="#EEFFE0">
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block>2000 - 2003</block>
+                        </table-cell>
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block>Lehre als KV-Informatiker in der Zürcher Kantonalbank<block>Zertifikat: Fähigkeitsausweis Branche Informatik-Anwendungsentwicklung</block>
+                           </block>
+                        </table-cell>
+                     </table-row>
+                     <table-row background-color="#DDFFE0">
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block>2000 - 2003</block>
+                        </table-cell>
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block>KV Zürich Business School<block>Zertifikat: Kaufmännische Berufsmaturität</block>
+                           </block>
+                        </table-cell>
+                     </table-row>
+                  </table-body>
+               </table>
+            </block>
+	           <block font-size="14pt" font-weight="bold" space-before="10mm" space-after="5mm"
+                   keep-with-next="always"
+                   hyphenate="false">Berufserfahrung</block>
+		          <block>
+               <block font-size="12pt" font-weight="bold" space-before="5mm" space-after="2mm"
+                      keep-with-next="always"
+                      hyphenate="false"
+                      text-align="center">Zürcher Kantonalbank</block>
+               <block>
+                  <block padding-top="1mm" padding-bottom="2mm" keep-with-next="always">
+                     <block padding-top="1mm" padding-bottom="2mm">
+                        <block font-style="italic" font-weight="bold">Juni 2010 - Aug. 2010</block>
+                        <block padding-top="1mm" padding-bottom="2mm">Applikationsentwickler auf Stundenlohnbasis</block>
+                     </block>
+                  </block>
+                  <block padding-top="1mm" padding-bottom="2mm">
+                     <table>
+                        <table-column column-width="17%"/>
+                        <table-column/>
+                        <table-body>
+                           <table-row background-color="#DDFFE0">
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>Projekt</block>
+                              </table-cell>
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>ACS (Zutritts- und Zugriffsrechteverwaltung) Rel. 2.1</block>
+                              </table-cell>
+                           </table-row>
+                           <table-row>
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>Aktivitäten</block>
+                              </table-cell>
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>
+                                    <list-block>
+                                       <list-item>
+                                          <list-item-label>
+                                             <block>·</block>
+                                          </list-item-label>
+                                          <list-item-body start-indent="body-start()">
+                                             <block>Kundennahe Umsetzung von fachlichen Anforderungen nach Scrum Rahmenwerk</block>
+                                          </list-item-body>
+                                       </list-item>
+                                       <list-item>
+                                          <list-item-label>
+                                             <block>·</block>
+                                          </list-item-label>
+                                          <list-item-body start-indent="body-start()">
+                                             <block>Implementieren, testen und presentieren dieser Anforderungen (Apache Wicket, Spring, Hibernate, LDAP)</block>
+                                          </list-item-body>
+                                       </list-item>
+                                    </list-block>
+                                 </block>
+                              </table-cell>
+                           </table-row>
+                        </table-body>
+                     </table>
+                  </block>
+               </block>
+               <block>
+                  <block padding-top="1mm" padding-bottom="2mm" keep-with-next="always">
+                     <block padding-top="1mm" padding-bottom="2mm">
+                        <block font-style="italic" font-weight="bold">Jan. 2010 - Feb. 2010</block>
+                        <block padding-top="1mm" padding-bottom="2mm">Aushilfe auf Stundenlohnbasis</block>
+                     </block>
+                  </block>
+                  <block padding-top="1mm" padding-bottom="2mm">
+                     <table>
+                        <table-column column-width="17%"/>
+                        <table-column/>
+                        <table-body>
+                           <table-row background-color="#DDFFE0">
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>Projekt</block>
+                              </table-cell>
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>Match E4 Testing</block>
+                              </table-cell>
+                           </table-row>
+                           <table-row>
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>Aktivitäten</block>
+                              </table-cell>
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>
+                                    <list-block>
+                                       <list-item>
+                                          <list-item-label>
+                                             <block>·</block>
+                                          </list-item-label>
+                                          <list-item-body start-indent="body-start()">
+                                             <block>Kosten-Nutzen-Analyse diverser Optimierungen im Testprozess</block>
+                                          </list-item-body>
+                                       </list-item>
+                                    </list-block>
+                                 </block>
+                              </table-cell>
+                           </table-row>
+                        </table-body>
+                     </table>
+                  </block>
+               </block>
+               <block>
+                  <block padding-top="1mm" padding-bottom="2mm" keep-with-next="always">
+                     <block padding-top="1mm" padding-bottom="2mm">
+                        <block font-style="italic" font-weight="bold">Aug. 2003 - Okt. 2008</block>
+                        <block padding-top="1mm" padding-bottom="2mm">Applikationsentwickler in Festanstellung</block>
+                     </block>
+                  </block>
+                  <block padding-top="1mm" padding-bottom="2mm">
+                     <table>
+                        <table-column column-width="17%"/>
+                        <table-column/>
+                        <table-body>
+                           <table-row background-color="#DDFFE0">
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>Projekt</block>
+                              </table-cell>
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>TAB/REF Ablösung (Migration der Referenzdaten von Mainfraime zu dezentral)</block>
+                              </table-cell>
+                           </table-row>
+                           <table-row>
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>Aktivitäten</block>
+                              </table-cell>
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>
+                                    <list-block>
+                                       <list-item>
+                                          <list-item-label>
+                                             <block>·</block>
+                                          </list-item-label>
+                                          <list-item-body start-indent="body-start()">
+                                             <block>Mitentwicklung der PL/1 Schnittstelle auf dezentrale Services (C++)</block>
+                                          </list-item-body>
+                                       </list-item>
+                                       <list-item>
+                                          <list-item-label>
+                                             <block>·</block>
+                                          </list-item-label>
+                                          <list-item-body start-indent="body-start()">
+                                             <block>Performance Analyse des Zugriffs auf alte bzw. neue Datenhaltung</block>
+                                          </list-item-body>
+                                       </list-item>
+                                       <list-item>
+                                          <list-item-label>
+                                             <block>·</block>
+                                          </list-item-label>
+                                          <list-item-body start-indent="body-start()">
+                                             <block>Modellieren und Realisieren von Interface Business Objects (XML)</block>
+                                          </list-item-body>
+                                       </list-item>
+                                       <list-item>
+                                          <list-item-label>
+                                             <block>·</block>
+                                          </list-item-label>
+                                          <list-item-body start-indent="body-start()">
+                                             <block>Realisieren eines Generators zur dynamischen Erstellung von Static SQL (Java)</block>
+                                          </list-item-body>
+                                       </list-item>
+                                    </list-block>
+                                 </block>
+                              </table-cell>
+                           </table-row>
+                        </table-body>
+                     </table>
+                  </block>
+                  <block padding-top="1mm" padding-bottom="2mm">
+                     <table>
+                        <table-column column-width="17%"/>
+                        <table-column/>
+                        <table-body>
+                           <table-row background-color="#DDFFE0">
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>Projekt</block>
+                              </table-cell>
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>PSV ASD/SDV (Produktions Support Vereinbarung Stammdatenverwaltung)</block>
+                              </table-cell>
+                           </table-row>
+                           <table-row>
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>Aktivitäten</block>
+                              </table-cell>
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>
+                                    <list-block>
+                                       <list-item>
+                                          <list-item-label>
+                                             <block>·</block>
+                                          </list-item-label>
+                                          <list-item-body start-indent="body-start()">
+                                             <block>Sicherstellen der Service Level Agreements im Bereich ADB (Datawarehouse) Belieferung</block>
+                                          </list-item-body>
+                                       </list-item>
+                                       <list-item>
+                                          <list-item-label>
+                                             <block>·</block>
+                                          </list-item-label>
+                                          <list-item-body start-indent="body-start()">
+                                             <block>Durchführen von Systembuilds in der Stammdatenverwaltung</block>
+                                          </list-item-body>
+                                       </list-item>
+                                    </list-block>
+                                 </block>
+                              </table-cell>
+                           </table-row>
+                        </table-body>
+                     </table>
+                  </block>
+                  <block padding-top="1mm" padding-bottom="2mm">
+                     <table>
+                        <table-column column-width="17%"/>
+                        <table-column/>
+                        <table-body>
+                           <table-row background-color="#DDFFE0">
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>Projekt</block>
+                              </table-cell>
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>Migration Bestandesführung Geld Rel. 2.0 </block>
+                              </table-cell>
+                           </table-row>
+                           <table-row>
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>Aktivitäten</block>
+                              </table-cell>
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>
+                                    <list-block>
+                                       <list-item>
+                                          <list-item-label>
+                                             <block>·</block>
+                                          </list-item-label>
+                                          <list-item-body start-indent="body-start()">
+                                             <block>Realisieren eines Servicemoduls in PL/1 inkl. Regressionstests</block>
+                                          </list-item-body>
+                                       </list-item>
+                                    </list-block>
+                                 </block>
+                              </table-cell>
+                           </table-row>
+                        </table-body>
+                     </table>
+                  </block>
+                  <block padding-top="1mm" padding-bottom="2mm">
+                     <table>
+                        <table-column column-width="17%"/>
+                        <table-column/>
+                        <table-body>
+                           <table-row background-color="#DDFFE0">
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>Projekt</block>
+                              </table-cell>
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>SDS (Stammdaten-Services) Rel. 1.0 (Neuentwicklung der Stammdatenapplikation)</block>
+                              </table-cell>
+                           </table-row>
+                           <table-row>
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>Aktivitäten</block>
+                              </table-cell>
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>
+                                    <list-block>
+                                       <list-item>
+                                          <list-item-label>
+                                             <block>·</block>
+                                          </list-item-label>
+                                          <list-item-body start-indent="body-start()">
+                                             <block>Analyse, Spezifikation, Design, Implementation und Test diverser Java Softwarekomponenten</block>
+                                          </list-item-body>
+                                       </list-item>
+                                    </list-block>
+                                 </block>
+                              </table-cell>
+                           </table-row>
+                        </table-body>
+                     </table>
+                  </block>
+                  <block padding-top="1mm" padding-bottom="2mm">
+                     <table>
+                        <table-column column-width="17%"/>
+                        <table-column/>
+                        <table-body>
+                           <table-row background-color="#DDFFE0">
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>Projekt</block>
+                              </table-cell>
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>SDS (Stammdaten-Services) Rel. 2.0 (Folgeprojekt von SDS R1.0)</block>
+                              </table-cell>
+                           </table-row>
+                           <table-row>
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>Aktivitäten</block>
+                              </table-cell>
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>
+                                    <list-block>
+                                       <list-item>
+                                          <list-item-label>
+                                             <block>·</block>
+                                          </list-item-label>
+                                          <list-item-body start-indent="body-start()">
+                                             <block>Stellvertretung des Teilprojektleiters ASD/SDS GUI</block>
+                                          </list-item-body>
+                                       </list-item>
+                                       <list-item>
+                                          <list-item-label>
+                                             <block>·</block>
+                                          </list-item-label>
+                                          <list-item-body start-indent="body-start()">
+                                             <block>Realisieren eines ASD/SDS GUI Prototyps in Java inkl. Präsentation am Projektgesamtmeeting</block>
+                                          </list-item-body>
+                                       </list-item>
+                                       <list-item>
+                                          <list-item-label>
+                                             <block>·</block>
+                                          </list-item-label>
+                                          <list-item-body start-indent="body-start()">
+                                             <block>Spezifikation der Java Software Komponente ASD/SDS GUI und codierung des generischen Teils</block>
+                                          </list-item-body>
+                                       </list-item>
+                                       <list-item>
+                                          <list-item-label>
+                                             <block>·</block>
+                                          </list-item-label>
+                                          <list-item-body start-indent="body-start()">
+                                             <block>Abstimmung der Realisierung der fachlichen Anforderungen mit dem Fachbereich</block>
+                                          </list-item-body>
+                                       </list-item>
+                                    </list-block>
+                                 </block>
+                              </table-cell>
+                           </table-row>
+                        </table-body>
+                     </table>
+                  </block>
+                  <block padding-top="1mm" padding-bottom="2mm">
+                     <table>
+                        <table-column column-width="17%"/>
+                        <table-column/>
+                        <table-body>
+                           <table-row background-color="#DDFFE0">
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>Projekt</block>
+                              </table-cell>
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>Zentrale Führung der VV-Codierung</block>
+                              </table-cell>
+                           </table-row>
+                           <table-row>
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>Aktivitäten</block>
+                              </table-cell>
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>
+                                    <list-block>
+                                       <list-item>
+                                          <list-item-label>
+                                             <block>·</block>
+                                          </list-item-label>
+                                          <list-item-body start-indent="body-start()">
+                                             <block>Teilprolektleitung ASD/SDS</block>
+                                          </list-item-body>
+                                       </list-item>
+                                       <list-item>
+                                          <list-item-label>
+                                             <block>·</block>
+                                          </list-item-label>
+                                          <list-item-body start-indent="body-start()">
+                                             <block>Definition des bankfachlichen Modells und Konsistenzbedingungen mit dem Fachbereich</block>
+                                          </list-item-body>
+                                       </list-item>
+                                       <list-item>
+                                          <list-item-label>
+                                             <block>·</block>
+                                          </list-item-label>
+                                          <list-item-body start-indent="body-start()">
+                                             <block>Implemention nach MDA (Model Driven Architecture) Ansatz</block>
+                                          </list-item-body>
+                                       </list-item>
+                                    </list-block>
+                                 </block>
+                              </table-cell>
+                           </table-row>
+                        </table-body>
+                     </table>
+                  </block>
+               </block>
+            </block>
+	
+	           <block font-size="14pt" font-weight="bold" space-before="10mm" space-after="5mm"
+                   keep-with-next="always"
+                   hyphenate="false">Weiterbildungen</block>
+            <block>
+               <table>
+                  <table-column column-width="17%"/>
+                  <table-column/>
+                  <table-body>
+                     <table-row background-color="#DDFFE0">
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block>Jan. 2008</block>
+                        </table-cell>
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block>Object Oriented Analysis and Design with UML (Zühlke)</block>
+                        </table-cell>
+                     </table-row>
+                     <table-row background-color="#EEFFE0">
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block>Juli 2007</block>
+                        </table-cell>
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block>Synergy Ugrade 6.5 (Telelogic)</block>
+                        </table-cell>
+                     </table-row>
+                     <table-row background-color="#DDFFE0">
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block>Nov. 2006</block>
+                        </table-cell>
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block>Java - Design Patterns (IBM)</block>
+                        </table-cell>
+                     </table-row>
+                     <table-row background-color="#EEFFE0">
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block>Nov. 2005</block>
+                        </table-cell>
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block>DB2 UDB for z/OS - Anwendungsprogrammierung (IBM)</block>
+                        </table-cell>
+                     </table-row>
+                     <table-row background-color="#DDFFE0">
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block>Apr. 2005</block>
+                        </table-cell>
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block>PL/1 Grundlagen (IFA)</block>
+                        </table-cell>
+                     </table-row>
+                     <table-row background-color="#EEFFE0">
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block>März 2004</block>
+                        </table-cell>
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block>Synergy / CM Build-Manager (Telelogic)</block>
+                        </table-cell>
+                     </table-row>
+                  </table-body>
+               </table>
+            </block>
+	           <block font-size="14pt" font-weight="bold" space-before="10mm" space-after="5mm"
+                   keep-with-next="always"
+                   hyphenate="false">Zertifikate</block>
+            <block>
+               <table>
+                  <table-column column-width="17%"/>
+                  <table-column/>
+                  <table-body>
+                     <table-row background-color="#DDFFE0">
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block>2011</block>
+                        </table-cell>
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block>Certified Secure Web Developer (CSWD)</block>
+                        </table-cell>
+                     </table-row>
+                     <table-row background-color="#EEFFE0">
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block>2005</block>
+                        </table-cell>
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block>OMG-Certified UML Professionals (OCUP)</block>
+                        </table-cell>
+                     </table-row>
+                  </table-body>
+               </table>
+            </block>
+	           <block font-size="14pt" font-weight="bold" space-before="10mm" space-after="5mm"
+                   keep-with-next="always"
+                   hyphenate="false">Kompetenzen</block>
+            <block>
+               <table>
+                  <table-column column-width="17%"/>
+                  <table-column/>
+                  <table-body>
+                     <table-row background-color="#DDFFE0">
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block>Sprachen</block>
+                        </table-cell>
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block>Solide Kenntnisse in Java, C/C++, XML, LaTeX, Python, bash, PL/I, </block>
+                        </table-cell>
+                     </table-row>
+                     <table-row background-color="#EEFFE0">
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block/>
+                        </table-cell>
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block>Gute Kenntnisse in HTML/CSS, C#, Visual Basic, Objective-C, etc.</block>
+                        </table-cell>
+                     </table-row>
+                  </table-body>
+               </table>
+            </block>
+            <block>
+               <table>
+                  <table-column column-width="17%"/>
+                  <table-column/>
+                  <table-body>
+                     <table-row background-color="#DDFFE0">
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block>Frameworks</block>
+                        </table-cell>
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block>Solide Kenntnisse in Apache Wicket, Qt, JUnit</block>
+                        </table-cell>
+                     </table-row>
+                     <table-row background-color="#EEFFE0">
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block/>
+                        </table-cell>
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block>Gute Kenntnisse in .NET, Hibernate, GWT, Spring, Servlets, etc.</block>
+                        </table-cell>
+                     </table-row>
+                  </table-body>
+               </table>
+            </block>
+            <block>
+               <table>
+                  <table-column column-width="17%"/>
+                  <table-column/>
+                  <table-body>
+                     <table-row background-color="#DDFFE0">
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block>Datenbanken</block>
+                        </table-cell>
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block>Solide Kenntnisse in DB2, LDAP</block>
+                        </table-cell>
+                     </table-row>
+                     <table-row background-color="#EEFFE0">
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block/>
+                        </table-cell>
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block>Gute Kenntnisse in Oracle, MySQL, SQL Server, HSQLDB</block>
+                        </table-cell>
+                     </table-row>
+                  </table-body>
+               </table>
+            </block>
+            <block>
+               <table>
+                  <table-column column-width="17%"/>
+                  <table-column/>
+                  <table-body>
+                     <table-row background-color="#DDFFE0">
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block>Programme</block>
+                        </table-cell>
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block>Solide Kenntnisse in itelliJ, Eclipse, QtCreator, Rational Rose, Enterprise Architekt, Visual Paradigm UML, Office suite</block>
+                        </table-cell>
+                     </table-row>
+                     <table-row background-color="#EEFFE0">
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block/>
+                        </table-cell>
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block>Gute Kenntnisse in Visual Studio, Xcode, make, etc.</block>
+                        </table-cell>
+                     </table-row>
+                  </table-body>
+               </table>
+            </block>
+            <block>
+               <table>
+                  <table-column column-width="17%"/>
+                  <table-column/>
+                  <table-body>
+                     <table-row background-color="#DDFFE0">
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block>Umgebungen</block>
+                        </table-cell>
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block>Solide Kenntnisse in Linux (Ubuntu), Windows, z/OS</block>
+                        </table-cell>
+                     </table-row>
+                     <table-row background-color="#EEFFE0">
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block/>
+                        </table-cell>
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block>Gute Kenntnisse in Unix (AIX), Mac OS X, USS (Unix System Services)</block>
+                        </table-cell>
+                     </table-row>
+                  </table-body>
+               </table>
+            </block>
+	           <block font-size="14pt" font-weight="bold" space-before="10mm" space-after="5mm"
+                   keep-with-next="always"
+                   hyphenate="false">Sprachen</block>
+            <block>
+               <table>
+                  <table-column column-width="17%"/>
+                  <table-column/>
+                  <table-body>
+                     <table-row background-color="#DDFFE0">
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block>Deutsch</block>
+                        </table-cell>
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block>Muttersprache</block>
+                        </table-cell>
+                     </table-row>
+                     <table-row background-color="#EEFFE0">
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block>Französisch</block>
+                        </table-cell>
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block>Schriftlich und mündlich fliessend</block>
+                        </table-cell>
+                     </table-row>
+                     <table-row background-color="#DDFFE0">
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block>Englisch</block>
+                        </table-cell>
+                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                    padding="4px 4px 4px 4px">
+                           <block>Schriftlich und mündlich gut</block>
+                        </table-cell>
+                     </table-row>
+                  </table-body>
+               </table>
+            </block>
+	
+	           <block font-size="14pt" font-weight="bold" space-before="10mm" space-after="5mm"
+                   keep-with-next="always"
+                   hyphenate="false">Referenzen</block>Auf Anfrage
+    <block font-size="14pt" font-weight="bold" space-before="10mm" space-after="5mm"
+                   keep-with-next="always"
+                   hyphenate="false">Mögliche Anstellung</block>Nach Vereinbarung, ab sofort verfügbar
+</block>
+      </flow>
+   </page-sequence>
+</root>
