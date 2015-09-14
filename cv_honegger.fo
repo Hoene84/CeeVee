@@ -24,8 +24,7 @@
                                     number-rows-spanned="2">
                            <block>
                               <block text-align="left">
-                                 <fo:external-graphic xmlns:fo="http://www.w3.org/1999/XSL/Format"
-                                                      src="cv_honegger_photo_3_mod2_cmp.jpg"
+                                 <fo:external-graphic xmlns:fo="http://www.w3.org/1999/XSL/Format" src="cv_honegger_photo.jpg"
                                                       content-width="42mm"
                                                       content-height="54mm"/>
                               </block>
@@ -42,7 +41,7 @@
                                  </block>
                                  <block padding-top="1mm" padding-bottom="2mm">
                                     <block>Bachelor of Science HES-SO in Informatik</block>
-                                    <block>5 Jahre Berufserfahrung</block>
+                                    <block>9 Jahre Berufserfahrung</block>
                                  </block>
                               </block>
                            </block>
@@ -70,9 +69,9 @@
                                  <block>Niederhasli ZH</block>
                                  <block>ledig</block>
                                  <block>
-                                    <block>Varis 9, 1700 Fribourg</block>
+                                    <block>Hinterdorfstrasse 10, 8157 Dielsdorf</block>
                                     <block>076 386 82 56</block>
-                                    <block>simon.honegger@edu.hefr.ch</block>
+                                    <block>simon.honegger@gmail.com</block>
                                  </block>
                               </block>
                            </block>
@@ -128,6 +127,319 @@
 	           <block font-size="14pt" font-weight="bold" space-before="10mm" space-after="5mm"
                    keep-with-next="always"
                    hyphenate="false">Berufserfahrung</block>
+            <block>
+               <block font-size="12pt" font-weight="bold" space-before="5mm" space-after="2mm"
+                      keep-with-next="always"
+                      hyphenate="false"
+                      text-align="center">IMISnext AG</block>
+               <block>
+                  <block padding-top="1mm" padding-bottom="2mm" keep-with-next="always">
+                     <block padding-top="1mm" padding-bottom="2mm">
+                        <block font-style="italic" font-weight="bold">Okt. 2011 - Dez. 2015</block>
+                        <block padding-top="1mm" padding-bottom="2mm">Senior Applikationsentwickler in Festanstellung</block>
+                     </block>
+                  </block>
+                  <block padding-top="1mm" padding-bottom="2mm">
+                     <table>
+                        <table-column column-width="17%"/>
+                        <table-column/>
+                        <table-body>
+                           <table-row background-color="#DDFFE0">
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>Projekt</block>
+                              </table-cell>
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>Konzeption iShop Core Framework 4.0</block>
+                              </table-cell>
+                           </table-row>
+                           <table-row>
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>Aktivitäten</block>
+                              </table-cell>
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>
+                                    <list-block>
+                                       <list-item>
+                                          <list-item-label>
+                                             <block>·</block>
+                                          </list-item-label>
+                                          <list-item-body start-indent="body-start()">
+                                             <block>Analyse der architektonischen Probleme iShop Core 3</block>
+                                          </list-item-body>
+                                       </list-item>
+                                       <list-item>
+                                          <list-item-label>
+                                             <block>·</block>
+                                          </list-item-label>
+                                          <list-item-body start-indent="body-start()">
+                                             <block>Design/Architektur iShop Core 4.0</block>
+                                          </list-item-body>
+                                       </list-item>
+                                    </list-block>
+                                 </block>
+                              </table-cell>
+                           </table-row>
+                        </table-body>
+                     </table>
+                  </block>
+                  <block padding-top="1mm" padding-bottom="2mm">
+                     <table>
+                        <table-column column-width="17%"/>
+                        <table-column/>
+                        <table-body>
+                           <table-row background-color="#DDFFE0">
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>Projekt</block>
+                              </table-cell>
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>Mitglied des iShop Core Teams</block>
+                              </table-cell>
+                           </table-row>
+                           <table-row>
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>Aktivitäten</block>
+                              </table-cell>
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>
+                                    <list-block>
+                                       <list-item>
+                                          <list-item-label>
+                                             <block>·</block>
+                                          </list-item-label>
+                                          <list-item-body start-indent="body-start()">
+                                             <block>Verifikation/Validation aller Merge Requests für iShop Core 3</block>
+                                          </list-item-body>
+                                       </list-item>
+                                       <list-item>
+                                          <list-item-label>
+                                             <block>·</block>
+                                          </list-item-label>
+                                          <list-item-body start-indent="body-start()">
+                                             <block>Fällen von Design/Architektur Entscheidungen iShop Core 3</block>
+                                          </list-item-body>
+                                       </list-item>
+                                       <list-item>
+                                          <list-item-label>
+                                             <block>·</block>
+                                          </list-item-label>
+                                          <list-item-body start-indent="body-start()">
+                                             <block>Unterstützung bei Fragen/Lösungentscheidungen/Problemen der Entwickler</block>
+                                          </list-item-body>
+                                       </list-item>
+                                    </list-block>
+                                 </block>
+                              </table-cell>
+                           </table-row>
+                        </table-body>
+                     </table>
+                  </block>
+                  <block padding-top="1mm" padding-bottom="2mm">
+                     <table>
+                        <table-column column-width="17%"/>
+                        <table-column/>
+                        <table-body>
+                           <table-row background-color="#DDFFE0">
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>Projekt</block>
+                              </table-cell>
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>Projektverantwortlicher Shopimplementationen Sonepar CH/AT</block>
+                              </table-cell>
+                           </table-row>
+                           <table-row>
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>Aktivitäten</block>
+                              </table-cell>
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>
+                                    <list-block>
+                                       <list-item>
+                                          <list-item-label>
+                                             <block>·</block>
+                                          </list-item-label>
+                                          <list-item-body start-indent="body-start()">
+                                             <block>Einführung Mandantenfähigkeit bzgl. Logik, Darstellung und Anbindung von Umsystemen (6 Instanzen, 2 Systemumgebungen, )</block>
+                                          </list-item-body>
+                                       </list-item>
+                                       <list-item>
+                                          <list-item-label>
+                                             <block>·</block>
+                                          </list-item-label>
+                                          <list-item-body start-indent="body-start()">
+                                             <block>Koordination mit Umsystemen (ERP/Pim/Mobile/Webservices)</block>
+                                          </list-item-body>
+                                       </list-item>
+                                       <list-item>
+                                          <list-item-label>
+                                             <block>·</block>
+                                          </list-item-label>
+                                          <list-item-body start-indent="body-start()">
+                                             <block>Entwicklung diverser Features im Front- sowie Backend</block>
+                                          </list-item-body>
+                                       </list-item>
+                                       <list-item>
+                                          <list-item-label>
+                                             <block>·</block>
+                                          </list-item-label>
+                                          <list-item-body start-indent="body-start()">
+                                             <block>Koordination von Entwicklung/Testing/Releases</block>
+                                          </list-item-body>
+                                       </list-item>
+                                       <list-item>
+                                          <list-item-label>
+                                             <block>·</block>
+                                          </list-item-label>
+                                          <list-item-body start-indent="body-start()">
+                                             <block>Verantwortung QS, Verifikation/Validation Merge Requests aller Entwickler</block>
+                                          </list-item-body>
+                                       </list-item>
+                                       <list-item>
+                                          <list-item-label>
+                                             <block>·</block>
+                                          </list-item-label>
+                                          <list-item-body start-indent="body-start()">
+                                             <block>Beratung der Kunden zur technischen Umsetzung ihrer fachliche Anforderungen und Wünsche</block>
+                                          </list-item-body>
+                                       </list-item>
+                                       <list-item>
+                                          <list-item-label>
+                                             <block>·</block>
+                                          </list-item-label>
+                                          <list-item-body start-indent="body-start()">
+                                             <block>Verantwortung für die Einhaltung des SLA, die Infrastruktur und deren Dokumentation</block>
+                                          </list-item-body>
+                                       </list-item>
+                                    </list-block>
+                                 </block>
+                              </table-cell>
+                           </table-row>
+                        </table-body>
+                     </table>
+                  </block>
+                  <block padding-top="1mm" padding-bottom="2mm">
+                     <table>
+                        <table-column column-width="17%"/>
+                        <table-column/>
+                        <table-body>
+                           <table-row background-color="#DDFFE0">
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>Projekt</block>
+                              </table-cell>
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>Neuentwicklung www.geckoreifen.de und www.esashop.ch</block>
+                              </table-cell>
+                           </table-row>
+                           <table-row>
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>Aktivitäten</block>
+                              </table-cell>
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>
+                                    <list-block>
+                                       <list-item>
+                                          <list-item-label>
+                                             <block>·</block>
+                                          </list-item-label>
+                                          <list-item-body start-indent="body-start()">
+                                             <block>Entwicklung diverser Features im Front- sowie Backend in Scala mit Hilfe des Play Framework</block>
+                                          </list-item-body>
+                                       </list-item>
+                                       <list-item>
+                                          <list-item-label>
+                                             <block>·</block>
+                                          </list-item-label>
+                                          <list-item-body start-indent="body-start()">
+                                             <block>Integration tagesakueller SAP Daten</block>
+                                          </list-item-body>
+                                       </list-item>
+                                       <list-item>
+                                          <list-item-label>
+                                             <block>·</block>
+                                          </list-item-label>
+                                          <list-item-body start-indent="body-start()">
+                                             <block>Anbindung von REST APIs zur Erweiterung der Produktinformationen</block>
+                                          </list-item-body>
+                                       </list-item>
+                                    </list-block>
+                                 </block>
+                              </table-cell>
+                           </table-row>
+                        </table-body>
+                     </table>
+                  </block>
+                  <block padding-top="1mm" padding-bottom="2mm">
+                     <table>
+                        <table-column column-width="17%"/>
+                        <table-column/>
+                        <table-body>
+                           <table-row background-color="#DDFFE0">
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>Projekt</block>
+                              </table-cell>
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>Spezifikation Agile Entwicklung in der IMISnext</block>
+                              </table-cell>
+                           </table-row>
+                           <table-row>
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>Aktivitäten</block>
+                              </table-cell>
+                              <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
+                                          padding="4px 4px 4px 4px">
+                                 <block>
+                                    <list-block>
+                                       <list-item>
+                                          <list-item-label>
+                                             <block>·</block>
+                                          </list-item-label>
+                                          <list-item-body start-indent="body-start()">
+                                             <block>Erstellung eines Dokumentes für die Geschäftsführung</block>
+                                          </list-item-body>
+                                       </list-item>
+                                       <list-item>
+                                          <list-item-label>
+                                             <block>·</block>
+                                          </list-item-label>
+                                          <list-item-body start-indent="body-start()">
+                                             <block>Aufzeigen des Optimierungspotenzials der Entwicklungsprozesse mithilfe agiler Methodiken</block>
+                                          </list-item-body>
+                                       </list-item>
+                                       <list-item>
+                                          <list-item-label>
+                                             <block>·</block>
+                                          </list-item-label>
+                                          <list-item-body start-indent="body-start()">
+                                             <block>Definition agiler Projektumsetzung in der IMISnext unter Berücksichtung des Kundenumfelds und der Vorgehensweise in der internen Entwicklung</block>
+                                          </list-item-body>
+                                       </list-item>
+                                    </list-block>
+                                 </block>
+                              </table-cell>
+                           </table-row>
+                        </table-body>
+                     </table>
+                  </block>
+               </block>
+            </block>
 		          <block>
                <block font-size="12pt" font-weight="bold" space-before="5mm" space-after="2mm"
                       keep-with-next="always"
@@ -668,7 +980,7 @@
                         </table-cell>
                         <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
                                     padding="4px 4px 4px 4px">
-                           <block>Solide Kenntnisse in Java, C/C++, XML, LaTeX, Python, bash, PL/I, </block>
+                           <block>Solide Kenntnisse in Java, HTML/CSS, C/C++, XML, LaTeX, Python, bash, PL/I, </block>
                         </table-cell>
                      </table-row>
                      <table-row background-color="#EEFFE0">
@@ -678,7 +990,7 @@
                         </table-cell>
                         <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
                                     padding="4px 4px 4px 4px">
-                           <block>Gute Kenntnisse in HTML/CSS, C#, Visual Basic, Objective-C, etc.</block>
+                           <block>Gute Kenntnisse in C#, Visual Basic, Objective-C, etc.</block>
                         </table-cell>
                      </table-row>
                   </table-body>
@@ -841,9 +1153,9 @@
 	           <block font-size="14pt" font-weight="bold" space-before="10mm" space-after="5mm"
                    keep-with-next="always"
                    hyphenate="false">Referenzen</block>Auf Anfrage
-    <block font-size="14pt" font-weight="bold" space-before="10mm" space-after="5mm"
+	<block font-size="14pt" font-weight="bold" space-before="10mm" space-after="5mm"
                    keep-with-next="always"
-                   hyphenate="false">Mögliche Anstellung</block>Nach Vereinbarung, ab sofort verfügbar
+                   hyphenate="false">Mögliche Anstellung</block>Nach Vereinbarung, ab Jan. 2015 verfügbar
 </block>
       </flow>
    </page-sequence>
