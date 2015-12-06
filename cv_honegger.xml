@@ -66,16 +66,16 @@
                     <activity>Unterstützung bei Fragen, Lösungentscheidungen und Problemen der Entwickler</activity>
                 </project>
                 <project title="Projektverantwortlicher Shopimplementationen Sonepar CH/AT">
-                    <activity>Einführung Mandantenfähigkeit bzgl. Logik, Darstellung und Anbindung von Umsystemen (6 Instanzen, 2 Systemumgebungen, )</activity>
-                    <activity>Koordination mit Umsystemen (ERP/Pim/Mobile/Webservices)</activity>
+                    <activity>Einführung Mandantenfähigkeit bzgl. Logik, Darstellung und Anbindung von Umsystemen (6 Mandanten, 2 Systemumgebungen, )</activity>
                     <activity>Entwicklung diverser Features im Front- sowie Backend</activity>
+                    <activity>Koordination mit Umsystemen (ERP/Pim/Mobile/Webservices)</activity>
                     <activity>Koordination von Entwicklung/Testing/Releases</activity>
                     <activity>Verantwortung QS, Verifikation/Validation Merge Requests aller Entwickler</activity>
                     <activity>Beratung der Kunden zur technischen Umsetzung ihrer fachliche Anforderungen und Wünsche</activity>
-                    <activity>Verantwortung für die Einhaltung des SLA, die Infrastruktur und deren Dokumentation</activity>
+                    <activity>Verantwortung über Infrastruktur, deren Dokumentation für die Einhaltung des SLA</activity>
                 </project>
                 <project title="Neuentwicklung www.geckoreifen.de und www.esashop.ch">
-                    <activity>Entwicklung diverser Features im Front- sowie Backend in Scala mit Hilfe des Play Framework</activity>
+                    <activity>Entwicklung diverser Features im Front- sowie Backend in Scala mithilfe des Play Frameworks</activity>
                     <activity>Integration tagesakueller SAP Daten</activity>
                     <activity>Anbindung von REST APIs zur Erweiterung der Produktinformationen</activity>
                 </project>
@@ -94,7 +94,7 @@
                 <function>Applikationsentwickler auf Stundenlohnbasis</function>
                 <project title="ACS (Zutritts- und Zugriffsrechteverwaltung) Rel. 2.1">
                     <activity>Kundennahe Umsetzung von fachlichen Anforderungen nach Scrum Rahmenwerk</activity>
-                    <activity>Implementieren, testen und presentieren dieser Anforderungen (Apache Wicket, Spring, Hibernate, LDAP)</activity>
+                    <activity>Implementieren, testen und präsentieren dieser Anforderungen (Apache Wicket, Spring, Hibernate, LDAP)</activity>
                 </project>
             </period>
             <period>
@@ -109,32 +109,30 @@
                 <from year="2003" month="08"/>
                 <to year="2008" month="10"/>
                 <function>Applikationsentwickler in Festanstellung</function>
-                <project title="TAB/REF Ablösung (Migration der Referenzdaten von Mainfraime zu dezentral)">
-                    <activity>Mitentwicklung der PL/1 Schnittstelle auf dezentrale Services (C++)</activity>
-                    <activity>Performance Analyse des Zugriffs auf alte bzw. neue Datenhaltung</activity>
-                    <activity>Modellieren und Realisieren von Interface Business Objects (XML)</activity>
-                    <activity>Realisieren eines Generators zur dynamischen Erstellung von Static SQL (Java)</activity>
+                <project title="Zentrale Führung der VV-Codierung">
+                    <activity>Teilprojektleitung ASD/SDS</activity>
+                    <activity>Definition des bankfachlichen Modells und Konsistenzbedingungen mit dem Fachbereich</activity>
+                    <activity>Implemention nach MDA (Model Driven Architecture) Ansatz</activity>
+                </project>
+                <project title="SDS (Stammdaten-Services) Rel. 2.0 (Folgeprojekt von SDS R1.0)">
+                    <activity>Stellvertretung des Teilprojektleiters ASD/SDS GUI</activity>
+                    <activity>Spezifikation der Java Software Komponente ASD/SDS GUI und codierung des generischen Teils</activity>
+                    <activity>Abstimmung der Realisierung der fachlichen Anforderungen mit dem Fachbereich</activity>
+                </project>
+                <project title="SDS (Stammdaten-Services) Rel. 1.0 (Neuentwicklung der Stammdatenapplikation)">
+                    <activity>Analyse, Spezifikation, Design, Implementation und Test diverser Java Softwarekomponenten</activity>
+                </project>
+                <project title="Migration Bestandesführung Geld Rel. 2.0 ">
+                    <activity>Realisieren eines Servicemoduls in PL/1 inkl. Regressionstests</activity>
                 </project>
                 <project title="PSV ASD/SDV (Produktions Support Vereinbarung Stammdatenverwaltung)">
                     <activity>Sicherstellen der Service Level Agreements im Bereich ADB (Datawarehouse) Belieferung</activity>
                     <activity>Durchführen von Systembuilds in der Stammdatenverwaltung</activity>
                 </project>
-                <project title="Migration Bestandesführung Geld Rel. 2.0 ">
-                    <activity>Realisieren eines Servicemoduls in PL/1 inkl. Regressionstests</activity>
-                </project>
-                <project title="SDS (Stammdaten-Services) Rel. 1.0 (Neuentwicklung der Stammdatenapplikation)">
-                    <activity>Analyse, Spezifikation, Design, Implementation und Test diverser Java Softwarekomponenten</activity>
-                </project>
-                <project title="SDS (Stammdaten-Services) Rel. 2.0 (Folgeprojekt von SDS R1.0)">
-                    <activity>Stellvertretung des Teilprojektleiters ASD/SDS GUI</activity>
-                    <activity>Realisieren eines ASD/SDS GUI Prototyps in Java inkl. Präsentation am Projektgesamtmeeting</activity>
-                    <activity>Spezifikation der Java Software Komponente ASD/SDS GUI und codierung des generischen Teils</activity>
-                    <activity>Abstimmung der Realisierung der fachlichen Anforderungen mit dem Fachbereich</activity>
-                </project>
-                <project title="Zentrale Führung der VV-Codierung">
-                    <activity>Teilprolektleitung ASD/SDS</activity>
-                    <activity>Definition des bankfachlichen Modells und Konsistenzbedingungen mit dem Fachbereich</activity>
-                    <activity>Implemention nach MDA (Model Driven Architecture) Ansatz</activity>
+                <project title="TAB/REF Ablösung (Migration der Referenzdaten von Mainfraime zu dezentral)">
+                    <activity>Mitentwicklung der PL/1 Schnittstelle auf dezentrale Services (C++)</activity>
+                    <activity>Performance Analyse des Zugriffs auf alte bzw. neue Datenhaltung</activity>
+                    <activity>Modellieren und Realisieren von Interface Business Objects (XML)</activity>
                 </project>
             </period>
         </experiance>
@@ -179,74 +177,79 @@
         <skillgroup title="Sprachen">
             <solidskill etc="false">
                 <skill>Java</skill>
+                <skill>Scala</skill>
                 <skill>HTML/CSS</skill>
                 <skill>C/C++</skill>
-                <skill>XML</skill>
-                <skill>LaTeX</skill>
-                <skill>Python</skill>
+                <skill>XML(XSLT/XSL)</skill>
+                <skill>SQL</skill>
+                <skill>JS</skill>
                 <skill>bash</skill>
-                <skill>PL/I</skill>
-                <skill></skill>
+                <skill>Python</skill>
+                <skill>LaTeX</skill>
             </solidskill>
             <goodskill etc="true">
-			    
-                <skill>C#</skill>
+                <skill>PL/I</skill>
                 <skill>Visual Basic</skill>
-                <skill>Objective-C</skill>
             </goodskill>
         </skillgroup>
         <skillgroup title="Frameworks">
             <solidskill etc="false">
-                <skill>Apache Wicket</skill>
-                <skill>Qt</skill>
+                <skill>Tapestry</skill>
+                <skill>Play Framework</skill>
+                <skill>Spring</skill>
+                <skill>jQuery</skill>
+                <skill>jaxws</skill>
                 <skill>JUnit</skill>
+                <skill>Mockito</skill>
             </solidskill>
             <goodskill etc="true">
+                <skill>Apache Wicket</skill>
+                <skill>GWT</skill>
+                <skill>Qt</skill>
                 <skill>.NET</skill>
                 <skill>Hibernate</skill>
-                <skill>GWT</skill>
-                <skill>Spring</skill>
-                <skill>Servlets</skill>
             </goodskill>
         </skillgroup>
         <skillgroup title="Datenbanken">
             <solidskill etc="false">
-                <skill>DB2</skill>
+                <skill>MSSQL</skill>
                 <skill>LDAP</skill>
+                <skill>Jena</skill>
+                <skill>FS basierte Datenhaltung</skill>
             </solidskill>
             <goodskill etc="false">
-                <skill>Oracle</skill>
-                <skill>MySQL</skill>
-                <skill>SQL Server</skill>
                 <skill>HSQLDB</skill>
+                <skill>Oracle</skill>
+                <skill>DB2</skill>
+                <skill>MySQL</skill>
             </goodskill>
         </skillgroup>
         <skillgroup title="Programme">
             <solidskill etc="false">
                 <skill>itelliJ</skill>
                 <skill>Eclipse</skill>
-                <skill>QtCreator</skill>
+                <skill>Astah</skill>
                 <skill>Rational Rose</skill>
                 <skill>Enterprise Architekt</skill>
                 <skill>Visual Paradigm UML</skill>
                 <skill>Office suite</skill>
             </solidskill>
             <goodskill etc="true">
+                <skill>make</skill>
+                <skill>QtCreator</skill>
                 <skill>Visual Studio</skill>
                 <skill>Xcode</skill>
-                <skill>make</skill>
             </goodskill>
         </skillgroup>
         <skillgroup title="Umgebungen">
             <solidskill etc="false">
-                <skill>Linux (Ubuntu)</skill>
-                <skill>Windows</skill>
-                <skill>z/OS</skill>
+                <skill>Linux und andere Unix basierte Systeme</skill>
             </solidskill>
             <goodskill etc="false">
-                <skill>Unix (AIX)</skill>
-                <skill>Mac OS X</skill>
+                <skill>Windows</skill>
+                <skill>z/OS</skill>
                 <skill>USS (Unix System Services)</skill>
+                <skill>Mac OS X</skill>
             </goodskill>
         </skillgroup>
     </skills>
