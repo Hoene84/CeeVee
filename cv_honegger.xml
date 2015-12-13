@@ -94,7 +94,12 @@
                 <function>Applikationsentwickler auf Stundenlohnbasis</function>
                 <project title="ACS (Zutritts- und Zugriffsrechteverwaltung) Rel. 2.1">
                     <activity>Kundennahe Umsetzung von fachlichen Anforderungen nach Scrum Rahmenwerk</activity>
-                    <activity>Implementieren, testen und präsentieren dieser Anforderungen (Apache Wicket, Spring, Hibernate, LDAP)</activity>
+                    <activity>Implementieren, testen und präsentieren dieser Anforderungen</activity>
+                    <keyword>Java</keyword>
+                    <keyword>Apache Wicket</keyword>
+                    <keyword>Hibernate</keyword>
+                    <keyword>LDAP</keyword>
+                    <keyword>Scrum</keyword>
                 </project>
             </period>
             <period>
