@@ -74,3 +74,8 @@ img
 {
     width: 175px;
 }
+
+div.company div.logo
+{
+    float: right;
+}

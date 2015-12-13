@@ -94,6 +94,10 @@
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
+	<xs:complexType name="companyType">
+		<xs:attribute name="name" type="xs:string"/>
+		<xs:attribute name="logo" type="xs:anyURI"/>
+	</xs:complexType>
 	<xs:complexType name="paragraphType">
 		<xs:attribute name="title" type="xs:string"/>
 	</xs:complexType>
@@ -220,7 +224,7 @@
 	</xs:complexType>
 	<xs:complexType name="experianceType">
 		<xs:sequence>
-			<xs:element name="company" type="xs:string"/>
+			<xs:element name="company" type="companyType"/>
 			<xs:element name="period" type="periodType" maxOccurs="unbounded"/>
 		</xs:sequence>
 	</xs:complexType>
@@ -278,7 +282,7 @@
 			<xs:extension base="basePersonType">
 				<xs:sequence>
 					<xs:element name="position" type="xs:string"/>
-					<xs:element name="company" type="xs:string"/>
+					<xs:element name="company" type="companyType"/>
 				</xs:sequence>
 			</xs:extension>
 		</xs:complexContent>

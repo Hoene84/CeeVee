@@ -347,6 +347,16 @@
 			</div>
 		</li>
 	</xsl:template>
+	<xsl:template match="company">
+		<div class="company">
+			<div class="logo">
+				<img src="{@logo}" />
+			</div>
+			<div  class="name">
+				<xsl:value-of select="@name" />
+			</div>
+		</div>
+	</xsl:template>
 	<!-- languages -->
 	<xsl:template match="languages">
 		<xsl:apply-templates select="@title"/>

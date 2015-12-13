@@ -54,7 +54,7 @@
     </educations>
     <experiences title="Berufserfahrung">
         <experiance>
-            <company>IMISnext AG</company>
+            <company name="IMISnext AG" logo="logo_imis.png" />
             <period>
                 <from year="2011" month="10"/>
                 <to year="2015" month="12"/>
@@ -90,7 +90,7 @@
             </period>
         </experiance>
         <experiance>
-            <company>Zürcher Kantonalbank</company>
+            <company name="Zürcher Kantonalbank" logo="logo_zkb.png"/>
             <period>
                 <from year="2010" month="06"/>
                 <to year="2010" month="08"/>
