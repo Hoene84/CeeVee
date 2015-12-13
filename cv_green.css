@@ -1,5 +1,10 @@
-.bordered,
 .odd
 {
     background-color: #c9ef8f;
+}
+
+.even,
+.bordered
+{
+    background-color: #e6ffb2;
 }

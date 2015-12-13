@@ -308,7 +308,7 @@
 		<div class="paragraph">
 			<table>
 				<tbody>
-					<tr>
+					<tr class="even">
 						<td>
 							<div>
 								<xsl:text>Projekt</xsl:text>
