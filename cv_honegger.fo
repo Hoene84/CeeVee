@@ -11,74 +11,89 @@
       <flow flow-name="xsl-region-body">
          <block font-family="Nimbus Sans L" font-size="10pt">
             <block padding-top="1mm" padding-bottom="2mm">
-               <table background-color="#FFFFFF" border-width="2px,0px,2px,0px" border-style="solid"
+               <block background-color="#FFFFFF" border-width="2px,0px,2px,0px" border-style="solid"
                       border-color="#DDFFE0">
-                  <table-column column-width="38.17%"/>
-                  <table-column column-width="17%"/>
-                  <table-column/>
-                  <table-body>
-                     <table-row>
-                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
-                                    padding="4px 4px 4px 4px"
-                                    display-align="center"
-                                    number-rows-spanned="2">
-                           <block>
-                              <block text-align="left">
-                                 <fo:external-graphic xmlns:fo="http://www.w3.org/1999/XSL/Format" src="cv_honegger_photo.jpg"
-                                                      content-width="42mm"
-                                                      content-height="54mm"/>
-                              </block>
-                           </block>
-                        </table-cell>
-                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
-                                    padding="14px 4px 4px 4px"
-                                    display-align="center"
-                                    number-columns-spanned="2">
-                           <block>
-                              <block text-align="left">
-                                 <block padding-top="1mm" padding-bottom="2mm">
-                                    <block font-style="italic" font-weight="bold">Simon Honegger</block>
-                                 </block>
-                                 <block padding-top="1mm" padding-bottom="2mm">
-                                    <block>Bachelor of Science HES-SO in Informatik</block>
-                                    <block>9 Jahre Berufserfahrung</block>
-                                 </block>
-                              </block>
-                           </block>
-                        </table-cell>
-                     </table-row>
-                     <table-row>
-                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
-                                    padding="4px 4px 4px 4px">
+                  <inline-container>
+                     <block text-align="left">
+                        <fo:external-graphic xmlns:fo="http://www.w3.org/1999/XSL/Format" src="cv_honegger_photo.jpg"
+                                             content-width="42mm"
+                                             content-height="54mm"/>
+                     </block>
+                  </inline-container>
+                  <inline-container>
+                     <block>
+                        <block text-align="left">
                            <block padding-top="1mm" padding-bottom="2mm">
-                              <block padding-top="1mm" padding-bottom="2mm">
-                                 <block>Geburtsdatum</block>
-                                 <block>Heimatort</block>
-                                 <block>Zivilstand</block>
-                                 <block>Adresse</block>
-                                 <block>Telefon</block>
-                                 <block>Email</block>
-                              </block>
+                              <block font-style="italic" font-weight="bold">Simon Honegger</block>
                            </block>
-                        </table-cell>
-                        <table-cell border-width="0px,0px,0px,0px" border-style="solid" border-color="black"
-                                    padding="4px 4px 4px 4px">
                            <block padding-top="1mm" padding-bottom="2mm">
-                              <block padding-top="1mm" padding-bottom="2mm">
-                                 <block>22 Juli 1984</block>
-                                 <block>Niederhasli ZH</block>
-                                 <block>ledig</block>
-                                 <block>
-                                    <block>Hinterdorfstrasse 10, 8157 Dielsdorf</block>
-                                    <block>076 386 82 56</block>
-                                    <block>simon.honegger@gmail.com</block>
-                                 </block>
-                              </block>
+                              <block>Bachelor of Science HES-SO in Informatik</block>
+                              <block>9 Jahre Berufserfahrung</block>
                            </block>
-                        </table-cell>
-                     </table-row>
-                  </table-body>
-               </table>
+                        </block>
+                     </block>
+                     <block>
+                        <inline-container>
+                           <table>
+                              <table-body>
+                                 <table-row>
+                                    <table-cell>
+                                       <block>Geburtsdatum</block>
+                                    </table-cell>
+                                    <table-cell>
+                                       <block>22 Juli 1984</block>
+                                    </table-cell>
+                                 </table-row>
+                                 <table-row>
+                                    <table-cell>
+                                       <block>Heimatort</block>
+                                    </table-cell>
+                                    <table-cell>
+                                       <block>Niederhasli ZH</block>
+                                    </table-cell>
+                                 </table-row>
+                                 <table-row>
+                                    <table-cell>
+                                       <block>Zivilstand</block>
+                                    </table-cell>
+                                    <table-cell>
+                                       <block>ledig</block>
+                                    </table-cell>
+                                 </table-row>
+                                 <table-row>
+                                    <table-cell>
+                                       <block>Adresse</block>
+                                    </table-cell>
+                                    <table-cell>
+                                       <block>
+                                          <block>Hinterdorfstrasse 10, 8157 Dielsdorf</block>
+                                       </block>
+                                    </table-cell>
+                                 </table-row>
+                                 <table-row>
+                                    <table-cell>
+                                       <block>Telefon</block>
+                                    </table-cell>
+                                    <table-cell>
+                                       <block>
+                                          <block>076 386 82 56</block>
+                                       </block>
+                                    </table-cell>
+                                 </table-row>
+                                 <table-row>
+                                    <table-cell>
+                                       <block>Email</block>
+                                    </table-cell>
+                                    <table-cell>
+                                       <block>simon.honegger@gmail.com</block>
+                                    </table-cell>
+                                 </table-row>
+                              </table-body>
+                           </table>
+                        </inline-container>
+                     </block>
+                  </inline-container>
+               </block>
             </block>
             <block font-size="14pt" font-weight="bold" space-before="10mm" space-after="5mm"
                    keep-with-next="always"
@@ -489,7 +504,7 @@
                                              <block>·</block>
                                           </list-item-label>
                                           <list-item-body start-indent="body-start()">
-                                             <block>Implementieren, testen und präsentieren dieser Anforderungen (Apache Wicket, Spring, Hibernate, LDAP)</block>
+                                             <block>Implementieren, testen und präsentieren dieser Anforderungen</block>
                                           </list-item-body>
                                        </list-item>
                                     </list-block>

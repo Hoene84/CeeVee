@@ -11,6 +11,7 @@
 	<xsl:output method="html" version="4.0" encoding="ISO-8859-1" indent="yes"/>
 	<!--___________________________________________________________element mapping-->
 	<xsl:variable name="block">div</xsl:variable>
+	<xsl:variable name="inline">div</xsl:variable>
 	<xsl:variable name="table">table</xsl:variable>
 	<xsl:variable name="tableBody">tbody</xsl:variable>
 	<xsl:variable name="tableRow">tr</xsl:variable>
@@ -37,8 +38,8 @@
 	<xsl:attribute-set name="centeredParagrapthAttrs">
 		<xsl:attribute name="class">centered</xsl:attribute>
 	</xsl:attribute-set>
-	<xsl:attribute-set name="leftParagrapthAttrs">
-		<xsl:attribute name="class">left</xsl:attribute>
+	<xsl:attribute-set name="inlineParagrapthAttrs">
+		<xsl:attribute name="class">inline</xsl:attribute>
 	</xsl:attribute-set>
 	<xsl:attribute-set name="keepWithNextParagrapthAttrs"/><!--makes no sense in html-->
 	<xsl:attribute-set name="h1Attrs">
@@ -56,6 +57,10 @@
 	</xsl:attribute-set>
 	<xsl:attribute-set name="evenRowAttrs">
 		<xsl:attribute name="style">background-color:#FFFFEE</xsl:attribute>
+	</xsl:attribute-set>
+	<xsl:attribute-set name="ImgCellAttrs" use-attribute-sets="defaultCellAttrs">
+	</xsl:attribute-set>
+	<xsl:attribute-set name="HeaderCellAttrs" use-attribute-sets="defaultCellAttrs">
 	</xsl:attribute-set>
 	<xsl:attribute-set name="verticalCenteredCellAttrs">
 		<xsl:attribute name="class">verticalCentered</xsl:attribute>
@@ -94,7 +99,7 @@
 					<xsl:text>
 					*, body, html { font-family:Nimbus Sans L;font-size:10pt; }
 					table { width:100%; }
-					table.bordered { border-width:2px border-color:black; border-style:solid; background-color:#FFFFDD; } 
+					.bordered { border-width:2px border-color:black; border-style:solid; background-color:#FFFFDD; } 
 					td { vertical-align:top;padding:2px 2px 2px 2px; }
 					td.verticalCentered { vertical-align:middle; }
 					div.h1 { font-size:16pt;font-weight:bold;margin-top:10mm;margin-bottom:5mm; }
@@ -102,8 +107,7 @@
 					div.centered { text-align:center; padding:10px 10px 10px 10px; }
 					div.paragraph { padding-top:2mm;padding-bottom:2mm}
 					div.highlighted { font-style: italic;font-weight:bold; }
-					div.left { width:80%; }
-					div.picture { width:80%; }
+					div.inline { display:inline-block; }
 					</xsl:text>
 				</style>
 			</head>

@@ -4,6 +4,7 @@
 <xsl:output method="xml" version="1.0" encoding="ISO-8859-1" indent="yes"/>
 	<!--___________________________________________________________element mapping-->
 	<xsl:variable name="block">block</xsl:variable>
+	<xsl:variable name="inline">inline-container</xsl:variable>
 	<xsl:variable name="table">table</xsl:variable>
 	<xsl:variable name="tableBody">table-body</xsl:variable>
 	<xsl:variable name="tableRow">table-row</xsl:variable>
@@ -36,6 +37,9 @@
 	</xsl:attribute-set>
 	<xsl:attribute-set name="centeredParagrapthAttrs">
 		<xsl:attribute name="text-align">left</xsl:attribute>
+	</xsl:attribute-set>
+	<xsl:attribute-set name="inlineParagrapthAttrs">
+		<!--<xsl:attribute name="inline-container">inline-container</xsl:attribute>-->
 	</xsl:attribute-set>
 	<xsl:attribute-set name="keepWithNextParagrapthAttrs" use-attribute-sets="defaultParagraphAttrs">
 		<xsl:attribute name="keep-with-next">always</xsl:attribute>

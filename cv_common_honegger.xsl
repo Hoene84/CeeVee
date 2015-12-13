@@ -10,58 +10,102 @@
 	<!-- person -->
 	<xsl:template match="person">
 		<xsl:element name="{$block}" use-attribute-sets="defaultParagraphAttrs">
-			<xsl:element name="{$table}" use-attribute-sets="borderedTableAttrs">
-				<xsl:call-template name="rigthFixedColumnDefs"/>
-				<xsl:element name="{$tableBody}">
-					<xsl:element name="{$tableRow}">
-						<xsl:element name="{$tableCell}" use-attribute-sets="ImgCellAttrs">
-							<xsl:element name="{$block}">
-								<xsl:call-template name="personImg"/>
-							</xsl:element>
-						</xsl:element>
-						<xsl:element name="{$tableCell}" use-attribute-sets="HeaderCellAttrs">
-							<xsl:element name="{$block}">
-								<xsl:call-template name="personHeader"/>
-							</xsl:element>
-						</xsl:element>
+			<xsl:element name="{$block}" use-attribute-sets="borderedTableAttrs">
+				<xsl:element name="{$inline}" use-attribute-sets="inlineParagrapthAttrs">
+					<xsl:call-template name="personImg"/>
+				</xsl:element>
+				<xsl:element name="{$inline}" use-attribute-sets="inlineParagrapthAttrs">
+					<xsl:element name="{$block}">
+						<xsl:call-template name="personHeader"/>
 					</xsl:element>
-					<xsl:element name="{$tableRow}">
-						<xsl:element name="{$tableCell}" use-attribute-sets="defaultCellAttrs">
-							<xsl:element name="{$block}" use-attribute-sets="defaultParagraphAttrs">
-								<xsl:call-template name="personLabels"/>
-							</xsl:element>
-						</xsl:element>
-						<xsl:element name="{$tableCell}" use-attribute-sets="defaultCellAttrs">
-							<xsl:element name="{$block}" use-attribute-sets="defaultParagraphAttrs">
-								<xsl:call-template name="personText"/>
-							</xsl:element>
-						</xsl:element>
+					<xsl:element name="{$block}">
+						<xsl:call-template name="personInfos"/>
 					</xsl:element>
 				</xsl:element>
 			</xsl:element>
 		</xsl:element>
 	</xsl:template>
 	<!-- text part of the person (left side) -->
-	<xsl:template name="personLabels">
-        <xsl:element name="{$block}" use-attribute-sets="defaultParagraphAttrs">            
-			<xsl:element name="{$block}">
-				<xsl:text>Geburtsdatum</xsl:text>
+	<xsl:template name="personInfos">
+		<xsl:element name="{$inline}" use-attribute-sets="inlineParagrapthAttrs">            
+			<xsl:element name="{$table}">
+				<xsl:element name="{$tableBody}">
+					<xsl:element name="{$tableRow}">
+						<xsl:element name="{$tableCell}">
+							<xsl:element name="{$block}">
+								<xsl:text>Geburtsdatum</xsl:text>
+							</xsl:element>
+						</xsl:element>
+						<xsl:element name="{$tableCell}">	
+							<xsl:element name="{$block}">		
+							<xsl:apply-templates select="birthday"/>
+							</xsl:element>
+						</xsl:element>
+					</xsl:element>
+					<xsl:element name="{$tableRow}">
+						<xsl:element name="{$tableCell}">
+							<xsl:element name="{$block}">
+							<xsl:text>Heimatort</xsl:text>
+							</xsl:element>
+						</xsl:element>
+						<xsl:element name="{$tableCell}">
+							<xsl:element name="{$block}">
+							<xsl:apply-templates select="hometown"/>
+							</xsl:element>
+						</xsl:element>
+					</xsl:element>
+					<xsl:element name="{$tableRow}">
+						<xsl:element name="{$tableCell}">
+							<xsl:element name="{$block}">
+							<xsl:text>Zivilstand</xsl:text>
+							</xsl:element>
+						</xsl:element>
+						<xsl:element name="{$tableCell}">
+							<xsl:element name="{$block}">
+							<xsl:apply-templates select="maritalStatus"/>
+							</xsl:element>
+						</xsl:element>
+					</xsl:element>
+					<xsl:element name="{$tableRow}">
+						<xsl:element name="{$tableCell}">
+							<xsl:element name="{$block}">
+							<xsl:text>Adresse</xsl:text>
+							</xsl:element>
+						</xsl:element>
+						<xsl:element name="{$tableCell}">
+							<xsl:element name="{$block}">
+							<xsl:apply-templates select="contact/address"/>
+							</xsl:element>
+						</xsl:element>
+					</xsl:element>
+					<xsl:element name="{$tableRow}">
+						<xsl:element name="{$tableCell}">
+							<xsl:element name="{$block}">
+							<xsl:text>Telefon</xsl:text>
+							</xsl:element>
+						</xsl:element>
+						<xsl:element name="{$tableCell}">
+							<xsl:element name="{$block}">
+							<xsl:for-each select="contact/phone">
+								<xsl:apply-templates select="current()"/>
+							</xsl:for-each>
+							</xsl:element>
+						</xsl:element>
+					</xsl:element>
+					<xsl:element name="{$tableRow}">
+						<xsl:element name="{$tableCell}">
+							<xsl:element name="{$block}">
+							<xsl:text>Email</xsl:text>
+							</xsl:element>
+						</xsl:element>
+						<xsl:element name="{$tableCell}">
+							<xsl:element name="{$block}">
+							<xsl:apply-templates select="contact/email"/>
+							</xsl:element>
+						</xsl:element>
+					</xsl:element>
+				</xsl:element>
 			</xsl:element>
-			<xsl:element name="{$block}">
-				<xsl:text>Heimatort</xsl:text>
-			</xsl:element>
-			<xsl:element name="{$block}">
-				<xsl:text>Zivilstand</xsl:text>
-			</xsl:element>
-			<xsl:element name="{$block}">
-				<xsl:text>Adresse</xsl:text>
-			</xsl:element>
-			<xsl:element name="{$block}">
-				<xsl:text>Telefon</xsl:text>
-			</xsl:element>
-			<xsl:element name="{$block}">
-				<xsl:text>Email</xsl:text>
-            </xsl:element>
 		</xsl:element>
 	</xsl:template>
 	<xsl:template name="personHeader">
@@ -84,22 +128,7 @@
 			</xsl:element>
 		</xsl:element>
 	</xsl:template>
-	<xsl:template name="personText">
-		<xsl:element name="{$block}" use-attribute-sets="defaultParagraphAttrs">
-			<xsl:element name="{$block}">			
-				<xsl:apply-templates select="birthday"/>
-			</xsl:element>
-			<xsl:element name="{$block}">
-				<xsl:apply-templates select="hometown"/>
-			</xsl:element>
-			<xsl:element name="{$block}">
-				<xsl:apply-templates select="maritalStatus"/>
-			</xsl:element>
-			<xsl:element name="{$block}">
-				<xsl:apply-templates select="contact"/>
-			</xsl:element>
-		</xsl:element>
-	</xsl:template>
+	
 	<!-- image of the person (rigth side) -->
 	<xsl:template name="personImg">
 		<xsl:element name="{$block}" use-attribute-sets="centeredParagrapthAttrs">
@@ -108,16 +137,6 @@
 				<xsl:with-param name="width" select="$personPictureWidth"/>
 				<xsl:with-param name="heigth" select="$personPictureHeigth"/>
 			</xsl:call-template>
-		</xsl:element>
-	</xsl:template>
-	<!-- contact -->
-	<xsl:template match="contact">
-		<xsl:apply-templates select="address"/>
-		<xsl:for-each select="phone">
-			<xsl:apply-templates select="current()"/>
-		</xsl:for-each>
-		<xsl:element name="{$block}">
-			<xsl:apply-templates select="email"/>
 		</xsl:element>
 	</xsl:template>
 
