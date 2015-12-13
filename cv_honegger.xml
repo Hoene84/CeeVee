@@ -54,8 +54,8 @@
     </educations>
     <experiences title="Berufserfahrung">
         <experiance>
-            <company name="IMISnext AG" logo="logo_imis.png" />
             <period>
+                <company name="IMISnext AG" logo="logo_imis.png" />
                 <from year="2011" month="10"/>
                 <to year="2015" month="12"/>
                 <function>Senior Applikationsentwickler in Festanstellung</function>
@@ -90,8 +90,8 @@
             </period>
         </experiance>
         <experiance>
-            <company name="Zürcher Kantonalbank" logo="logo_zkb.png"/>
             <period>
+                <company name="Zürcher Kantonalbank" logo="logo_zkb.png"/>
                 <from year="2010" month="06"/>
                 <to year="2010" month="08"/>
                 <function>Applikationsentwickler auf Stundenlohnbasis</function>
@@ -106,6 +106,7 @@
                 </project>
             </period>
             <period>
+                <company name="Zürcher Kantonalbank" logo="logo_zkb.png"/>
                 <from year="2010" month="01"/>
                 <to year="2010" month="02"/>
                 <function>Aushilfe auf Stundenlohnbasis</function>
@@ -114,6 +115,7 @@
                 </project>
             </period>
             <period>
+                <company name="Zürcher Kantonalbank" logo="logo_zkb.png"/>
                 <from year="2003" month="08"/>
                 <to year="2008" month="10"/>
                 <function>Applikationsentwickler in Festanstellung</function>

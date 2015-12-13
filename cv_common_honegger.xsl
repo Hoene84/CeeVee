@@ -282,15 +282,15 @@
 		<xsl:apply-templates/>
 	</xsl:template>
 	<xsl:template match="experiance">
-		<div>
-			<h2>
-				<xsl:apply-templates select="company"/>
-			</h2>
+		<div class="experiance">
 			<xsl:apply-templates select="period"/>
 		</div>
 	</xsl:template>
 	<xsl:template match="period">
-		<div>
+		<h3 class="period">
+			<xsl:apply-templates select="company"/>
+		</h3>
+		<div class="period">
 			<div>
 				<div class="paragraph">
 					<div class="highlighted">

@@ -224,12 +224,12 @@
 	</xs:complexType>
 	<xs:complexType name="experianceType">
 		<xs:sequence>
-			<xs:element name="company" type="companyType"/>
 			<xs:element name="period" type="periodType" maxOccurs="unbounded"/>
 		</xs:sequence>
 	</xs:complexType>
     <xs:complexType name="periodType">
 		<xs:sequence>
+			<xs:element name="company" type="companyType"/>
 			<xs:element name="from" type="dateType"/>
 			<xs:element name="to" type="dateType"/>
             <xs:element name="function" type="xs:string"/>
