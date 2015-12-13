@@ -1,26 +1,93 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpa-functions">
-   <head><style type="text/css">
-					body { background-color:white; }
-					*, body, html { font-family:Nimbus Sans L;font-size:10pt; }
-					table { width:100%; }
-					.bordered { border-width:2px border-color:black; border-style:solid; background-color:#FFFFDD; } 
-					td { vertical-align:top;padding:2px 2px 2px 2px; }
-					td.verticalCentered { vertical-align:middle; }
-					div.h1 { font-size:16pt;font-weight:bold;margin-top:10mm;margin-bottom:5mm; }
-					div.h2 { font-size:12pt;font-weight:bold;bold;margin-top:5mm;margin-bottom:2mm; }
-					div.centered { text-align:center; padding:10px 10px 10px 10px; }
-					div.paragraph { padding-top:2mm;padding-bottom:2mm}
-					div.highlighted { font-style: italic;font-weight:bold; }
-					div.inline { display:inline-block; }
-					</style></head>
+   <head><style type="text/css">body {
+    background-color: white;
+}
+
+*, body, html {
+    font-family: Nimbus Sans L;
+    font-size: 10pt;
+}
+
+table {
+    width: 100%;
+}
+
+.bordered {
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    background-color: #FFFFDD;
+}
+
+td {
+    vertical-align: top;
+    padding: 2px 2px 2px 2px;
+}
+
+td.verticalCentered {
+    vertical-align: middle;
+}
+
+h1 {
+    font-size: 16pt;
+    font-weight: bold;
+    margin-top: 10mm;
+    margin-bottom: 5mm;
+}
+
+h2 {
+    font-size: 12pt;
+    font-weight: bold;
+    margin-top: 5mm;
+    margin-bottom: 2mm;
+}
+
+div.centered {
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+}
+
+div.paragraph {
+    padding-top: 2mm;
+    padding-bottom: 2mm
+}
+
+div.highlighted {
+    font-style: italic;
+    font-weight: bold;
+}
+
+div.inline {
+    display: inline-block;
+}
+
+.even
+{
+    background-color:#FFFFEE
+}
+
+.odd
+{
+    background-color:#FFFFDD
+}
+
+img
+{
+    width: 175px;
+}.bordered,
+.odd
+{
+    background-color: #c9ef8f;
+}</style></head>
    <body>
       <div style="width:800px;margin: 0 auto;">
-         <div xmlns="http://www.w3.org/1999/XSL/Format">
+         <div xmlns:cv="http://cv">
+            
             
             <div class="paragraph">
                <div class="bordered">
                   <div class="inline">
-                     <div class="centered"><img xmlns="http://www.w3.org/1999/xhtml" src="cv_honegger_photo.jpg" width="175px" height="225px"></img></div>
+                     <div class="centered"><img src="cv_honegger_photo.jpg"></img></div>
                   </div>
                   <div class="inline">
                      <div>
@@ -98,15 +165,11 @@
                </div>
             </div>
             
-            <div class="h1">Ausbildung</div>
+            <h1>Ausbildung</h1>
             <div>
                <table>
-                  <colgroup xmlns="http://www.w3.org/1999/xhtml">
-                     <col style="width:20%;"></col>
-                     <col></col>
-                  </colgroup>
                   <tbody>
-                     <tr style="background-color:#FFFFDD">
+                     <tr class="odd">
                         <td>
                            <div>2008 - 2011</div>
                         </td>
@@ -116,7 +179,7 @@
                            </div>
                         </td>
                      </tr>
-                     <tr style="background-color:#FFFFEE">
+                     <tr class="even">
                         <td>
                            <div>2000 - 2003</div>
                         </td>
@@ -126,7 +189,7 @@
                            </div>
                         </td>
                      </tr>
-                     <tr style="background-color:#FFFFDD">
+                     <tr class="odd">
                         <td>
                            <div>2000 - 2003</div>
                         </td>
@@ -140,10 +203,10 @@
                </table>
             </div>
             
-            <div class="h1">Berufserfahrung</div>
+            <h1>Berufserfahrung</h1>
             
             <div>
-               <div class="h2">IMISnext AG</div>
+               <h2>IMISnext AG</h2>
                <div>
                   <div>
                      <div class="paragraph">
@@ -153,12 +216,8 @@
                   </div>
                   <div class="paragraph">
                      <table>
-                        <colgroup xmlns="http://www.w3.org/1999/xhtml">
-                           <col style="width:20%;"></col>
-                           <col></col>
-                        </colgroup>
                         <tbody>
-                           <tr style="background-color:#FFFFDD">
+                           <tr>
                               <td>
                                  <div>Projekt</div>
                               </td>
@@ -174,20 +233,10 @@
                                  <div>
                                     <ul>
                                        <li>
-                                          <div>
-                                             <div></div>
-                                          </div>
-                                          <div>
-                                             <div>Analyse der architektonischen Probleme iShop Core 3</div>
-                                          </div>
+                                          <div>Analyse der architektonischen Probleme iShop Core 3</div>
                                        </li>
                                        <li>
-                                          <div>
-                                             <div></div>
-                                          </div>
-                                          <div>
-                                             <div>Design/Architektur iShop Core 4.0</div>
-                                          </div>
+                                          <div>Design/Architektur iShop Core 4.0</div>
                                        </li>
                                     </ul>
                                  </div>
@@ -198,12 +247,8 @@
                   </div>
                   <div class="paragraph">
                      <table>
-                        <colgroup xmlns="http://www.w3.org/1999/xhtml">
-                           <col style="width:20%;"></col>
-                           <col></col>
-                        </colgroup>
                         <tbody>
-                           <tr style="background-color:#FFFFDD">
+                           <tr>
                               <td>
                                  <div>Projekt</div>
                               </td>
@@ -219,28 +264,13 @@
                                  <div>
                                     <ul>
                                        <li>
-                                          <div>
-                                             <div></div>
-                                          </div>
-                                          <div>
-                                             <div>Verifikation/Validation aller Merge Requests für iShop Core 3</div>
-                                          </div>
+                                          <div>Verifikation/Validation aller Merge Requests für iShop Core 3</div>
                                        </li>
                                        <li>
-                                          <div>
-                                             <div></div>
-                                          </div>
-                                          <div>
-                                             <div>Mitverantwortung Design- und Architekturentscheidungen iShop Core 3</div>
-                                          </div>
+                                          <div>Mitverantwortung Design- und Architekturentscheidungen iShop Core 3</div>
                                        </li>
                                        <li>
-                                          <div>
-                                             <div></div>
-                                          </div>
-                                          <div>
-                                             <div>Unterstützung bei Fragen, Lösungentscheidungen und Problemen der Entwickler</div>
-                                          </div>
+                                          <div>Unterstützung bei Fragen, Lösungentscheidungen und Problemen der Entwickler</div>
                                        </li>
                                     </ul>
                                  </div>
@@ -251,12 +281,8 @@
                   </div>
                   <div class="paragraph">
                      <table>
-                        <colgroup xmlns="http://www.w3.org/1999/xhtml">
-                           <col style="width:20%;"></col>
-                           <col></col>
-                        </colgroup>
                         <tbody>
-                           <tr style="background-color:#FFFFDD">
+                           <tr>
                               <td>
                                  <div>Projekt</div>
                               </td>
@@ -272,60 +298,25 @@
                                  <div>
                                     <ul>
                                        <li>
-                                          <div>
-                                             <div></div>
-                                          </div>
-                                          <div>
-                                             <div>Einführung Mandantenfähigkeit bzgl. Logik, Darstellung und Anbindung von Umsystemen (6 Mandanten, 2 Systemumgebungen, )</div>
-                                          </div>
+                                          <div>Einführung Mandantenfähigkeit bzgl. Logik, Darstellung und Anbindung von Umsystemen (6 Mandanten, 2 Systemumgebungen, )</div>
                                        </li>
                                        <li>
-                                          <div>
-                                             <div></div>
-                                          </div>
-                                          <div>
-                                             <div>Entwicklung diverser Features im Front- sowie Backend</div>
-                                          </div>
+                                          <div>Entwicklung diverser Features im Front- sowie Backend</div>
                                        </li>
                                        <li>
-                                          <div>
-                                             <div></div>
-                                          </div>
-                                          <div>
-                                             <div>Koordination mit Umsystemen (ERP/Pim/Mobile/Webservices)</div>
-                                          </div>
+                                          <div>Koordination mit Umsystemen (ERP/Pim/Mobile/Webservices)</div>
                                        </li>
                                        <li>
-                                          <div>
-                                             <div></div>
-                                          </div>
-                                          <div>
-                                             <div>Koordination von Entwicklung/Testing/Releases</div>
-                                          </div>
+                                          <div>Koordination von Entwicklung/Testing/Releases</div>
                                        </li>
                                        <li>
-                                          <div>
-                                             <div></div>
-                                          </div>
-                                          <div>
-                                             <div>Verantwortung QS, Verifikation/Validation Merge Requests aller Entwickler</div>
-                                          </div>
+                                          <div>Verantwortung QS, Verifikation/Validation Merge Requests aller Entwickler</div>
                                        </li>
                                        <li>
-                                          <div>
-                                             <div></div>
-                                          </div>
-                                          <div>
-                                             <div>Beratung der Kunden zur technischen Umsetzung ihrer fachliche Anforderungen und Wünsche</div>
-                                          </div>
+                                          <div>Beratung der Kunden zur technischen Umsetzung ihrer fachliche Anforderungen und Wünsche</div>
                                        </li>
                                        <li>
-                                          <div>
-                                             <div></div>
-                                          </div>
-                                          <div>
-                                             <div>Verantwortung über Infrastruktur, deren Dokumentation für die Einhaltung des SLA</div>
-                                          </div>
+                                          <div>Verantwortung über Infrastruktur, deren Dokumentation für die Einhaltung des SLA</div>
                                        </li>
                                     </ul>
                                  </div>
@@ -336,12 +327,8 @@
                   </div>
                   <div class="paragraph">
                      <table>
-                        <colgroup xmlns="http://www.w3.org/1999/xhtml">
-                           <col style="width:20%;"></col>
-                           <col></col>
-                        </colgroup>
                         <tbody>
-                           <tr style="background-color:#FFFFDD">
+                           <tr>
                               <td>
                                  <div>Projekt</div>
                               </td>
@@ -357,28 +344,13 @@
                                  <div>
                                     <ul>
                                        <li>
-                                          <div>
-                                             <div></div>
-                                          </div>
-                                          <div>
-                                             <div>Entwicklung diverser Features im Front- sowie Backend in Scala mithilfe des Play Frameworks</div>
-                                          </div>
+                                          <div>Entwicklung diverser Features im Front- sowie Backend in Scala mithilfe des Play Frameworks</div>
                                        </li>
                                        <li>
-                                          <div>
-                                             <div></div>
-                                          </div>
-                                          <div>
-                                             <div>Integration tagesakueller SAP Daten</div>
-                                          </div>
+                                          <div>Integration tagesakueller SAP Daten</div>
                                        </li>
                                        <li>
-                                          <div>
-                                             <div></div>
-                                          </div>
-                                          <div>
-                                             <div>Anbindung von REST APIs zur Erweiterung der Produktinformationen</div>
-                                          </div>
+                                          <div>Anbindung von REST APIs zur Erweiterung der Produktinformationen</div>
                                        </li>
                                     </ul>
                                  </div>
@@ -389,12 +361,8 @@
                   </div>
                   <div class="paragraph">
                      <table>
-                        <colgroup xmlns="http://www.w3.org/1999/xhtml">
-                           <col style="width:20%;"></col>
-                           <col></col>
-                        </colgroup>
                         <tbody>
-                           <tr style="background-color:#FFFFDD">
+                           <tr>
                               <td>
                                  <div>Projekt</div>
                               </td>
@@ -410,29 +378,14 @@
                                  <div>
                                     <ul>
                                        <li>
-                                          <div>
-                                             <div></div>
-                                          </div>
-                                          <div>
-                                             <div>Erstellung eines Dokumentes für die Geschäftsführung</div>
-                                          </div>
+                                          <div>Erstellung eines Dokumentes für die Geschäftsführung</div>
                                        </li>
                                        <li>
-                                          <div>
-                                             <div></div>
-                                          </div>
-                                          <div>
-                                             <div>Aufzeigen des Optimierungspotenzials der Entwicklungsprozesse mithilfe agiler Methodiken</div>
-                                          </div>
+                                          <div>Aufzeigen des Optimierungspotenzials der Entwicklungsprozesse mithilfe agiler Methodiken</div>
                                        </li>
                                        <li>
-                                          <div>
-                                             <div></div>
-                                          </div>
-                                          <div>
-                                             <div>Definition agiler Projektumsetzung in der IMISnext unter Berücksichtung des Kundenumfelds und der Vorgehensweise in der internen
-                                                Entwicklung
-                                             </div>
+                                          <div>Definition agiler Projektumsetzung in der IMISnext unter Berücksichtung des Kundenumfelds und der Vorgehensweise in der internen
+                                             Entwicklung
                                           </div>
                                        </li>
                                     </ul>
@@ -446,7 +399,7 @@
             </div>
             
             <div>
-               <div class="h2">Zürcher Kantonalbank</div>
+               <h2>Zürcher Kantonalbank</h2>
                <div>
                   <div>
                      <div class="paragraph">
@@ -456,12 +409,8 @@
                   </div>
                   <div class="paragraph">
                      <table>
-                        <colgroup xmlns="http://www.w3.org/1999/xhtml">
-                           <col style="width:20%;"></col>
-                           <col></col>
-                        </colgroup>
                         <tbody>
-                           <tr style="background-color:#FFFFDD">
+                           <tr>
                               <td>
                                  <div>Projekt</div>
                               </td>
@@ -477,20 +426,10 @@
                                  <div>
                                     <ul>
                                        <li>
-                                          <div>
-                                             <div></div>
-                                          </div>
-                                          <div>
-                                             <div>Kundennahe Umsetzung von fachlichen Anforderungen nach Scrum Rahmenwerk</div>
-                                          </div>
+                                          <div>Kundennahe Umsetzung von fachlichen Anforderungen nach Scrum Rahmenwerk</div>
                                        </li>
                                        <li>
-                                          <div>
-                                             <div></div>
-                                          </div>
-                                          <div>
-                                             <div>Implementieren, testen und präsentieren dieser Anforderungen</div>
-                                          </div>
+                                          <div>Implementieren, testen und präsentieren dieser Anforderungen</div>
                                        </li>
                                     </ul>
                                  </div>
@@ -509,12 +448,8 @@
                   </div>
                   <div class="paragraph">
                      <table>
-                        <colgroup xmlns="http://www.w3.org/1999/xhtml">
-                           <col style="width:20%;"></col>
-                           <col></col>
-                        </colgroup>
                         <tbody>
-                           <tr style="background-color:#FFFFDD">
+                           <tr>
                               <td>
                                  <div>Projekt</div>
                               </td>
@@ -530,12 +465,7 @@
                                  <div>
                                     <ul>
                                        <li>
-                                          <div>
-                                             <div></div>
-                                          </div>
-                                          <div>
-                                             <div>Kosten-Nutzen-Analyse diverser Optimierungen im Testprozess</div>
-                                          </div>
+                                          <div>Kosten-Nutzen-Analyse diverser Optimierungen im Testprozess</div>
                                        </li>
                                     </ul>
                                  </div>
@@ -554,12 +484,8 @@
                   </div>
                   <div class="paragraph">
                      <table>
-                        <colgroup xmlns="http://www.w3.org/1999/xhtml">
-                           <col style="width:20%;"></col>
-                           <col></col>
-                        </colgroup>
                         <tbody>
-                           <tr style="background-color:#FFFFDD">
+                           <tr>
                               <td>
                                  <div>Projekt</div>
                               </td>
@@ -575,28 +501,13 @@
                                  <div>
                                     <ul>
                                        <li>
-                                          <div>
-                                             <div></div>
-                                          </div>
-                                          <div>
-                                             <div>Teilprojektleitung ASD/SDS</div>
-                                          </div>
+                                          <div>Teilprojektleitung ASD/SDS</div>
                                        </li>
                                        <li>
-                                          <div>
-                                             <div></div>
-                                          </div>
-                                          <div>
-                                             <div>Definition des bankfachlichen Modells und Konsistenzbedingungen mit dem Fachbereich</div>
-                                          </div>
+                                          <div>Definition des bankfachlichen Modells und Konsistenzbedingungen mit dem Fachbereich</div>
                                        </li>
                                        <li>
-                                          <div>
-                                             <div></div>
-                                          </div>
-                                          <div>
-                                             <div>Implemention nach MDA (Model Driven Architecture) Ansatz</div>
-                                          </div>
+                                          <div>Implemention nach MDA (Model Driven Architecture) Ansatz</div>
                                        </li>
                                     </ul>
                                  </div>
@@ -607,12 +518,8 @@
                   </div>
                   <div class="paragraph">
                      <table>
-                        <colgroup xmlns="http://www.w3.org/1999/xhtml">
-                           <col style="width:20%;"></col>
-                           <col></col>
-                        </colgroup>
                         <tbody>
-                           <tr style="background-color:#FFFFDD">
+                           <tr>
                               <td>
                                  <div>Projekt</div>
                               </td>
@@ -628,28 +535,13 @@
                                  <div>
                                     <ul>
                                        <li>
-                                          <div>
-                                             <div></div>
-                                          </div>
-                                          <div>
-                                             <div>Stellvertretung des Teilprojektleiters ASD/SDS GUI</div>
-                                          </div>
+                                          <div>Stellvertretung des Teilprojektleiters ASD/SDS GUI</div>
                                        </li>
                                        <li>
-                                          <div>
-                                             <div></div>
-                                          </div>
-                                          <div>
-                                             <div>Spezifikation der Java Software Komponente ASD/SDS GUI und codierung des generischen Teils</div>
-                                          </div>
+                                          <div>Spezifikation der Java Software Komponente ASD/SDS GUI und codierung des generischen Teils</div>
                                        </li>
                                        <li>
-                                          <div>
-                                             <div></div>
-                                          </div>
-                                          <div>
-                                             <div>Abstimmung der Realisierung der fachlichen Anforderungen mit dem Fachbereich</div>
-                                          </div>
+                                          <div>Abstimmung der Realisierung der fachlichen Anforderungen mit dem Fachbereich</div>
                                        </li>
                                     </ul>
                                  </div>
@@ -660,12 +552,8 @@
                   </div>
                   <div class="paragraph">
                      <table>
-                        <colgroup xmlns="http://www.w3.org/1999/xhtml">
-                           <col style="width:20%;"></col>
-                           <col></col>
-                        </colgroup>
                         <tbody>
-                           <tr style="background-color:#FFFFDD">
+                           <tr>
                               <td>
                                  <div>Projekt</div>
                               </td>
@@ -681,12 +569,7 @@
                                  <div>
                                     <ul>
                                        <li>
-                                          <div>
-                                             <div></div>
-                                          </div>
-                                          <div>
-                                             <div>Analyse, Spezifikation, Design, Implementation und Test diverser Java Softwarekomponenten</div>
-                                          </div>
+                                          <div>Analyse, Spezifikation, Design, Implementation und Test diverser Java Softwarekomponenten</div>
                                        </li>
                                     </ul>
                                  </div>
@@ -697,12 +580,8 @@
                   </div>
                   <div class="paragraph">
                      <table>
-                        <colgroup xmlns="http://www.w3.org/1999/xhtml">
-                           <col style="width:20%;"></col>
-                           <col></col>
-                        </colgroup>
                         <tbody>
-                           <tr style="background-color:#FFFFDD">
+                           <tr>
                               <td>
                                  <div>Projekt</div>
                               </td>
@@ -718,12 +597,7 @@
                                  <div>
                                     <ul>
                                        <li>
-                                          <div>
-                                             <div></div>
-                                          </div>
-                                          <div>
-                                             <div>Realisieren eines Servicemoduls in PL/1 inkl. Regressionstests</div>
-                                          </div>
+                                          <div>Realisieren eines Servicemoduls in PL/1 inkl. Regressionstests</div>
                                        </li>
                                     </ul>
                                  </div>
@@ -734,12 +608,8 @@
                   </div>
                   <div class="paragraph">
                      <table>
-                        <colgroup xmlns="http://www.w3.org/1999/xhtml">
-                           <col style="width:20%;"></col>
-                           <col></col>
-                        </colgroup>
                         <tbody>
-                           <tr style="background-color:#FFFFDD">
+                           <tr>
                               <td>
                                  <div>Projekt</div>
                               </td>
@@ -755,20 +625,10 @@
                                  <div>
                                     <ul>
                                        <li>
-                                          <div>
-                                             <div></div>
-                                          </div>
-                                          <div>
-                                             <div>Sicherstellen der Service Level Agreements im Bereich ADB (Datawarehouse) Belieferung</div>
-                                          </div>
+                                          <div>Sicherstellen der Service Level Agreements im Bereich ADB (Datawarehouse) Belieferung</div>
                                        </li>
                                        <li>
-                                          <div>
-                                             <div></div>
-                                          </div>
-                                          <div>
-                                             <div>Durchführen von Systembuilds in der Stammdatenverwaltung</div>
-                                          </div>
+                                          <div>Durchführen von Systembuilds in der Stammdatenverwaltung</div>
                                        </li>
                                     </ul>
                                  </div>
@@ -779,12 +639,8 @@
                   </div>
                   <div class="paragraph">
                      <table>
-                        <colgroup xmlns="http://www.w3.org/1999/xhtml">
-                           <col style="width:20%;"></col>
-                           <col></col>
-                        </colgroup>
                         <tbody>
-                           <tr style="background-color:#FFFFDD">
+                           <tr>
                               <td>
                                  <div>Projekt</div>
                               </td>
@@ -800,28 +656,13 @@
                                  <div>
                                     <ul>
                                        <li>
-                                          <div>
-                                             <div></div>
-                                          </div>
-                                          <div>
-                                             <div>Mitentwicklung der PL/1 Schnittstelle auf dezentrale Services (C++)</div>
-                                          </div>
+                                          <div>Mitentwicklung der PL/1 Schnittstelle auf dezentrale Services (C++)</div>
                                        </li>
                                        <li>
-                                          <div>
-                                             <div></div>
-                                          </div>
-                                          <div>
-                                             <div>Performance Analyse des Zugriffs auf alte bzw. neue Datenhaltung</div>
-                                          </div>
+                                          <div>Performance Analyse des Zugriffs auf alte bzw. neue Datenhaltung</div>
                                        </li>
                                        <li>
-                                          <div>
-                                             <div></div>
-                                          </div>
-                                          <div>
-                                             <div>Modellieren und Realisieren von Interface Business Objects (XML)</div>
-                                          </div>
+                                          <div>Modellieren und Realisieren von Interface Business Objects (XML)</div>
                                        </li>
                                     </ul>
                                  </div>
@@ -834,15 +675,11 @@
             </div>
             
             
-            <div class="h1">Weiterbildungen</div>
+            <h1>Weiterbildungen</h1>
             <div>
                <table>
-                  <colgroup xmlns="http://www.w3.org/1999/xhtml">
-                     <col style="width:20%;"></col>
-                     <col></col>
-                  </colgroup>
                   <tbody>
-                     <tr style="background-color:#FFFFDD">
+                     <tr class="odd">
                         <td>
                            <div>Jan. 2008</div>
                         </td>
@@ -850,7 +687,7 @@
                            <div>Object Oriented Analysis and Design with UML (Zühlke)</div>
                         </td>
                      </tr>
-                     <tr style="background-color:#FFFFEE">
+                     <tr class="even">
                         <td>
                            <div>Juli 2007</div>
                         </td>
@@ -858,7 +695,7 @@
                            <div>Synergy Ugrade 6.5 (Telelogic)</div>
                         </td>
                      </tr>
-                     <tr style="background-color:#FFFFDD">
+                     <tr class="odd">
                         <td>
                            <div>Nov. 2006</div>
                         </td>
@@ -866,7 +703,7 @@
                            <div>Java - Design Patterns (IBM)</div>
                         </td>
                      </tr>
-                     <tr style="background-color:#FFFFEE">
+                     <tr class="even">
                         <td>
                            <div>Nov. 2005</div>
                         </td>
@@ -874,7 +711,7 @@
                            <div>DB2 UDB for z/OS - Anwendungsprogrammierung (IBM)</div>
                         </td>
                      </tr>
-                     <tr style="background-color:#FFFFDD">
+                     <tr class="odd">
                         <td>
                            <div>Apr. 2005</div>
                         </td>
@@ -882,7 +719,7 @@
                            <div>PL/1 Grundlagen (IFA)</div>
                         </td>
                      </tr>
-                     <tr style="background-color:#FFFFEE">
+                     <tr class="even">
                         <td>
                            <div>März 2004</div>
                         </td>
@@ -894,15 +731,11 @@
                </table>
             </div>
             
-            <div class="h1">Zertifikate</div>
+            <h1>Zertifikate</h1>
             <div>
                <table>
-                  <colgroup xmlns="http://www.w3.org/1999/xhtml">
-                     <col style="width:20%;"></col>
-                     <col></col>
-                  </colgroup>
                   <tbody>
-                     <tr style="background-color:#FFFFDD">
+                     <tr class="odd">
                         <td>
                            <div>2011</div>
                         </td>
@@ -910,7 +743,7 @@
                            <div>Certified Secure Web Developer (CSWD)</div>
                         </td>
                      </tr>
-                     <tr style="background-color:#FFFFEE">
+                     <tr class="even">
                         <td>
                            <div>2005</div>
                         </td>
@@ -922,15 +755,11 @@
                </table>
             </div>
             
-            <div class="h1">Kompetenzen</div>
+            <h1>Kompetenzen</h1>
             <div>
                <table>
-                  <colgroup xmlns="http://www.w3.org/1999/xhtml">
-                     <col style="width:20%;"></col>
-                     <col></col>
-                  </colgroup>
                   <tbody>
-                     <tr style="background-color:#FFFFDD">
+                     <tr class="odd">
                         <td>
                            <div>Sprachen</div>
                         </td>
@@ -938,7 +767,7 @@
                            <div>Solide Kenntnisse in Java, Scala, HTML/CSS, C/C++, XML(XSLT/XSL), SQL, JS, bash, Python, LaTeX</div>
                         </td>
                      </tr>
-                     <tr style="background-color:#FFFFEE">
+                     <tr class="even">
                         <td>
                            <div></div>
                         </td>
@@ -951,12 +780,8 @@
             </div>
             <div>
                <table>
-                  <colgroup xmlns="http://www.w3.org/1999/xhtml">
-                     <col style="width:20%;"></col>
-                     <col></col>
-                  </colgroup>
                   <tbody>
-                     <tr style="background-color:#FFFFDD">
+                     <tr class="odd">
                         <td>
                            <div>Frameworks</div>
                         </td>
@@ -964,7 +789,7 @@
                            <div>Solide Kenntnisse in Tapestry, Play Framework, Spring, jQuery, jaxws, JUnit, Mockito</div>
                         </td>
                      </tr>
-                     <tr style="background-color:#FFFFEE">
+                     <tr class="even">
                         <td>
                            <div></div>
                         </td>
@@ -977,12 +802,8 @@
             </div>
             <div>
                <table>
-                  <colgroup xmlns="http://www.w3.org/1999/xhtml">
-                     <col style="width:20%;"></col>
-                     <col></col>
-                  </colgroup>
                   <tbody>
-                     <tr style="background-color:#FFFFDD">
+                     <tr class="odd">
                         <td>
                            <div>Datenbanken</div>
                         </td>
@@ -990,7 +811,7 @@
                            <div>Solide Kenntnisse in MSSQL, LDAP, Jena, FS basierte Datenhaltung</div>
                         </td>
                      </tr>
-                     <tr style="background-color:#FFFFEE">
+                     <tr class="even">
                         <td>
                            <div></div>
                         </td>
@@ -1003,12 +824,8 @@
             </div>
             <div>
                <table>
-                  <colgroup xmlns="http://www.w3.org/1999/xhtml">
-                     <col style="width:20%;"></col>
-                     <col></col>
-                  </colgroup>
                   <tbody>
-                     <tr style="background-color:#FFFFDD">
+                     <tr class="odd">
                         <td>
                            <div>Programme</div>
                         </td>
@@ -1016,7 +833,7 @@
                            <div>Solide Kenntnisse in itelliJ, Eclipse, Astah, Rational Rose, Enterprise Architekt, Visual Paradigm UML, Office suite</div>
                         </td>
                      </tr>
-                     <tr style="background-color:#FFFFEE">
+                     <tr class="even">
                         <td>
                            <div></div>
                         </td>
@@ -1029,12 +846,8 @@
             </div>
             <div>
                <table>
-                  <colgroup xmlns="http://www.w3.org/1999/xhtml">
-                     <col style="width:20%;"></col>
-                     <col></col>
-                  </colgroup>
                   <tbody>
-                     <tr style="background-color:#FFFFDD">
+                     <tr class="odd">
                         <td>
                            <div>Umgebungen</div>
                         </td>
@@ -1042,7 +855,7 @@
                            <div>Solide Kenntnisse in Linux und andere Unix basierte Systeme</div>
                         </td>
                      </tr>
-                     <tr style="background-color:#FFFFEE">
+                     <tr class="even">
                         <td>
                            <div></div>
                         </td>
@@ -1054,15 +867,11 @@
                </table>
             </div>
             
-            <div class="h1">Sprachen</div>
+            <h1>Sprachen</h1>
             <div>
                <table>
-                  <colgroup xmlns="http://www.w3.org/1999/xhtml">
-                     <col style="width:20%;"></col>
-                     <col></col>
-                  </colgroup>
                   <tbody>
-                     <tr style="background-color:#FFFFDD">
+                     <tr class="odd">
                         <td>
                            <div>Deutsch</div>
                         </td>
@@ -1070,7 +879,7 @@
                            <div>Muttersprache</div>
                         </td>
                      </tr>
-                     <tr style="background-color:#FFFFEE">
+                     <tr class="even">
                         <td>
                            <div>Französisch</div>
                         </td>
@@ -1078,7 +887,7 @@
                            <div>Schriftlich und mündlich fliessend</div>
                         </td>
                      </tr>
-                     <tr style="background-color:#FFFFDD">
+                     <tr class="odd">
                         <td>
                            <div>Englisch</div>
                         </td>
@@ -1091,9 +900,9 @@
             </div>
             
             
-            <div class="h1">Referenzen</div>Auf Anfrage
+            <h1>Referenzen</h1>Auf Anfrage
             
-            <div class="h1">Mögliche Anstellung</div>Nach Vereinbarung, ab Jan. 2015 verfügbar
+            <h1>Mögliche Anstellung</h1>Nach Vereinbarung, ab Jan. 2015 verfügbar
             
          </div>
       </div>

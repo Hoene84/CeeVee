@@ -1,147 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?altova_samplexml cv.xml?>
-<xsl:stylesheet version="2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fn="http://www.w3.org/2005/xpa-functions" xmlns:cv="http://cv" xmlns="http://www.w3.org/1999/XSL/Format">
+<xsl:stylesheet version="2.0"
+				xmlns="http://www.w3.org/1999/xhtml"
+				xmlns:xs="http://www.w3.org/2001/XMLSchema"
+				xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fn="http://www.w3.org/2005/xpa-functions"
+				xmlns:cv="http://cv">
 	<!-- do a parent for inherit default font Attrs -->
 	<xsl:template name="main">
-		<xsl:element name="{$block}" use-attribute-sets="defaultFontAttrs">
+		<div>
 			<xsl:apply-templates/>
-		</xsl:element>
+		</div>
 	</xsl:template>
 	<!-- person -->
 	<xsl:template match="person">
-		<xsl:element name="{$block}" use-attribute-sets="defaultParagraphAttrs">
-			<xsl:element name="{$block}" use-attribute-sets="borderedTableAttrs">
-				<xsl:element name="{$inline}" use-attribute-sets="inlineParagrapthAttrs">
+		<div class="paragraph">
+			<div class="bordered">
+				<div class="inline">
 					<xsl:call-template name="personImg"/>
-				</xsl:element>
-				<xsl:element name="{$inline}" use-attribute-sets="inlineParagrapthAttrs">
-					<xsl:element name="{$block}">
+				</div>
+				<div class="inline">
+					<div>
 						<xsl:call-template name="personHeader"/>
-					</xsl:element>
-					<xsl:element name="{$block}">
+					</div>
+					<div>
 						<xsl:call-template name="personInfos"/>
-					</xsl:element>
-				</xsl:element>
-			</xsl:element>
-		</xsl:element>
+					</div>
+				</div>
+			</div>
+		</div>
 	</xsl:template>
 	<!-- text part of the person (left side) -->
 	<xsl:template name="personInfos">
-		<xsl:element name="{$inline}" use-attribute-sets="inlineParagrapthAttrs">            
-			<xsl:element name="{$table}">
-				<xsl:element name="{$tableBody}">
-					<xsl:element name="{$tableRow}">
-						<xsl:element name="{$tableCell}">
-							<xsl:element name="{$block}">
+		<div class="inline">
+			<table>
+				<tbody>
+					<tr>
+						<td>
+							<div>
 								<xsl:text>Geburtsdatum</xsl:text>
-							</xsl:element>
-						</xsl:element>
-						<xsl:element name="{$tableCell}">	
-							<xsl:element name="{$block}">		
+							</div>
+						</td>
+						<td>
+							<div>
 							<xsl:apply-templates select="birthday"/>
-							</xsl:element>
-						</xsl:element>
-					</xsl:element>
-					<xsl:element name="{$tableRow}">
-						<xsl:element name="{$tableCell}">
-							<xsl:element name="{$block}">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div>
 							<xsl:text>Heimatort</xsl:text>
-							</xsl:element>
-						</xsl:element>
-						<xsl:element name="{$tableCell}">
-							<xsl:element name="{$block}">
+							</div>
+						</td>
+						<td>
+							<div>
 							<xsl:apply-templates select="hometown"/>
-							</xsl:element>
-						</xsl:element>
-					</xsl:element>
-					<xsl:element name="{$tableRow}">
-						<xsl:element name="{$tableCell}">
-							<xsl:element name="{$block}">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div>
 							<xsl:text>Zivilstand</xsl:text>
-							</xsl:element>
-						</xsl:element>
-						<xsl:element name="{$tableCell}">
-							<xsl:element name="{$block}">
+							</div>
+						</td>
+						<td>
+							<div>
 							<xsl:apply-templates select="maritalStatus"/>
-							</xsl:element>
-						</xsl:element>
-					</xsl:element>
-					<xsl:element name="{$tableRow}">
-						<xsl:element name="{$tableCell}">
-							<xsl:element name="{$block}">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div>
 							<xsl:text>Adresse</xsl:text>
-							</xsl:element>
-						</xsl:element>
-						<xsl:element name="{$tableCell}">
-							<xsl:element name="{$block}">
+							</div>
+						</td>
+						<td>
+							<div>
 							<xsl:apply-templates select="contact/address"/>
-							</xsl:element>
-						</xsl:element>
-					</xsl:element>
-					<xsl:element name="{$tableRow}">
-						<xsl:element name="{$tableCell}">
-							<xsl:element name="{$block}">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div>
 							<xsl:text>Telefon</xsl:text>
-							</xsl:element>
-						</xsl:element>
-						<xsl:element name="{$tableCell}">
-							<xsl:element name="{$block}">
+							</div>
+						</td>
+						<td>
+							<div>
 							<xsl:for-each select="contact/phone">
 								<xsl:apply-templates select="current()"/>
 							</xsl:for-each>
-							</xsl:element>
-						</xsl:element>
-					</xsl:element>
-					<xsl:element name="{$tableRow}">
-						<xsl:element name="{$tableCell}">
-							<xsl:element name="{$block}">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div>
 							<xsl:text>Email</xsl:text>
-							</xsl:element>
-						</xsl:element>
-						<xsl:element name="{$tableCell}">
-							<xsl:element name="{$block}">
+							</div>
+						</td>
+						<td>
+							<div>
 							<xsl:apply-templates select="contact/email"/>
-							</xsl:element>
-						</xsl:element>
-					</xsl:element>
-				</xsl:element>
-			</xsl:element>
-		</xsl:element>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 	</xsl:template>
 	<xsl:template name="personHeader">
-		<xsl:element name="{$block}" use-attribute-sets="centeredParagrapthAttrs">
-			<xsl:element name="{$block}" use-attribute-sets="defaultParagraphAttrs">
-				<xsl:element name="{$block}" use-attribute-sets="highlightedAttrs">
+		<div class="centered">
+			<div class="paragraph">
+				<div class="highlighted">
 					<xsl:apply-templates select="forename"/>
 					<xsl:text> </xsl:text>
 					<xsl:apply-templates select="name"/>
-				</xsl:element>
-            </xsl:element>
-            <xsl:element name="{$block}" use-attribute-sets="defaultParagraphAttrs">            
-				<xsl:element name="{$block}">
+				</div>
+			</div>
+            <div class="paragraph">            
+				<div>
 					<xsl:apply-templates select="title"/>
-                </xsl:element>
-                <xsl:element name="{$block}">
+				</div>
+                <div>
 					<xsl:apply-templates select="experience"/>
 					<xsl:text> Jahre Berufserfahrung</xsl:text>
-				</xsl:element>
-			</xsl:element>
-		</xsl:element>
+				</div>
+			</div>
+		</div>
 	</xsl:template>
 	
 	<!-- image of the person (rigth side) -->
 	<xsl:template name="personImg">
-		<xsl:element name="{$block}" use-attribute-sets="centeredParagrapthAttrs">
-			<xsl:call-template name="picture">
-				<xsl:with-param name="uri" select="//person/picture"/>
-				<xsl:with-param name="width" select="$personPictureWidth"/>
-				<xsl:with-param name="heigth" select="$personPictureHeigth"/>
-			</xsl:call-template>
-		</xsl:element>
+		<div class="centered">
+			<img src="{//person/picture}" />
+		</div>
 	</xsl:template>
 
 	<xsl:template match="address">
-		<xsl:element name="{$block}">
+		<div>
 				<xsl:apply-templates select="street"/>
 				<xsl:text> </xsl:text>
 				<xsl:apply-templates select="streetnumber"/>
@@ -149,7 +149,7 @@
 				<xsl:apply-templates select="zip"/>
 				<xsl:text> </xsl:text>
 				<xsl:apply-templates select="location"/>
-		</xsl:element>
+		</div>
 	</xsl:template>
 	<xsl:template match="zip">
 		<xsl:if test="/cv/@international=true()">
@@ -159,7 +159,7 @@
 		<xsl:apply-templates/>
 	</xsl:template>
 	<xsl:template match="phone">
-		<xsl:element name="{$block}">
+		<div>
 			<!--xsl:choose>
 				<xsl:when test="@type = 'homePhone'">
 					<xsl:text>Privat: </xsl:text>
@@ -180,7 +180,7 @@
 			<xsl:apply-templates select="areaCode"/>
 			<xsl:text> </xsl:text>
 			<xsl:apply-templates select="number"/>
-		</xsl:element>
+		</div>
 	</xsl:template>
 	<!-- skills -->
 	<xsl:template match="skills">
@@ -191,13 +191,13 @@
 		<xsl:call-template name="tableContent"/>
 	</xsl:template>
 	<xsl:template match="solidskill">
-		<xsl:element name="{$tableCell}" use-attribute-sets="defaultCellAttrs">
-			<xsl:element name="{$block}">
+		<td>
+			<div>
 				<xsl:apply-templates select="../@title"/>
-			</xsl:element>
-		</xsl:element>
-		<xsl:element name="{$tableCell}" use-attribute-sets="defaultCellAttrs">
-			<xsl:element name="{$block}">
+			</div>
+		</td>
+		<td>
+			<div>
                 <xsl:text>Solide Kenntnisse in </xsl:text>
 				<xsl:for-each select="skill">
 				    <xsl:apply-templates select="current()"/>
@@ -208,17 +208,17 @@
 				<xsl:if test="@etc = true()">
 					<xsl:text>, etc.</xsl:text>
 				</xsl:if>
-			</xsl:element>
-		</xsl:element>
+			</div>
+		</td>
 	</xsl:template>
     <xsl:template match="goodskill">
-        <xsl:element name="{$tableCell}" use-attribute-sets="defaultCellAttrs">
-			<xsl:element name="{$block}">
+        <td>
+			<div>
                 <xsl:text></xsl:text>
-            </xsl:element>
-		</xsl:element>
-		<xsl:element name="{$tableCell}" use-attribute-sets="defaultCellAttrs">
-			<xsl:element name="{$block}">
+			</div>
+		</td>
+		<td>
+			<div>
                 <xsl:text>Gute Kenntnisse in </xsl:text>
 				<xsl:for-each select="skill">
     			    <xsl:apply-templates select="current()"/>
@@ -229,8 +229,8 @@
 				<xsl:if test="@etc = true()">
 					<xsl:text>, etc.</xsl:text>
 				</xsl:if>
-			</xsl:element>
-		</xsl:element>
+			</div>
+		</td>
 	</xsl:template>
 	<!-- educations -->
 	<xsl:template match="educations">
@@ -242,22 +242,22 @@
 		<xsl:call-template name="tableContent"/>
 	</xsl:template>
 	<xsl:template match="education">
-		<xsl:element name="{$tableCell}" use-attribute-sets="defaultCellAttrs">
-			<xsl:element name="{$block}">
+		<td>
+			<div>
 				<xsl:call-template name="dateTemplate"/>
-			</xsl:element>
-		</xsl:element>
-		<xsl:element name="{$tableCell}" use-attribute-sets="defaultCellAttrs">
-			<xsl:element name="{$block}">
+			</div>
+		</td>
+		<td>
+			<div>
 				<xsl:apply-templates select="description"/>
 				<xsl:for-each select="certificate">
-					<xsl:element name="{$block}">
+					<div>
 						<xsl:text>Zertifikat: </xsl:text>
 						<xsl:apply-templates select="current()"/>
-					</xsl:element>
+					</div>
 				</xsl:for-each>
-			</xsl:element>
-		</xsl:element>
+			</div>
+		</td>
 	</xsl:template>
 	<!-- certificats -->
 	<xsl:template match="certificats">
@@ -265,16 +265,16 @@
 		<xsl:call-template name="tableContent"/>
 	</xsl:template>
 	<xsl:template match="certificat">
-		<xsl:element name="{$tableCell}" use-attribute-sets="defaultCellAttrs">
-			<xsl:element name="{$block}">
+		<td>
+			<div>
 				<xsl:call-template name="dateTemplate"/>
-			</xsl:element>
-		</xsl:element>
-		<xsl:element name="{$tableCell}" use-attribute-sets="defaultCellAttrs">
-			<xsl:element name="{$block}">
+			</div>
+		</td>
+		<td>
+			<div>
 				<xsl:apply-templates select="description"/>
-			</xsl:element>
-		</xsl:element>
+			</div>
+		</td>
 	</xsl:template>
 	<!-- expiriances -->
 	<xsl:template match="experiences">
@@ -282,80 +282,70 @@
 		<xsl:apply-templates/>
 	</xsl:template>
 	<xsl:template match="experiance">
-		<xsl:element name="{$block}">
-			<xsl:element name="{$block}" use-attribute-sets="h2Attrs">
+		<div>
+			<h2>
 				<xsl:apply-templates select="company"/>
-			</xsl:element>
+			</h2>
 			<xsl:apply-templates select="period"/>
-		</xsl:element>
+		</div>
 	</xsl:template>
 	<xsl:template match="period">
-		<xsl:element name="{$block}">
-			<xsl:element name="{$block}" use-attribute-sets="keepWithNextParagrapthAttrs">
-				<!--xsl:element name="{$block}" use-attribute-sets="centeredParagrapthAttrs"-->
-					<xsl:element name="{$block}" use-attribute-sets="defaultParagraphAttrs">
-						<xsl:element name="{$block}" use-attribute-sets="highlightedAttrs">
-							<xsl:call-template name="dateTemplate"/>
-                        </xsl:element>						
-                        <xsl:element name="{$block}" use-attribute-sets="defaultParagraphAttrs">
-                            <xsl:apply-templates select="function"/>
-						</xsl:element>
-					</xsl:element>
-				<!--/xsl:element-->
-			</xsl:element>
+		<div>
+			<div>
+				<div class="paragraph">
+					<div class="highlighted">
+						<xsl:call-template name="dateTemplate"/>
+					</div>
+					<div class="paragraph">
+						<xsl:apply-templates select="function"/>
+					</div>
+				</div>
+			</div>
 			<xsl:apply-templates select="project"/>
-		</xsl:element>
+		</div>
 	</xsl:template>
 	<xsl:template match="project">
-		<xsl:element name="{$block}" use-attribute-sets="defaultParagraphAttrs">
-			<xsl:element name="{$table}">
-				<xsl:call-template name="tableColumnDefs"/>
-				<xsl:element name="{$tableBody}">
-					<xsl:element name="{$tableRow}" use-attribute-sets="oddRowAttrs">
-						<xsl:element name="{$tableCell}" use-attribute-sets="defaultCellAttrs">
-							<xsl:element name="{$block}">
+		<div class="paragraph">
+			<table>
+				<tbody>
+					<tr>
+						<td>
+							<div>
 								<xsl:text>Projekt</xsl:text>
-							</xsl:element>
-						</xsl:element>
-						<xsl:element name="{$tableCell}" use-attribute-sets="defaultCellAttrs">
-							<xsl:element name="{$block}">
+							</div>
+						</td>
+						<td>
+							<div>
 								<xsl:apply-templates select="@title"/>
-							</xsl:element>
-						</xsl:element>
-					</xsl:element>
-					<xsl:element name="{$tableRow}">
-						<xsl:element name="{$tableCell}" use-attribute-sets="defaultCellAttrs">
-							<xsl:element name="{$block}">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div>
 								<xsl:text>Aktivitäten</xsl:text>
-							</xsl:element>
-						</xsl:element>
-						<xsl:element name="{$tableCell}" use-attribute-sets="defaultCellAttrs">
-							<xsl:element name="{$block}">
-								<xsl:element name="{$list}">
+							</div>
+						</td>
+						<td>
+							<div>
+								<ul>
 									<xsl:for-each select="activity">
 										<xsl:apply-templates select="current()"/>
 									</xsl:for-each>
-								</xsl:element>
-							</xsl:element>
-						</xsl:element>
-					</xsl:element>
-				</xsl:element>
-			</xsl:element>
-		</xsl:element>
+								</ul>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 	</xsl:template>
 	<xsl:template match="activity">
-		<xsl:element name="{$listItem}">
-			<xsl:element name="{$listItemLabel}">
-				<xsl:element name="{$block}">
-					<xsl:value-of select="$listLabelSign"/>
-				</xsl:element>
-			</xsl:element>
-			<xsl:element name="{$listItemBody}" use-attribute-sets="listItemBodyAttrs">
-				<xsl:element name="{$block}">
-					<xsl:value-of select="current()"/>
-				</xsl:element>
-			</xsl:element>
-		</xsl:element>
+		<li>
+			<div>
+				<xsl:value-of select="current()"/>
+			</div>
+		</li>
 	</xsl:template>
 	<!-- languages -->
 	<xsl:template match="languages">
@@ -363,16 +353,16 @@
 		<xsl:call-template name="tableContent"/>
 	</xsl:template>
 	<xsl:template match="language">
-		<xsl:element name="{$tableCell}" use-attribute-sets="defaultCellAttrs">
-			<xsl:element name="{$block}">
+		<td>
+			<div>
 				<xsl:apply-templates select="@name"/>
-			</xsl:element>
-		</xsl:element>
-		<xsl:element name="{$tableCell}" use-attribute-sets="defaultCellAttrs">
-			<xsl:element name="{$block}">
+			</div>
+		</td>
+		<td>
+			<div>
 				<xsl:apply-templates select="skill"/>
-			</xsl:element>
-		</xsl:element>
+			</div>
+		</td>
 	</xsl:template>
 	<xsl:template match="skill[text()='native']">
 		<xsl:text>Muttersprache</xsl:text>
@@ -386,23 +376,16 @@
 	<!-- hobbies -->
 	<xsl:template match="hobbys">
 		<xsl:apply-templates select="@title"/>
-		<xsl:element name="{$list}">
+		<ul>
 			<xsl:apply-templates/>
-		</xsl:element>
+		</ul>
 	</xsl:template>
 	<xsl:template match="hobby">
-		<xsl:element name="{$listItem}">
-			<xsl:element name="{$listItemLabel}">
-				<xsl:element name="{$block}">
-					<xsl:value-of select="$listLabelSign"/>
-				</xsl:element>
-			</xsl:element>
-			<xsl:element name="{$listItemBody}" use-attribute-sets="listItemBodyAttrs">
-				<xsl:element name="{$block}">
-					<xsl:value-of select="current()"/>
-				</xsl:element>
-			</xsl:element>
-		</xsl:element>
+		<li>
+			<div>
+				<xsl:value-of select="current()"/>
+			</div>
+		</li>
 	</xsl:template>
 	<!-- references -->
 	<xsl:template match="references">
@@ -411,9 +394,9 @@
         	<xsl:text>Auf Anfrage</xsl:text>
 	    </xsl:if>
 		<xsl:for-each select="reference">
-			<xsl:element name="{$block}" use-attribute-sets="defaultParagraphAttrs">
+			<div class="paragraph">
                 <xsl:apply-templates select="current()"/>
-			</xsl:element>
+			</div>
 		</xsl:for-each>
 	</xsl:template>
     
@@ -439,31 +422,30 @@
 	</xsl:template>
 	<!-- formats titel at niveau 3 -->
 	<xsl:template match="cv/*/@title">
-		<xsl:element name="{$block}" use-attribute-sets="h1Attrs">
+		<h1>
 			<xsl:value-of select="current()"/>
-		</xsl:element>
+		</h1>
 	</xsl:template>
 	<!--A Table with a row for each content-->
 	<xsl:template name="tableContent">
-		<xsl:element name="{$block}">
-			<xsl:element name="{$table}">
-				<xsl:call-template name="tableColumnDefs"/>
-				<xsl:element name="{$tableBody}">
+		<div>
+			<table>
+				<tbody>
 					<xsl:for-each select="*">
 						<xsl:if test="position() mod 2=0">
-							<xsl:element name="{$tableRow}" use-attribute-sets="evenRowAttrs">
+							<tr class="even">
 								<xsl:apply-templates select="current()"/>
-							</xsl:element>
+							</tr>
 						</xsl:if>
 						<xsl:if test="position() mod 2=1">
-							<xsl:element name="{$tableRow}" use-attribute-sets="oddRowAttrs">
+							<tr class="odd">
 								<xsl:apply-templates select="current()"/>
-							</xsl:element>
+							</tr>
 						</xsl:if>
 					</xsl:for-each>
-				</xsl:element>
-			</xsl:element>
-		</xsl:element>
+				</tbody>
+			</table>
+		</div>
 	</xsl:template>
 	<!--Dates formatting (exclusion and order garanteed by schema)-->
 	<xsl:function name="cv:month-name-de" as="xs:string?">

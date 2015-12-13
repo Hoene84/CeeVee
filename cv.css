@@ -1,0 +1,76 @@
+body {
+    background-color: white;
+}
+
+*, body, html {
+    font-family: Nimbus Sans L;
+    font-size: 10pt;
+}
+
+table {
+    width: 100%;
+}
+
+.bordered {
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    background-color: #FFFFDD;
+}
+
+td {
+    vertical-align: top;
+    padding: 2px 2px 2px 2px;
+}
+
+td.verticalCentered {
+    vertical-align: middle;
+}
+
+h1 {
+    font-size: 16pt;
+    font-weight: bold;
+    margin-top: 10mm;
+    margin-bottom: 5mm;
+}
+
+h2 {
+    font-size: 12pt;
+    font-weight: bold;
+    margin-top: 5mm;
+    margin-bottom: 2mm;
+}
+
+div.centered {
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+}
+
+div.paragraph {
+    padding-top: 2mm;
+    padding-bottom: 2mm
+}
+
+div.highlighted {
+    font-style: italic;
+    font-weight: bold;
+}
+
+div.inline {
+    display: inline-block;
+}
+
+.even
+{
+    background-color:#FFFFEE
+}
+
+.odd
+{
+    background-color:#FFFFDD
+}
+
+img
+{
+    width: 175px;
+}

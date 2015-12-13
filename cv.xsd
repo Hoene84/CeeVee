@@ -303,9 +303,16 @@
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
+
+	<xs:complexType name="layoutType">
+		<xs:sequence>
+			<xs:element name="theme" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
 	<xs:element name="cv">
 		<xs:complexType>
 			<xs:all>
+				<xs:element name="layout" type="layoutType"  minOccurs="0"/>
 				<xs:element name="person" type="personType"/>
 				<xs:element name="skills" type="skillsType"/>
 				<xs:element name="educations" type="educationsType"/>
@@ -318,6 +325,7 @@
 				<xs:element name="begin" type="beginType"/>
 			</xs:all>
 			<xs:attribute name="international" type="xs:boolean"/>
+			<xs:attribute name="theme" type="xs:string"/>
 		</xs:complexType>
 	</xs:element>
 </xs:schema>

@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cv.xsd" international="false">
+<cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cv.xsd" international="false" theme="green">
+    <layout>
+        <theme>green</theme>
+    </layout>
     <person>
         <forename>Simon</forename>
         <name>Honegger</name>
