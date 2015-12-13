@@ -97,6 +97,7 @@
 			<head>
 				<style type="text/css">
 					<xsl:text>
+					body { background-color:white; }
 					*, body, html { font-family:Nimbus Sans L;font-size:10pt; }
 					table { width:100%; }
 					.bordered { border-width:2px border-color:black; border-style:solid; background-color:#FFFFDD; } 
