@@ -167,46 +167,50 @@
 		<xsl:call-template name="tableContent"/>
 	</xsl:template>
 	<xsl:template match="solidskill">
-		<td>
-			<div>
-				<xsl:apply-templates select="../@title"/>
-			</div>
-		</td>
-		<td>
-			<div>
-                <xsl:text>Solide Kenntnisse in </xsl:text>
-				<xsl:for-each select="skill">
-				    <xsl:apply-templates select="current()"/>
-					<xsl:if test="position() != last()">
-						<xsl:text>, </xsl:text>
+		<dl>
+			<dt>
+				<div>
+					<xsl:apply-templates select="../@title"/>
+				</div>
+			</dt>
+			<dd>
+				<div>
+					<xsl:text>Solide Kenntnisse in </xsl:text>
+					<xsl:for-each select="skill">
+						<xsl:apply-templates select="current()"/>
+						<xsl:if test="position() != last()">
+							<xsl:text>, </xsl:text>
+						</xsl:if>
+					</xsl:for-each>
+					<xsl:if test="@etc = true()">
+						<xsl:text>, etc.</xsl:text>
 					</xsl:if>
-				</xsl:for-each>
-				<xsl:if test="@etc = true()">
-					<xsl:text>, etc.</xsl:text>
-				</xsl:if>
-			</div>
-		</td>
+				</div>
+			</dd>
+		</dl>
 	</xsl:template>
     <xsl:template match="goodskill">
-        <td>
-			<div>
-                <xsl:text></xsl:text>
-			</div>
-		</td>
-		<td>
-			<div>
-                <xsl:text>Gute Kenntnisse in </xsl:text>
-				<xsl:for-each select="skill">
-    			    <xsl:apply-templates select="current()"/>
-					<xsl:if test="position() != last()">
-						<xsl:text>, </xsl:text>
+		<dl>
+			<dt>
+				<div>
+					<xsl:text></xsl:text>
+				</div>
+			</dt>
+			<dd>
+				<div>
+					<xsl:text>Gute Kenntnisse in </xsl:text>
+					<xsl:for-each select="skill">
+						<xsl:apply-templates select="current()"/>
+						<xsl:if test="position() != last()">
+							<xsl:text>, </xsl:text>
+						</xsl:if>
+					</xsl:for-each>
+					<xsl:if test="@etc = true()">
+						<xsl:text>, etc.</xsl:text>
 					</xsl:if>
-				</xsl:for-each>
-				<xsl:if test="@etc = true()">
-					<xsl:text>, etc.</xsl:text>
-				</xsl:if>
-			</div>
-		</td>
+				</div>
+			</dd>
+		</dl>
 	</xsl:template>
 	<!-- educations -->
 	<xsl:template match="educations">
@@ -218,22 +222,24 @@
 		<xsl:call-template name="tableContent"/>
 	</xsl:template>
 	<xsl:template match="education">
-		<td>
-			<div>
-				<xsl:call-template name="dateTemplate"/>
-			</div>
-		</td>
-		<td>
-			<div>
-				<xsl:apply-templates select="description"/>
-				<xsl:for-each select="certificate">
-					<div>
-						<xsl:text>Zertifikat: </xsl:text>
-						<xsl:apply-templates select="current()"/>
-					</div>
-				</xsl:for-each>
-			</div>
-		</td>
+		<dl>
+			<dt>
+				<div>
+					<xsl:call-template name="dateTemplate"/>
+				</div>
+			</dt>
+			<dd>
+				<div>
+					<xsl:apply-templates select="description"/>
+					<xsl:for-each select="certificate">
+						<div>
+							<xsl:text>Zertifikat: </xsl:text>
+							<xsl:apply-templates select="current()"/>
+						</div>
+					</xsl:for-each>
+				</div>
+			</dd>
+		</dl>
 	</xsl:template>
 	<!-- certificats -->
 	<xsl:template match="certificats">
@@ -241,16 +247,18 @@
 		<xsl:call-template name="tableContent"/>
 	</xsl:template>
 	<xsl:template match="certificat">
-		<td>
-			<div>
-				<xsl:call-template name="dateTemplate"/>
-			</div>
-		</td>
-		<td>
-			<div>
-				<xsl:apply-templates select="description"/>
-			</div>
-		</td>
+		<dl>
+			<dt>
+				<div>
+					<xsl:call-template name="dateTemplate"/>
+				</div>
+			</dt>
+			<dd>
+				<div>
+					<xsl:apply-templates select="description"/>
+				</div>
+			</dd>
+		</dl>
 	</xsl:template>
 	<!-- expiriances -->
 	<xsl:template match="experiences">
@@ -277,43 +285,41 @@
 					</div>
 				</div>
 			</div>
-			<xsl:apply-templates select="project"/>
+			<div class="projects">
+				<xsl:apply-templates select="project"/>
+			</div>
 		</div>
 	</xsl:template>
 	<xsl:template match="project">
-		<div class="paragraph">
-			<table>
-				<tbody>
-					<tr class="even">
-						<td>
-							<div>
-								<xsl:text>Projekt</xsl:text>
-							</div>
-						</td>
-						<td>
-							<div>
-								<xsl:apply-templates select="@title"/>
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<div>
-								<xsl:text>Aktivitäten</xsl:text>
-							</div>
-						</td>
-						<td>
-							<div>
-								<ul>
-									<xsl:for-each select="activity">
-										<xsl:apply-templates select="current()"/>
-									</xsl:for-each>
-								</ul>
-							</div>
-						</td>
-					</tr>
-				</tbody>
-			</table>
+		<div class="project">
+			<div class="header odd">
+				<div class="label">
+					<div>
+						<xsl:text>Projekt</xsl:text>
+					</div>
+				</div>
+				<div class="value">
+					<div>
+						<xsl:apply-templates select="@title"/>
+					</div>
+				</div>
+			</div>
+			<div class="content even">
+				<div class="label">
+					<div>
+						<xsl:text>Aktivitäten</xsl:text>
+					</div>
+				</div>
+				<div class="value">
+					<div>
+						<ul>
+							<xsl:for-each select="activity">
+								<xsl:apply-templates select="current()"/>
+							</xsl:for-each>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</div>
 	</xsl:template>
 	<xsl:template match="activity">
@@ -339,16 +345,18 @@
 		<xsl:call-template name="tableContent"/>
 	</xsl:template>
 	<xsl:template match="language">
-		<td>
-			<div>
-				<xsl:apply-templates select="@name"/>
-			</div>
-		</td>
-		<td>
-			<div>
-				<xsl:apply-templates select="skill"/>
-			</div>
-		</td>
+		<dl>
+			<dt>
+				<div>
+					<xsl:apply-templates select="@name"/>
+				</div>
+			</dt>
+			<dd>
+				<div>
+					<xsl:apply-templates select="skill"/>
+				</div>
+			</dd>
+		</dl>
 	</xsl:template>
 	<xsl:template match="skill[text()='native']">
 		<xsl:text>Muttersprache</xsl:text>
@@ -385,8 +393,8 @@
 			</div>
 		</xsl:for-each>
 	</xsl:template>
-    
-	<xsl:template match="reference">		
+
+	<xsl:template match="reference">
         <xsl:apply-templates select="name"/>
 		<xsl:text> </xsl:text>
 		<xsl:apply-templates select="forename"/>
@@ -400,7 +408,7 @@
 	<xsl:template match="begin">
 		<xsl:apply-templates select="@title"/>
         <xsl:text>Nach Vereinbarung, ab </xsl:text>
-        <xsl:call-template name="dateTemplate"/>        
+        <xsl:call-template name="dateTemplate"/>
         <xsl:if test="@immediatly = true()">
         	<xsl:text>sofort</xsl:text>
 	    </xsl:if>
@@ -414,28 +422,24 @@
 	</xsl:template>
 	<!--A Table with a row for each content-->
 	<xsl:template name="tableContent">
-		<div>
-			<table>
-				<tbody>
-					<xsl:for-each select="*">
-						<xsl:if test="position() mod 2=0">
-							<tr class="even">
-								<xsl:apply-templates select="current()"/>
-							</tr>
-						</xsl:if>
-						<xsl:if test="position() mod 2=1">
-							<tr class="odd">
-								<xsl:apply-templates select="current()"/>
-							</tr>
-						</xsl:if>
-					</xsl:for-each>
-				</tbody>
-			</table>
-		</div>
+		<ul>
+			<xsl:for-each select="*">
+				<xsl:if test="position() mod 2=0">
+					<li class="even">
+						<xsl:apply-templates select="current()"/>
+					</li>
+				</xsl:if>
+				<xsl:if test="position() mod 2=1">
+					<li class="odd">
+						<xsl:apply-templates select="current()"/>
+					</li>
+				</xsl:if>
+			</xsl:for-each>
+		</ul>
 	</xsl:template>
 	<!--Dates formatting (exclusion and order garanteed by schema)-->
 	<xsl:function name="cv:month-name-de" as="xs:string?">
-  		<xsl:param name="month" as="xs:integer?"/>
+		<xsl:param name="month" as="xs:integer?"/>
 		<xsl:sequence select="('Jan.', 'Feb.', 'März', 'Apr.', 'Mai', 'Juni', 'Juli', 'Aug.', 'Sep.', 'Okt.', 'Nov.', 'Dez.') [$month]"/>
 	</xsl:function>
 	<xsl:template name="dateFormat">

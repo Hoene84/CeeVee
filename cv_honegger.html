@@ -8,10 +8,6 @@
     font-size: 10pt;
 }
 
-table {
-    width: 100%;
-}
-
 div.person {
     border-width: 2px;
     border-color: black;
@@ -26,35 +22,41 @@ div.person > div {
     vertical-align:top;
 }
 
-div.person div.infos {
+div.person div.infos,
+div.projects,
+ul
+{
     display:table;
     width:100%;
-    /*table-layout: fixed;*/
 }
 
-div.person div.infos div.infoGroup {
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+div.person div.infos div.infoGroup,
+div.project,
+li
+{
     display: table-row-group;
 }
 
-div.person div.infos div.info {
+div.person div.infos div.info,
+div.project > div,
+dl
+{
     display:table-row;
 }
 
-div.person div.infos div.label{
+div.person div.infos div.label,
+div.person div.infos div.value,
+div.project div.label,
+div.project div.value,
+dt,
+dd
+{
     display: table-cell;
-}
-
-div.person div.infos div.value{
-    display: table-cell;
-}
-
-td {
-    vertical-align: top;
-    padding: 2px 2px 2px 2px;
-}
-
-td.verticalCentered {
-    vertical-align: middle;
 }
 
 h1 {
@@ -109,7 +111,7 @@ div.company div.logo
 }
 
 .even,
-.bordered
+div.person
 {
     background-color: #e6ffb2;
 }</style></head>
@@ -174,42 +176,44 @@ div.company div.logo
             </div>
             
             <h1>Ausbildung</h1>
-            <div>
-               <table>
-                  <tbody>
-                     <tr class="odd">
-                        <td>
-                           <div>2008 - 2011</div>
-                        </td>
-                        <td>
-                           <div>Zweisprachiges Studium an der Ecole d'ingénieurs et d'architectes de Fribourg
-                              <div>Zertifikat: Bachelor of Science HES-SO in Informatik (bilingue Franz./Deutsch)</div>
-                           </div>
-                        </td>
-                     </tr>
-                     <tr class="even">
-                        <td>
-                           <div>2000 - 2003</div>
-                        </td>
-                        <td>
-                           <div>Lehre als KV-Informatiker in der Zürcher Kantonalbank
-                              <div>Zertifikat: Fähigkeitsausweis Branche Informatik-Anwendungsentwicklung</div>
-                           </div>
-                        </td>
-                     </tr>
-                     <tr class="odd">
-                        <td>
-                           <div>2000 - 2003</div>
-                        </td>
-                        <td>
-                           <div>KV Zürich Business School
-                              <div>Zertifikat: Kaufmännische Berufsmaturität</div>
-                           </div>
-                        </td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
+            <ul>
+               <li class="odd">
+                  <dl>
+                     <dt>
+                        <div>2008 - 2011</div>
+                     </dt>
+                     <dd>
+                        <div>Zweisprachiges Studium an der Ecole d'ingénieurs et d'architectes de Fribourg
+                           <div>Zertifikat: Bachelor of Science HES-SO in Informatik (bilingue Franz./Deutsch)</div>
+                        </div>
+                     </dd>
+                  </dl>
+               </li>
+               <li class="even">
+                  <dl>
+                     <dt>
+                        <div>2000 - 2003</div>
+                     </dt>
+                     <dd>
+                        <div>Lehre als KV-Informatiker in der Zürcher Kantonalbank
+                           <div>Zertifikat: Fähigkeitsausweis Branche Informatik-Anwendungsentwicklung</div>
+                        </div>
+                     </dd>
+                  </dl>
+               </li>
+               <li class="odd">
+                  <dl>
+                     <dt>
+                        <div>2000 - 2003</div>
+                     </dt>
+                     <dd>
+                        <div>KV Zürich Business School
+                           <div>Zertifikat: Kaufmännische Berufsmaturität</div>
+                        </div>
+                     </dd>
+                  </dl>
+               </li>
+            </ul>
             
             <h1>Berufserfahrung</h1>
             
@@ -227,186 +231,168 @@ div.company div.logo
                         <div class="paragraph">Senior Applikationsentwickler in Festanstellung</div>
                      </div>
                   </div>
-                  <div class="paragraph">
-                     <table>
-                        <tbody>
-                           <tr class="even">
-                              <td>
-                                 <div>Projekt</div>
-                              </td>
-                              <td>
-                                 <div>Konzeption iShop Core Framework 4.0</div>
-                              </td>
-                           </tr>
-                           <tr>
-                              <td>
-                                 <div>Aktivitäten</div>
-                              </td>
-                              <td>
-                                 <div>
-                                    <ul>
-                                       <li>
-                                          <div>Analyse der architektonischen Probleme iShop Core 3</div>
-                                       </li>
-                                       <li>
-                                          <div>Design/Architektur iShop Core 4.0</div>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </td>
-                           </tr>
-                        </tbody>
-                     </table>
-                  </div>
-                  <div class="paragraph">
-                     <table>
-                        <tbody>
-                           <tr class="even">
-                              <td>
-                                 <div>Projekt</div>
-                              </td>
-                              <td>
-                                 <div>Mitglied des iShop Core Teams</div>
-                              </td>
-                           </tr>
-                           <tr>
-                              <td>
-                                 <div>Aktivitäten</div>
-                              </td>
-                              <td>
-                                 <div>
-                                    <ul>
-                                       <li>
-                                          <div>Verifikation/Validation aller Merge Requests für iShop Core 3</div>
-                                       </li>
-                                       <li>
-                                          <div>Mitverantwortung Design- und Architekturentscheidungen iShop Core 3</div>
-                                       </li>
-                                       <li>
-                                          <div>Unterstützung bei Fragen, Lösungentscheidungen und Problemen der Entwickler</div>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </td>
-                           </tr>
-                        </tbody>
-                     </table>
-                  </div>
-                  <div class="paragraph">
-                     <table>
-                        <tbody>
-                           <tr class="even">
-                              <td>
-                                 <div>Projekt</div>
-                              </td>
-                              <td>
-                                 <div>Projektverantwortlicher Shopimplementationen Sonepar CH/AT</div>
-                              </td>
-                           </tr>
-                           <tr>
-                              <td>
-                                 <div>Aktivitäten</div>
-                              </td>
-                              <td>
-                                 <div>
-                                    <ul>
-                                       <li>
-                                          <div>Einführung Mandantenfähigkeit bzgl. Logik, Darstellung und Anbindung von Umsystemen (6 Mandanten, 2 Systemumgebungen, )</div>
-                                       </li>
-                                       <li>
-                                          <div>Entwicklung diverser Features im Front- sowie Backend</div>
-                                       </li>
-                                       <li>
-                                          <div>Koordination mit Umsystemen (ERP/Pim/Mobile/Webservices)</div>
-                                       </li>
-                                       <li>
-                                          <div>Koordination von Entwicklung/Testing/Releases</div>
-                                       </li>
-                                       <li>
-                                          <div>Verantwortung QS, Verifikation/Validation Merge Requests aller Entwickler</div>
-                                       </li>
-                                       <li>
-                                          <div>Beratung der Kunden zur technischen Umsetzung ihrer fachliche Anforderungen und Wünsche</div>
-                                       </li>
-                                       <li>
-                                          <div>Verantwortung über Infrastruktur, deren Dokumentation für die Einhaltung des SLA</div>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </td>
-                           </tr>
-                        </tbody>
-                     </table>
-                  </div>
-                  <div class="paragraph">
-                     <table>
-                        <tbody>
-                           <tr class="even">
-                              <td>
-                                 <div>Projekt</div>
-                              </td>
-                              <td>
-                                 <div>Neuentwicklung www.geckoreifen.de und www.esashop.ch</div>
-                              </td>
-                           </tr>
-                           <tr>
-                              <td>
-                                 <div>Aktivitäten</div>
-                              </td>
-                              <td>
-                                 <div>
-                                    <ul>
-                                       <li>
-                                          <div>Entwicklung diverser Features im Front- sowie Backend in Scala mithilfe des Play Frameworks</div>
-                                       </li>
-                                       <li>
-                                          <div>Integration tagesakueller SAP Daten</div>
-                                       </li>
-                                       <li>
-                                          <div>Anbindung von REST APIs zur Erweiterung der Produktinformationen</div>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </td>
-                           </tr>
-                        </tbody>
-                     </table>
-                  </div>
-                  <div class="paragraph">
-                     <table>
-                        <tbody>
-                           <tr class="even">
-                              <td>
-                                 <div>Projekt</div>
-                              </td>
-                              <td>
-                                 <div>Spezifikation Agile Entwicklung in der IMISnext</div>
-                              </td>
-                           </tr>
-                           <tr>
-                              <td>
-                                 <div>Aktivitäten</div>
-                              </td>
-                              <td>
-                                 <div>
-                                    <ul>
-                                       <li>
-                                          <div>Erstellung eines Dokumentes für die Geschäftsführung</div>
-                                       </li>
-                                       <li>
-                                          <div>Aufzeigen des Optimierungspotenzials der Entwicklungsprozesse mithilfe agiler Methodiken</div>
-                                       </li>
-                                       <li>
-                                          <div>Definition agiler Projektumsetzung in der IMISnext unter Berücksichtung des Kundenumfelds und der Vorgehensweise in der internen
-                                             Entwicklung
-                                          </div>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </td>
-                           </tr>
-                        </tbody>
-                     </table>
+                  <div class="projects">
+                     <div class="project">
+                        <div class="header odd">
+                           <div class="label">
+                              <div>Projekt</div>
+                           </div>
+                           <div class="value">
+                              <div>Konzeption iShop Core Framework 4.0</div>
+                           </div>
+                        </div>
+                        <div class="content even">
+                           <div class="label">
+                              <div>Aktivitäten</div>
+                           </div>
+                           <div class="value">
+                              <div>
+                                 <ul>
+                                    <li>
+                                       <div>Analyse der architektonischen Probleme iShop Core 3</div>
+                                    </li>
+                                    <li>
+                                       <div>Design/Architektur iShop Core 4.0</div>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="project">
+                        <div class="header odd">
+                           <div class="label">
+                              <div>Projekt</div>
+                           </div>
+                           <div class="value">
+                              <div>Mitglied des iShop Core Teams</div>
+                           </div>
+                        </div>
+                        <div class="content even">
+                           <div class="label">
+                              <div>Aktivitäten</div>
+                           </div>
+                           <div class="value">
+                              <div>
+                                 <ul>
+                                    <li>
+                                       <div>Verifikation/Validation aller Merge Requests für iShop Core 3</div>
+                                    </li>
+                                    <li>
+                                       <div>Mitverantwortung Design- und Architekturentscheidungen iShop Core 3</div>
+                                    </li>
+                                    <li>
+                                       <div>Unterstützung bei Fragen, Lösungentscheidungen und Problemen der Entwickler</div>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="project">
+                        <div class="header odd">
+                           <div class="label">
+                              <div>Projekt</div>
+                           </div>
+                           <div class="value">
+                              <div>Projektverantwortlicher Shopimplementationen Sonepar CH/AT</div>
+                           </div>
+                        </div>
+                        <div class="content even">
+                           <div class="label">
+                              <div>Aktivitäten</div>
+                           </div>
+                           <div class="value">
+                              <div>
+                                 <ul>
+                                    <li>
+                                       <div>Einführung Mandantenfähigkeit bzgl. Logik, Darstellung und Anbindung von Umsystemen (6 Mandanten, 2 Systemumgebungen, )</div>
+                                    </li>
+                                    <li>
+                                       <div>Entwicklung diverser Features im Front- sowie Backend</div>
+                                    </li>
+                                    <li>
+                                       <div>Koordination mit Umsystemen (ERP/Pim/Mobile/Webservices)</div>
+                                    </li>
+                                    <li>
+                                       <div>Koordination von Entwicklung/Testing/Releases</div>
+                                    </li>
+                                    <li>
+                                       <div>Verantwortung QS, Verifikation/Validation Merge Requests aller Entwickler</div>
+                                    </li>
+                                    <li>
+                                       <div>Beratung der Kunden zur technischen Umsetzung ihrer fachliche Anforderungen und Wünsche</div>
+                                    </li>
+                                    <li>
+                                       <div>Verantwortung über Infrastruktur, deren Dokumentation für die Einhaltung des SLA</div>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="project">
+                        <div class="header odd">
+                           <div class="label">
+                              <div>Projekt</div>
+                           </div>
+                           <div class="value">
+                              <div>Neuentwicklung www.geckoreifen.de und www.esashop.ch</div>
+                           </div>
+                        </div>
+                        <div class="content even">
+                           <div class="label">
+                              <div>Aktivitäten</div>
+                           </div>
+                           <div class="value">
+                              <div>
+                                 <ul>
+                                    <li>
+                                       <div>Entwicklung diverser Features im Front- sowie Backend in Scala mithilfe des Play Frameworks</div>
+                                    </li>
+                                    <li>
+                                       <div>Integration tagesakueller SAP Daten</div>
+                                    </li>
+                                    <li>
+                                       <div>Anbindung von REST APIs zur Erweiterung der Produktinformationen</div>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="project">
+                        <div class="header odd">
+                           <div class="label">
+                              <div>Projekt</div>
+                           </div>
+                           <div class="value">
+                              <div>Spezifikation Agile Entwicklung in der IMISnext</div>
+                           </div>
+                        </div>
+                        <div class="content even">
+                           <div class="label">
+                              <div>Aktivitäten</div>
+                           </div>
+                           <div class="value">
+                              <div>
+                                 <ul>
+                                    <li>
+                                       <div>Erstellung eines Dokumentes für die Geschäftsführung</div>
+                                    </li>
+                                    <li>
+                                       <div>Aufzeigen des Optimierungspotenzials der Entwicklungsprozesse mithilfe agiler Methodiken</div>
+                                    </li>
+                                    <li>
+                                       <div>Definition agiler Projektumsetzung in der IMISnext unter Berücksichtung des Kundenumfelds und der Vorgehensweise in der internen
+                                          Entwicklung
+                                       </div>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                   </div>
                </div>
             </div>
@@ -425,36 +411,34 @@ div.company div.logo
                         <div class="paragraph">Applikationsentwickler auf Stundenlohnbasis</div>
                      </div>
                   </div>
-                  <div class="paragraph">
-                     <table>
-                        <tbody>
-                           <tr class="even">
-                              <td>
-                                 <div>Projekt</div>
-                              </td>
-                              <td>
-                                 <div>ACS (Zutritts- und Zugriffsrechteverwaltung) Rel. 2.1</div>
-                              </td>
-                           </tr>
-                           <tr>
-                              <td>
-                                 <div>Aktivitäten</div>
-                              </td>
-                              <td>
-                                 <div>
-                                    <ul>
-                                       <li>
-                                          <div>Kundennahe Umsetzung von fachlichen Anforderungen nach Scrum Rahmenwerk</div>
-                                       </li>
-                                       <li>
-                                          <div>Implementieren, testen und präsentieren dieser Anforderungen</div>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </td>
-                           </tr>
-                        </tbody>
-                     </table>
+                  <div class="projects">
+                     <div class="project">
+                        <div class="header odd">
+                           <div class="label">
+                              <div>Projekt</div>
+                           </div>
+                           <div class="value">
+                              <div>ACS (Zutritts- und Zugriffsrechteverwaltung) Rel. 2.1</div>
+                           </div>
+                        </div>
+                        <div class="content even">
+                           <div class="label">
+                              <div>Aktivitäten</div>
+                           </div>
+                           <div class="value">
+                              <div>
+                                 <ul>
+                                    <li>
+                                       <div>Kundennahe Umsetzung von fachlichen Anforderungen nach Scrum Rahmenwerk</div>
+                                    </li>
+                                    <li>
+                                       <div>Implementieren, testen und präsentieren dieser Anforderungen</div>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                   </div>
                </div>
                <h3 class="period">
@@ -470,33 +454,31 @@ div.company div.logo
                         <div class="paragraph">Aushilfe auf Stundenlohnbasis</div>
                      </div>
                   </div>
-                  <div class="paragraph">
-                     <table>
-                        <tbody>
-                           <tr class="even">
-                              <td>
-                                 <div>Projekt</div>
-                              </td>
-                              <td>
-                                 <div>Match E4 Testing</div>
-                              </td>
-                           </tr>
-                           <tr>
-                              <td>
-                                 <div>Aktivitäten</div>
-                              </td>
-                              <td>
-                                 <div>
-                                    <ul>
-                                       <li>
-                                          <div>Kosten-Nutzen-Analyse diverser Optimierungen im Testprozess</div>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </td>
-                           </tr>
-                        </tbody>
-                     </table>
+                  <div class="projects">
+                     <div class="project">
+                        <div class="header odd">
+                           <div class="label">
+                              <div>Projekt</div>
+                           </div>
+                           <div class="value">
+                              <div>Match E4 Testing</div>
+                           </div>
+                        </div>
+                        <div class="content even">
+                           <div class="label">
+                              <div>Aktivitäten</div>
+                           </div>
+                           <div class="value">
+                              <div>
+                                 <ul>
+                                    <li>
+                                       <div>Kosten-Nutzen-Analyse diverser Optimierungen im Testprozess</div>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                   </div>
                </div>
                <h3 class="period">
@@ -512,422 +494,410 @@ div.company div.logo
                         <div class="paragraph">Applikationsentwickler in Festanstellung</div>
                      </div>
                   </div>
-                  <div class="paragraph">
-                     <table>
-                        <tbody>
-                           <tr class="even">
-                              <td>
-                                 <div>Projekt</div>
-                              </td>
-                              <td>
-                                 <div>Zentrale Führung der VV-Codierung</div>
-                              </td>
-                           </tr>
-                           <tr>
-                              <td>
-                                 <div>Aktivitäten</div>
-                              </td>
-                              <td>
-                                 <div>
-                                    <ul>
-                                       <li>
-                                          <div>Teilprojektleitung ASD/SDS</div>
-                                       </li>
-                                       <li>
-                                          <div>Definition des bankfachlichen Modells und Konsistenzbedingungen mit dem Fachbereich</div>
-                                       </li>
-                                       <li>
-                                          <div>Implemention nach MDA (Model Driven Architecture) Ansatz</div>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </td>
-                           </tr>
-                        </tbody>
-                     </table>
-                  </div>
-                  <div class="paragraph">
-                     <table>
-                        <tbody>
-                           <tr class="even">
-                              <td>
-                                 <div>Projekt</div>
-                              </td>
-                              <td>
-                                 <div>SDS (Stammdaten-Services) Rel. 2.0 (Folgeprojekt von SDS R1.0)</div>
-                              </td>
-                           </tr>
-                           <tr>
-                              <td>
-                                 <div>Aktivitäten</div>
-                              </td>
-                              <td>
-                                 <div>
-                                    <ul>
-                                       <li>
-                                          <div>Stellvertretung des Teilprojektleiters ASD/SDS GUI</div>
-                                       </li>
-                                       <li>
-                                          <div>Spezifikation der Java Software Komponente ASD/SDS GUI und codierung des generischen Teils</div>
-                                       </li>
-                                       <li>
-                                          <div>Abstimmung der Realisierung der fachlichen Anforderungen mit dem Fachbereich</div>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </td>
-                           </tr>
-                        </tbody>
-                     </table>
-                  </div>
-                  <div class="paragraph">
-                     <table>
-                        <tbody>
-                           <tr class="even">
-                              <td>
-                                 <div>Projekt</div>
-                              </td>
-                              <td>
-                                 <div>SDS (Stammdaten-Services) Rel. 1.0 (Neuentwicklung der Stammdatenapplikation)</div>
-                              </td>
-                           </tr>
-                           <tr>
-                              <td>
-                                 <div>Aktivitäten</div>
-                              </td>
-                              <td>
-                                 <div>
-                                    <ul>
-                                       <li>
-                                          <div>Analyse, Spezifikation, Design, Implementation und Test diverser Java Softwarekomponenten</div>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </td>
-                           </tr>
-                        </tbody>
-                     </table>
-                  </div>
-                  <div class="paragraph">
-                     <table>
-                        <tbody>
-                           <tr class="even">
-                              <td>
-                                 <div>Projekt</div>
-                              </td>
-                              <td>
-                                 <div>Migration Bestandesführung Geld Rel. 2.0 </div>
-                              </td>
-                           </tr>
-                           <tr>
-                              <td>
-                                 <div>Aktivitäten</div>
-                              </td>
-                              <td>
-                                 <div>
-                                    <ul>
-                                       <li>
-                                          <div>Realisieren eines Servicemoduls in PL/1 inkl. Regressionstests</div>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </td>
-                           </tr>
-                        </tbody>
-                     </table>
-                  </div>
-                  <div class="paragraph">
-                     <table>
-                        <tbody>
-                           <tr class="even">
-                              <td>
-                                 <div>Projekt</div>
-                              </td>
-                              <td>
-                                 <div>PSV ASD/SDV (Produktions Support Vereinbarung Stammdatenverwaltung)</div>
-                              </td>
-                           </tr>
-                           <tr>
-                              <td>
-                                 <div>Aktivitäten</div>
-                              </td>
-                              <td>
-                                 <div>
-                                    <ul>
-                                       <li>
-                                          <div>Sicherstellen der Service Level Agreements im Bereich ADB (Datawarehouse) Belieferung</div>
-                                       </li>
-                                       <li>
-                                          <div>Durchführen von Systembuilds in der Stammdatenverwaltung</div>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </td>
-                           </tr>
-                        </tbody>
-                     </table>
-                  </div>
-                  <div class="paragraph">
-                     <table>
-                        <tbody>
-                           <tr class="even">
-                              <td>
-                                 <div>Projekt</div>
-                              </td>
-                              <td>
-                                 <div>TAB/REF Ablösung (Migration der Referenzdaten von Mainfraime zu dezentral)</div>
-                              </td>
-                           </tr>
-                           <tr>
-                              <td>
-                                 <div>Aktivitäten</div>
-                              </td>
-                              <td>
-                                 <div>
-                                    <ul>
-                                       <li>
-                                          <div>Mitentwicklung der PL/1 Schnittstelle auf dezentrale Services (C++)</div>
-                                       </li>
-                                       <li>
-                                          <div>Performance Analyse des Zugriffs auf alte bzw. neue Datenhaltung</div>
-                                       </li>
-                                       <li>
-                                          <div>Modellieren und Realisieren von Interface Business Objects (XML)</div>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </td>
-                           </tr>
-                        </tbody>
-                     </table>
+                  <div class="projects">
+                     <div class="project">
+                        <div class="header odd">
+                           <div class="label">
+                              <div>Projekt</div>
+                           </div>
+                           <div class="value">
+                              <div>Zentrale Führung der VV-Codierung</div>
+                           </div>
+                        </div>
+                        <div class="content even">
+                           <div class="label">
+                              <div>Aktivitäten</div>
+                           </div>
+                           <div class="value">
+                              <div>
+                                 <ul>
+                                    <li>
+                                       <div>Teilprojektleitung ASD/SDS</div>
+                                    </li>
+                                    <li>
+                                       <div>Definition des bankfachlichen Modells und Konsistenzbedingungen mit dem Fachbereich</div>
+                                    </li>
+                                    <li>
+                                       <div>Implemention nach MDA (Model Driven Architecture) Ansatz</div>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="project">
+                        <div class="header odd">
+                           <div class="label">
+                              <div>Projekt</div>
+                           </div>
+                           <div class="value">
+                              <div>SDS (Stammdaten-Services) Rel. 2.0 (Folgeprojekt von SDS R1.0)</div>
+                           </div>
+                        </div>
+                        <div class="content even">
+                           <div class="label">
+                              <div>Aktivitäten</div>
+                           </div>
+                           <div class="value">
+                              <div>
+                                 <ul>
+                                    <li>
+                                       <div>Stellvertretung des Teilprojektleiters ASD/SDS GUI</div>
+                                    </li>
+                                    <li>
+                                       <div>Spezifikation der Java Software Komponente ASD/SDS GUI und codierung des generischen Teils</div>
+                                    </li>
+                                    <li>
+                                       <div>Abstimmung der Realisierung der fachlichen Anforderungen mit dem Fachbereich</div>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="project">
+                        <div class="header odd">
+                           <div class="label">
+                              <div>Projekt</div>
+                           </div>
+                           <div class="value">
+                              <div>SDS (Stammdaten-Services) Rel. 1.0 (Neuentwicklung der Stammdatenapplikation)</div>
+                           </div>
+                        </div>
+                        <div class="content even">
+                           <div class="label">
+                              <div>Aktivitäten</div>
+                           </div>
+                           <div class="value">
+                              <div>
+                                 <ul>
+                                    <li>
+                                       <div>Analyse, Spezifikation, Design, Implementation und Test diverser Java Softwarekomponenten</div>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="project">
+                        <div class="header odd">
+                           <div class="label">
+                              <div>Projekt</div>
+                           </div>
+                           <div class="value">
+                              <div>Migration Bestandesführung Geld Rel. 2.0 </div>
+                           </div>
+                        </div>
+                        <div class="content even">
+                           <div class="label">
+                              <div>Aktivitäten</div>
+                           </div>
+                           <div class="value">
+                              <div>
+                                 <ul>
+                                    <li>
+                                       <div>Realisieren eines Servicemoduls in PL/1 inkl. Regressionstests</div>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="project">
+                        <div class="header odd">
+                           <div class="label">
+                              <div>Projekt</div>
+                           </div>
+                           <div class="value">
+                              <div>PSV ASD/SDV (Produktions Support Vereinbarung Stammdatenverwaltung)</div>
+                           </div>
+                        </div>
+                        <div class="content even">
+                           <div class="label">
+                              <div>Aktivitäten</div>
+                           </div>
+                           <div class="value">
+                              <div>
+                                 <ul>
+                                    <li>
+                                       <div>Sicherstellen der Service Level Agreements im Bereich ADB (Datawarehouse) Belieferung</div>
+                                    </li>
+                                    <li>
+                                       <div>Durchführen von Systembuilds in der Stammdatenverwaltung</div>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="project">
+                        <div class="header odd">
+                           <div class="label">
+                              <div>Projekt</div>
+                           </div>
+                           <div class="value">
+                              <div>TAB/REF Ablösung (Migration der Referenzdaten von Mainfraime zu dezentral)</div>
+                           </div>
+                        </div>
+                        <div class="content even">
+                           <div class="label">
+                              <div>Aktivitäten</div>
+                           </div>
+                           <div class="value">
+                              <div>
+                                 <ul>
+                                    <li>
+                                       <div>Mitentwicklung der PL/1 Schnittstelle auf dezentrale Services (C++)</div>
+                                    </li>
+                                    <li>
+                                       <div>Performance Analyse des Zugriffs auf alte bzw. neue Datenhaltung</div>
+                                    </li>
+                                    <li>
+                                       <div>Modellieren und Realisieren von Interface Business Objects (XML)</div>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                   </div>
                </div>
             </div>
             
             
             <h1>Weiterbildungen</h1>
-            <div>
-               <table>
-                  <tbody>
-                     <tr class="odd">
-                        <td>
-                           <div>Jan. 2008</div>
-                        </td>
-                        <td>
-                           <div>Object Oriented Analysis and Design with UML (Zühlke)</div>
-                        </td>
-                     </tr>
-                     <tr class="even">
-                        <td>
-                           <div>Juli 2007</div>
-                        </td>
-                        <td>
-                           <div>Synergy Ugrade 6.5 (Telelogic)</div>
-                        </td>
-                     </tr>
-                     <tr class="odd">
-                        <td>
-                           <div>Nov. 2006</div>
-                        </td>
-                        <td>
-                           <div>Java - Design Patterns (IBM)</div>
-                        </td>
-                     </tr>
-                     <tr class="even">
-                        <td>
-                           <div>Nov. 2005</div>
-                        </td>
-                        <td>
-                           <div>DB2 UDB for z/OS - Anwendungsprogrammierung (IBM)</div>
-                        </td>
-                     </tr>
-                     <tr class="odd">
-                        <td>
-                           <div>Apr. 2005</div>
-                        </td>
-                        <td>
-                           <div>PL/1 Grundlagen (IFA)</div>
-                        </td>
-                     </tr>
-                     <tr class="even">
-                        <td>
-                           <div>März 2004</div>
-                        </td>
-                        <td>
-                           <div>Synergy / CM Build-Manager (Telelogic)</div>
-                        </td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
+            <ul>
+               <li class="odd">
+                  <dl>
+                     <dt>
+                        <div>Jan. 2008</div>
+                     </dt>
+                     <dd>
+                        <div>Object Oriented Analysis and Design with UML (Zühlke)</div>
+                     </dd>
+                  </dl>
+               </li>
+               <li class="even">
+                  <dl>
+                     <dt>
+                        <div>Juli 2007</div>
+                     </dt>
+                     <dd>
+                        <div>Synergy Ugrade 6.5 (Telelogic)</div>
+                     </dd>
+                  </dl>
+               </li>
+               <li class="odd">
+                  <dl>
+                     <dt>
+                        <div>Nov. 2006</div>
+                     </dt>
+                     <dd>
+                        <div>Java - Design Patterns (IBM)</div>
+                     </dd>
+                  </dl>
+               </li>
+               <li class="even">
+                  <dl>
+                     <dt>
+                        <div>Nov. 2005</div>
+                     </dt>
+                     <dd>
+                        <div>DB2 UDB for z/OS - Anwendungsprogrammierung (IBM)</div>
+                     </dd>
+                  </dl>
+               </li>
+               <li class="odd">
+                  <dl>
+                     <dt>
+                        <div>Apr. 2005</div>
+                     </dt>
+                     <dd>
+                        <div>PL/1 Grundlagen (IFA)</div>
+                     </dd>
+                  </dl>
+               </li>
+               <li class="even">
+                  <dl>
+                     <dt>
+                        <div>März 2004</div>
+                     </dt>
+                     <dd>
+                        <div>Synergy / CM Build-Manager (Telelogic)</div>
+                     </dd>
+                  </dl>
+               </li>
+            </ul>
             
             <h1>Zertifikate</h1>
-            <div>
-               <table>
-                  <tbody>
-                     <tr class="odd">
-                        <td>
-                           <div>2011</div>
-                        </td>
-                        <td>
-                           <div>Certified Secure Web Developer (CSWD)</div>
-                        </td>
-                     </tr>
-                     <tr class="even">
-                        <td>
-                           <div>2005</div>
-                        </td>
-                        <td>
-                           <div>OMG-Certified UML Professionals (OCUP)</div>
-                        </td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
+            <ul>
+               <li class="odd">
+                  <dl>
+                     <dt>
+                        <div>2011</div>
+                     </dt>
+                     <dd>
+                        <div>Certified Secure Web Developer (CSWD)</div>
+                     </dd>
+                  </dl>
+               </li>
+               <li class="even">
+                  <dl>
+                     <dt>
+                        <div>2005</div>
+                     </dt>
+                     <dd>
+                        <div>OMG-Certified UML Professionals (OCUP)</div>
+                     </dd>
+                  </dl>
+               </li>
+            </ul>
             
             <h1>Kompetenzen</h1>
-            <div>
-               <table>
-                  <tbody>
-                     <tr class="odd">
-                        <td>
-                           <div>Sprachen</div>
-                        </td>
-                        <td>
-                           <div>Solide Kenntnisse in Java, Scala, HTML/CSS, C/C++, XML(XSLT/XSL), SQL, JS, bash, Python, LaTeX</div>
-                        </td>
-                     </tr>
-                     <tr class="even">
-                        <td>
-                           <div></div>
-                        </td>
-                        <td>
-                           <div>Gute Kenntnisse in PL/I, Visual Basic, etc.</div>
-                        </td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
-            <div>
-               <table>
-                  <tbody>
-                     <tr class="odd">
-                        <td>
-                           <div>Frameworks</div>
-                        </td>
-                        <td>
-                           <div>Solide Kenntnisse in Tapestry, Play Framework, Spring, jQuery, jaxws, JUnit, Mockito</div>
-                        </td>
-                     </tr>
-                     <tr class="even">
-                        <td>
-                           <div></div>
-                        </td>
-                        <td>
-                           <div>Gute Kenntnisse in Apache Wicket, GWT, Qt, .NET, Hibernate, etc.</div>
-                        </td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
-            <div>
-               <table>
-                  <tbody>
-                     <tr class="odd">
-                        <td>
-                           <div>Datenbanken</div>
-                        </td>
-                        <td>
-                           <div>Solide Kenntnisse in MSSQL, LDAP, Jena, FS basierte Datenhaltung</div>
-                        </td>
-                     </tr>
-                     <tr class="even">
-                        <td>
-                           <div></div>
-                        </td>
-                        <td>
-                           <div>Gute Kenntnisse in HSQLDB, Oracle, DB2, MySQL</div>
-                        </td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
-            <div>
-               <table>
-                  <tbody>
-                     <tr class="odd">
-                        <td>
-                           <div>Programme</div>
-                        </td>
-                        <td>
-                           <div>Solide Kenntnisse in itelliJ, Eclipse, Astah, Rational Rose, Enterprise Architekt, Visual Paradigm UML, Office suite</div>
-                        </td>
-                     </tr>
-                     <tr class="even">
-                        <td>
-                           <div></div>
-                        </td>
-                        <td>
-                           <div>Gute Kenntnisse in make, QtCreator, Visual Studio, Xcode, etc.</div>
-                        </td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
-            <div>
-               <table>
-                  <tbody>
-                     <tr class="odd">
-                        <td>
-                           <div>Umgebungen</div>
-                        </td>
-                        <td>
-                           <div>Solide Kenntnisse in Linux und andere Unix basierte Systeme</div>
-                        </td>
-                     </tr>
-                     <tr class="even">
-                        <td>
-                           <div></div>
-                        </td>
-                        <td>
-                           <div>Gute Kenntnisse in Windows, z/OS, USS (Unix System Services), Mac OS X</div>
-                        </td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
+            <ul>
+               <li class="odd">
+                  <dl>
+                     <dt>
+                        <div>Sprachen</div>
+                     </dt>
+                     <dd>
+                        <div>Solide Kenntnisse in Java, Scala, HTML/CSS, C/C++, XML(XSLT/XSL), SQL, JS, bash, Python, LaTeX</div>
+                     </dd>
+                  </dl>
+               </li>
+               <li class="even">
+                  <dl>
+                     <dt>
+                        <div></div>
+                     </dt>
+                     <dd>
+                        <div>Gute Kenntnisse in PL/I, Visual Basic, etc.</div>
+                     </dd>
+                  </dl>
+               </li>
+            </ul>
+            <ul>
+               <li class="odd">
+                  <dl>
+                     <dt>
+                        <div>Frameworks</div>
+                     </dt>
+                     <dd>
+                        <div>Solide Kenntnisse in Tapestry, Play Framework, Spring, jQuery, jaxws, JUnit, Mockito</div>
+                     </dd>
+                  </dl>
+               </li>
+               <li class="even">
+                  <dl>
+                     <dt>
+                        <div></div>
+                     </dt>
+                     <dd>
+                        <div>Gute Kenntnisse in Apache Wicket, GWT, Qt, .NET, Hibernate, etc.</div>
+                     </dd>
+                  </dl>
+               </li>
+            </ul>
+            <ul>
+               <li class="odd">
+                  <dl>
+                     <dt>
+                        <div>Datenbanken</div>
+                     </dt>
+                     <dd>
+                        <div>Solide Kenntnisse in MSSQL, LDAP, Jena, FS basierte Datenhaltung</div>
+                     </dd>
+                  </dl>
+               </li>
+               <li class="even">
+                  <dl>
+                     <dt>
+                        <div></div>
+                     </dt>
+                     <dd>
+                        <div>Gute Kenntnisse in HSQLDB, Oracle, DB2, MySQL</div>
+                     </dd>
+                  </dl>
+               </li>
+            </ul>
+            <ul>
+               <li class="odd">
+                  <dl>
+                     <dt>
+                        <div>Programme</div>
+                     </dt>
+                     <dd>
+                        <div>Solide Kenntnisse in itelliJ, Eclipse, Astah, Rational Rose, Enterprise Architekt, Visual Paradigm UML, Office suite</div>
+                     </dd>
+                  </dl>
+               </li>
+               <li class="even">
+                  <dl>
+                     <dt>
+                        <div></div>
+                     </dt>
+                     <dd>
+                        <div>Gute Kenntnisse in make, QtCreator, Visual Studio, Xcode, etc.</div>
+                     </dd>
+                  </dl>
+               </li>
+            </ul>
+            <ul>
+               <li class="odd">
+                  <dl>
+                     <dt>
+                        <div>Umgebungen</div>
+                     </dt>
+                     <dd>
+                        <div>Solide Kenntnisse in Linux und andere Unix basierte Systeme</div>
+                     </dd>
+                  </dl>
+               </li>
+               <li class="even">
+                  <dl>
+                     <dt>
+                        <div></div>
+                     </dt>
+                     <dd>
+                        <div>Gute Kenntnisse in Windows, z/OS, USS (Unix System Services), Mac OS X</div>
+                     </dd>
+                  </dl>
+               </li>
+            </ul>
             
             <h1>Sprachen</h1>
-            <div>
-               <table>
-                  <tbody>
-                     <tr class="odd">
-                        <td>
-                           <div>Deutsch</div>
-                        </td>
-                        <td>
-                           <div>Muttersprache</div>
-                        </td>
-                     </tr>
-                     <tr class="even">
-                        <td>
-                           <div>Französisch</div>
-                        </td>
-                        <td>
-                           <div>Schriftlich und mündlich fliessend</div>
-                        </td>
-                     </tr>
-                     <tr class="odd">
-                        <td>
-                           <div>Englisch</div>
-                        </td>
-                        <td>
-                           <div>Schriftlich und mündlich gut</div>
-                        </td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
+            <ul>
+               <li class="odd">
+                  <dl>
+                     <dt>
+                        <div>Deutsch</div>
+                     </dt>
+                     <dd>
+                        <div>Muttersprache</div>
+                     </dd>
+                  </dl>
+               </li>
+               <li class="even">
+                  <dl>
+                     <dt>
+                        <div>Französisch</div>
+                     </dt>
+                     <dd>
+                        <div>Schriftlich und mündlich fliessend</div>
+                     </dd>
+                  </dl>
+               </li>
+               <li class="odd">
+                  <dl>
+                     <dt>
+                        <div>Englisch</div>
+                     </dt>
+                     <dd>
+                        <div>Schriftlich und mündlich gut</div>
+                     </dd>
+                  </dl>
+               </li>
+            </ul>
             
             
             <h1>Referenzen</h1>Auf Anfrage
