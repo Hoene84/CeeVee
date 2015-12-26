@@ -7,24 +7,40 @@ body {
     font-size: 10pt;
 }
 
-table {
-    width: 100%;
-}
-
-.bordered {
+div.person {
     border-width: 2px;
     border-color: black;
     border-style: solid;
     background-color: #FFFFDD;
 }
 
-td {
-    vertical-align: top;
-    padding: 2px 2px 2px 2px;
+div.person > div {
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    display: inline-block;
+    vertical-align:top;
 }
 
-td.verticalCentered {
-    vertical-align: middle;
+div.person div.infos {
+    display:table;
+    width:100%;
+    /*table-layout: fixed;*/
+}
+
+div.person div.infos div.infoGroup {
+    display: table-row-group;
+}
+
+div.person div.infos div.info {
+    display:table-row;
+}
+
+div.person div.infos div.label{
+    display: table-cell;
+}
+
+div.person div.infos div.value{
+    display: table-cell;
 }
 
 h1 {
@@ -39,11 +55,6 @@ h2 {
     font-weight: bold;
     margin-top: 5mm;
     margin-bottom: 2mm;
-}
-
-div.centered {
-    text-align: center;
-    padding: 10px 10px 10px 10px;
 }
 
 div.paragraph {

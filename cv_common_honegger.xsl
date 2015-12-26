@@ -14,11 +14,11 @@
 	<!-- person -->
 	<xsl:template match="person">
 		<div class="paragraph">
-			<div class="bordered">
-				<div class="inline">
+			<div class="person">
+				<div class="image">
 					<xsl:call-template name="personImg"/>
 				</div>
-				<div class="inline">
+				<div class="description">
 					<div>
 						<xsl:call-template name="personHeader"/>
 					</div>
@@ -31,89 +31,65 @@
 	</xsl:template>
 	<!-- text part of the person (left side) -->
 	<xsl:template name="personInfos">
-		<div class="inline">
-			<table>
-				<tbody>
-					<tr>
-						<td>
-							<div>
-								<xsl:text>Geburtsdatum</xsl:text>
-							</div>
-						</td>
-						<td>
-							<div>
-							<xsl:apply-templates select="birthday"/>
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<div>
-							<xsl:text>Heimatort</xsl:text>
-							</div>
-						</td>
-						<td>
-							<div>
-							<xsl:apply-templates select="hometown"/>
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<div>
-							<xsl:text>Zivilstand</xsl:text>
-							</div>
-						</td>
-						<td>
-							<div>
-							<xsl:apply-templates select="maritalStatus"/>
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<div>
-							<xsl:text>Adresse</xsl:text>
-							</div>
-						</td>
-						<td>
-							<div>
-							<xsl:apply-templates select="contact/address"/>
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<div>
-							<xsl:text>Telefon</xsl:text>
-							</div>
-						</td>
-						<td>
-							<div>
-							<xsl:for-each select="contact/phone">
-								<xsl:apply-templates select="current()"/>
-							</xsl:for-each>
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<div>
-							<xsl:text>Email</xsl:text>
-							</div>
-						</td>
-						<td>
-							<div>
+		<div class="infos">
+			<div class="info birthday">
+				<div class="label">
+					<xsl:text>Geburtsdatum</xsl:text>
+				</div>
+				<div class="value">
+					<xsl:apply-templates select="birthday"/>
+				</div>
+			</div>
+			<div class="info hometown">
+				<div class="label">
+					<xsl:text>Heimatort</xsl:text>
+				</div>
+				<div class="value">
+					<xsl:apply-templates select="hometown"/>
+				</div>
+			</div>
+			<div class="info maritalStatus">
+				<div class="label">
+					<xsl:text>Zivilstand</xsl:text>
+				</div>
+				<div class="value">
+					<xsl:apply-templates select="maritalStatus"/>
+				</div>
+			</div>
+			<div class="infoGroup contact">
+				<div class="info address">
+					<div class="label">
+						<xsl:text>Adresse</xsl:text>
+					</div>
+					<div class="value">
+						<xsl:apply-templates select="contact/address"/>
+					</div>
+				</div>
+				<div class="info phone">
+					<div class="label">
+						<xsl:text>Telefon</xsl:text>
+					</div>
+					<div class="value">
+						<xsl:for-each select="contact/phone">
+							<xsl:apply-templates select="current()"/>
+						</xsl:for-each>
+					</div>
+				</div>
+				<div class="info email">
+					<div class="label">
+						<xsl:text>Email</xsl:text>
+					</div>
+					<div class="value">
+						<xsl:for-each select="contact/email">
 							<xsl:apply-templates select="contact/email"/>
-							</div>
-						</td>
-					</tr>
-				</tbody>
-			</table>
+						</xsl:for-each>
+					</div>
+				</div>
+			</div>
 		</div>
 	</xsl:template>
 	<xsl:template name="personHeader">
-		<div class="centered">
+		<div class="header">
 			<div class="paragraph">
 				<div class="highlighted">
 					<xsl:apply-templates select="forename"/>

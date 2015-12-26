@@ -12,11 +12,40 @@ table {
     width: 100%;
 }
 
-.bordered {
+div.person {
     border-width: 2px;
     border-color: black;
     border-style: solid;
     background-color: #FFFFDD;
+}
+
+div.person > div {
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    display: inline-block;
+    vertical-align:top;
+}
+
+div.person div.infos {
+    display:table;
+    width:100%;
+    /*table-layout: fixed;*/
+}
+
+div.person div.infos div.infoGroup {
+    display: table-row-group;
+}
+
+div.person div.infos div.info {
+    display:table-row;
+}
+
+div.person div.infos div.label{
+    display: table-cell;
+}
+
+div.person div.infos div.value{
+    display: table-cell;
 }
 
 td {
@@ -40,11 +69,6 @@ h2 {
     font-weight: bold;
     margin-top: 5mm;
     margin-bottom: 2mm;
-}
-
-div.centered {
-    text-align: center;
-    padding: 10px 10px 10px 10px;
 }
 
 div.paragraph {
@@ -95,13 +119,13 @@ div.company div.logo
             
             
             <div class="paragraph">
-               <div class="bordered">
-                  <div class="inline">
+               <div class="person">
+                  <div class="image">
                      <div class="centered"><img src="cv_honegger_photo.jpg"></img></div>
                   </div>
-                  <div class="inline">
+                  <div class="description">
                      <div>
-                        <div class="centered">
+                        <div class="header">
                            <div class="paragraph">
                               <div class="highlighted">Simon Honegger</div>
                            </div>
@@ -112,63 +136,37 @@ div.company div.logo
                         </div>
                      </div>
                      <div>
-                        <div class="inline">
-                           <table>
-                              <tbody>
-                                 <tr>
-                                    <td>
-                                       <div>Geburtsdatum</div>
-                                    </td>
-                                    <td>
-                                       <div>22 Juli 1984</div>
-                                    </td>
-                                 </tr>
-                                 <tr>
-                                    <td>
-                                       <div>Heimatort</div>
-                                    </td>
-                                    <td>
-                                       <div>Niederhasli ZH</div>
-                                    </td>
-                                 </tr>
-                                 <tr>
-                                    <td>
-                                       <div>Zivilstand</div>
-                                    </td>
-                                    <td>
-                                       <div>ledig</div>
-                                    </td>
-                                 </tr>
-                                 <tr>
-                                    <td>
-                                       <div>Adresse</div>
-                                    </td>
-                                    <td>
-                                       <div>
-                                          <div>Hinterdorfstrasse 10, 8157 Dielsdorf</div>
-                                       </div>
-                                    </td>
-                                 </tr>
-                                 <tr>
-                                    <td>
-                                       <div>Telefon</div>
-                                    </td>
-                                    <td>
-                                       <div>
-                                          <div>076 386 82 56</div>
-                                       </div>
-                                    </td>
-                                 </tr>
-                                 <tr>
-                                    <td>
-                                       <div>Email</div>
-                                    </td>
-                                    <td>
-                                       <div>simon.honegger@gmail.com</div>
-                                    </td>
-                                 </tr>
-                              </tbody>
-                           </table>
+                        <div class="infos">
+                           <div class="info birthday">
+                              <div class="label">Geburtsdatum</div>
+                              <div class="value">22 Juli 1984</div>
+                           </div>
+                           <div class="info hometown">
+                              <div class="label">Heimatort</div>
+                              <div class="value">Niederhasli ZH</div>
+                           </div>
+                           <div class="info maritalStatus">
+                              <div class="label">Zivilstand</div>
+                              <div class="value">ledig</div>
+                           </div>
+                           <div class="infoGroup contact">
+                              <div class="info address">
+                                 <div class="label">Adresse</div>
+                                 <div class="value">
+                                    <div>Hinterdorfstrasse 10, 8157 Dielsdorf</div>
+                                 </div>
+                              </div>
+                              <div class="info phone">
+                                 <div class="label">Telefon</div>
+                                 <div class="value">
+                                    <div>076 386 82 56</div>
+                                 </div>
+                              </div>
+                              <div class="info email">
+                                 <div class="label">Email</div>
+                                 <div class="value"></div>
+                              </div>
+                           </div>
                         </div>
                      </div>
                   </div>
