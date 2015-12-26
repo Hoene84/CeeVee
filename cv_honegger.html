@@ -12,32 +12,31 @@ div.person {
     border-width: 2px;
     border-color: black;
     border-style: solid;
-    background-color: #FFFFDD;
 }
 
 div.person > div {
     text-align: center;
-    padding: 10px 10px 10px 10px;
+    padding: 20px;
     display: inline-block;
     vertical-align:top;
 }
 
 div.person div.infos,
 div.projects,
-ul
+ul.table
 {
     display:table;
     width:100%;
 }
 
-ul {
+ul.table {
     list-style-type: none;
     padding: 0;
 }
 
 div.person div.infos div.infoGroup,
 div.project,
-li
+ul.table > li
 {
     display: table-row-group;
 }
@@ -53,34 +52,48 @@ div.person div.infos div.label,
 div.person div.infos div.value,
 div.project div.label,
 div.project div.value,
-dt,
+ul.table dt,
 dd
 {
     display: table-cell;
+    padding: 5px 10px;
 }
+
+div.project div.label,
+dt
+{
+    width: 14%;
+}
+
 
 h1 {
     font-size: 16pt;
     font-weight: bold;
-    margin-top: 10mm;
-    margin-bottom: 5mm;
+    margin-top: 2em;
 }
 
 h2 {
     font-size: 12pt;
     font-weight: bold;
-    margin-top: 5mm;
-    margin-bottom: 2mm;
+    margin-top: 2em;
+}
+
+h3 {
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+h4 {
+    font-weight: normal;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
 }
 
 div.paragraph {
     padding-top: 2mm;
     padding-bottom: 2mm
-}
-
-div.highlighted {
-    font-style: italic;
-    font-weight: bold;
 }
 
 div.inline {
@@ -120,54 +133,50 @@ div.person
          <div xmlns:cv="http://cv">
             
             
-            <div class="paragraph">
-               <div class="person">
-                  <div class="image">
-                     <div class="centered"><img src="cv_honegger_photo.jpg"></img></div>
-                  </div>
-                  <div class="description">
-                     <div>
-                        <div class="header">
-                           <div class="paragraph">
-                              <div class="highlighted">Simon Honegger</div>
-                           </div>
-                           <div class="paragraph">
-                              <div>Bachelor of Science HES-SO in Informatik</div>
-                              <div>9 Jahre Berufserfahrung</div>
-                           </div>
+            <div class="person">
+               <div class="image">
+                  <div class="centered"><img src="cv_honegger_photo.jpg"></img></div>
+               </div>
+               <div class="description">
+                  <div>
+                     <div class="header">
+                        <h3>Simon Honegger</h3>
+                        <div>
+                           <div>Bachelor of Science HES-SO in Informatik</div>
+                           <div>9 Jahre Berufserfahrung</div>
                         </div>
                      </div>
-                     <div>
-                        <div class="infos">
-                           <div class="info birthday">
-                              <div class="label">Geburtsdatum</div>
-                              <div class="value">22 Juli 1984</div>
-                           </div>
-                           <div class="info hometown">
-                              <div class="label">Heimatort</div>
-                              <div class="value">Niederhasli ZH</div>
-                           </div>
-                           <div class="info maritalStatus">
-                              <div class="label">Zivilstand</div>
-                              <div class="value">ledig</div>
-                           </div>
-                           <div class="infoGroup contact">
-                              <div class="info address">
-                                 <div class="label">Adresse</div>
-                                 <div class="value">
-                                    <div>Hinterdorfstrasse 10, 8157 Dielsdorf</div>
-                                 </div>
+                  </div>
+                  <div>
+                     <div class="infos">
+                        <div class="info birthday">
+                           <div class="label">Geburtsdatum</div>
+                           <div class="value">22 Juli 1984</div>
+                        </div>
+                        <div class="info hometown">
+                           <div class="label">Heimatort</div>
+                           <div class="value">Niederhasli ZH</div>
+                        </div>
+                        <div class="info maritalStatus">
+                           <div class="label">Zivilstand</div>
+                           <div class="value">ledig</div>
+                        </div>
+                        <div class="infoGroup contact">
+                           <div class="info address">
+                              <div class="label">Adresse</div>
+                              <div class="value">
+                                 <div>Hinterdorfstrasse 10, 8157 Dielsdorf</div>
                               </div>
-                              <div class="info phone">
-                                 <div class="label">Telefon</div>
-                                 <div class="value">
-                                    <div>076 386 82 56</div>
-                                 </div>
+                           </div>
+                           <div class="info phone">
+                              <div class="label">Telefon</div>
+                              <div class="value">
+                                 <div>076 386 82 56</div>
                               </div>
-                              <div class="info email">
-                                 <div class="label">Email</div>
-                                 <div class="value"></div>
-                              </div>
+                           </div>
+                           <div class="info email">
+                              <div class="label">Email</div>
+                              <div class="value"></div>
                            </div>
                         </div>
                      </div>
@@ -176,7 +185,7 @@ div.person
             </div>
             
             <h1>Ausbildung</h1>
-            <ul>
+            <ul class="table">
                <li class="odd">
                   <dl>
                      <dt>
@@ -218,19 +227,15 @@ div.person
             <h1>Berufserfahrung</h1>
             
             <div class="experiance">
-               <h3 class="period">
+               <h2 class="period">
                   <div class="company">
                      <div class="logo"><img src="logo_imis.png"></img></div>
                      <div class="name">IMISnext AG</div>
                   </div>
-               </h3>
+               </h2>
                <div class="period">
-                  <div>
-                     <div class="paragraph">
-                        <div class="highlighted">Okt. 2011 - Dez. 2015</div>
-                        <div class="paragraph">Senior Applikationsentwickler in Festanstellung</div>
-                     </div>
-                  </div>
+                  <h3>Okt. 2011 - Dez. 2015</h3>
+                  <h4 class="function">Senior Applikationsentwickler in Festanstellung</h4>
                   <div class="projects">
                      <div class="project">
                         <div class="header odd">
@@ -398,19 +403,15 @@ div.person
             </div>
             
             <div class="experiance">
-               <h3 class="period">
+               <h2 class="period">
                   <div class="company">
                      <div class="logo"><img src="logo_zkb.png"></img></div>
                      <div class="name">Zürcher Kantonalbank</div>
                   </div>
-               </h3>
+               </h2>
                <div class="period">
-                  <div>
-                     <div class="paragraph">
-                        <div class="highlighted">Juni 2010 - Aug. 2010</div>
-                        <div class="paragraph">Applikationsentwickler auf Stundenlohnbasis</div>
-                     </div>
-                  </div>
+                  <h3>Juni 2010 - Aug. 2010</h3>
+                  <h4 class="function">Applikationsentwickler auf Stundenlohnbasis</h4>
                   <div class="projects">
                      <div class="project">
                         <div class="header odd">
@@ -441,19 +442,15 @@ div.person
                      </div>
                   </div>
                </div>
-               <h3 class="period">
+               <h2 class="period">
                   <div class="company">
                      <div class="logo"><img src="logo_zkb.png"></img></div>
                      <div class="name">Zürcher Kantonalbank</div>
                   </div>
-               </h3>
+               </h2>
                <div class="period">
-                  <div>
-                     <div class="paragraph">
-                        <div class="highlighted">Jan. 2010 - Feb. 2010</div>
-                        <div class="paragraph">Aushilfe auf Stundenlohnbasis</div>
-                     </div>
-                  </div>
+                  <h3>Jan. 2010 - Feb. 2010</h3>
+                  <h4 class="function">Aushilfe auf Stundenlohnbasis</h4>
                   <div class="projects">
                      <div class="project">
                         <div class="header odd">
@@ -481,19 +478,15 @@ div.person
                      </div>
                   </div>
                </div>
-               <h3 class="period">
+               <h2 class="period">
                   <div class="company">
                      <div class="logo"><img src="logo_zkb.png"></img></div>
                      <div class="name">Zürcher Kantonalbank</div>
                   </div>
-               </h3>
+               </h2>
                <div class="period">
-                  <div>
-                     <div class="paragraph">
-                        <div class="highlighted">Aug. 2003 - Okt. 2008</div>
-                        <div class="paragraph">Applikationsentwickler in Festanstellung</div>
-                     </div>
-                  </div>
+                  <h3>Aug. 2003 - Okt. 2008</h3>
+                  <h4 class="function">Applikationsentwickler in Festanstellung</h4>
                   <div class="projects">
                      <div class="project">
                         <div class="header odd">
@@ -666,7 +659,7 @@ div.person
             
             
             <h1>Weiterbildungen</h1>
-            <ul>
+            <ul class="table">
                <li class="odd">
                   <dl>
                      <dt>
@@ -730,7 +723,7 @@ div.person
             </ul>
             
             <h1>Zertifikate</h1>
-            <ul>
+            <ul class="table">
                <li class="odd">
                   <dl>
                      <dt>
@@ -754,7 +747,7 @@ div.person
             </ul>
             
             <h1>Kompetenzen</h1>
-            <ul>
+            <ul class="table">
                <li class="odd">
                   <dl>
                      <dt>
@@ -776,7 +769,7 @@ div.person
                   </dl>
                </li>
             </ul>
-            <ul>
+            <ul class="table">
                <li class="odd">
                   <dl>
                      <dt>
@@ -798,7 +791,7 @@ div.person
                   </dl>
                </li>
             </ul>
-            <ul>
+            <ul class="table">
                <li class="odd">
                   <dl>
                      <dt>
@@ -820,7 +813,7 @@ div.person
                   </dl>
                </li>
             </ul>
-            <ul>
+            <ul class="table">
                <li class="odd">
                   <dl>
                      <dt>
@@ -842,7 +835,7 @@ div.person
                   </dl>
                </li>
             </ul>
-            <ul>
+            <ul class="table">
                <li class="odd">
                   <dl>
                      <dt>
@@ -866,7 +859,7 @@ div.person
             </ul>
             
             <h1>Sprachen</h1>
-            <ul>
+            <ul class="table">
                <li class="odd">
                   <dl>
                      <dt>
@@ -900,7 +893,9 @@ div.person
             </ul>
             
             
-            <h1>Referenzen</h1>Auf Anfrage
+            <div class="paragraph">
+               <h1>Referenzen</h1>Auf Anfrage
+            </div>
             
             <h1>Mögliche Anstellung</h1>Nach Vereinbarung, ab Jan. 2015 verfügbar
             

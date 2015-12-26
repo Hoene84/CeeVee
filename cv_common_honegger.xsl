@@ -13,18 +13,16 @@
 	</xsl:template>
 	<!-- person -->
 	<xsl:template match="person">
-		<div class="paragraph">
-			<div class="person">
-				<div class="image">
-					<xsl:call-template name="personImg"/>
+		<div class="person">
+			<div class="image">
+				<xsl:call-template name="personImg"/>
+			</div>
+			<div class="description">
+				<div>
+					<xsl:call-template name="personHeader"/>
 				</div>
-				<div class="description">
-					<div>
-						<xsl:call-template name="personHeader"/>
-					</div>
-					<div>
-						<xsl:call-template name="personInfos"/>
-					</div>
+				<div>
+					<xsl:call-template name="personInfos"/>
 				</div>
 			</div>
 		</div>
@@ -90,14 +88,12 @@
 	</xsl:template>
 	<xsl:template name="personHeader">
 		<div class="header">
-			<div class="paragraph">
-				<div class="highlighted">
-					<xsl:apply-templates select="forename"/>
-					<xsl:text> </xsl:text>
-					<xsl:apply-templates select="name"/>
-				</div>
-			</div>
-            <div class="paragraph">            
+			<h3>
+				<xsl:apply-templates select="forename"/>
+				<xsl:text> </xsl:text>
+				<xsl:apply-templates select="name"/>
+			</h3>
+            <div>
 				<div>
 					<xsl:apply-templates select="title"/>
 				</div>
@@ -271,20 +267,16 @@
 		</div>
 	</xsl:template>
 	<xsl:template match="period">
-		<h3 class="period">
+		<h2 class="period">
 			<xsl:apply-templates select="company"/>
-		</h3>
+		</h2>
 		<div class="period">
-			<div>
-				<div class="paragraph">
-					<div class="highlighted">
-						<xsl:call-template name="dateTemplate"/>
-					</div>
-					<div class="paragraph">
-						<xsl:apply-templates select="function"/>
-					</div>
-				</div>
-			</div>
+			<h3>
+				<xsl:call-template name="dateTemplate"/>
+			</h3>
+			<h4 class="function">
+				<xsl:apply-templates select="function"/>
+			</h4>
 			<div class="projects">
 				<xsl:apply-templates select="project"/>
 			</div>
@@ -370,7 +362,7 @@
 	<!-- hobbies -->
 	<xsl:template match="hobbys">
 		<xsl:apply-templates select="@title"/>
-		<ul>
+		<ul class="table">
 			<xsl:apply-templates/>
 		</ul>
 	</xsl:template>
@@ -383,15 +375,15 @@
 	</xsl:template>
 	<!-- references -->
 	<xsl:template match="references">
-		<xsl:apply-templates select="@title"/>
-        <xsl:if test="@ondemande = true()">
-        	<xsl:text>Auf Anfrage</xsl:text>
-	    </xsl:if>
-		<xsl:for-each select="reference">
-			<div class="paragraph">
-                <xsl:apply-templates select="current()"/>
-			</div>
-		</xsl:for-each>
+		<div class="paragraph">
+			<xsl:apply-templates select="@title"/>
+			<xsl:if test="@ondemande = true()">
+				<xsl:text>Auf Anfrage</xsl:text>
+			</xsl:if>
+			<xsl:for-each select="reference">
+				<xsl:apply-templates select="current()"/>
+			</xsl:for-each>
+		</div>
 	</xsl:template>
 
 	<xsl:template match="reference">
@@ -422,7 +414,7 @@
 	</xsl:template>
 	<!--A Table with a row for each content-->
 	<xsl:template name="tableContent">
-		<ul>
+		<ul class="table">
 			<xsl:for-each select="*">
 				<xsl:if test="position() mod 2=0">
 					<li class="even">
