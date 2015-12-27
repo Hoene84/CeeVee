@@ -11,13 +11,26 @@ div.person {
     border-width: 2px;
     border-color: black;
     border-style: solid;
+    display: flex;
+    align-items: center;
 }
 
 div.person > div {
-    text-align: center;
     padding: 20px;
     display: inline-block;
     vertical-align:top;
+}
+
+div.person > div.description
+{
+    margin-left: 50px;
+}
+
+div.person h1,
+div.person h2,
+div.person h3
+{
+    margin-top: 0;
 }
 
 div.person div.infos,
@@ -55,8 +68,21 @@ ul.table dt,
 dd
 {
     display: table-cell;
+}
+
+div.project div.label,
+div.project div.value,
+ul.table dt,
+dd
+{
     padding: 4px 8px;
     border: 1px solid white;
+}
+
+div.person div.infos div.label,
+div.person div.infos div.value
+{
+    padding-right: 8px;
 }
 
 div.project div.label,

@@ -87,22 +87,18 @@
 		</div>
 	</xsl:template>
 	<xsl:template name="personHeader">
-		<div class="header">
-			<h3>
-				<xsl:apply-templates select="forename"/>
-				<xsl:text> </xsl:text>
-				<xsl:apply-templates select="name"/>
-			</h3>
-            <div>
-				<div>
-					<xsl:apply-templates select="title"/>
-				</div>
-                <div>
-					<xsl:apply-templates select="experience"/>
-					<xsl:text> Jahre Berufserfahrung</xsl:text>
-				</div>
-			</div>
-		</div>
+		<h1>
+			<xsl:apply-templates select="forename"/>
+			<xsl:text> </xsl:text>
+			<xsl:apply-templates select="name"/>
+		</h1>
+		<h2>
+			<xsl:apply-templates select="experience"/>
+			<xsl:text> Jahre Berufserfahrung</xsl:text>
+		</h2>
+		<h3>
+			<xsl:apply-templates select="title"/>
+		</h3>
 	</xsl:template>
 	
 	<!-- image of the person (rigth side) -->
