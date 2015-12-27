@@ -8,15 +8,14 @@ body {
 }
 
 div.person {
-    border-width: 2px;
-    border-color: black;
-    border-style: solid;
+    border-radius: 20px 100px;
+    overflow: hidden;
     display: flex;
     align-items: center;
+    margin-top: 50px;
 }
 
 div.person > div {
-    padding: 20px;
     display: inline-block;
     vertical-align:top;
 }
