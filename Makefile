@@ -2,18 +2,18 @@
 
 all: pdf
 
-common: cv_common_honegger.xsl cv_honegger.xml
+common: src/cv_common.xsl data/cv.xml target
+	mkdir -p target
 
-validate: cv_honegger.xml cv.xsd
-	xmllint --noout cv_honegger.xml --schema cv.xsd
+validate: data/cv.xml src/cv.xsd
+	xmllint --noout data/cv.xml --schema src/cv.xsd
 
-html: validate cv_html_honegger.xsl
-	if $$(saxonb-xslt cv_honegger.xml cv_html_honegger.xsl > cv_honegger.html) ; then xdg-open cv_honegger.html ; fi ;
+html: validate common src/cv_html.xsl
+	if $$(saxonb-xslt data/cv.xml src/cv_html.xsl > target/cv.html) ; then xdg-open target/cv.html &> /dev/null ; fi ;
+	cp -r data/res/* target/.
 
 pdf: html
-	if $$(wkhtmltopdf cv_honegger.html -> cv_honegger.pdf) ; then xdg-open cv_honegger.pdf ; fi ;
+	if $$(wkhtmltopdf target/cv.html -> target/cv.pdf) ; then xdg-open target/cv.pdf &> /dev/null ; fi ;
 
 clean:
-	rm cv_honegger.fo
-	rm cv_honegger.pdf
-	rm cv_honegger.html
+	rm -rf target

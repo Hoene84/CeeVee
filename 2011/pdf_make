@@ -1,6 +1,0 @@
-if $(fop -xml cv_honegger.xml -xsl cv_fo_honegger.xsl -pdf cv_honegger.pdf) ;then
-   evince cv_honegger.pdf
-else
-   fop -q -xml cv_honegger.xml -xsl cv_fo_honegger.xsl -foout cv_honegger.xslfo
-   gedit cv_pdf_honegger.xslfo
-fi

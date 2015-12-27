@@ -16,7 +16,7 @@
 		<html>
 			<head>
 				<style type="text/css">
-					<xsl:value-of select="unparsed-text('cv.css', 'UTF-8')" disable-output-escaping="yes"/>
+					<xsl:value-of select="unparsed-text('../style/cv.css', 'UTF-8')" disable-output-escaping="yes"/>
 					<xsl:apply-templates mode="layout"/>
 				</style>
 			</head>
@@ -35,13 +35,13 @@
 	</xsl:template>
 
 	<xsl:template match="theme" mode="layout">
-		<xsl:value-of select="unparsed-text(concat('cv_', /current(), '.css'), 'UTF-8')" disable-output-escaping="yes"/>
+		<xsl:value-of select="unparsed-text(concat('../style/cv_', /current(), '.css'), 'UTF-8')" disable-output-escaping="yes"/>
 	</xsl:template>
 
 
 	<!--________________________________________________________include of the common-->
 	<!--processing of the xml-->
-	<xsl:include href="cv_common_honegger.xsl"/>
+	<xsl:include href="cv_common.xsl"/>
 
 	<!--________________________________________________________exclude for common-->
 	<xsl:template match="layout"/>
