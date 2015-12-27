@@ -296,7 +296,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="content even">
+			<div class="content">
 				<div class="label">
 					<div>
 						<xsl:text>Aktivitäten</xsl:text>
