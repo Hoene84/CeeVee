@@ -79,7 +79,7 @@
 					</div>
 					<div class="value">
 						<xsl:for-each select="contact/email">
-							<xsl:apply-templates select="contact/email"/>
+							<xsl:apply-templates select="current()"/>
 						</xsl:for-each>
 					</div>
 				</div>
