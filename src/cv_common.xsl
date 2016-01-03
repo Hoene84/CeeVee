@@ -207,16 +207,13 @@
             </dd>
         </dl>
     </xsl:template>
-    <!-- educations -->
-    <xsl:template match="educations">
+
+    <xsl:template match="educations|training|certificats|projects">
         <xsl:apply-templates select="@title"/>
         <xsl:call-template name="tableContent"/>
     </xsl:template>
-    <xsl:template match="training">
-        <xsl:apply-templates select="@title"/>
-        <xsl:call-template name="tableContent"/>
-    </xsl:template>
-    <xsl:template match="education">
+
+    <xsl:template match="activity">
         <dl>
             <dt>
                 <div>
@@ -236,25 +233,7 @@
             </dd>
         </dl>
     </xsl:template>
-    <!-- certificats -->
-    <xsl:template match="certificats">
-        <xsl:apply-templates select="@title"/>
-        <xsl:call-template name="tableContent"/>
-    </xsl:template>
-    <xsl:template match="certificat">
-        <dl>
-            <dt>
-                <div>
-                    <xsl:call-template name="dateTemplate"/>
-                </div>
-            </dt>
-            <dd>
-                <div>
-                    <xsl:apply-templates select="description"/>
-                </div>
-            </dd>
-        </dl>
-    </xsl:template>
+
     <!-- expiriances -->
     <xsl:template match="experiences">
         <xsl:apply-templates select="@title"/>
@@ -305,7 +284,7 @@
                     <div>
                         <ul>
                             <xsl:for-each select="activity">
-                                <xsl:apply-templates select="current()"/>
+                                <xsl:apply-templates select="current()" mode="project"/>
                             </xsl:for-each>
                         </ul>
                     </div>
@@ -313,7 +292,7 @@
             </div>
         </div>
     </xsl:template>
-    <xsl:template match="activity">
+    <xsl:template match="activity" mode="project">
         <li>
             <div>
                 <xsl:value-of select="current()"/>

@@ -174,7 +174,7 @@
             <xs:element name="description" type="descriptionType"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:complexType name="educationType">
+    <xs:complexType name="activityType">
         <xs:complexContent>
             <xs:extension base="descriptedType">
                 <xs:sequence>
@@ -192,29 +192,11 @@
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
-    <xs:complexType name="educationsType">
+    <xs:complexType name="activitiesType">
         <xs:complexContent>
             <xs:extension base="paragraphType">
                 <xs:sequence>
-                    <xs:element name="education" type="educationType" maxOccurs="unbounded"/>
-                </xs:sequence>
-            </xs:extension>
-        </xs:complexContent>
-    </xs:complexType>
-    <xs:complexType name="certificatType">
-        <xs:complexContent>
-            <xs:extension base="descriptedType">
-                <xs:sequence>
-                    <xs:element name="date" type="dateType"/>
-                </xs:sequence>
-            </xs:extension>
-        </xs:complexContent>
-    </xs:complexType>
-    <xs:complexType name="certificatsType">
-        <xs:complexContent>
-            <xs:extension base="paragraphType">
-                <xs:sequence>
-                    <xs:element name="certificat" type="certificatType" maxOccurs="unbounded"/>
+                    <xs:element name="activity" type="activityType" maxOccurs="unbounded"/>
                 </xs:sequence>
             </xs:extension>
         </xs:complexContent>
@@ -328,9 +310,10 @@
                 <xs:element name="layout" type="layoutType"  minOccurs="0"/>
                 <xs:element name="person" type="personType"/>
                 <xs:element name="skills" type="skillsType"/>
-                <xs:element name="educations" type="educationsType"/>
-                <xs:element name="training" type="educationsType"/>
-                <xs:element name="certificats" type="certificatsType" minOccurs="0"/>
+                <xs:element name="educations" type="activitiesType"/>
+                <xs:element name="training" type="activitiesType"/>
+                <xs:element name="certificats" type="activitiesType" minOccurs="0"/>
+                <xs:element name="projects" type="activitiesType" minOccurs="0"/>
                 <xs:element name="experiences" type="experiancesType" minOccurs="0"/>
                 <xs:element name="languages" type="languagesType"/>
                 <xs:element name="hobbys" type="hobbysType" minOccurs="0"/>

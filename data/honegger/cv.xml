@@ -33,24 +33,24 @@
         <picture>cv_honegger_photo.jpg</picture>
     </person>
     <educations title="Ausbildung">
-        <education>
+        <activity>
             <description>Zweisprachiges Studium an der Ecole d'ingénieurs et d'architectes de Fribourg</description>
             <from year="2008"/>
             <to year="2011"/>
             <certificate>Bachelor of Science HES-SO in Informatik (bilingue Franz./Deutsch)</certificate>
-        </education>
-        <education>
+        </activity>
+        <activity>
             <description>Lehre als KV-Informatiker in der Zürcher Kantonalbank</description>
             <from year="2000"/>
             <to year="2003"/>
             <certificate>Fähigkeitsausweis Branche Informatik-Anwendungsentwicklung</certificate>
-        </education>
-        <education>
+        </activity>
+        <activity>
             <description>KV Zürich Business School</description>
             <from year="2000"/>
             <to year="2003"/>
             <certificate>Kaufmännische Berufsmaturität</certificate>
-        </education>
+        </activity>
     </educations>
     <experiences title="Berufserfahrung">
         <experiance>
@@ -148,40 +148,40 @@
         </experiance>
     </experiences>
     <training title="Weiterbildungen">
-        <education>
+        <activity>
             <description>Object Oriented Analysis and Design with UML (Zühlke)</description>
             <date year="2008" month="1"/>
-        </education>
-        <education>
+        </activity>
+        <activity>
             <description>Synergy Ugrade 6.5 (Telelogic)</description>
             <date year="2007" month="7"/>
-        </education>
-        <education>
+        </activity>
+        <activity>
             <description>Java - Design Patterns (IBM)</description>
             <date year="2006" month="11"/>
-        </education>
-        <education>
+        </activity>
+        <activity>
             <description>DB2 UDB for z/OS - Anwendungsprogrammierung (IBM)</description>
             <date year="2005" month="11"/>
-        </education>
-        <education>
+        </activity>
+        <activity>
             <description>PL/1 Grundlagen (IFA)</description>
             <date year="2005" month="4"/>
-        </education>
-        <education>
+        </activity>
+        <activity>
             <description>Synergy / CM Build-Manager (Telelogic)</description>
             <date year="2004" month="3"/>
-        </education>
+        </activity>
     </training>
     <certificats title="Zertifikate">
-        <certificat>
+        <activity>
             <description>Certified Secure Web Developer (CSWD)</description>
             <date year="2011"/>
-        </certificat>
-        <certificat>
+        </activity>
+        <activity>
             <description>OMG-Certified UML Professionals (OCUP)</description>
             <date year="2005"/>
-        </certificat>
+        </activity>
     </certificats>
     <skills title="Kompetenzen">
         <skillgroup title="Sprachen">
@@ -275,9 +275,9 @@
         </skillgroup>
     </skills>
     <languages title="Sprachen">
-        <skill id="de" level="native">Deutsch</skill>
-        <skill id="fr" level="fluent">Französisch</skill>
-        <skill id="en" level="good">Englisch</skill>
+        <skill id="de" level="native" logo="flags/flag-de.png">Deutsch</skill>
+        <skill id="fr" level="fluent" logo="flags/flag-fr.png">Französisch</skill>
+        <skill id="en" level="good" logo="flags/flag-en.png">Englisch</skill>
     </languages>
     <!--<hobbys title="Hobbies">
         <hobby>Unihockey</hobby>
