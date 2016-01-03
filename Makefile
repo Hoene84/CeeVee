@@ -5,14 +5,15 @@ all: pdf
 target:
 	mkdir -p target
 
-common: src/cv_common.xsl data/cv.xml
+common: src/cv_common.xsl data/honegger/cv.xml
 
-validate: data/cv.xml src/cv.xsd
-	xmllint --noout data/cv.xml --schema src/cv.xsd
+validate: data/honegger/cv.xml src/cv.xsd
+	xmllint --noout data/honegger/cv.xml --schema src/cv.xsd
 
 html: validate common target src/cv_html.xsl
-	if $$(saxonb-xslt data/cv.xml src/cv_html.xsl > target/cv.html) ; then xdg-open target/cv.html &> /dev/null ; fi ;
-	cp -r data/res/* target/.
+	if $$(saxonb-xslt data/honegger/cv.xml src/cv_html.xsl > target/cv.html) ; then xdg-open target/cv.html &> /dev/null ; fi ;
+	cp -r data/honegger/res/* target/.
+	cp -r data/common/res/* target/.
 
 pdf: html target target/cv.html
 	if $$(wkhtmltopdf target/cv.html -> target/cv.pdf) ; then xdg-open target/cv.pdf &> /dev/null ; fi ;
