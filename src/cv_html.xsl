@@ -8,13 +8,14 @@
     xmlns="http://www.w3.org/1999/xhtml" 
     exclude-result-prefixes="html">
 
-	<xsl:output method="html" version="4.0" encoding="ISO-8859-1" indent="yes"/>
+	<xsl:output method="html" version="4.0" encoding="UTF-8" indent="yes"/>
 
 	<!--____________________________________________________main tamplate-->
 	<!--to do the outline, should call main tamplate-->
 	<xsl:template match="/">
 		<html>
 			<head>
+				<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 				<style type="text/css">
 					<xsl:value-of select="unparsed-text('../style/cv.css', 'UTF-8')" disable-output-escaping="yes"/>
 					<xsl:apply-templates mode="layout"/>

@@ -5,6 +5,9 @@
 				xmlns:xs="http://www.w3.org/2001/XMLSchema"
 				xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fn="http://www.w3.org/2005/xpa-functions"
 				xmlns:cv="http://cv">
+
+	<xsl:output method="html" version="4.0" encoding="UTF-8" indent="yes"/>
+
 	<!-- do a parent for inherit default font Attrs -->
 	<xsl:template name="main">
 		<div>
