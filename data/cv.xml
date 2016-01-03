@@ -201,6 +201,18 @@
                 <skill id="vb" logo="skills/visual-basic.png">Visual Basic</skill>
             </goodskill>
         </skillgroup>
+        <skillgroup title="Entwicklung">
+            <solidskill etc="false">
+                <skill id="scrum" logo="skills/scrum.jpg">Scrum</skill>
+                <skill id="uml" logo="skills/uml.gif">UML</skill>
+                <skill id="git" logo="skills/git.png">GIT</skill>
+            </solidskill>
+            <goodskill etc="true">
+                <skill id="svn" logo="skills/svn.jpg">SVN</skill>
+                <skill id="synergy" logo="skills/synergy.png">Rational Synergy</skill>
+                <skill id="cvs">CVS</skill>
+            </goodskill>
+        </skillgroup>
         <skillgroup title="Frameworks">
             <solidskill etc="false">
                 <skill id="tapestry" logo="skills/tapestry.png">Tapestry</skill>
