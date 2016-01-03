@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cv.xsd" international="false" theme="green">
+<cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../src/cv.xsd" international="false" theme="green">
     <layout>
         <theme>green</theme>
     </layout>
@@ -186,93 +186,86 @@
     <skills title="Kompetenzen">
         <skillgroup title="Sprachen">
             <solidskill etc="false">
-                <skill>Java</skill>
-                <skill>Scala</skill>
-                <skill>HTML/CSS</skill>
-                <skill>C/C++</skill>
-                <skill>XML(XSLT/XSL)</skill>
-                <skill>SQL</skill>
-                <skill>JS</skill>
-                <skill>bash</skill>
-                <skill>Python</skill>
-                <skill>LaTeX</skill>
+                <skill id="java" logo="skills/java_ee.png">Java</skill>
+                <skill id="scala" logo="skills/scala.png">Scala</skill>
+                <skill id="html" logo="skills/html_css_js.png">HTML/CSS/JS</skill>
+                <skill id="c" logo="skills/CPlusPlus.jpg">C/C++</skill>
+                <skill id="xml" logo="skills/xml.png">XML(XSLT/XSL)</skill>
+                <skill id="sql" logo="skills/sql.png">SQL</skill>
+                <skill id="bash" logo="skills/bash.png">bash</skill>
+                <skill id="python" logo="skills/python.jpg">Python</skill>
+                <skill id="latex" logo="skills/latex.svg">LaTeX</skill>
             </solidskill>
             <goodskill etc="true">
-                <skill>PL/I</skill>
-                <skill>Visual Basic</skill>
+                <skill id="pli" logo="skills/pli.jpg">PL/I</skill>
+                <skill id="vb" logo="skills/visual-basic.png">Visual Basic</skill>
             </goodskill>
         </skillgroup>
         <skillgroup title="Frameworks">
             <solidskill etc="false">
-                <skill>Tapestry</skill>
-                <skill>Play Framework</skill>
-                <skill>Spring</skill>
-                <skill>jQuery</skill>
-                <skill>jaxws</skill>
-                <skill>JUnit</skill>
-                <skill>Mockito</skill>
+                <skill id="tapestry" logo="skills/tapestry.png">Tapestry</skill>
+                <skill id="play" logo="skills/play.png">Play Framework</skill>
+                <skill id="spring" logo="skills/spring.png">Spring</skill>
+                <skill id="jquery" logo="skills/jquery.svg">jQuery</skill>
+                <skill id="jaxws" logo="skills/jaxws.gif">jaxws</skill>
+                <skill id="junit" logo="skills/junit.png">JUnit</skill>
+                <skill id="mockito" logo="skills/mockito.jpg">Mockito</skill>
             </solidskill>
             <goodskill etc="true">
-                <skill>Apache Wicket</skill>
-                <skill>GWT</skill>
-                <skill>Qt</skill>
-                <skill>.NET</skill>
-                <skill>Hibernate</skill>
+                <skill id="wicket" logo="skills/xxx">Apache Wicket</skill>
+                <skill id="gwt" logo="skills/xxx">GWT</skill>
+                <skill id="qt" logo="skills/xxx">Qt</skill>
+                <skill id="dotnet" logo="skills/xxx">.NET</skill>
+                <skill id="hibernate" logo="skills/xxx">Hibernate</skill>
             </goodskill>
         </skillgroup>
         <skillgroup title="Datenbanken">
             <solidskill etc="false">
-                <skill>MSSQL</skill>
-                <skill>LDAP</skill>
-                <skill>Jena</skill>
-                <skill>FS basierte Datenhaltung</skill>
+                <skill id="mssql" logo="skills/mssql.jpg">MSSQL</skill>
+                <skill id="ldap" logo="skills/ldap.jpg">LDAP</skill>
+                <skill id="jena" logo="skills/jena.png">Jena</skill>
+                <skill id="fs">FS basierte Datenhaltung</skill>
             </solidskill>
             <goodskill etc="false">
-                <skill>HSQLDB</skill>
-                <skill>Oracle</skill>
-                <skill>DB2</skill>
-                <skill>MySQL</skill>
+                <skill id="hsqldb" logo="skills/hsqldb.png">HSQLDB</skill>
+                <skill id="oracle" logo="skills/oracle.png">Oracle</skill>
+                <skill id="db2" logo="skills/db2.png">DB2</skill>
+                <skill id="mysql" logo="skills/mysql.jpg">MySQL</skill>
             </goodskill>
         </skillgroup>
         <skillgroup title="Programme">
             <solidskill etc="false">
-                <skill>itelliJ</skill>
-                <skill>Eclipse</skill>
-                <skill>Astah</skill>
-                <skill>Rational Rose</skill>
-                <skill>Enterprise Architekt</skill>
-                <skill>Visual Paradigm UML</skill>
-                <skill>Office suite</skill>
+                <skill id="intellij" logo="skills/intellij.png">itelliJ</skill>
+                <skill id="eclipse" logo="skills/eclipse.png">Eclipse</skill>
+                <skill id="astah" logo="skills/astah.png">Astah</skill>
+                <skill id="rr" logo="skills/rational_rose.gif">Rational Rose</skill>
+                <skill id="ea" logo="skills/enterprise_architekt.jpg">Enterprise Architekt</skill>
+                <skill id="vp" logo="skills/visual_paradigm.png">Visual Paradigm UML</skill>
+                <skill id="office" logo="skills/microsoftOffice.jpg">Office suite</skill>
             </solidskill>
             <goodskill etc="true">
-                <skill>make</skill>
-                <skill>QtCreator</skill>
-                <skill>Visual Studio</skill>
-                <skill>Xcode</skill>
+                <skill id="make" logo="skills/make.png">make</skill>
+                <skill id="qtcreator" logo="skills/qtcreator.png">QtCreator</skill>
+                <skill id="vs" logo="skills/visual_studio.png">Visual Studio</skill>
+                <skill id="xcode" logo="skills/xcode.png">Xcode</skill>
             </goodskill>
         </skillgroup>
         <skillgroup title="Umgebungen">
             <solidskill etc="false">
-                <skill>Linux und andere Unix basierte Systeme</skill>
+                <skill id="linux" logo="skills/linux.png">Linux und andere Unix basierte Systeme</skill>
             </solidskill>
             <goodskill etc="false">
-                <skill>Windows</skill>
-                <skill>z/OS</skill>
-                <skill>USS (Unix System Services)</skill>
-                <skill>Mac OS X</skill>
+                <skill id="windows" logo="skills/windows.png">Windows</skill>
+                <skill id="zos" logo="skills/zos.jpg">z/OS</skill>
+                <skill id="uss">USS (Unix System Services)</skill>
+                <skill id="mac" logo="skills/osx.jpg">Mac OS X</skill>
             </goodskill>
         </skillgroup>
     </skills>
     <languages title="Sprachen">
-        <language name="Deutsch">
-            <skill>native</skill>
-        </language>
-        <language name="Französisch">
-            <skill>fluent</skill>
-        </language>
-        <language name="Englisch">
-            <skill>good</skill>
-        </language>
+        <skill id="de" level="native">Deutsch</skill>
+        <skill id="fr" level="fluent">Französisch</skill>
+        <skill id="en" level="good">Englisch</skill>
     </languages>
     <!--<hobbys title="Hobbies">
         <hobby>Unihockey</hobby>

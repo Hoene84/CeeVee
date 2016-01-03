@@ -115,7 +115,7 @@
         <xs:complexContent>
             <xs:extension base="paragraphType">
                 <xs:sequence>
-                    <xs:element name="skill" type="xs:string" maxOccurs="unbounded"/>
+                    <xs:element name="skill" type="skillType" maxOccurs="unbounded"/>
                 </xs:sequence>
                 <xs:attribute name="etc" type="xs:boolean"/>
             </xs:extension>
@@ -129,6 +129,14 @@
                 </xs:sequence>
             </xs:extension>
         </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="skillType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="id" type="xs:ID"/>
+                <xs:attribute name="logo" type="xs:anyURI"/>
+            </xs:extension>
+        </xs:simpleContent>
     </xs:complexType>
     <xs:complexType name="dateType">
         <xs:attribute name="year" use="required">
@@ -246,24 +254,25 @@
         </xs:complexContent>
     </xs:complexType>
     <xs:complexType name="languangeType">
-        <xs:sequence>
-            <xs:element name="skill">
-                <xs:simpleType>
-                    <xs:restriction base="xs:string">
-                        <xs:enumeration value="native"/>
-                        <xs:enumeration value="fluent"/>
-                        <xs:enumeration value="good"/>
-                    </xs:restriction>
-                </xs:simpleType>
-            </xs:element>
-        </xs:sequence>
-        <xs:attribute name="name" type="xs:string"/>
+        <xs:complexContent>
+            <xs:extension base="skillType">
+                <xs:attribute name="level" use="required">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="native"/>
+                            <xs:enumeration value="fluent"/>
+                            <xs:enumeration value="good"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:attribute>
+            </xs:extension>
+        </xs:complexContent>
     </xs:complexType>
     <xs:complexType name="languagesType">
         <xs:complexContent>
             <xs:extension base="paragraphType">
                 <xs:sequence>
-                    <xs:element name="language" type="languangeType" maxOccurs="unbounded"/>
+                    <xs:element name="skill" type="languangeType" maxOccurs="unbounded"/>
                 </xs:sequence>
             </xs:extension>
         </xs:complexContent>
