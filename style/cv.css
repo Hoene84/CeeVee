@@ -17,7 +17,7 @@ div.person {
 
 div.person > div {
     display: inline-block;
-    vertical-align:top;
+    /*vertical-align:top;*/
 }
 
 div.person > div.description
@@ -30,6 +30,12 @@ div.person h2,
 div.person h3
 {
     margin-top: 0;
+    margin-bottom: 5px;
+}
+
+div.person div.infos
+{
+    margin-top: 20px;
 }
 
 div.person div.infos,
@@ -81,7 +87,7 @@ dd
 div.person div.infos div.label,
 div.person div.infos div.value
 {
-    padding-right: 8px;
+    padding-right: 80px;
 }
 
 div.project div.label,
@@ -137,7 +143,7 @@ div.inline {
 
 img
 {
-    width: 175px;
+    width: 200px;
 }
 
 div.company div.logo
