@@ -34,21 +34,21 @@
     </person>
     <educations title="Ausbildung">
         <activity>
-            <description>Zweisprachiges Studium an der Ecole d'ingénieurs et d'architectes de Fribourg</description>
             <from year="2008"/>
             <to year="2011"/>
+            <description>Zweisprachiges Studium an der Ecole d'ingénieurs et d'architectes de Fribourg</description>
             <certificate>Bachelor of Science HES-SO in Informatik (bilingue Franz./Deutsch)</certificate>
         </activity>
         <activity>
-            <description>Lehre als KV-Informatiker in der Zürcher Kantonalbank</description>
             <from year="2000"/>
             <to year="2003"/>
+            <description>Lehre als KV-Informatiker in der Zürcher Kantonalbank</description>
             <certificate>Fähigkeitsausweis Branche Informatik-Anwendungsentwicklung</certificate>
         </activity>
         <activity>
-            <description>KV Zürich Business School</description>
             <from year="2000"/>
             <to year="2003"/>
+            <description>KV Zürich Business School</description>
             <certificate>Kaufmännische Berufsmaturität</certificate>
         </activity>
     </educations>
@@ -147,42 +147,55 @@
             </period>
         </experiance>
     </experiences>
+    
+    <projects title="Projekte">
+        <activity logo="turtleplayer.png" link="http://www.turtle-player.co.uk/">
+            <title>Turtle Player</title>
+            <description>Musicplayer optimiert für grosse Playlisten</description>
+        </activity>
+        <activity link="https://github.com/Hoene84/perzist">
+            <title>Perzist</title>
+            <description>Persistenzlayer mit Fokus auf compile time error detection</description>
+        </activity>
+    </projects>
+
     <training title="Weiterbildungen">
         <activity>
-            <description>Object Oriented Analysis and Design with UML (Zühlke)</description>
             <date year="2008" month="1"/>
+            <description>Object Oriented Analysis and Design with UML (Zühlke)</description>
         </activity>
         <activity>
-            <description>Synergy Ugrade 6.5 (Telelogic)</description>
             <date year="2007" month="7"/>
+            <description>Synergy Ugrade 6.5 (Telelogic)</description>
         </activity>
         <activity>
-            <description>Java - Design Patterns (IBM)</description>
             <date year="2006" month="11"/>
+            <description>Java - Design Patterns (IBM)</description>
         </activity>
         <activity>
-            <description>DB2 UDB for z/OS - Anwendungsprogrammierung (IBM)</description>
             <date year="2005" month="11"/>
+            <description>DB2 UDB for z/OS - Anwendungsprogrammierung (IBM)</description>
         </activity>
         <activity>
-            <description>PL/1 Grundlagen (IFA)</description>
             <date year="2005" month="4"/>
+            <description>PL/1 Grundlagen (IFA)</description>
         </activity>
         <activity>
-            <description>Synergy / CM Build-Manager (Telelogic)</description>
             <date year="2004" month="3"/>
+            <description>Synergy / CM Build-Manager (Telelogic)</description>
         </activity>
     </training>
     <certificats title="Zertifikate">
         <activity>
-            <description>Certified Secure Web Developer (CSWD)</description>
             <date year="2011"/>
+            <description>Certified Secure Web Developer (CSWD)</description>
         </activity>
         <activity>
-            <description>OMG-Certified UML Professionals (OCUP)</description>
             <date year="2005"/>
+            <description>OMG-Certified UML Professionals (OCUP)</description>
         </activity>
     </certificats>
+    
     <skills title="Kompetenzen">
         <skillgroup title="Sprachen">
             <solidskill etc="false">

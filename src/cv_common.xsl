@@ -217,6 +217,9 @@
         <dl>
             <dt>
                 <div>
+                    <xsl:value-of select="title"/>
+                </div>
+                <div>
                     <xsl:call-template name="dateTemplate"/>
                 </div>
             </dt>

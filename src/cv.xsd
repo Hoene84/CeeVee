@@ -99,7 +99,7 @@
         <xs:attribute name="logo" type="xs:anyURI"/>
     </xs:complexType>
     <xs:complexType name="paragraphType">
-        <xs:attribute name="title" type="xs:string"/>
+        <xs:attribute name="title" type="xs:string" use="required"/>
     </xs:complexType>
     <xs:complexType name="skillgroupType">
         <xs:complexContent>
@@ -112,14 +112,10 @@
         </xs:complexContent>
     </xs:complexType>
     <xs:complexType name="weightedSkillgroupType">
-        <xs:complexContent>
-            <xs:extension base="paragraphType">
-                <xs:sequence>
-                    <xs:element name="skill" type="skillType" maxOccurs="unbounded"/>
-                </xs:sequence>
-                <xs:attribute name="etc" type="xs:boolean"/>
-            </xs:extension>
-        </xs:complexContent>
+        <xs:sequence>
+            <xs:element name="skill" type="skillType" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="etc" type="xs:boolean"/>
     </xs:complexType>
     <xs:complexType name="skillsType">
         <xs:complexContent>
@@ -169,28 +165,25 @@
             <xs:element name="italic" type="xs:string"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:complexType name="descriptedType">
-        <xs:sequence>
-            <xs:element name="description" type="descriptionType"/>
-        </xs:sequence>
-    </xs:complexType>
+
     <xs:complexType name="activityType">
-        <xs:complexContent>
-            <xs:extension base="descriptedType">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element name="date" type="dateType"/>
                 <xs:sequence>
-                    <xs:choice>
-                        <xs:element name="date" type="dateType"/>
-                        <xs:sequence>
-                            <xs:element name="from" type="dateType"/>
-                            <xs:element name="to" type="dateType"/>
-                        </xs:sequence>
-                    </xs:choice>
-                    <xs:sequence>
-                        <xs:element name="certificate" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
-                    </xs:sequence>
+                    <xs:element name="from" type="dateType"/>
+                    <xs:element name="to" type="dateType"/>
                 </xs:sequence>
-            </xs:extension>
-        </xs:complexContent>
+                <xs:element name="title" type="xs:string"/>
+            </xs:choice>
+            <xs:sequence>
+                <xs:element name="description" type="descriptionType" minOccurs="1"/>
+                <xs:element name="certificate" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="link" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:sequence>
+        <xs:attribute name="logo" type="xs:anyURI"/>
+        <xs:attribute name="link" type="xs:anyURI"/>
     </xs:complexType>
     <xs:complexType name="activitiesType">
         <xs:complexContent>
