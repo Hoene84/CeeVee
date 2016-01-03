@@ -1,60 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
-	<xs:complexType name="phoneType">
-		<xs:sequence>
-			<xs:element name="countryCode">
-				<xs:simpleType>
-					<xs:restriction base="xs:string">
-						<xs:pattern value="\d{2}"/>
-					</xs:restriction>
-				</xs:simpleType>
-			</xs:element>
-			<xs:element name="areaCode">
-				<xs:simpleType>
-					<xs:restriction base="xs:integer">
-						<xs:pattern value="\d{2}"/>
-					</xs:restriction>
-				</xs:simpleType>
-			</xs:element>
-			<xs:element name="number">
-				<xs:simpleType>
-					<xs:restriction base="xs:string">
-						<xs:pattern value="\d{3}\s\d{2}\s\d{2}"/>
-					</xs:restriction>
-				</xs:simpleType>
-			</xs:element>
-		</xs:sequence>
-		<xs:attribute name="type" use="required">
-			<xs:simpleType>
-				<xs:restriction base="xs:string">
-					<xs:enumeration value="homePhone"/>
-					<xs:enumeration value="cellPhone"/>
-					<xs:enumeration value="businessPhone"/>
-				</xs:restriction>
-			</xs:simpleType>
-		</xs:attribute>
-	</xs:complexType>
-	<xs:complexType name="addressType">
-		<xs:sequence>
-			<xs:element name="street" type="xs:string"/>
-			<xs:element name="streetnumber" type="xs:string"/>
-			<!-- TODO: restrict to numbers < 99999-->
-			<xs:element name="zip">
-				<xs:complexType>
-					<xs:simpleContent>
-						<xs:extension base="xs:integer">
-							<xs:attribute name="countryIsoCode" use="required">
-								<xs:simpleType>
-									<xs:restriction base="xs:string">
-										<xs:pattern value="[A-Z]{1,3}"/>
-									</xs:restriction>
-								</xs:simpleType>
-							</xs:attribute>
-						</xs:extension>
-					</xs:simpleContent>
-				</xs:complexType>
-			</xs:element>
-			<xs:element name="location" type="xs:string"/>
-		</xs:sequence>
-	</xs:complexType>
+    <xs:complexType name="phoneType">
+        <xs:sequence>
+            <xs:element name="countryCode">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="\d{2}"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="areaCode">
+                <xs:simpleType>
+                    <xs:restriction base="xs:integer">
+                        <xs:pattern value="\d{2}"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="number">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="\d{3}\s\d{2}\s\d{2}"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="type" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="homePhone"/>
+                    <xs:enumeration value="cellPhone"/>
+                    <xs:enumeration value="businessPhone"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="addressType">
+        <xs:sequence>
+            <xs:element name="street" type="xs:string"/>
+            <xs:element name="streetnumber" type="xs:string"/>
+            <!-- TODO: restrict to numbers < 99999-->
+            <xs:element name="zip">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:integer">
+                            <xs:attribute name="countryIsoCode" use="required">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[A-Z]{1,3}"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:attribute>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="location" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
 </xs:schema>

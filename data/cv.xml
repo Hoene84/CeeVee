@@ -15,10 +15,10 @@
                 <location>Dielsdorf</location>
             </address>
             <!--phone type="homePhone">
-				<countryCode>41</countryCode>
-				<areaCode>43</areaCode>
-				<number>535 68 44</number>
-			</phone-->
+                <countryCode>41</countryCode>
+                <areaCode>43</areaCode>
+                <number>535 68 44</number>
+            </phone-->
             <phone type="cellPhone">
                 <countryCode>41</countryCode>
                 <areaCode>76</areaCode>
@@ -275,24 +275,24 @@
         </language>
     </languages>
     <!--<hobbys title="Hobbies">
-		<hobby>Unihockey</hobby>
-		<hobby>Snowboarden</hobby>
-		<hobby>Stricken</hobby>
-		<hobby>Lesen</hobby>
-	</hobbys>-->
+        <hobby>Unihockey</hobby>
+        <hobby>Snowboarden</hobby>
+        <hobby>Stricken</hobby>
+        <hobby>Lesen</hobby>
+    </hobbys>-->
     <references title="Referenzen" ondemande="true">
         <!--<reference>
-			<forename>Klara</forename>
-			<name>Kioalafas</name>
-			<position>Leiterin Entwicklung</position>
-			<company>Zürcher Kantonalbank</company>
-		</reference>
-		<reference>
-			<forename>Ogün</forename>
-			<name>Cetin</name>
-			<position>Projektleiter</position>
-			<company>Zürcher Kantonalbank</company>
-		</reference>-->
+            <forename>Klara</forename>
+            <name>Kioalafas</name>
+            <position>Leiterin Entwicklung</position>
+            <company>Zürcher Kantonalbank</company>
+        </reference>
+        <reference>
+            <forename>Ogün</forename>
+            <name>Cetin</name>
+            <position>Projektleiter</position>
+            <company>Zürcher Kantonalbank</company>
+        </reference>-->
     </references>
     <begin title="Mögliche Anstellung">
         <date year="2015" month="1"/>
