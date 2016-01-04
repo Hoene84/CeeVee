@@ -200,7 +200,7 @@
                 <xs:element name="activity" type="xs:string" maxOccurs="unbounded"/>
             </xs:sequence>
             <xs:sequence>
-                <xs:element name="keyword" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="skillref" type="xs:IDREF" minOccurs="0" maxOccurs="unbounded"/>
             </xs:sequence>
         </xs:sequence>
         <xs:attribute name="title" type="xs:string"/>
@@ -294,7 +294,8 @@
 
     <xs:complexType name="layoutType">
         <xs:sequence>
-            <xs:element name="theme" type="xs:string" minOccurs="0"/>
+            <xs:element name="theme" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="script" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
     <xs:element name="cv">
@@ -316,5 +317,15 @@
             <xs:attribute name="international" type="xs:boolean"/>
             <xs:attribute name="theme" type="xs:string"/>
         </xs:complexType>
+
+        <xs:key name="skillKey"  >
+            <xs:selector xpath=".//skill" />
+            <xs:field xpath="@id" />
+        </xs:key>
+
+        <xs:keyref name="skillRef" refer="skillKey">
+            <xs:selector xpath=".//skillref" />
+            <xs:field xpath="@id" />
+        </xs:keyref>
     </xs:element>
 </xs:schema>

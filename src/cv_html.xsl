@@ -18,8 +18,8 @@
                 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
                 <style type="text/css">
                     <xsl:value-of select="unparsed-text('../style/cv.css', 'UTF-8')" disable-output-escaping="yes"/>
-                    <xsl:apply-templates mode="layout"/>
                 </style>
+                <xsl:apply-templates mode="layout"/>
             </head>
             <body>
                 <div style="width:800px;margin: 0 auto;">
@@ -36,9 +36,16 @@
     </xsl:template>
 
     <xsl:template match="theme" mode="layout">
-        <xsl:value-of select="unparsed-text(concat('../style/cv_', /current(), '.css'), 'UTF-8')" disable-output-escaping="yes"/>
+        <style type="text/css">
+            <xsl:value-of select="unparsed-text(concat('../style/cv_', /current(), '.css'), 'UTF-8')" disable-output-escaping="yes"/>
+        </style>
     </xsl:template>
 
+    <xsl:template match="script" mode="layout">
+        <script type="text/javascript">
+            <xsl:value-of select="unparsed-text(concat('../js/', /current(), '.js'), 'UTF-8')" disable-output-escaping="yes"/>
+        </script>
+    </xsl:template>
 
     <!--________________________________________________________include of the common-->
     <!--processing of the xml-->

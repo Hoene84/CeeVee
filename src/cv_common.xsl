@@ -8,6 +8,8 @@
 
     <xsl:output method="html" version="4.0" encoding="UTF-8" indent="yes"/>
 
+    <xsl:key name="skillref" match="//skill" use="@id"/>
+
     <!-- do a parent for inherit default font Attrs -->
     <xsl:template name="main">
         <div>
@@ -291,10 +293,18 @@
                             </xsl:for-each>
                         </ul>
                     </div>
+                    <div class="skillrefs">
+                        <xsl:apply-templates select="key('skillref', skillref)" mode="skillref"/>
+                    </div>
                 </div>
             </div>
         </div>
     </xsl:template>
+
+    <xsl:template match="skill" mode="skillref">
+        <img src="{@logo}" alt="{@id}" title="{.}"/>
+    </xsl:template>
+
     <xsl:template match="activity" mode="project">
         <li>
             <div>

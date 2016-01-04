@@ -2,6 +2,10 @@
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../src/cv.xsd" international="false" theme="green">
     <layout>
         <theme>green</theme>
+        <script>ext/jquery-2.1.4</script>
+        <!--<script>ext/isotope.pkgd</script>-->
+        <script>ext/packery.pkgd</script>
+        <script>init</script>
     </layout>
     <person>
         <forename>Simon</forename>
@@ -98,11 +102,11 @@
                 <project title="ACS (Zutritts- und Zugriffsrechteverwaltung) Rel. 2.1">
                     <activity>Kundennahe Umsetzung von fachlichen Anforderungen nach Scrum Rahmenwerk</activity>
                     <activity>Implementieren, testen und präsentieren dieser Anforderungen</activity>
-                    <keyword>Java</keyword>
-                    <keyword>Apache Wicket</keyword>
-                    <keyword>Hibernate</keyword>
-                    <keyword>LDAP</keyword>
-                    <keyword>Scrum</keyword>
+                    <skillref>java</skillref>
+                    <skillref>wicket</skillref>
+                    <skillref>hibernate</skillref>
+                    <skillref>ldap</skillref>
+                    <skillref>scrum</skillref>
                 </project>
             </period>
             <period>
@@ -237,11 +241,11 @@
                 <skill id="mockito" logo="skills/mockito.jpg">Mockito</skill>
             </solidskill>
             <goodskill etc="true">
-                <skill id="wicket" logo="skills/xxx">Apache Wicket</skill>
-                <skill id="gwt" logo="skills/xxx">GWT</skill>
-                <skill id="qt" logo="skills/xxx">Qt</skill>
-                <skill id="dotnet" logo="skills/xxx">.NET</skill>
-                <skill id="hibernate" logo="skills/xxx">Hibernate</skill>
+                <skill id="wicket" logo="skills/apache-wicket.png">Apache Wicket</skill>
+                <skill id="gwt" logo="skills/gwt.jpg">GWT</skill>
+                <skill id="qt" logo="skills/Qt.jpg">Qt</skill>
+                <skill id="dotnet" logo="skills/net.png">.NET</skill>
+                <skill id="hibernate" logo="skills/hibernate.png">Hibernate</skill>
             </goodskill>
         </skillgroup>
         <skillgroup title="Datenbanken">

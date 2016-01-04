@@ -141,7 +141,7 @@ div.inline {
     background-color:#FFFFDD
 }
 
-img
+.person img
 {
     width: 200px;
 }
@@ -149,4 +149,10 @@ img
 div.company div.logo
 {
     float: right;
+}
+
+div.skillrefs img
+{
+    max-height: 100px;
+    max-width: 300px;
 }
