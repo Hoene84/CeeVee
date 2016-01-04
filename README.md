@@ -8,11 +8,11 @@ Usage:
 make all
 
 Directories:
-data : source
-js : includable js
-src : common definition and transformation
-style : includable themes (css)
-target : generated result
+1. data : source
+1. js : includable js
+1. src : common definition and transformation
+1. style : includable themes (css)
+1. target : generated result
 
 Source:
 Hard codes in Makefile for the moment.
