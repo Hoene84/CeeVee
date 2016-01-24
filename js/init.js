@@ -1,12 +1,12 @@
 
 // does not work yet in a useful manner
-//$( document ).ready(function() {
-//    //$('.skillrefs').isotope({
-//    //    itemSelector: 'img'
-//    //    //layoutMode: 'fitRows'
-//    //});
-//    $('.skillrefs').packery({
-//        itemSelector: 'img'
-//        //layoutMode: 'fitRows'
-//    });
-//});
+$( document ).ready(function() {
+    setTimeout(function(){
+        $('.skillrefs').packery({
+            itemSelector: '.skillref',
+            //layoutMode: 'fitRows'
+            gutter: 10
+        });
+    }, 0);
+
+});

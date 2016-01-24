@@ -302,7 +302,9 @@
     </xsl:template>
 
     <xsl:template match="skill" mode="skillref">
-        <img src="{@logo}" alt="{@id}" title="{.}"/>
+        <div class="skillref">
+            <img src="{@logo}" alt="{@id}" title="{.}"/>
+        </div>
     </xsl:template>
 
     <xsl:template match="activity" mode="project">
