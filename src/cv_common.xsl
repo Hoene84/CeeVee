@@ -210,7 +210,7 @@
         </dl>
     </xsl:template>
 
-    <xsl:template match="educations|training|certificats|projects">
+    <xsl:template match="educations|trainings|certificats|projects">
         <xsl:apply-templates select="@title"/>
         <xsl:call-template name="tableContent"/>
     </xsl:template>

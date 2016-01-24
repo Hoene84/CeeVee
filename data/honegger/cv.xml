@@ -189,13 +189,20 @@
         <activity logo="turtleplayer.png" link="http://www.turtle-player.co.uk/">
             <title>Turtle Player</title>
             <description>Musicplayer optimiert für grosse Playlisten</description>
+            <skillrefs>
+                <skillref>java</skillref>
+                <skillref>android</skillref>
+                <skillref>intellij</skillref>
+            </skillrefs>
         </activity>
         <activity link="https://github.com/Hoene84/perzist">
             <title>Perzist</title>
             <description>Persistenzlayer mit Fokus auf compile time error detection</description>
             <skillrefs>
                 <skillref>java</skillref>
+                <skillref>intellij</skillref>
                 <skillref>hsqldb</skillref>
+                <skillref>mysql</skillref>
             </skillrefs>
         </activity>
     </projects>
@@ -269,8 +276,9 @@
         </skillgroup>
         <skillgroup title="Frameworks">
             <solidskill etc="false">
-                <skill id="tapestry" logo="skills/tapestry.png">Tapestry</skill>
                 <skill id="play" logo="skills/play.png">Play Framework</skill>
+                <skill id="tapestry" logo="skills/tapestry.png">Tapestry</skill>
+                <skill id="android" logo="skills/android.png">Android SDK</skill>
                 <skill id="spring" logo="skills/spring.png">Spring</skill>
                 <skill id="jquery" logo="skills/jquery.svg">jQuery</skill>
                 <skill id="jaxws" logo="skills/jaxws.gif">jaxws</skill>
