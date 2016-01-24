@@ -71,6 +71,7 @@
                     <activity>Verifikation/Validation aller Merge Requests für iShop Core 3</activity>
                     <activity>Mitverantwortung Design- und Architekturentscheidungen iShop Core 3</activity>
                     <activity>Unterstützung bei Fragen, Lösungentscheidungen und Problemen der Entwickler</activity>
+                    <skillref>git</skillref>
                 </project>
                 <project title="Projektverantwortlicher Shopimplementationen Sonepar CH/AT">
                     <activity>Einführung Mandantenfähigkeit bzgl. Logik, Darstellung und Anbindung von Umsystemen (6 Mandanten, 2 Systemumgebungen, )</activity>
@@ -116,6 +117,8 @@
                 <function>Aushilfe auf Stundenlohnbasis</function>
                 <project title="Match E4 Testing">
                     <activity>Kosten-Nutzen-Analyse diverser Optimierungen im Testprozess</activity>
+                    <skillref>office</skillref>
+                    <skillref>windows</skillref>
                 </project>
             </period>
             <period>
@@ -127,26 +130,43 @@
                     <activity>Teilprojektleitung ASD/SDS</activity>
                     <activity>Definition des bankfachlichen Modells und Konsistenzbedingungen mit dem Fachbereich</activity>
                     <activity>Implemention nach MDA (Model Driven Architecture) Ansatz</activity>
+                    <skillref>rr</skillref>
                 </project>
                 <project title="SDS (Stammdaten-Services) Rel. 2.0 (Folgeprojekt von SDS R1.0)">
                     <activity>Stellvertretung des Teilprojektleiters ASD/SDS GUI</activity>
                     <activity>Spezifikation der Java Software Komponente ASD/SDS GUI und codierung des generischen Teils</activity>
                     <activity>Abstimmung der Realisierung der fachlichen Anforderungen mit dem Fachbereich</activity>
+                    <skillref>java</skillref>
+                    <skillref>intellij</skillref>
+                    <skillref>hsqldb</skillref>
+                    <skillref>junit</skillref>
+                    <skillref>svn</skillref>
+                    <skillref>windows</skillref>
                 </project>
                 <project title="SDS (Stammdaten-Services) Rel. 1.0 (Neuentwicklung der Stammdatenapplikation)">
                     <activity>Analyse, Spezifikation, Design, Implementation und Test diverser Java Softwarekomponenten</activity>
                 </project>
                 <project title="Migration Bestandesführung Geld Rel. 2.0 ">
                     <activity>Realisieren eines Servicemoduls in PL/1 inkl. Regressionstests</activity>
+                    <skillref>pli</skillref>
+                    <skillref>db2</skillref>
+                    <skillref>zos</skillref>
                 </project>
                 <project title="PSV ASD/SDV (Produktions Support Vereinbarung Stammdatenverwaltung)">
                     <activity>Sicherstellen der Service Level Agreements im Bereich ADB (Datawarehouse) Belieferung</activity>
                     <activity>Durchführen von Systembuilds in der Stammdatenverwaltung</activity>
+                    <skillref>db2</skillref>
+                    <skillref>xml</skillref>
+                    <skillref>rr</skillref>
+                    <skillref>zos</skillref>
                 </project>
                 <project title="TAB/REF Ablösung (Migration der Referenzdaten von Mainfraime zu dezentral)">
                     <activity>Mitentwicklung der PL/1 Schnittstelle auf dezentrale Services (C++)</activity>
                     <activity>Performance Analyse des Zugriffs auf alte bzw. neue Datenhaltung</activity>
                     <activity>Modellieren und Realisieren von Interface Business Objects (XML)</activity>
+                    <skillref>c</skillref>
+                    <skillref>db2</skillref>
+                    <skillref>zos</skillref>
                 </project>
             </period>
         </experiance>
