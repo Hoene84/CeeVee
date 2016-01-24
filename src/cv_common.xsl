@@ -234,6 +234,7 @@
                             <xsl:apply-templates select="current()"/>
                         </div>
                     </xsl:for-each>
+                    <xsl:apply-templates select="skillrefs"/>
                 </div>
             </dd>
         </dl>
@@ -263,6 +264,7 @@
             <div class="projects">
                 <xsl:apply-templates select="project"/>
             </div>
+            <xsl:apply-templates select="skillrefs"/>
         </div>
     </xsl:template>
     <xsl:template match="project">
@@ -293,11 +295,15 @@
                             </xsl:for-each>
                         </ul>
                     </div>
-                    <div class="skillrefs">
-                        <xsl:apply-templates select="key('skillref', skillref)" mode="skillref"/>
-                    </div>
+                    <xsl:apply-templates select="skillrefs"/>
                 </div>
             </div>
+        </div>
+    </xsl:template>
+
+    <xsl:template match="skillrefs">
+        <div class="skillrefs">
+            <xsl:apply-templates select="key('skillref', skillref)" mode="skillref"/>
         </div>
     </xsl:template>
 

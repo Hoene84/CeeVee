@@ -71,7 +71,6 @@
                     <activity>Verifikation/Validation aller Merge Requests für iShop Core 3</activity>
                     <activity>Mitverantwortung Design- und Architekturentscheidungen iShop Core 3</activity>
                     <activity>Unterstützung bei Fragen, Lösungentscheidungen und Problemen der Entwickler</activity>
-                    <skillref>git</skillref>
                 </project>
                 <project title="Projektverantwortlicher Shopimplementationen Sonepar CH/AT">
                     <activity>Einführung Mandantenfähigkeit bzgl. Logik, Darstellung und Anbindung von Umsystemen (6 Mandanten, 2 Systemumgebungen, )</activity>
@@ -103,11 +102,13 @@
                 <project title="ACS (Zutritts- und Zugriffsrechteverwaltung) Rel. 2.1">
                     <activity>Kundennahe Umsetzung von fachlichen Anforderungen nach Scrum Rahmenwerk</activity>
                     <activity>Implementieren, testen und präsentieren dieser Anforderungen</activity>
-                    <skillref>java</skillref>
-                    <skillref>wicket</skillref>
-                    <skillref>hibernate</skillref>
-                    <skillref>ldap</skillref>
-                    <skillref>scrum</skillref>
+                    <skillrefs>
+                        <skillref>java</skillref>
+                        <skillref>wicket</skillref>
+                        <skillref>hibernate</skillref>
+                        <skillref>ldap</skillref>
+                        <skillref>scrum</skillref>
+                    </skillrefs>
                 </project>
             </period>
             <period>
@@ -117,9 +118,11 @@
                 <function>Aushilfe auf Stundenlohnbasis</function>
                 <project title="Match E4 Testing">
                     <activity>Kosten-Nutzen-Analyse diverser Optimierungen im Testprozess</activity>
+                </project>
+                <skillrefs>
                     <skillref>office</skillref>
                     <skillref>windows</skillref>
-                </project>
+                </skillrefs>
             </period>
             <period>
                 <company name="Zürcher Kantonalbank" logo="logo_zkb.png"/>
@@ -130,43 +133,53 @@
                     <activity>Teilprojektleitung ASD/SDS</activity>
                     <activity>Definition des bankfachlichen Modells und Konsistenzbedingungen mit dem Fachbereich</activity>
                     <activity>Implemention nach MDA (Model Driven Architecture) Ansatz</activity>
-                    <skillref>rr</skillref>
+                    <skillrefs>
+                        <skillref>rr</skillref>
+                    </skillrefs>
                 </project>
                 <project title="SDS (Stammdaten-Services) Rel. 2.0 (Folgeprojekt von SDS R1.0)">
                     <activity>Stellvertretung des Teilprojektleiters ASD/SDS GUI</activity>
                     <activity>Spezifikation der Java Software Komponente ASD/SDS GUI und codierung des generischen Teils</activity>
                     <activity>Abstimmung der Realisierung der fachlichen Anforderungen mit dem Fachbereich</activity>
-                    <skillref>java</skillref>
-                    <skillref>intellij</skillref>
-                    <skillref>hsqldb</skillref>
-                    <skillref>junit</skillref>
-                    <skillref>svn</skillref>
-                    <skillref>windows</skillref>
+                    <skillrefs>
+                        <skillref>java</skillref>
+                        <skillref>intellij</skillref>
+                        <skillref>hsqldb</skillref>
+                        <skillref>junit</skillref>
+                        <skillref>svn</skillref>
+                        <skillref>windows</skillref>
+                    </skillrefs>
                 </project>
                 <project title="SDS (Stammdaten-Services) Rel. 1.0 (Neuentwicklung der Stammdatenapplikation)">
                     <activity>Analyse, Spezifikation, Design, Implementation und Test diverser Java Softwarekomponenten</activity>
                 </project>
                 <project title="Migration Bestandesführung Geld Rel. 2.0 ">
                     <activity>Realisieren eines Servicemoduls in PL/1 inkl. Regressionstests</activity>
-                    <skillref>pli</skillref>
-                    <skillref>db2</skillref>
-                    <skillref>zos</skillref>
+                    <skillrefs>
+                        <skillref>pli</skillref>
+                        <skillref>db2</skillref>
+                        <skillref>zos</skillref>
+                    </skillrefs>
                 </project>
                 <project title="PSV ASD/SDV (Produktions Support Vereinbarung Stammdatenverwaltung)">
                     <activity>Sicherstellen der Service Level Agreements im Bereich ADB (Datawarehouse) Belieferung</activity>
                     <activity>Durchführen von Systembuilds in der Stammdatenverwaltung</activity>
-                    <skillref>db2</skillref>
-                    <skillref>xml</skillref>
-                    <skillref>rr</skillref>
-                    <skillref>zos</skillref>
+                    <skillrefs>
+                        <skillref>db2</skillref>
+                        <skillref>xml</skillref>
+                        <skillref>rr</skillref>
+                        <skillref>zos</skillref>
+                    </skillrefs>
                 </project>
                 <project title="TAB/REF Ablösung (Migration der Referenzdaten von Mainfraime zu dezentral)">
                     <activity>Mitentwicklung der PL/1 Schnittstelle auf dezentrale Services (C++)</activity>
                     <activity>Performance Analyse des Zugriffs auf alte bzw. neue Datenhaltung</activity>
                     <activity>Modellieren und Realisieren von Interface Business Objects (XML)</activity>
-                    <skillref>c</skillref>
-                    <skillref>db2</skillref>
-                    <skillref>zos</skillref>
+                    <skillrefs>
+                        <skillref>c</skillref>
+                        <skillref>db2</skillref>
+                        <skillref>zos</skillref>
+                    </skillrefs>
                 </project>
             </period>
         </experiance>
@@ -180,10 +193,14 @@
         <activity link="https://github.com/Hoene84/perzist">
             <title>Perzist</title>
             <description>Persistenzlayer mit Fokus auf compile time error detection</description>
+            <skillrefs>
+                <skillref>java</skillref>
+                <skillref>hsqldb</skillref>
+            </skillrefs>
         </activity>
     </projects>
 
-    <training title="Weiterbildungen">
+    <trainings title="Weiterbildungen">
         <activity>
             <date year="2008" month="1"/>
             <description>Object Oriented Analysis and Design with UML (Zühlke)</description>
@@ -208,7 +225,7 @@
             <date year="2004" month="3"/>
             <description>Synergy / CM Build-Manager (Telelogic)</description>
         </activity>
-    </training>
+    </trainings>
     <certificats title="Zertifikate">
         <activity>
             <date year="2011"/>

@@ -178,8 +178,8 @@
             </xs:choice>
             <xs:sequence>
                 <xs:element name="description" type="descriptionType" minOccurs="1"/>
+                <xs:element name="skillrefs" type="skillrefsType" minOccurs="0"/>
                 <xs:element name="certificate" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
-                <xs:element name="link" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
             </xs:sequence>
         </xs:sequence>
         <xs:attribute name="logo" type="xs:anyURI"/>
@@ -199,9 +199,7 @@
             <xs:sequence>
                 <xs:element name="activity" type="xs:string" maxOccurs="unbounded"/>
             </xs:sequence>
-            <xs:sequence>
-                <xs:element name="skillref" type="xs:IDREF" minOccurs="0" maxOccurs="unbounded"/>
-            </xs:sequence>
+            <xs:element name="skillrefs" type="skillrefsType" minOccurs="0"/>
         </xs:sequence>
         <xs:attribute name="title" type="xs:string"/>
     </xs:complexType>
@@ -217,8 +215,16 @@
             <xs:element name="to" type="dateType"/>
             <xs:element name="function" type="xs:string"/>
             <xs:element name="project" type="projectType" maxOccurs="unbounded"/>
+            <xs:element name="skillrefs" type="skillrefsType" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
+
+    <xs:complexType name="skillrefsType">
+        <xs:sequence>
+            <xs:element name="skillref" type="xs:IDREF" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
     <xs:complexType name="experiancesType">
         <xs:complexContent>
             <xs:extension base="paragraphType">
@@ -305,7 +311,7 @@
                 <xs:element name="person" type="personType"/>
                 <xs:element name="skills" type="skillsType"/>
                 <xs:element name="educations" type="activitiesType"/>
-                <xs:element name="training" type="activitiesType"/>
+                <xs:element name="trainings" type="activitiesType"/>
                 <xs:element name="certificats" type="activitiesType" minOccurs="0"/>
                 <xs:element name="projects" type="activitiesType" minOccurs="0"/>
                 <xs:element name="experiences" type="experiancesType" minOccurs="0"/>
