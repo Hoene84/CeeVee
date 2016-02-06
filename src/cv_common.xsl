@@ -234,7 +234,11 @@
                             <xsl:apply-templates select="current()"/>
                         </div>
                     </xsl:for-each>
-                    <xsl:apply-templates select="skillrefs"/>
+                </div>
+                <div>
+                    <div class="skillrefs">
+                        <xsl:apply-templates select="skillrefs"/>
+                    </div>
                 </div>
             </dd>
         </dl>
@@ -264,7 +268,9 @@
             <div class="projects">
                 <xsl:apply-templates select="project"/>
             </div>
-            <xsl:apply-templates select="skillrefs"/>
+            <div class="skillrefs">
+                <xsl:apply-templates select="skillrefs"/>
+            </div>
         </div>
     </xsl:template>
     <xsl:template match="project">
@@ -280,6 +286,7 @@
                         <xsl:apply-templates select="@title"/>
                     </div>
                 </div>
+                <div class="skillrefs" />
             </div>
             <div class="content">
                 <div class="label">
@@ -295,6 +302,8 @@
                             </xsl:for-each>
                         </ul>
                     </div>
+                </div>
+                <div class="skillrefs">
                     <xsl:apply-templates select="skillrefs"/>
                 </div>
             </div>
@@ -302,13 +311,13 @@
     </xsl:template>
 
     <xsl:template match="skillrefs">
-        <div class="skillrefs">
+        <div class="packeryContainer">
             <xsl:apply-templates select="key('skillref', skillref)" mode="skillref"/>
         </div>
     </xsl:template>
 
     <xsl:template match="skill" mode="skillref">
-        <div class="skillref">
+        <div class="packeryItem">
             <img src="{@logo}" alt="{@id}" title="{.}"/>
         </div>
     </xsl:template>

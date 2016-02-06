@@ -69,14 +69,21 @@ div.person div.infos div.label,
 div.person div.infos div.value,
 div.project div.label,
 div.project div.value,
+div.project div.skillrefs,
 ul.table dt,
-dd
+dd div
 {
     display: table-cell;
 }
 
+div.project div
+{
+    vertical-align: top;
+}
+
 div.project div.label,
 div.project div.value,
+div.project div.skillrefs,
 ul.table dt,
 dd
 {
@@ -151,8 +158,13 @@ div.company div.logo
     float: right;
 }
 
+div.project div.skillrefs
+{
+    width: 125px;
+}
+
 div.skillrefs img
 {
-    max-height: 50px;
     max-width: 125px;
+    max-height: 50px;
 }
