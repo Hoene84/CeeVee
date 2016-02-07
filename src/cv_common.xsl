@@ -210,7 +210,7 @@
         </dl>
     </xsl:template>
 
-    <xsl:template match="educations|trainings|certificats|projects">
+    <xsl:template match="educations|trainings|certificats|projects|languages">
         <xsl:apply-templates select="@title"/>
         <xsl:call-template name="tableContent"/>
     </xsl:template>
@@ -265,11 +265,13 @@
             <h4 class="function">
                 <xsl:apply-templates select="function"/>
             </h4>
-            <div class="projects">
-                <xsl:apply-templates select="project"/>
-            </div>
-            <div class="skillrefs">
-                <xsl:apply-templates select="skillrefs"/>
+            <div class="description">
+                <div class="projects">
+                    <xsl:apply-templates select="project"/>
+                </div>
+                <div class="skillrefs">
+                    <xsl:apply-templates select="skillrefs"/>
+                </div>
             </div>
         </div>
     </xsl:template>
@@ -339,33 +341,29 @@
             </div>
         </div>
     </xsl:template>
-    <!-- languages -->
-    <xsl:template match="languages">
-        <xsl:apply-templates select="@title"/>
-        <xsl:call-template name="tableContent"/>
-    </xsl:template>
-    <xsl:template match="language">
+    <xsl:template match="skill[@level]">
         <dl>
             <dt>
                 <div>
-                    <xsl:apply-templates select="@name"/>
+                    <xsl:apply-templates select="text()"/>
                 </div>
             </dt>
             <dd>
                 <div>
-                    <xsl:apply-templates select="skill"/>
+                    <xsl:choose>
+                        <xsl:when test="@level='native'">
+                            <xsl:text>Muttersprache</xsl:text>
+                        </xsl:when>
+                        <xsl:when test="@level='fluent'">
+                            <xsl:text>Schriftlich und mündlich fliessend</xsl:text>
+                        </xsl:when>
+                        <xsl:when test="@level='good'">
+                            <xsl:text>Schriftlich und mündlich gut</xsl:text>
+                        </xsl:when>
+                    </xsl:choose>
                 </div>
             </dd>
         </dl>
-    </xsl:template>
-    <xsl:template match="skill[text()='native']">
-        <xsl:text>Muttersprache</xsl:text>
-    </xsl:template>
-    <xsl:template match="skill[text()='fluent']">
-        <xsl:text>Schriftlich und mündlich fliessend</xsl:text>
-    </xsl:template>
-    <xsl:template match="skill[text()='good']">
-        <xsl:text>Schriftlich und mündlich gut</xsl:text>
     </xsl:template>
     <!-- hobbies -->
     <xsl:template match="hobbys">

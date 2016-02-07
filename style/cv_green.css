@@ -8,3 +8,8 @@ div.person
 {
     background-color: #e6ffb2;
 }
+
+div.period div.description
+{
+    border: 2px solid #c9ef8f;/*#d6d6d6;*/
+}
