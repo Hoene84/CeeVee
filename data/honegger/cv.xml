@@ -121,7 +121,6 @@
                     <skillref>sql</skillref>
                     <skillref>bash</skillref>
                     <skillref>hibernate</skillref>
-                    <skillref>fs</skillref>
                     <skillref>junit</skillref>
                     <skillref>mockito</skillref>
                     <skillref>astah</skillref>
@@ -210,10 +209,10 @@
     <projects title="Projekte">
         <activity logo="turtleplayer.png" link="http://www.turtle-player.co.uk/">
             <title>Turtle Player</title>
-            <description>Musicplayer optimiert für grosse Playlisten</description>
+            <description>Android Musicplayer optimiert für grosse Playlisten</description>
             <skillrefs>
-                <skillref>java</skillref>
                 <skillref>android</skillref>
+                <skillref>java</skillref>
                 <skillref>intellij</skillref>
             </skillrefs>
         </activity>
@@ -320,7 +319,7 @@
                 <skill id="mssql" logo="skills/mssql.jpg">MSSQL</skill>
                 <skill id="ldap" logo="skills/ldap.jpg">LDAP</skill>
                 <skill id="jena" logo="skills/jena.png">Jena</skill>
-                <skill id="fs">FS basierte Datenhaltung</skill>
+                <skill id="fs">Filesystem basierte Datenhaltung</skill>
             </solidskill>
             <goodskill etc="false">
                 <skill id="hsqldb" logo="skills/hsqldb.png">HSQLDB</skill>
