@@ -77,7 +77,7 @@ dl
 div.person div.infos div.label,
 div.person div.infos div.value,
 ul.table dt,
-dd div
+dd
 {
     display: table-cell;
 }

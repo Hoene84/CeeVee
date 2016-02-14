@@ -234,8 +234,6 @@
                             <xsl:apply-templates select="current()"/>
                         </div>
                     </xsl:for-each>
-                </div>
-                <div>
                     <xsl:apply-templates select="skillrefs"/>
                 </div>
             </dd>
