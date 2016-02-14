@@ -201,7 +201,8 @@
             </xs:sequence>
             <xs:element name="skillrefs" type="skillrefsType" minOccurs="0"/>
         </xs:sequence>
-        <xs:attribute name="title" type="xs:string"/>
+        <xs:attribute name="id" type="xs:string"/>
+        <xs:attribute name="title" type="xs:string" use="required"/>
     </xs:complexType>
     <xs:complexType name="experianceType">
         <xs:sequence>

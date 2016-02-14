@@ -1,0 +1,33 @@
+div.project.core4 div.skillrefs,
+div.project.core div.skillrefs,
+div.project.sonepar div.skillrefs,
+div.project.esa div.skillrefs,
+div.project.agile div.skillrefs,
+div.project.matche4 div.skillrefs,
+div.project.vv div.skillrefs
+{
+    display: inline-block;
+    margin: 5px;
+    width: 18%;
+}
+
+div.project.core4 div.value,
+div.project.core div.value,
+div.project.sonepar div.value,
+div.project.esa div.value,
+div.project.agile div.value,
+div.project.matche4 div.value,
+div.project.vv div.value
+{
+    width: 75%;
+    display: inline-block;
+}
+
+div.project.vv div.value {
+    width: 69%;
+}
+
+div.project.vv div.skillrefs
+{
+    width: 25%;
+}

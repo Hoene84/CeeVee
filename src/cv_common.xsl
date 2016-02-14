@@ -236,9 +236,7 @@
                     </xsl:for-each>
                 </div>
                 <div>
-                    <div class="skillrefs">
-                        <xsl:apply-templates select="skillrefs"/>
-                    </div>
+                    <xsl:apply-templates select="skillrefs"/>
                 </div>
             </dd>
         </dl>
@@ -269,33 +267,20 @@
                 <div class="projects">
                     <xsl:apply-templates select="project"/>
                 </div>
-                <div class="skillrefs">
-                    <xsl:apply-templates select="skillrefs"/>
-                </div>
+                <xsl:apply-templates select="skillrefs"/>
             </div>
         </div>
     </xsl:template>
     <xsl:template match="project">
-        <div class="project">
+        <div class="project {@id}">
             <div class="header odd">
-                <div class="label">
-                    <div>
-                        <xsl:text>Projekt</xsl:text>
-                    </div>
-                </div>
                 <div class="value">
                     <div>
                         <xsl:apply-templates select="@title"/>
                     </div>
                 </div>
-                <div class="skillrefs" />
             </div>
             <div class="content">
-                <div class="label">
-                    <div>
-                        <xsl:text>Aktivitäten</xsl:text>
-                    </div>
-                </div>
                 <div class="value">
                     <div>
                         <ul>
@@ -305,16 +290,16 @@
                         </ul>
                     </div>
                 </div>
-                <div class="skillrefs">
-                    <xsl:apply-templates select="skillrefs"/>
-                </div>
+                <xsl:apply-templates select="skillrefs"/>
             </div>
         </div>
     </xsl:template>
 
     <xsl:template match="skillrefs">
-        <div class="packeryContainer">
-            <xsl:apply-templates select="key('skillref', skillref)" mode="skillref"/>
+        <div class="skillrefs">
+            <div class="packeryContainer">
+                <xsl:apply-templates select="key('skillref', skillref)" mode="skillref"/>
+            </div>
         </div>
     </xsl:template>
 

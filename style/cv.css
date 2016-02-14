@@ -46,7 +46,6 @@ div.person div.infos
 }
 
 div.person div.infos,
-div.projects,
 ul.table
 {
     display:table;
@@ -64,14 +63,12 @@ dd
 }
 
 div.person div.infos div.infoGroup,
-div.project,
 ul.table > li
 {
     display: table-row-group;
 }
 
 div.person div.infos div.info,
-div.project > div,
 dl
 {
     display:table-row;
@@ -79,9 +76,6 @@ dl
 
 div.person div.infos div.label,
 div.person div.infos div.value,
-div.project div.label,
-div.project div.value,
-div.project div.skillrefs,
 ul.table dt,
 dd div
 {
@@ -177,7 +171,13 @@ div.company div.logo
 
 div.project div.skillrefs
 {
-    width: 125px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+div.period div.description > div.skillrefs
+{
+    padding: 50px;
 }
 
 div.skillrefs img

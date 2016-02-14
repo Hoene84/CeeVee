@@ -13,3 +13,8 @@ div.period div.description
 {
     border: 2px solid #c9ef8f;/*#d6d6d6;*/
 }
+
+div.period div.description > div.skillrefs
+{
+    border-top: 2px solid #c9ef8f;/*#d6d6d6;*/
+}

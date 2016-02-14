@@ -2,6 +2,7 @@
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../src/cv.xsd" international="false" theme="green">
     <layout>
         <theme>green</theme>
+        <theme>honegger</theme>
         <script>ext/jquery-2.1.4</script>
         <!--<script>ext/isotope.pkgd</script>-->
         <script>ext/packery.pkgd</script>
@@ -63,19 +64,19 @@
                 <from year="2011" month="10"/>
                 <to year="2015" month="12"/>
                 <function>Senior Applikationsentwickler in Festanstellung</function>
-                <project title="Konzeption iShop Core Framework 4.0">
+                <project title="Konzeption iShop Core Framework 4.0" id="core4">
                     <activity>Analyse der architektonischen Probleme iShop Core 3</activity>
                     <activity>Design/Architektur iShop Core 4.0</activity>
                     <skillrefs>
                         <skillref>scala</skillref>
                     </skillrefs>
                 </project>
-                <project title="Mitglied des iShop Core Teams">
+                <project title="Mitglied des iShop Core Teams" id="core">
                     <activity>Verifikation/Validation aller Merge Requests für iShop Core 3</activity>
                     <activity>Mitverantwortung Design- und Architekturentscheidungen iShop Core 3</activity>
                     <activity>Unterstützung bei Fragen, Lösungentscheidungen und Problemen der Entwickler</activity>
                 </project>
-                <project title="Projektverantwortlicher Shopimplementationen Sonepar CH/AT">
+                <project title="Projektverantwortlicher Shopimplementationen Sonepar CH/AT" id="sonepar">
                     <activity>Einführung Mandantenfähigkeit bzgl. Logik, Darstellung und Anbindung von Umsystemen (6 Mandanten, 2 Systemumgebungen, )</activity>
                     <activity>Entwicklung diverser Features im Front- sowie Backend</activity>
                     <activity>Koordination mit Umsystemen (ERP/Pim/Mobile/Webservices)</activity>
@@ -90,7 +91,7 @@
                         <skillref>mssql</skillref>
                     </skillrefs>
                 </project>
-                <project title="Neuentwicklung www.geckoreifen.de und www.esashop.ch">
+                <project title="Neuentwicklung www.geckoreifen.de und www.esashop.ch" id="esa">
                     <activity>Entwicklung diverser Features im Front- sowie Backend in Scala mithilfe des Play Frameworks</activity>
                     <activity>Integration tagesakueller SAP Daten</activity>
                     <activity>Anbindung von REST APIs zur Erweiterung der Produktinformationen</activity>
@@ -99,7 +100,7 @@
                         <skillref>play</skillref>
                     </skillrefs>
                 </project>
-                <project title="Spezifikation Agile Entwicklung in der IMISnext">
+                <project title="Spezifikation Agile Entwicklung in der IMISnext" id="agile">
                     <activity>Erstellung eines Dokumentes für die Geschäftsführung</activity>
                     <activity>Aufzeigen des Optimierungspotenzials der Entwicklungsprozesse mithilfe agiler Methodiken</activity>
                     <activity>Definition agiler Projektumsetzung in der IMISnext unter Berücksichtung des Kundenumfelds und der Vorgehensweise in der internen Entwicklung</activity>
@@ -133,7 +134,7 @@
                 <from year="2010" month="06"/>
                 <to year="2010" month="08"/>
                 <function>Applikationsentwickler auf Stundenlohnbasis</function>
-                <project title="ACS (Zutritts- und Zugriffsrechteverwaltung) Rel. 2.1">
+                <project title="ACS (Zutritts- und Zugriffsrechteverwaltung) Rel. 2.1" id="acs">
                     <activity>Kundennahe Umsetzung von fachlichen Anforderungen nach Scrum Rahmenwerk</activity>
                     <activity>Implementieren, testen und präsentieren dieser Anforderungen</activity>
                     <skillrefs>
@@ -150,7 +151,7 @@
                 <from year="2010" month="01"/>
                 <to year="2010" month="02"/>
                 <function>Aushilfe auf Stundenlohnbasis</function>
-                <project title="Match E4 Testing">
+                <project title="Match E4 Testing" id="matche4">
                     <activity>Kosten-Nutzen-Analyse diverser Optimierungen im Testprozess</activity>
                     <skillrefs>
                         <skillref>office</skillref>
@@ -163,7 +164,7 @@
                 <from year="2003" month="08"/>
                 <to year="2008" month="10"/>
                 <function>Applikationsentwickler in Festanstellung</function>
-                <project title="Zentrale Führung der VV-Codierung">
+                <project title="Zentrale Führung der VV-Codierung" id="vv">
                     <activity>Teilprojektleitung ASD/SDS</activity>
                     <activity>Definition des bankfachlichen Modells und Konsistenzbedingungen mit dem Fachbereich</activity>
                     <activity>Implemention nach MDA (Model Driven Architecture) Ansatz</activity>
@@ -172,7 +173,7 @@
                         <skillref>rr</skillref>
                     </skillrefs>
                 </project>
-                <project title="SDS (Stammdaten-Services) Rel. 2.0 (Folgeprojekt von SDS R1.0)">
+                <project title="SDS (Stammdaten-Services) Rel. 2.0 (Folgeprojekt von SDS R1.0)" id="sds">
                     <activity>Stellvertretung des Teilprojektleiters ASD/SDS GUI</activity>
                     <activity>Spezifikation der Java Software Komponente ASD/SDS GUI und codierung des generischen Teils</activity>
                     <activity>Abstimmung der Realisierung der fachlichen Anforderungen mit dem Fachbereich</activity>
@@ -186,7 +187,7 @@
                         <skillref>windows</skillref>
                     </skillrefs>
                 </project>
-                <project title="ASD/SDV/CIF">
+                <project title="ASD/SDV/CIF" id="asd">
                     <activity>Realisieren eines Servicemoduls in PL/1 inkl. Regressionstests (Migration Bestandesführung Geld Rel. 2.0)</activity>
                     <activity>PSV ASD/SDV - Sicherstellen der Service Level Agreements im Bereich ADB (Datawarehouse) Belieferung</activity>
                     <activity>Durchführen von Systembuilds in der Stammdatenverwaltung</activity>
