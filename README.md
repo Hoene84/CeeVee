@@ -3,6 +3,7 @@ Xml -> HTML CV
 
 ## Requried
 Linux System
+sudo apt-get install libsaxonb-java wkhtmltopdf libxml2-utils
 
 ## Usage
 make all
