@@ -212,8 +212,8 @@
     
     <projects title="Projekte">
         <activity logo="turtleplayer.png" link="http://www.turtle-player.co.uk/" id="turtleplayer">
-            <from year="2012" month="09"/>
-            <to year="2014" month="04"/>
+            <from year="2012"/>
+            <to year="2014"/>
             <title>Turtle Player</title>
             <description>Android Musicplayer optimiert für grosse Playlisten</description>
             <skillrefs>
@@ -223,8 +223,8 @@
             </skillrefs>
         </activity>
         <activity link="https://github.com/Hoene84/perzist" id="perzist">
-            <from year="2014" month="02"/>
-            <to year="2014" month="04"/>
+            <from year="2014"/>
+            <to year="2014"/>
             <title>Perzist</title>
             <description>Persistenzlayer mit Fokus auf compile time error detection</description>
             <skillrefs>
@@ -235,7 +235,7 @@
             </skillrefs>
         </activity>
         <activity link="https://github.com/Hoene84/CeeVee" id="ceevee">
-            <from year="2015" month="09"/>
+            <from year="2015"/>
             <to year="2016"/>
             <title>CeeVee</title>
             <description>CV generator: xml -> html/pdf</description>
