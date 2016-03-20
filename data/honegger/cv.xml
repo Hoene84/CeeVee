@@ -275,26 +275,26 @@
                 <skill id="java" logo="skills/java_ee.png">Java</skill>
                 <skill id="scala" logo="skills/scala.png">Scala</skill>
                 <skill id="html" logo="skills/html_css_js.png">HTML/CSS/JS</skill>
-                <skill id="c" logo="skills/CPlusPlus.jpg">C/C++</skill>
+                <skill id="c" logo="skills/CPlusPlus.png">C/C++</skill>
                 <skill id="xml" logo="skills/xml.png">XML(XSLT/XSL)</skill>
                 <skill id="sql" logo="skills/sql.png">SQL</skill>
                 <skill id="bash" logo="skills/bash.png">bash</skill>
-                <skill id="python" logo="skills/python.jpg">Python</skill>
-                <skill id="latex" logo="skills/latex.svg">LaTeX</skill>
+                <skill id="python" logo="skills/python.png">Python</skill>
+                <skill id="latex" logo="skills/latex.png">LaTeX</skill>
             </solidskill>
             <goodskill etc="true">
-                <skill id="pli" logo="skills/pli.jpg">PL/I</skill>
+                <skill id="pli" logo="skills/pli.png">PL/I</skill>
                 <skill id="vb" logo="skills/visual-basic.png">Visual Basic</skill>
             </goodskill>
         </skillgroup>
         <skillgroup title="Entwicklung">
             <solidskill etc="false">
-                <skill id="scrum" logo="skills/scrum.jpg">Scrum</skill>
-                <skill id="uml" logo="skills/uml.gif">UML</skill>
+                <skill id="scrum" logo="skills/scrum.png">Scrum</skill>
+                <skill id="uml" logo="skills/uml.png">UML</skill>
                 <skill id="git" logo="skills/git.png">GIT</skill>
             </solidskill>
             <goodskill etc="true">
-                <skill id="svn" logo="skills/svn.jpg">SVN</skill>
+                <skill id="svn" logo="skills/svn.png">SVN</skill>
                 <skill id="synergy" logo="skills/synergy.png">Rational Synergy</skill>
                 <skill id="cvs">CVS</skill>
             </goodskill>
@@ -305,23 +305,23 @@
                 <skill id="tapestry" logo="skills/tapestry.png">Tapestry</skill>
                 <skill id="android" logo="skills/android.png">Android SDK</skill>
                 <skill id="spring" logo="skills/spring.png">Spring</skill>
-                <skill id="jquery" logo="skills/jquery.svg">jQuery</skill>
-                <skill id="jaxws" logo="skills/jaxws.gif">jaxws</skill>
+                <skill id="jquery" logo="skills/jquery.png">jQuery</skill>
+                <skill id="jaxws" logo="skills/jaxws.png">jaxws</skill>
                 <skill id="junit" logo="skills/junit.png">JUnit</skill>
-                <skill id="mockito" logo="skills/mockito.jpg">Mockito</skill>
+                <skill id="mockito" logo="skills/mockito.png">Mockito</skill>
             </solidskill>
             <goodskill etc="true">
                 <skill id="wicket" logo="skills/apache-wicket.png">Apache Wicket</skill>
-                <skill id="gwt" logo="skills/gwt.jpg">GWT</skill>
-                <skill id="qt" logo="skills/Qt.jpg">Qt</skill>
+                <skill id="gwt" logo="skills/gwt.png">GWT</skill>
+                <skill id="qt" logo="skills/Qt.png">Qt</skill>
                 <skill id="dotnet" logo="skills/net.png">.NET</skill>
                 <skill id="hibernate" logo="skills/hibernate.png">Hibernate</skill>
             </goodskill>
         </skillgroup>
         <skillgroup title="Datenbanken">
             <solidskill etc="false">
-                <skill id="mssql" logo="skills/mssql.jpg">MSSQL</skill>
-                <skill id="ldap" logo="skills/ldap.jpg">LDAP</skill>
+                <skill id="mssql" logo="skills/mssql.png">MSSQL</skill>
+                <skill id="ldap" logo="skills/ldap.png">LDAP</skill>
                 <skill id="jena" logo="skills/jena.png">Jena</skill>
                 <skill id="fs">Filesystem basierte Datenhaltung</skill>
             </solidskill>
@@ -329,7 +329,7 @@
                 <skill id="hsqldb" logo="skills/hsqldb.png">HSQLDB</skill>
                 <skill id="oracle" logo="skills/oracle.png">Oracle</skill>
                 <skill id="db2" logo="skills/db2.png">DB2</skill>
-                <skill id="mysql" logo="skills/mysql.jpg">MySQL</skill>
+                <skill id="mysql" logo="skills/mysql.png">MySQL</skill>
             </goodskill>
         </skillgroup>
         <skillgroup title="Programme">
@@ -337,10 +337,10 @@
                 <skill id="intellij" logo="skills/intellij.png">itelliJ</skill>
                 <skill id="eclipse" logo="skills/eclipse.png">Eclipse</skill>
                 <skill id="astah" logo="skills/astah.png">Astah</skill>
-                <skill id="rr" logo="skills/rational_rose.gif">Rational Rose</skill>
-                <skill id="ea" logo="skills/enterprise_architekt.jpg">Enterprise Architekt</skill>
+                <skill id="rr" logo="skills/rational_rose.png">Rational Rose</skill>
+                <skill id="ea" logo="skills/enterprise_architekt.png">Enterprise Architekt</skill>
                 <skill id="vp" logo="skills/visual_paradigm.png">Visual Paradigm UML</skill>
-                <skill id="office" logo="skills/microsoftOffice.jpg">Office suite</skill>
+                <skill id="office" logo="skills/microsoftOffice.png">Office suite</skill>
             </solidskill>
             <goodskill etc="true">
                 <skill id="make" logo="skills/make.png">make</skill>
@@ -355,9 +355,9 @@
             </solidskill>
             <goodskill etc="false">
                 <skill id="windows" logo="skills/windows.png">Windows</skill>
-                <skill id="zos" logo="skills/zos.jpg">z/OS</skill>
+                <skill id="zos" logo="skills/zos.png">z/OS</skill>
                 <skill id="uss">USS (Unix System Services)</skill>
-                <skill id="mac" logo="skills/osx.jpg">Mac OS X</skill>
+                <skill id="mac" logo="skills/osx.png">Mac OS X</skill>
             </goodskill>
         </skillgroup>
     </skills>
