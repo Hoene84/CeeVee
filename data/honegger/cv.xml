@@ -75,6 +75,10 @@
                     <activity>Verifikation/Validation aller Merge Requests für iShop Core 3</activity>
                     <activity>Mitverantwortung Design- und Architekturentscheidungen iShop Core 3</activity>
                     <activity>Unterstützung bei Fragen, Lösungentscheidungen und Problemen der Entwickler</activity>
+                    <skillrefs>
+                        <skillref>java</skillref>
+                        <skillref>scala</skillref>
+                    </skillrefs>
                 </project>
                 <project title="Projektverantwortlicher Shopimplementationen Sonepar CH/AT" id="sonepar">
                     <activity>Einführung Mandantenfähigkeit bzgl. Logik, Darstellung und Anbindung von Umsystemen (6 Mandanten, 2 Systemumgebungen, )</activity>
@@ -85,9 +89,10 @@
                     <activity>Beratung der Kunden zur technischen Umsetzung ihrer fachliche Anforderungen und Wünsche</activity>
                     <activity>Verantwortung über Infrastruktur, deren Dokumentation für die Einhaltung des SLA</activity>
                     <skillrefs>
+                        <skillref>java</skillref>
                         <skillref>tapestry</skillref>
-                        <skillref>jaxws</skillref>
                         <skillref>jena</skillref>
+                        <skillref>jaxws</skillref>
                         <skillref>mssql</skillref>
                     </skillrefs>
                 </project>
@@ -97,6 +102,7 @@
                     <activity>Anbindung von REST APIs zur Erweiterung der Produktinformationen</activity>
                     <skillrefs>
                         <skillref>scala</skillref>
+                        <skillref>java</skillref>
                         <skillref>play</skillref>
                     </skillrefs>
                 </project>
@@ -111,7 +117,6 @@
                 </project>
                 <skillrefs>
                     <skillref>linux</skillref>
-                    <skillref>java</skillref>
                     <skillref>html</skillref>
                     <skillref>jquery</skillref>
                     <skillref>spring</skillref>
@@ -123,7 +128,6 @@
                     <skillref>hibernate</skillref>
                     <skillref>junit</skillref>
                     <skillref>mockito</skillref>
-                    <skillref>astah</skillref>
                 </skillrefs>
             </period>
         </experiance>
@@ -180,10 +184,9 @@
                     <skillrefs>
                         <skillref>java</skillref>
                         <skillref>intellij</skillref>
+                        <skillref>svn</skillref>
                         <skillref>hsqldb</skillref>
                         <skillref>junit</skillref>
-                        <skillref>svn</skillref>
-                        <skillref>windows</skillref>
                     </skillrefs>
                 </project>
                 <project title="ASD/SDV/CIF" id="asd">
@@ -196,6 +199,7 @@
                         <skillref>c</skillref>
                         <skillref>java</skillref>
                         <skillref>pli</skillref>
+                        <skillref>synergy</skillref>
                         <skillref>db2</skillref>
                         <skillref>zos</skillref>
                         <skillref>xml</skillref>
