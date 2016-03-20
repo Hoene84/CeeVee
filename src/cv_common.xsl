@@ -227,8 +227,11 @@
             </dt>
             <dd>
                 <div class="text">
+                    <div class="logo">
+                        <img src="{@logo}" />
+                    </div>
                     <div class="description">
-                        <xsl:apply-templates select="description"/>
+                        <xsl:value-of select="description" disable-output-escaping="yes"/>
                     </div>
                     <div class="link">
                         <a href="{@link}"><xsl:value-of select="@link"/></a>

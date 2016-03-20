@@ -1,9 +1,7 @@
 div.project.core4 div.skillrefs,
 div.project.core div.skillrefs,
-div.project.esa div.skillrefs,
 div.project.agile div.skillrefs,
-div.project.matche4 div.skillrefs,
-div.project.vv div.skillrefs
+div.project.matche4 div.skillrefs
 {
     display: inline-block;
     margin: 5px;
@@ -12,10 +10,8 @@ div.project.vv div.skillrefs
 
 div.project.core4 div.value,
 div.project.core div.value,
-div.project.esa div.value,
 div.project.agile div.value,
-div.project.matche4 div.value,
-div.project.vv div.value
+div.project.matche4 div.value
 {
     width: 75%;
     display: inline-block;
