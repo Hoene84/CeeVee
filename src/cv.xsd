@@ -168,15 +168,15 @@
 
     <xs:complexType name="activityType">
         <xs:sequence>
-            <xs:choice>
+            <xs:choice minOccurs="0">
                 <xs:element name="date" type="dateType"/>
                 <xs:sequence>
                     <xs:element name="from" type="dateType"/>
                     <xs:element name="to" type="dateType"/>
                 </xs:sequence>
-                <xs:element name="title" type="xs:string"/>
             </xs:choice>
             <xs:sequence>
+                <xs:element name="title" type="xs:string" minOccurs="0"/>
                 <xs:element name="description" type="descriptionType" minOccurs="1"/>
                 <xs:element name="skillrefs" type="skillrefsType" minOccurs="0"/>
                 <xs:element name="certificate" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
