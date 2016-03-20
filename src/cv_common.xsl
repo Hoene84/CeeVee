@@ -216,7 +216,7 @@
     </xsl:template>
 
     <xsl:template match="activity">
-        <dl>
+        <dl class="activity {@id}">
             <dt>
                 <div>
                     <xsl:value-of select="title"/>
@@ -226,16 +226,21 @@
                 </div>
             </dt>
             <dd>
-                <div>
-                    <xsl:apply-templates select="description"/>
+                <div class="text">
+                    <div class="description">
+                        <xsl:apply-templates select="description"/>
+                    </div>
+                    <div class="link">
+                        <a href="{@link}"><xsl:value-of select="@link"/></a>
+                    </div>
                     <xsl:for-each select="certificate">
                         <div>
                             <xsl:text>Zertifikat: </xsl:text>
                             <xsl:apply-templates select="current()"/>
                         </div>
                     </xsl:for-each>
-                    <xsl:apply-templates select="skillrefs"/>
                 </div>
+                <xsl:apply-templates select="skillrefs"/>
             </dd>
         </dl>
     </xsl:template>
@@ -314,6 +319,7 @@
             </div>
         </li>
     </xsl:template>
+
     <xsl:template match="company">
         <div class="company">
             <div class="logo">
@@ -324,6 +330,7 @@
             </div>
         </div>
     </xsl:template>
+
     <xsl:template match="skill[@level]">
         <dl>
             <dt>

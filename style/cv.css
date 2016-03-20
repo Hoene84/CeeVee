@@ -175,6 +175,18 @@ div.project div.skillrefs
     margin-bottom: 5px;
 }
 
+dl.activity div.text
+{
+    display: inline-block;
+}
+
+dl.activity div.skillrefs
+{
+    width: 45%;
+    float: right;
+    margin: 5px;
+}
+
 div.period div.description > div.skillrefs
 {
     padding: 50px;

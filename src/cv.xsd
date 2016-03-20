@@ -184,6 +184,7 @@
         </xs:sequence>
         <xs:attribute name="logo" type="xs:anyURI"/>
         <xs:attribute name="link" type="xs:anyURI"/>
+        <xs:attribute name="id" type="xs:string"/>
     </xs:complexType>
     <xs:complexType name="activitiesType">
         <xs:complexContent>

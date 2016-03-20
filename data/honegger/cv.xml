@@ -211,7 +211,7 @@
     </experiences>
     
     <projects title="Projekte">
-        <activity logo="turtleplayer.png" link="http://www.turtle-player.co.uk/">
+        <activity logo="turtleplayer.png" link="http://www.turtle-player.co.uk/" id="turtleplayer">
             <title>Turtle Player</title>
             <description>Android Musicplayer optimiert für grosse Playlisten</description>
             <skillrefs>
@@ -220,7 +220,7 @@
                 <skillref>intellij</skillref>
             </skillrefs>
         </activity>
-        <activity link="https://github.com/Hoene84/perzist">
+        <activity link="https://github.com/Hoene84/perzist" id="perzist">
             <title>Perzist</title>
             <description>Persistenzlayer mit Fokus auf compile time error detection</description>
             <skillrefs>
@@ -228,6 +228,14 @@
                 <skillref>intellij</skillref>
                 <skillref>hsqldb</skillref>
                 <skillref>mysql</skillref>
+            </skillrefs>
+        </activity>
+        <activity link="https://github.com/Hoene84/CeeVee" id="ceevee">
+            <title>CeeVee</title>
+            <description>CV generator: xml -> html/pdf</description>
+            <skillrefs>
+                <skillref>xml</skillref>
+                <skillref>html</skillref>
             </skillrefs>
         </activity>
     </projects>
