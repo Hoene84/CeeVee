@@ -1,2 +1,2 @@
 To convert und resize all images in this folder:
-`mogrify  -format png -transparent white -resize '250x100>' *`
+`mogrify  -format png -trim -transparent white -resize '250x100>' *`
