@@ -10,9 +10,6 @@ body {
 div.person {
     border-radius: 20px 100px;
     overflow: hidden;
-    display: flex;
-    align-items: center;
-    margin-top: 50px;
 }
 
 div.period div.description
@@ -24,12 +21,13 @@ div.period div.description
 
 div.person > div {
     display: inline-block;
-    /*vertical-align:top;*/
+    vertical-align:top;
 }
 
 div.person > div.description
 {
     margin-left: 50px;
+    margin-top: 27px;
 }
 
 div.person h1,
@@ -99,6 +97,7 @@ dd
 ul.table dt,
 dd
 {
+    vertical-align:top;
     border: 1px solid white;
 }
 
