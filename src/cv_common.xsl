@@ -98,11 +98,11 @@
             <xsl:apply-templates select="name"/>
         </h1>
         <h2>
-            <xsl:apply-templates select="experience"/>
-            <xsl:text> Jahre Berufserfahrung</xsl:text>
+            <xsl:apply-templates select="title"/>
         </h2>
         <h3>
-            <xsl:apply-templates select="title"/>
+            <xsl:apply-templates select="experience"/>
+            <xsl:text> Jahre Berufserfahrung</xsl:text>
         </h3>
     </xsl:template>
     
@@ -259,16 +259,20 @@
         </div>
     </xsl:template>
     <xsl:template match="period">
-        <h2 class="period">
-            <xsl:apply-templates select="company"/>
-        </h2>
+        <xsl:apply-templates select="company"/>
+        <div class="function">
+            <div>
+                <h2>
+                    <xsl:call-template name="dateTemplate"/>
+                </h2>
+            </div>
+            <div>
+                <h3 class="function">
+                    <xsl:apply-templates select="function"/>
+                </h3>
+            </div>
+        </div>
         <div class="period">
-            <h3>
-                <xsl:call-template name="dateTemplate"/>
-            </h3>
-            <h4 class="function">
-                <xsl:apply-templates select="function"/>
-            </h4>
             <div class="description">
                 <div class="projects">
                     <xsl:apply-templates select="project"/>
@@ -327,9 +331,6 @@
         <div class="company">
             <div class="logo">
                 <img src="{@logo}" />
-            </div>
-            <div  class="name">
-                <xsl:value-of select="@name" />
             </div>
         </div>
     </xsl:template>

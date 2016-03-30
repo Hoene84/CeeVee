@@ -170,9 +170,25 @@ div.inline {
     width: 200px;
 }
 
-div.company div.logo
+div.experiance div.period
+{
+    margin-bottom: 30px;
+}
+
+div.experiance div.company,
+div.experiance div.function
+{
+    display: inline-block;
+}
+
+div.experiance div.function,
+div.experiance div.function h2,
+div.experiance div.function h3
 {
     float: right;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
 }
 
 div.project div.skillrefs
