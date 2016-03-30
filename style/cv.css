@@ -10,7 +10,6 @@ body {
 div.person {
     border-radius: 20px 100px;
     overflow: hidden;
-    margin-top: 50px;
 }
 
 div.period div.description
@@ -124,13 +123,13 @@ dt
 h1 {
     font-size: 16pt;
     font-weight: bold;
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 h2 {
     font-size: 12pt;
     font-weight: bold;
-    margin-top: 2em;
+    margin-top: 1.5em;
 }
 
 h3 {
