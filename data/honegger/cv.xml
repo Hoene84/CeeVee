@@ -57,6 +57,18 @@
             <certificate>Kaufmännische Berufsmaturität</certificate>
         </activity>
     </educations>
+    <career title="Werdegang">
+        <activity>
+            <from year="2011"/>
+            <to year="2015" />
+            <description>IMISnext AG&lt;br/&gt;Senior Applikationsentwickler Java, Scala</description>
+        </activity>
+        <activity>
+            <from year="2003"/>
+            <to year="2008" />
+            <description>Zürcher Kantonalbank&lt;br/&gt;Applikationsentwickler Java, C++, PL/1</description>
+        </activity>
+    </career>
     <experiences title="Berufserfahrung">
         <experiance>
             <period>
