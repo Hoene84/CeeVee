@@ -171,13 +171,6 @@
                 <from year="2011" month="10"/>
                 <to year="2015" month="12"/>
                 <function>Senior Applikationsentwickler in Festanstellung</function>
-                <project title="Konzeption iShop Core Framework 4.0" id="core4">
-                    <activity>Analyse der architektonischen Probleme iShop Core 3</activity>
-                    <activity>Design/Architektur iShop Core 4.0</activity>
-                    <skillrefs>
-                        <skillref>scala</skillref>
-                    </skillrefs>
-                </project>
                 <project title="Mitglied des iShop Core Teams" id="core">
                     <activity>Analyse der architektonischen Probleme iShop Core 3 und konzeption iShop Core 4 mit individuellen domain models</activity>
                     <activity>Verifikation/Validation aller Merge Requests für iShop Core 3</activity>
