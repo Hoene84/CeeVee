@@ -69,228 +69,7 @@
             <description>Zürcher Kantonalbank&lt;br/&gt;Applikationsentwickler Java, C++, PL/1</description>
         </activity>
     </career>
-    <experiences title="Berufserfahrung">
-        <experiance>
-            <period>
-                <company name="IMISnext AG" logo="logo_imis.png" />
-                <from year="2011" month="10"/>
-                <to year="2015" month="12"/>
-                <function>Senior Applikationsentwickler in Festanstellung</function>
-                <project title="Konzeption iShop Core Framework 4.0" id="core4">
-                    <activity>Analyse der architektonischen Probleme iShop Core 3</activity>
-                    <activity>Design/Architektur iShop Core 4.0</activity>
-                    <skillrefs>
-                        <skillref>scala</skillref>
-                    </skillrefs>
-                </project>
-                <project title="Mitglied des iShop Core Teams" id="core">
-                    <activity>Verifikation/Validation aller Merge Requests für iShop Core 3</activity>
-                    <activity>Mitverantwortung Design- und Architekturentscheidungen iShop Core 3</activity>
-                    <activity>Unterstützung bei Fragen, Lösungentscheidungen und Problemen der Entwickler</activity>
-                    <skillrefs>
-                        <skillref>java</skillref>
-                    </skillrefs>
-                </project>
-                <project title="Projektverantwortlicher Webshops Sonepar CH/AT" id="sonepar">
-                    <activity>Einführung Mandantenfähigkeit bzgl. Logik, Darstellung und Anbindung von Umsystemen (6 Mandanten)</activity>
-                    <activity>Entwicklung diverser Features im Front- sowie Backend</activity>
-                    <activity>Koordination mit Umsystemen (ERP/Pim/Mobile/Webservices)</activity>
-                    <activity>Koordination von Entwicklung/Testing/Releases</activity>
-                    <activity>Verantwortung QS, Verifikation/Validation Merge Requests aller Entwickler</activity>
-                    <activity>Beratung der Kunden zur technischen Umsetzung ihrer fachliche Anforderungen und Wünsche</activity>
-                    <activity>Verantwortung über Infrastruktur, deren Dokumentation für die Einhaltung des SLA</activity>
-                    <skillrefs>
-                        <skillref>java</skillref>
-                        <skillref>tapestry</skillref>
-                        <skillref>jena</skillref>
-                        <skillref>jaxws</skillref>
-                        <skillref>mssql</skillref>
-                    </skillrefs>
-                </project>
-                <project title="Neuentwicklung www.geckoreifen.de und www.esashop.ch" id="esa">
-                    <activity>Entwicklung diverser Features im Front- sowie Backend in Scala mithilfe des Play Frameworks</activity>
-                    <activity>Integration tagesakueller SAP Daten</activity>
-                    <activity>Anbindung von REST APIs zur Erweiterung der Produktinformationen</activity>
-                    <skillrefs>
-                        <skillref>scala</skillref>
-                        <skillref>java</skillref>
-                        <skillref>play</skillref>
-                    </skillrefs>
-                </project>
-                <project title="Spezifikation Agile Entwicklung in der IMISnext" id="agile">
-                    <activity>Erstellung eines Dokumentes für die Geschäftsführung</activity>
-                    <activity>Aufzeigen des Optimierungspotenzials der Entwicklungsprozesse mithilfe agiler Methodiken</activity>
-                    <activity>Initiierung der agilen Projektumsetzung in der IMISnext unter Berücksichtigung des Kundenumfelds und der Vorgehensweise in der internen Entwicklung.</activity>
-                    <activity>Coaching eines Scrum Teams in der Scrum Master Funktion</activity>
-                    <skillrefs>
-                        <skillref>scrum</skillref>
-                        <skillref>latex</skillref>
-                    </skillrefs>
-                </project>
-                <skillrefs>
-                    <skillref>linux</skillref>
-                    <skillref>html</skillref>
-                    <skillref>jquery</skillref>
-                    <skillref>spring</skillref>
-                    <skillref>xml</skillref>
-                    <skillref>git</skillref>
-                    <skillref>intellij</skillref>
-                    <skillref>sql</skillref>
-                    <skillref>bash</skillref>
-                    <skillref>hibernate</skillref>
-                    <skillref>maven</skillref>
-                    <skillref>junit</skillref>
-                    <skillref>mockito</skillref>
-                </skillrefs>
-            </period>
-        </experiance>
-        <experiance>
-            <period>
-                <company name="Zürcher Kantonalbank" logo="logo_zkb.png"/>
-                <from year="2010" month="06"/>
-                <to year="2010" month="08"/>
-                <function>Applikationsentwickler auf Stundenlohnbasis</function>
-                <project title="ACS (Zutritts- und Zugriffsrechteverwaltung) Rel. 2.1" id="acs">
-                    <activity>Kundennahe Umsetzung von fachlichen Anforderungen nach Scrum Rahmenwerk</activity>
-                    <activity>Implementieren, testen und präsentieren dieser Anforderungen</activity>
-                    <skillrefs>
-                        <skillref>java</skillref>
-                        <skillref>wicket</skillref>
-                        <skillref>hibernate</skillref>
-                        <skillref>ldap</skillref>
-                        <skillref>scrum</skillref>
-                    </skillrefs>
-                </project>
-            </period>
-            <period>
-                <company name="Zürcher Kantonalbank" logo="logo_zkb.png"/>
-                <from year="2010" month="01"/>
-                <to year="2010" month="02"/>
-                <function>Aushilfe auf Stundenlohnbasis</function>
-                <project title="Match E4 Testing" id="matche4">
-                    <activity>Kosten-Nutzen-Analyse diverser Optimierungen im Testprozess</activity>
-                    <skillrefs>
-                        <skillref>office</skillref>
-                        <skillref>windows</skillref>
-                    </skillrefs>
-                </project>
-            </period>
-            <period>
-                <company name="Zürcher Kantonalbank" logo="logo_zkb.png"/>
-                <from year="2003" month="08"/>
-                <to year="2008" month="10"/>
-                <function>Applikationsentwickler in Festanstellung</function>
-                <project title="Zentrale Führung der VV-Codierung" id="vv">
-                    <activity>Teilprojektleitung ASD/SDS</activity>
-                    <activity>Definition des bankfachlichen Modells und Konsistenzbedingungen mit dem Fachbereich</activity>
-                    <activity>Implemention nach MDA (Model Driven Architecture) Ansatz</activity>
-                </project>
-                <project title="SDS (Stammdaten-Services) Rel. 2.0 (Folgeprojekt von SDS R1.0)" id="sds">
-                    <activity>Stellvertretung des Teilprojektleiters ASD/SDS GUI</activity>
-                    <activity>Spezifikation der Java Software Komponente ASD/SDS GUI und codierung des generischen Teils</activity>
-                    <activity>Abstimmung der Realisierung der fachlichen Anforderungen mit dem Fachbereich</activity>
-                    <activity>Analyse, Spezifikation, Design, Implementation und Test diverser Java Softwarekomponenten</activity>
-                    <skillrefs>
-                        <skillref>java</skillref>
-                        <skillref>intellij</skillref>
-                        <skillref>svn</skillref>
-                        <skillref>hsqldb</skillref>
-                        <skillref>junit</skillref>
-                    </skillrefs>
-                </project>
-                <project title="ASD/SDV/CIF" id="asd">
-                    <activity>Realisieren eines Servicemoduls in PL/1 inkl. Regressionstests (Migration Bestandesführung Geld Rel. 2.0)</activity>
-                    <activity>PSV ASD/SDV - Sicherstellen der Service Level Agreements im Bereich ADB (Datawarehouse) Belieferung</activity>
-                    <activity>Durchführen von Systembuilds in der Stammdatenverwaltung</activity>
-                    <activity>Mitentwicklung der PL/1 Schnittstelle auf dezentrale Services (C++)</activity>
-                    <activity>Modellieren und Realisieren von Interface Business Objects (XML)</activity>
-                    <skillrefs>
-                        <skillref>c</skillref>
-                        <skillref>java</skillref>
-                        <skillref>pli</skillref>
-                        <skillref>synergy</skillref>
-                        <skillref>db2</skillref>
-                        <skillref>zos</skillref>
-                        <skillref>xml</skillref>
-                        <skillref>sql</skillref>
-                    </skillrefs>
-                </project>
-            </period>
-        </experiance>
-    </experiences>
-    
-    <projects title="Projekte">
-        <activity link="http://www.turtle-player.co.uk/" id="turtleplayer">
-            <from year="2012"/>
-            <to year="2014"/>
-            <title>Turtle Player</title>
-            <description>Android Musicplayer optimiert für grosse Playlisten</description>
-            <skillrefs>
-                <skillref>android</skillref>
-                <skillref>java</skillref>
-                <skillref>intellij</skillref>
-            </skillrefs>
-        </activity>
-        <activity link="https://github.com/Hoene84/perzist" id="perzist">
-            <from year="2014"/>
-            <to year="2014"/>
-            <title>Perzist</title>
-            <description>Persistenzlayer mit Fokus auf compile time error detection</description>
-            <skillrefs>
-                <skillref>java</skillref>
-                <skillref>sql</skillref>
-                <skillref>intellij</skillref>
-            </skillrefs>
-        </activity>
-        <activity link="https://github.com/Hoene84/CeeVee" id="ceevee">
-            <from year="2015"/>
-            <to year="2016"/>
-            <title>CeeVee</title>
-            <description>CV generator: xml -> html/pdf&lt;br/&gt;Dieser CV resultiert daraus</description>
-            <skillrefs>
-                <skillref>xml</skillref>
-                <skillref>html</skillref>
-            </skillrefs>
-        </activity>
-    </projects>
 
-    <trainings title="Weiterbildungen">
-        <activity>
-            <date year="2008" month="1"/>
-            <description>Object Oriented Analysis and Design with UML (Zühlke)</description>
-        </activity>
-        <activity>
-            <date year="2007" month="7"/>
-            <description>Synergy Ugrade 6.5 (Telelogic)</description>
-        </activity>
-        <activity>
-            <date year="2006" month="11"/>
-            <description>Java - Design Patterns (IBM)</description>
-        </activity>
-        <activity>
-            <date year="2005" month="11"/>
-            <description>DB2 UDB for z/OS - Anwendungsprogrammierung (IBM)</description>
-        </activity>
-        <activity>
-            <date year="2005" month="4"/>
-            <description>PL/1 Grundlagen (IFA)</description>
-        </activity>
-        <activity>
-            <date year="2004" month="3"/>
-            <description>Synergy / CM Build-Manager (Telelogic)</description>
-        </activity>
-    </trainings>
-    <certificats title="Zertifikate">
-        <activity>
-            <date year="2011"/>
-            <description>Certified Secure Web Developer (CSWD)</description>
-        </activity>
-        <activity>
-            <date year="2005"/>
-            <description>OMG-Certified UML Professionals (OCUP)</description>
-        </activity>
-    </certificats>
-    
     <skills title="Kompetenzen">
         <skillgroup title="Sprachen">
             <solidskill etc="false">
@@ -384,6 +163,195 @@
             </goodskill>
         </skillgroup>
     </skills>
+
+    <experiences title="Berufserfahrung">
+        <experiance>
+            <period>
+                <company name="IMISnext AG" logo="logo_imis.png" />
+                <from year="2011" month="10"/>
+                <to year="2015" month="12"/>
+                <function>Senior Applikationsentwickler in Festanstellung</function>
+                <project title="Konzeption iShop Core Framework 4.0" id="core4">
+                    <activity>Analyse der architektonischen Probleme iShop Core 3</activity>
+                    <activity>Design/Architektur iShop Core 4.0</activity>
+                    <skillrefs>
+                        <skillref>scala</skillref>
+                    </skillrefs>
+                </project>
+                <project title="Mitglied des iShop Core Teams" id="core">
+                    <activity>Analyse der architektonischen Probleme iShop Core 3 und konzeption iShop Core 4 mit individuellen domain models</activity>
+                    <activity>Verifikation/Validation aller Merge Requests für iShop Core 3</activity>
+                    <activity>Mitverantwortung Design- und Architekturentscheidungen iShop Core 3</activity>
+                    <activity>Unterstützung bei Fragen, Lösungentscheidungen und Problemen der Entwickler</activity>
+                    <skillrefs>
+                        <skillref>java</skillref>
+                    </skillrefs>
+                </project>
+                <project title="Projektverantwortlicher Webshops Sonepar CH/AT" id="sonepar">
+                    <activity>Einführung Mandantenfähigkeit bzgl. Logik, Darstellung und Anbindung von Umsystemen (6 Mandanten)</activity>
+                    <activity>Entwicklung diverser Features im Front- sowie Backend in Java mithilfe des Tapestry Frameworks</activity>
+                    <activity>Koordination mit Umsystemen (ERP/Pim/Mobile/Webservices)</activity>
+                    <activity>Koordination von Entwicklung, Testing, Releases und Deployments</activity>
+                    <activity>Verantwortung QS, Verifikation/Validation Merge Requests aller Entwickler</activity>
+                    <activity>Beratung der Kunden zur technischen Umsetzung ihrer fachliche Anforderungen und Wünsche</activity>
+                    <activity>Verantwortung über Infrastruktur, deren Dokumentation und für die Einhaltung des SLA</activity>
+                    <skillrefs>
+                        <skillref>java</skillref>
+                        <skillref>tapestry</skillref>
+                    </skillrefs>
+                </project>
+                <project title="Neuentwicklung www.geckoreifen.de und www.esashop.ch" id="esa">
+                    <activity>Entwicklung diverser Features im Front- sowie Backend in Scala mithilfe des Play Frameworks</activity>
+                    <activity>Integration tagesakueller SAP Daten</activity>
+                    <activity>Anbindung von REST APIs zur Erweiterung der Produktinformationen</activity>
+                    <skillrefs>
+                        <skillref>scala</skillref>
+                        <skillref>play</skillref>
+                    </skillrefs>
+                </project>
+                <project title="Spezifikation Agile Entwicklung in der IMISnext" id="agile">
+                    <activity>Erstellung eines Dokumentes für die Geschäftsführung</activity>
+                    <activity>Aufzeigen des Optimierungspotenzials der Entwicklungsprozesse mithilfe agiler Methodiken</activity>
+                    <activity>Initiierung der agilen Projektumsetzung in der IMISnext unter Berücksichtigung des Kundenumfelds und der Vorgehensweise in der internen Entwicklung.</activity>
+                    <activity>Coaching eines Scrum Teams in der Scrum Master Funktion</activity>
+                    <skillrefs>
+                        <skillref>scrum</skillref>
+                    </skillrefs>
+                </project>
+            </period>
+        </experiance>
+        <experiance>
+            <period>
+                <company name="Zürcher Kantonalbank" logo="logo_zkb.png"/>
+                <from year="2010" month="06"/>
+                <to year="2010" month="08"/>
+                <function>Applikationsentwickler auf Stundenlohnbasis</function>
+                <project title="ACS (Zutritts- und Zugriffsrechteverwaltung) Rel. 2.1" id="acs">
+                    <activity>Kundennahe Umsetzung von fachlichen Anforderungen nach Scrum Rahmenwerk</activity>
+                    <activity>Implementieren, testen und präsentieren dieser Anforderungen</activity>
+                    <skillrefs>
+                        <skillref>java</skillref>
+                        <skillref>scrum</skillref>
+                    </skillrefs>
+                </project>
+            </period>
+            <period>
+                <company name="Zürcher Kantonalbank" logo="logo_zkb.png"/>
+                <from year="2010" month="01"/>
+                <to year="2010" month="02"/>
+                <function>Aushilfe auf Stundenlohnbasis</function>
+                <project title="Match E4 Testing" id="matche4">
+                    <activity>Kosten-Nutzen-Analyse diverser Optimierungen im Testprozess</activity>
+                    <skillrefs>
+                        <skillref>office</skillref>
+                    </skillrefs>
+                </project>
+            </period>
+            <period>
+                <company name="Zürcher Kantonalbank" logo="logo_zkb.png"/>
+                <from year="2003" month="08"/>
+                <to year="2008" month="10"/>
+                <function>Applikationsentwickler in Festanstellung</function>
+                <project title="Zentrale Führung der VV-Codierung" id="vv">
+                    <activity>Teilprojektleitung ASD/SDS</activity>
+                    <activity>Definition des bankfachlichen Modells und Konsistenzbedingungen mit dem Fachbereich</activity>
+                    <activity>Implemention nach MDA (Model Driven Architecture) Ansatz</activity>
+                </project>
+                <project title="SDS (Stammdaten-Services) Rel. 2.0 (Folgeprojekt von SDS R1.0)" id="sds">
+                    <activity>Stellvertretung des Teilprojektleiters ASD/SDS GUI</activity>
+                    <activity>Spezifikation der Java Software Komponente ASD/SDS GUI und codierung des generischen Teils</activity>
+                    <activity>Abstimmung der Realisierung der fachlichen Anforderungen mit dem Fachbereich</activity>
+                    <activity>Analyse, Spezifikation, Design, Implementation und Test diverser Java Softwarekomponenten</activity>
+                    <skillrefs>
+                        <skillref>java</skillref>
+                    </skillrefs>
+                </project>
+                <project title="ASD/SDV/CIF" id="asd">
+                    <activity>Realisieren eines Servicemoduls in PL/1 inkl. Regressionstests (Migration Bestandesführung Geld Rel. 2.0)</activity>
+                    <activity>PSV ASD/SDV - Sicherstellen der Service Level Agreements im Bereich ADB (Datawarehouse) Belieferung</activity>
+                    <activity>Durchführen von Systembuilds in der Stammdatenverwaltung</activity>
+                    <activity>Mitentwicklung der PL/1 Schnittstelle auf dezentrale Services (C++)</activity>
+                    <activity>Modellieren und Realisieren von Interface Business Objects (XML)</activity>
+                    <skillrefs>
+                        <skillref>java</skillref>
+                        <skillref>c</skillref>
+                        <skillref>pli</skillref>
+                    </skillrefs>
+                </project>
+            </period>
+        </experiance>
+    </experiences>
+    
+    <projects title="Projekte">
+        <activity link="http://www.turtle-player.co.uk/" id="turtleplayer">
+            <from year="2012"/>
+            <to year="2014"/>
+            <title>Turtle Player</title>
+            <description>Android Musicplayer optimiert für grosse Playlisten</description>
+            <skillrefs>
+                <skillref>android</skillref>
+                <skillref>java</skillref>
+            </skillrefs>
+        </activity>
+        <activity link="https://github.com/Hoene84/perzist" id="perzist">
+            <from year="2014"/>
+            <to year="2014"/>
+            <title>Perzist</title>
+            <description>Persistenzlayer mit Fokus auf compile time error detection</description>
+            <skillrefs>
+                <skillref>java</skillref>
+                <skillref>sql</skillref>
+            </skillrefs>
+        </activity>
+        <activity link="https://github.com/Hoene84/CeeVee" id="ceevee">
+            <from year="2015"/>
+            <to year="2016"/>
+            <title>CeeVee</title>
+            <description>CV generator: xml -> html/pdf&lt;br/&gt;Dieser CV resultiert daraus</description>
+            <skillrefs>
+                <skillref>xml</skillref>
+                <skillref>html</skillref>
+            </skillrefs>
+        </activity>
+    </projects>
+
+    <trainings title="Weiterbildungen">
+        <activity>
+            <date year="2008" month="1"/>
+            <description>Object Oriented Analysis and Design with UML (Zühlke)</description>
+        </activity>
+        <activity>
+            <date year="2007" month="7"/>
+            <description>Synergy Ugrade 6.5 (Telelogic)</description>
+        </activity>
+        <activity>
+            <date year="2006" month="11"/>
+            <description>Java - Design Patterns (IBM)</description>
+        </activity>
+        <activity>
+            <date year="2005" month="11"/>
+            <description>DB2 UDB for z/OS - Anwendungsprogrammierung (IBM)</description>
+        </activity>
+        <activity>
+            <date year="2005" month="4"/>
+            <description>PL/1 Grundlagen (IFA)</description>
+        </activity>
+        <activity>
+            <date year="2004" month="3"/>
+            <description>Synergy / CM Build-Manager (Telelogic)</description>
+        </activity>
+    </trainings>
+    <certificats title="Zertifikate">
+        <activity>
+            <date year="2011"/>
+            <description>Certified Secure Web Developer (CSWD)</description>
+        </activity>
+        <activity>
+            <date year="2005"/>
+            <description>OMG-Certified UML Professionals (OCUP)</description>
+        </activity>
+    </certificats>
+
     <languages title="Sprachen">
         <skill id="de" level="native" logo="flags/flag-de.png">Deutsch</skill>
         <skill id="fr" level="fluent" logo="flags/flag-fr.png">Französisch</skill>
