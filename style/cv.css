@@ -10,6 +10,7 @@ body {
 div.person {
     border-radius: 20px 100px;
     overflow: hidden;
+    margin-top: 50px;
 }
 
 div.period div.description
@@ -53,6 +54,7 @@ ul.table
 ul.table {
     list-style-type: none;
     padding: 0;
+    page-break-inside: avoid !important;
 }
 
 dd
@@ -78,6 +80,11 @@ ul.table dt,
 dd
 {
     display: table-cell;
+}
+
+div.project
+{
+    page-break-inside: avoid !important;
 }
 
 div.project div
