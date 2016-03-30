@@ -16,7 +16,7 @@ html: validate common target src/cv_html.xsl
 	cp -r data/common/res/* target/.
 
 pdf: html target target/cv.html
-	if $$(wkhtmltopdf target/cv.html -> target/cv.pdf) ; then xdg-open target/cv.pdf &> /dev/null ; fi ;
+	if $$(wkhtmltopdf -L 10mm -R 10mm -T 20mm -B 20mm target/cv.html -> target/cv.pdf) ; then xdg-open target/cv.pdf &> /dev/null ; fi ;
 
 clean:
 	rm -rf target
