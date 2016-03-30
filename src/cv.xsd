@@ -319,8 +319,8 @@
                 <xs:element name="experiences" type="experiancesType" minOccurs="0"/>
                 <xs:element name="languages" type="languagesType"/>
                 <xs:element name="hobbys" type="hobbysType" minOccurs="0"/>
-                <xs:element name="references" type="referencesType"/>
-                <xs:element name="begin" type="beginType"/>
+                <xs:element name="references" type="referencesType" minOccurs="0"/>
+                <xs:element name="begin" type="beginType" minOccurs="0"/>
             </xs:all>
             <xs:attribute name="international" type="xs:boolean"/>
             <xs:attribute name="theme" type="xs:string"/>

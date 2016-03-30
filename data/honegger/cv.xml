@@ -108,7 +108,8 @@
                 <project title="Spezifikation Agile Entwicklung in der IMISnext" id="agile">
                     <activity>Erstellung eines Dokumentes für die Geschäftsführung</activity>
                     <activity>Aufzeigen des Optimierungspotenzials der Entwicklungsprozesse mithilfe agiler Methodiken</activity>
-                    <activity>Definition agiler Projektumsetzung in der IMISnext unter Berücksichtung des Kundenumfelds und der Vorgehensweise in der internen Entwicklung</activity>
+                    <activity>Initiierung der agilen Projektumsetzung in der IMISnext unter Berücksichtigung des Kundenumfelds und der Vorgehensweise in der internen Entwicklung.</activity>
+                    <activity>Coaching eines Scrum Teams in der Scrum Master Funktion</activity>
                     <skillrefs>
                         <skillref>scrum</skillref>
                         <skillref>latex</skillref>
@@ -382,21 +383,21 @@
         <hobby>Stricken</hobby>
         <hobby>Lesen</hobby>
     </hobbys>-->
-    <references title="Referenzen" ondemande="true">
-        <!--<reference>
-            <forename>Klara</forename>
-            <name>Kioalafas</name>
-            <position>Leiterin Entwicklung</position>
-            <company>Zürcher Kantonalbank</company>
-        </reference>
-        <reference>
-            <forename>Ogün</forename>
-            <name>Cetin</name>
-            <position>Projektleiter</position>
-            <company>Zürcher Kantonalbank</company>
-        </reference>-->
-    </references>
-    <begin title="Mögliche Anstellung">
-        <date year="2015" month="1"/>
-    </begin>
+    <!--<references title="Referenzen" ondemande="true">-->
+        <!--&lt;!&ndash;<reference>-->
+            <!--<forename>Klara</forename>-->
+            <!--<name>Kioalafas</name>-->
+            <!--<position>Leiterin Entwicklung</position>-->
+            <!--<company>Zürcher Kantonalbank</company>-->
+        <!--</reference>-->
+        <!--<reference>-->
+            <!--<forename>Ogün</forename>-->
+            <!--<name>Cetin</name>-->
+            <!--<position>Projektleiter</position>-->
+            <!--<company>Zürcher Kantonalbank</company>-->
+        <!--</reference>&ndash;&gt;-->
+    <!--</references>-->
+    <!--<begin title="Mögliche Anstellung">-->
+        <!--<date year="2015" month="1"/>-->
+    <!--</begin>-->
 </cv>
