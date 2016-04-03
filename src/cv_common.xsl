@@ -254,30 +254,30 @@
         <xsl:apply-templates/>
     </xsl:template>
     <xsl:template match="experiance">
-        <div class="experiance">
-            <xsl:apply-templates select="period"/>
-        </div>
+        <xsl:apply-templates select="period"/>
     </xsl:template>
     <xsl:template match="period">
-        <xsl:apply-templates select="company"/>
-        <div class="function">
-            <div>
-                <h2>
-                    <xsl:call-template name="dateTemplate"/>
-                </h2>
-            </div>
-            <div>
-                <h3 class="function">
-                    <xsl:apply-templates select="function"/>
-                </h3>
-            </div>
-        </div>
-        <div class="period">
-            <div class="description">
-                <div class="projects">
-                    <xsl:apply-templates select="project"/>
+        <div class="experiance">
+            <xsl:apply-templates select="company"/>
+            <div class="function">
+                <div>
+                    <h2>
+                        <xsl:call-template name="dateTemplate"/>
+                    </h2>
                 </div>
-                <xsl:apply-templates select="skillrefs"/>
+                <div>
+                    <h3 class="function">
+                        <xsl:apply-templates select="function"/>
+                    </h3>
+                </div>
+            </div>
+            <div class="period">
+                <div class="description">
+                    <div class="projects">
+                        <xsl:apply-templates select="project"/>
+                    </div>
+                    <xsl:apply-templates select="skillrefs"/>
+                </div>
             </div>
         </div>
     </xsl:template>
@@ -315,7 +315,14 @@
 
     <xsl:template match="skill" mode="skillref">
         <div class="packeryItem">
-            <img src="{@logo}" alt="{@id}" title="{.}"/>
+            <xsl:choose>
+                <xsl:when test="@logo">
+                    <img src="{@logo}" alt="{@id}" title="{.}"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="." />
+                </xsl:otherwise>
+            </xsl:choose>
         </div>
     </xsl:template>
 
@@ -408,7 +415,7 @@
     </xsl:template>
     <!-- formats titel at niveau 3 -->
     <xsl:template match="cv/*/@title">
-        <h1>
+        <h1 class="{current()}">
             <xsl:value-of select="current()"/>
         </h1>
     </xsl:template>

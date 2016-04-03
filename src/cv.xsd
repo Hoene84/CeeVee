@@ -312,8 +312,8 @@
                 <xs:element name="layout" type="layoutType"  minOccurs="0"/>
                 <xs:element name="person" type="personType"/>
                 <xs:element name="skills" type="skillsType"/>
-                <xs:element name="career" type="activitiesType"/>
-                <xs:element name="educations" type="activitiesType"/>
+                <xs:element name="career" type="activitiesType" minOccurs="0" />
+                <xs:element name="educations" type="activitiesType" minOccurs="0" />
                 <xs:element name="trainings" type="activitiesType"/>
                 <xs:element name="certificats" type="activitiesType" minOccurs="0"/>
                 <xs:element name="projects" type="activitiesType" minOccurs="0"/>

@@ -37,7 +37,12 @@
         <maritalStatus>ledig</maritalStatus>
         <picture>cv_honegger_photo.jpg</picture>
     </person>
-    <educations title="Ausbildung">
+    <career title="Werdegang">
+        <activity>
+            <from year="2011"/>
+            <to year="2015" />
+            <description>IMISnext AG&lt;br/&gt;Senior Applikationsentwickler Java &amp; Scala</description>
+        </activity>
         <activity>
             <from year="2008"/>
             <to year="2011"/>
@@ -45,10 +50,9 @@
             <certificate>Bachelor of Science HES-SO in Informatik (bilingue Franz./Deutsch)</certificate>
         </activity>
         <activity>
-            <from year="2000"/>
-            <to year="2003"/>
-            <description>Lehre als KV-Informatiker in der Zürcher Kantonalbank</description>
-            <certificate>Fähigkeitsausweis Branche Informatik-Anwendungsentwicklung</certificate>
+            <from year="2003"/>
+            <to year="2008" />
+            <description>Zürcher Kantonalbank&lt;br/&gt;Applikationsentwickler Java, C++, PL/1</description>
         </activity>
         <activity>
             <from year="2000"/>
@@ -56,17 +60,11 @@
             <description>KV Zürich Business School</description>
             <certificate>Kaufmännische Berufsmaturität</certificate>
         </activity>
-    </educations>
-    <career title="Werdegang">
         <activity>
-            <from year="2011"/>
-            <to year="2015" />
-            <description>IMISnext AG&lt;br/&gt;Senior Applikationsentwickler Java, Scala</description>
-        </activity>
-        <activity>
-            <from year="2003"/>
-            <to year="2008" />
-            <description>Zürcher Kantonalbank&lt;br/&gt;Applikationsentwickler Java, C++, PL/1</description>
+            <from year="2000"/>
+            <to year="2003"/>
+            <description>Lehre als KV-Informatiker in der Zürcher Kantonalbank</description>
+            <certificate>Fähigkeitsausweis Branche Informatik-Anwendungsentwicklung</certificate>
         </activity>
     </career>
 
@@ -84,7 +82,7 @@
                 <skill id="latex" logo="skills/latex.png">LaTeX</skill>
             </solidskill>
             <goodskill etc="true">
-                <skill id="pli" logo="skills/pli.png">PL/I</skill>
+                <skill id="pli">PL/I</skill>
                 <skill id="vb" logo="skills/visual-basic.png">Visual Basic</skill>
             </goodskill>
         </skillgroup>
@@ -164,6 +162,17 @@
         </skillgroup>
     </skills>
 
+    <certificats title="Zertifikate">
+        <activity>
+            <date year="2011"/>
+            <description>Certified Secure Web Developer (CSWD)</description>
+        </activity>
+        <activity>
+            <date year="2005"/>
+            <description>OMG-Certified UML Professionals (OCUP)</description>
+        </activity>
+    </certificats>
+
     <experiences title="Berufserfahrung">
         <experiance>
             <period>
@@ -172,12 +181,13 @@
                 <to year="2015" month="12"/>
                 <function>Senior Applikationsentwickler in Festanstellung</function>
                 <project title="Mitglied des iShop Core Teams" id="core">
-                    <activity>Analyse der architektonischen Probleme iShop Core 3 und konzeption iShop Core 4 mit individuellen domain models</activity>
+                    <activity>Analyse der architektonischen Probleme iShop Core 3 und Konzeption iShop Core 4 mit individuellen domain models</activity>
                     <activity>Verifikation/Validation aller Merge Requests für iShop Core 3</activity>
                     <activity>Mitverantwortung Design- und Architekturentscheidungen iShop Core 3</activity>
                     <activity>Unterstützung bei Fragen, Lösungentscheidungen und Problemen der Entwickler</activity>
                     <skillrefs>
                         <skillref>java</skillref>
+                        <skillref>scala</skillref>
                     </skillrefs>
                 </project>
                 <project title="Projektverantwortlicher Webshops Sonepar CH/AT" id="sonepar">
@@ -224,7 +234,6 @@
                     <activity>Implementieren, testen und präsentieren dieser Anforderungen</activity>
                     <skillrefs>
                         <skillref>java</skillref>
-                        <skillref>scrum</skillref>
                     </skillrefs>
                 </project>
             </period>
@@ -334,16 +343,6 @@
             <description>Synergy / CM Build-Manager (Telelogic)</description>
         </activity>
     </trainings>
-    <certificats title="Zertifikate">
-        <activity>
-            <date year="2011"/>
-            <description>Certified Secure Web Developer (CSWD)</description>
-        </activity>
-        <activity>
-            <date year="2005"/>
-            <description>OMG-Certified UML Professionals (OCUP)</description>
-        </activity>
-    </certificats>
 
     <languages title="Sprachen">
         <skill id="de" level="native" logo="flags/flag-de.png">Deutsch</skill>

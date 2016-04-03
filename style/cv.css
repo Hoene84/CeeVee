@@ -3,7 +3,7 @@ body {
 }
 
 *, body, html {
-    font-family: "Ubuntu Light";
+    font-family: Arial,sans-serif;
     font-size: 10pt;
 }
 
@@ -14,7 +14,6 @@ div.person {
 
 div.period div.description
 {
-    border-radius: 20px 50px;
     overflow: hidden;
     width: 100%;
 }
@@ -36,6 +35,8 @@ div.person h3
 {
     margin-top: 0;
     margin-bottom: 5px;
+    color: #333;
+    font-style: normal;
 }
 
 div.person div.infos
@@ -81,6 +82,7 @@ dd
     display: table-cell;
 }
 
+div.experiance,
 div.project
 {
     page-break-inside: avoid !important;
@@ -117,30 +119,49 @@ div.project div.label,
 dt
 {
     width: 14%;
-}
-
-
-h1 {
-    font-size: 16pt;
     font-weight: bold;
-    margin-top: 1em;
+    font-variant: small-caps;
 }
 
-h2 {
-    font-size: 12pt;
+h1, h2, h3, h4,
+div.packeryItem
+{
     font-weight: bold;
-    margin-top: 1.5em;
-}
-
-h3 {
     font-style: italic;
+    font-variant: small-caps;
+    letter-spacing: 3px;
+}
+
+h1,
+div.packeryItem
+{
+    font-size: 25px;
+    margin-top: 2em;
+    color: #5b5b5b;
+}
+
+div.packeryItem {
+    margin-top: 0;
+}
+
+h2
+{
+    margin-top: 1.5em;
+    font-size: 12pt;
+    color: #848484;
+}
+
+h3
+{
+    font-style: normal;
+    font-size: 13px;
     font-weight: bold;
     margin-bottom: 0.5em;
     margin-top: 0.5em;
 }
 
 h4 {
-    font-weight: normal;
+    font-weight: bold;
     margin-bottom: 0.5em;
     margin-top: 0.5em;
 }
