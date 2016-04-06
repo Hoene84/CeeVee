@@ -76,12 +76,12 @@
                 <skill id="html" logo="skills/html_css_js.png">HTML/CSS/JS</skill>
                 <skill id="bash" logo="skills/bash.png">bash</skill>
                 <skill id="c" logo="skills/CPlusPlus.png">C/C++</skill>
-                <skill id="xml" logo="skills/xml.png">XML(XSLT/XSL)</skill>
+                <skill id="xml" logo="skills/xml.png">XML(XSD/XSLT/XSL)</skill>
                 <skill id="sql" logo="skills/sql.png">SQL</skill>
-                <skill id="python" logo="skills/python.png">Python</skill>
                 <skill id="latex" logo="skills/latex.png">LaTeX</skill>
             </solidskill>
             <goodskill etc="true">
+                <skill id="python" logo="skills/python.png">Python</skill>
                 <skill id="pli">PL/I</skill>
                 <skill id="vb" logo="skills/visual-basic.png">Visual Basic</skill>
             </goodskill>
@@ -103,10 +103,11 @@
             <solidskill etc="false">
                 <skill id="play" logo="skills/play.png">Play Framework</skill>
                 <skill id="tapestry" logo="skills/tapestry.png">Tapestry</skill>
+                <skill id="lucene">Lucene</skill>
+                <skill id="jaxws" logo="skills/jaxws.png">jaxws</skill>
                 <skill id="android" logo="skills/android.png">Android SDK</skill>
                 <skill id="spring" logo="skills/spring.png">Spring</skill>
                 <skill id="jquery" logo="skills/jquery.png">jQuery</skill>
-                <skill id="jaxws" logo="skills/jaxws.png">jaxws</skill>
                 <skill id="junit" logo="skills/junit.png">JUnit</skill>
                 <skill id="mockito" logo="skills/mockito.png">Mockito</skill>
             </solidskill>
@@ -137,8 +138,8 @@
                 <skill id="intellij" logo="skills/intellij.png">itelliJ</skill>
                 <skill id="astah" logo="skills/astah.png">Astah</skill>
                 <skill id="rr" logo="skills/rational_rose.png">Rational Rose</skill>
-                <skill id="ea" logo="skills/enterprise_architekt.png">Enterprise Architekt</skill>
                 <skill id="vp" logo="skills/visual_paradigm.png">Visual Paradigm UML</skill>
+                <skill id="ea" logo="skills/enterprise_architekt.png">Enterprise Architekt</skill>
                 <skill id="office" logo="skills/microsoftOffice.png">Office suite</skill>
             </solidskill>
             <goodskill etc="true">
@@ -151,7 +152,7 @@
         </skillgroup>
         <skillgroup title="Umgebungen">
             <solidskill etc="false">
-                <skill id="linux" logo="skills/linux.png">Linux und andere Unix basierte Systeme</skill>
+                <skill id="linux" logo="skills/linux.png">Linux und anderen Unix basierte Systeme</skill>
             </solidskill>
             <goodskill etc="false">
                 <skill id="windows" logo="skills/windows.png">Windows</skill>
@@ -212,9 +213,8 @@
                         <skillref>play</skillref>
                     </skillrefs>
                 </project>
-                <project title="Spezifikation Agile Entwicklung in der IMISnext" id="agile">
-                    <activity>Erstellung eines Dokumentes für die Geschäftsführung</activity>
-                    <activity>Aufzeigen des Optimierungspotenzials der Entwicklungsprozesse mithilfe agiler Methodiken</activity>
+                <project title="Einführung agile Entwicklung in der IMISnext" id="agile">
+                    <activity>Aufzeigen des Optimierungspotenzials der Entwicklungsprozesse mithilfe agiler Methodiken gegenüber der Geschäftsführung mittels eines verständlichen und trotzdem vertiefenden Dokuments</activity>
                     <activity>Initiierung der agilen Projektumsetzung in der IMISnext unter Berücksichtigung des Kundenumfelds und der Vorgehensweise in der internen Entwicklung.</activity>
                     <activity>Coaching eines Scrum Teams in der Scrum Master Funktion</activity>
                     <skillrefs>
@@ -309,7 +309,7 @@
             <from year="2015"/>
             <to year="2016"/>
             <title>CeeVee</title>
-            <description>CV generator: xml -> html/pdf&lt;br/&gt;Dieser CV resultiert daraus</description>
+            <description>CV generator: XML -> HTML und PDF&lt;br/&gt;Das Resultat wird z.Zt. kritisch betrachted.</description>
             <skillrefs>
                 <skillref>xml</skillref>
                 <skillref>html</skillref>

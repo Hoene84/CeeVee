@@ -116,11 +116,18 @@ div.person div.infos div.value
 }
 
 div.project div.label,
+div.project div.header,
+dt
+{
+    font-weight: bold;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+}
+
+div.project div.label,
 dt
 {
     width: 14%;
-    font-weight: bold;
-    font-variant: small-caps;
 }
 
 h1, h2, h3, h4,
@@ -208,7 +215,7 @@ div.experiance div.function h3
     float: right;
     margin-bottom: 5px;
     margin-top: 5px;
-}
+    letter-spacing: 2px;
 }
 
 div.project div.skillrefs
