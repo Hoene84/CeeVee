@@ -172,7 +172,7 @@
             </dt>
             <dd>
                 <div>
-                    <xsl:text>Solide Kenntnisse in </xsl:text>
+                    <i><xsl:text>Solide Kenntnisse in: </xsl:text></i>
                     <xsl:for-each select="skill">
                         <xsl:apply-templates select="current()"/>
                         <xsl:if test="position() != last()">
@@ -195,7 +195,7 @@
             </dt>
             <dd>
                 <div>
-                    <xsl:text>Gute Kenntnisse in </xsl:text>
+                    <i><xsl:text>Gute Kenntnisse in: </xsl:text></i>
                     <xsl:for-each select="skill">
                         <xsl:apply-templates select="current()"/>
                         <xsl:if test="position() != last()">
@@ -238,7 +238,7 @@
                     </div>
                     <xsl:for-each select="certificate">
                         <div>
-                            <xsl:text>Zertifikat: </xsl:text>
+                            <i><xsl:text>Zertifikat: </xsl:text></i>
                             <xsl:apply-templates select="current()"/>
                         </div>
                     </xsl:for-each>
@@ -441,15 +441,25 @@
         <xsl:param name="month" as="xs:integer?"/>
         <xsl:sequence select="('Jan.', 'Feb.', 'März', 'Apr.', 'Mai', 'Juni', 'Juli', 'Aug.', 'Sep.', 'Okt.', 'Nov.', 'Dez.') [$month]"/>
     </xsl:function>
+    <xsl:function name="cv:month-number">
+        <xsl:param name="month"/>
+        <xsl:sequence select="$month"/>
+    </xsl:function>
     <xsl:template name="dateFormat">
         <xsl:if test="@day != ''">
             <xsl:apply-templates select="@day"/>
             <xsl:text> </xsl:text>
-        </xsl:if>        
-        <xsl:if test="@month != ''">
-            <xsl:value-of select="cv:month-name-de(@month)"/>
-            <xsl:text> </xsl:text>
         </xsl:if>
+        <xsl:choose>
+            <xsl:when test="@month != '' and @style = 'plain'">
+                <xsl:value-of select="@month"/>
+                <xsl:text>.</xsl:text>
+            </xsl:when>
+            <xsl:when test="@month != ''">
+                <xsl:value-of select="cv:month-name-de(@month)"/>
+                <xsl:text> </xsl:text>
+            </xsl:when>
+        </xsl:choose>
         <xsl:apply-templates select="@year"/>
     </xsl:template>
     <xsl:template match="date">

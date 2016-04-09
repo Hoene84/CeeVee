@@ -39,32 +39,27 @@
     </person>
     <career title="Werdegang">
         <activity>
-            <from year="2011"/>
-            <to year="2015" />
+            <from year="2011" month="10" style="plain" />
+            <to year="2016"  month="05" style="plain" />
             <description>IMISnext AG&lt;br/&gt;Senior Applikationsentwickler Java &amp; Scala</description>
         </activity>
         <activity>
-            <from year="2008"/>
-            <to year="2011"/>
+            <from year="2008" month="09" style="plain" />
+            <to year="2011" month="11" style="plain" />
             <description>Zweisprachiges Vollzeitstudium an der Ecole d'ingénieurs et d'architectes de Fribourg</description>
             <certificate>Bachelor of Science HES-SO in Informatik (bilingue Franz./Deutsch)</certificate>
         </activity>
         <activity>
-            <from year="2003"/>
-            <to year="2008" />
+            <from year="2003" month="08" style="plain" />
+            <to year="2008" month="10"  style="plain" />
             <description>Zürcher Kantonalbank&lt;br/&gt;Applikationsentwickler Java, C++, PL/1</description>
         </activity>
         <activity>
-            <from year="2000"/>
-            <to year="2003"/>
-            <description>KV Zürich Business School</description>
-            <certificate>Kaufmännische Berufsmaturität</certificate>
-        </activity>
-        <activity>
-            <from year="2000"/>
-            <to year="2003"/>
+            <from year="2000" month="08" style="plain" />
+            <to year="2003" month="08" style="plain" />
             <description>Lehre als KV-Informatiker in der Zürcher Kantonalbank</description>
             <certificate>Fähigkeitsausweis Branche Informatik-Anwendungsentwicklung</certificate>
+            <certificate>Kaufmännische Berufsmaturität - KV Zürich Business School</certificate>
         </activity>
     </career>
 
@@ -109,7 +104,6 @@
                 <skill id="spring" logo="skills/spring.png">Spring</skill>
                 <skill id="jquery" logo="skills/jquery.png">jQuery</skill>
                 <skill id="junit" logo="skills/junit.png">JUnit</skill>
-                <skill id="mockito" logo="skills/mockito.png">Mockito</skill>
             </solidskill>
             <goodskill etc="true">
                 <skill id="wicket" logo="skills/apache-wicket.png">Apache Wicket</skill>
@@ -117,6 +111,7 @@
                 <skill id="qt" logo="skills/Qt.png">Qt</skill>
                 <skill id="dotnet" logo="skills/net.png">.NET</skill>
                 <skill id="hibernate" logo="skills/hibernate.png">Hibernate</skill>
+                <skill id="mockito" logo="skills/mockito.png">Mockito</skill>
             </goodskill>
         </skillgroup>
         <skillgroup title="Datenbanken">
@@ -136,7 +131,6 @@
         <skillgroup title="Programme">
             <solidskill etc="false">
                 <skill id="intellij" logo="skills/intellij.png">itelliJ</skill>
-                <skill id="astah" logo="skills/astah.png">Astah</skill>
                 <skill id="rr" logo="skills/rational_rose.png">Rational Rose</skill>
                 <skill id="vp" logo="skills/visual_paradigm.png">Visual Paradigm UML</skill>
                 <skill id="ea" logo="skills/enterprise_architekt.png">Enterprise Architekt</skill>

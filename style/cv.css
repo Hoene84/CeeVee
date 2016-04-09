@@ -127,7 +127,7 @@ dt
 div.project div.label,
 dt
 {
-    width: 14%;
+    width: 21%;
 }
 
 h1, h2, h3, h4,
@@ -231,7 +231,7 @@ dl.activity div.text
 
 dl.activity div.skillrefs
 {
-    width: 25%;
+    width: 28%;
     float: right;
     margin: 5px;
 }
@@ -245,4 +245,9 @@ div.skillrefs img
 {
     max-width: 100px;
     max-height: 40px;
+}
+
+i
+{
+    color: #333;
 }

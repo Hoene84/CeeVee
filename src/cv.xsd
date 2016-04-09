@@ -159,6 +159,13 @@
                 </xs:restriction>
             </xs:simpleType>
         </xs:attribute>
+        <xs:attribute name="style">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="plain"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
     </xs:complexType>
     <xs:complexType name="descriptionType" mixed="true">
         <xs:sequence minOccurs="0" maxOccurs="unbounded">
