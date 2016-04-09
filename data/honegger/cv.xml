@@ -191,6 +191,14 @@
                         <skillref>scala</skillref>
                     </skillrefs>
                 </project>
+                <project title="Einführung agile Entwicklung in der IMISnext" id="agile">
+                    <activity>Aufzeigen des Optimierungspotenzials der Entwicklungsprozesse mithilfe agiler Methodiken gegenüber der Geschäftsführung mittels eines verständlichen und trotzdem vertiefenden Dokuments</activity>
+                    <activity>Initiierung der agilen Projektumsetzung in der IMISnext unter Berücksichtigung des Kundenumfelds und der Vorgehensweise in der internen Entwicklung.</activity>
+                    <activity>Coaching eines Scrum Teams in der Scrum Master Funktion</activity>
+                    <skillrefs>
+                        <skillref>scrum</skillref>
+                    </skillrefs>
+                </project>
                 <project title="Projektverantwortlicher Webshops Sonepar CH/AT" id="sonepar">
                     <activity>Einführung Mandantenfähigkeit bzgl. Logik, Darstellung und Anbindung von Umsystemen (6 Mandanten)</activity>
                     <activity>Entwicklung diverser Features im Front- sowie Backend in Java mithilfe des Tapestry Frameworks</activity>
@@ -211,14 +219,6 @@
                     <skillrefs>
                         <skillref>scala</skillref>
                         <skillref>play</skillref>
-                    </skillrefs>
-                </project>
-                <project title="Einführung agile Entwicklung in der IMISnext" id="agile">
-                    <activity>Aufzeigen des Optimierungspotenzials der Entwicklungsprozesse mithilfe agiler Methodiken gegenüber der Geschäftsführung mittels eines verständlichen und trotzdem vertiefenden Dokuments</activity>
-                    <activity>Initiierung der agilen Projektumsetzung in der IMISnext unter Berücksichtigung des Kundenumfelds und der Vorgehensweise in der internen Entwicklung.</activity>
-                    <activity>Coaching eines Scrum Teams in der Scrum Master Funktion</activity>
-                    <skillrefs>
-                        <skillref>scrum</skillref>
                     </skillrefs>
                 </project>
             </period>
