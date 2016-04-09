@@ -179,7 +179,7 @@
                     <activity>Analyse der architektonischen Probleme iShop Core 3 und Konzeption iShop Core 4 mit individuellen domain models</activity>
                     <activity>Verifikation/Validation aller Merge Requests für iShop Core 3</activity>
                     <activity>Mitverantwortung Design- und Architekturentscheidungen iShop Core 3</activity>
-                    <activity>Unterstützung bei Fragen, Lösungentscheidungen und Problemen der Entwickler</activity>
+                    <activity>Unterstützung bei Fragen, Lösungsentscheidungen und Problemen der Entwickler</activity>
                     <skillrefs>
                         <skillref>java</skillref>
                         <skillref>scala</skillref>
@@ -208,7 +208,7 @@
                 </project>
                 <project title="Neuentwicklung www.geckoreifen.de und www.esashop.ch" id="esa">
                     <activity>Entwicklung diverser Features im Front- sowie Backend in Scala mithilfe des Play Frameworks</activity>
-                    <activity>Integration tagesakueller SAP Daten</activity>
+                    <activity>Integration tagesaktueller SAP Daten</activity>
                     <activity>Anbindung von REST APIs zur Erweiterung der Produktinformationen</activity>
                     <skillrefs>
                         <skillref>scala</skillref>
@@ -251,11 +251,11 @@
                 <project title="Zentrale Führung der VV-Codierung" id="vv">
                     <activity>Teilprojektleitung ASD/SDS</activity>
                     <activity>Definition des bankfachlichen Modells und Konsistenzbedingungen mit dem Fachbereich</activity>
-                    <activity>Implemention nach MDA (Model Driven Architecture) Ansatz</activity>
+                    <activity>Implementation nach MDA (Model Driven Architecture) Ansatz</activity>
                 </project>
                 <project title="SDS (Stammdaten-Services) Rel. 2.0 (Folgeprojekt von SDS R1.0)" id="sds">
                     <activity>Stellvertretung des Teilprojektleiters ASD/SDS GUI</activity>
-                    <activity>Spezifikation der Java Software Komponente ASD/SDS GUI und codierung des generischen Teils</activity>
+                    <activity>Spezifikation der Java Software Komponente ASD/SDS GUI und Codierung des generischen Teils</activity>
                     <activity>Abstimmung der Realisierung der fachlichen Anforderungen mit dem Fachbereich</activity>
                     <activity>Analyse, Spezifikation, Design, Implementation und Test diverser Java Softwarekomponenten</activity>
                     <skillrefs>
@@ -278,7 +278,7 @@
         </experiance>
     </experiences>
     
-    <projects title="Projekte">
+    <projects title="Private Projekte">
         <activity link="http://www.turtle-player.co.uk/" id="turtleplayer">
             <from year="2012"/>
             <to year="2014"/>
@@ -303,7 +303,7 @@
             <from year="2015"/>
             <to year="2016"/>
             <title>CeeVee</title>
-            <description>CV generator: XML -> HTML und PDF&lt;br/&gt;Das Resultat wird z.Zt. kritisch betrachted.</description>
+            <description>CV generator: XML -> HTML und PDF&lt;br/&gt;Das Resultat wird z.Zt. kritisch betrachtet.</description>
             <skillrefs>
                 <skillref>xml</skillref>
                 <skillref>html</skillref>
