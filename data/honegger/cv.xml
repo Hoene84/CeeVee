@@ -86,7 +86,10 @@
                 <skill id="scrum" logo="skills/scrum.png">Scrum</skill>
                 <skill id="uml" logo="skills/uml.png">UML</skill>
                 <skill id="git" logo="skills/git.png">GIT</skill>
+                <skill id="docker">Docker</skill>
                 <skill id="maven" logo="skills/maven.png">Maven</skill>
+                <skill id="rest">REST</skill>
+                <skill id="soap">SOAP</skill>
             </solidskill>
             <goodskill etc="true">
                 <skill id="svn" logo="skills/svn.png">SVN</skill>
