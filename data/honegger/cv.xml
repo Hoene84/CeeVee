@@ -197,7 +197,7 @@
                     </skillrefs>
                 </project>
                 <project title="Projektverantwortlicher Webshops Sonepar CH/AT" id="sonepar">
-                    <activity>Einführung Mandantenfähigkeit bzgl. Logik, Darstellung und Anbindung von Umsystemen (6 Mandanten)</activity>
+                    <activity>Einführung Mandantenfähigkeit bzgl. Logik, Darstellung und Anbindung von Umsystemen</activity>
                     <activity>Entwicklung diverser Features im Front- sowie Backend in Java mithilfe des Tapestry Frameworks</activity>
                     <activity>Koordination mit Umsystemen (ERP/Pim/Mobile/Webservices)</activity>
                     <activity>Koordination von Entwicklung, Testing, Releases und Deployments</activity>
@@ -240,7 +240,7 @@
                 <to year="2010" month="02"/>
                 <function>Aushilfe auf Stundenlohnbasis</function>
                 <project title="Match E4 Testing" id="matche4">
-                    <activity>Kosten-Nutzen-Analyse diverser Optimierungen im Testprozess</activity>
+                    <activity>Kosten-Nutzen-Analyse diverser Optimierungen im Integrationstest</activity>
                     <skillrefs>
                         <skillref>office</skillref>
                     </skillrefs>
