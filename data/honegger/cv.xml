@@ -255,6 +255,9 @@
                     <activity>Teilprojektleitung ASD/SDS</activity>
                     <activity>Definition des bankfachlichen Modells und Konsistenzbedingungen mit dem Fachbereich</activity>
                     <activity>Implementation nach MDA (Model Driven Architecture) Ansatz</activity>
+                    <skillrefs>
+                        <skillref>uml</skillref>
+                    </skillrefs>
                 </project>
                 <project title="SDS (Stammdaten-Services) Rel. 2.0 (Folgeprojekt von SDS R1.0)" id="sds">
                     <activity>Stellvertretung des Teilprojektleiters ASD/SDS GUI</activity>

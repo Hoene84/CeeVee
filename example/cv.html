@@ -274,10 +274,11 @@ div.project.sonepar div.skillrefs,
 div.project.esa div.skillrefs,
 div.project.sds div.skillrefs,
 div.project.acs div.skillrefs,
-div.project.asd div.skillrefs
+div.project.asd div.skillrefs,
+div.project.vv div.skillrefs
 {
     display: inline-block;
-    margin: 5px;
+    margin: 8px;
     width: 18%;
 }
 
@@ -289,7 +290,8 @@ div.project.sonepar div.value,
 div.project.esa div.value,
 div.project.sds div.value,
 div.project.acs div.value,
-div.project.asd div.value
+div.project.asd div.value,
+div.project.vv div.value
 {
     width: 75%;
     display: inline-block;
@@ -13600,7 +13602,8 @@ return Packery;
     setTimeout(function(){
         $('.packeryContainer').packery({
             itemSelector: '.packeryItem',
-            gutter: 20
+            gutter: 20,
+            isOriginLeft: false
         });
     }, 10);
 
@@ -13760,7 +13763,7 @@ return Packery;
                         <div>Entwicklung</div>
                      </dt>
                      <dd>
-                        <div><i>Solide Kenntnisse in: </i>Scrum, UML, GIT, Maven
+                        <div><i>Solide Kenntnisse in: </i>Scrum, UML, GIT, Docker, Maven, REST, SOAP
                         </div>
                      </dd>
                   </dl>
@@ -14004,7 +14007,7 @@ return Packery;
                                  <div>
                                     <ul>
                                        <li>
-                                          <div>Einführung Mandantenfähigkeit bzgl. Logik, Darstellung und Anbindung von Umsystemen (6 Mandanten)</div>
+                                          <div>Einführung Mandantenfähigkeit bzgl. Logik, Darstellung und Anbindung von Umsystemen</div>
                                        </li>
                                        <li>
                                           <div>Entwicklung diverser Features im Front- sowie Backend in Java mithilfe des Tapestry Frameworks</div>
@@ -14141,7 +14144,7 @@ return Packery;
                                  <div>
                                     <ul>
                                        <li>
-                                          <div>Kosten-Nutzen-Analyse diverser Optimierungen im Testprozess</div>
+                                          <div>Kosten-Nutzen-Analyse diverser Optimierungen im Integrationstest</div>
                                        </li>
                                     </ul>
                                  </div>
@@ -14192,6 +14195,11 @@ return Packery;
                                           <div>Implementation nach MDA (Model Driven Architecture) Ansatz</div>
                                        </li>
                                     </ul>
+                                 </div>
+                              </div>
+                              <div class="skillrefs">
+                                 <div class="packeryContainer">
+                                    <div class="packeryItem"><img src="skills/uml.png" alt="uml" title="UML"></img></div>
                                  </div>
                               </div>
                            </div>

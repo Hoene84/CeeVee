@@ -19,7 +19,7 @@ html: validate common target src/cv_html.xsl
 pdf: html target target/cv.html
 	wkhtmltopdf -L 10mm -R 10mm -T 20mm -B 20mm target/cv.html -> target/cv.pdf; then xdg-open target/cv.pdf &> /dev/null ;
 
-exsample: html pdf
+example: html pdf
 	mkdir -p example
 	cp target/* example/.
 

@@ -6,10 +6,11 @@ div.project.sonepar div.skillrefs,
 div.project.esa div.skillrefs,
 div.project.sds div.skillrefs,
 div.project.acs div.skillrefs,
-div.project.asd div.skillrefs
+div.project.asd div.skillrefs,
+div.project.vv div.skillrefs
 {
     display: inline-block;
-    margin: 5px;
+    margin: 8px;
     width: 18%;
 }
 
@@ -21,7 +22,8 @@ div.project.sonepar div.value,
 div.project.esa div.value,
 div.project.sds div.value,
 div.project.acs div.value,
-div.project.asd div.value
+div.project.asd div.value,
+div.project.vv div.value
 {
     width: 75%;
     display: inline-block;
