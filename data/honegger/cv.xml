@@ -40,7 +40,7 @@
     <career title="Werdegang">
         <activity>
             <from year="2011" month="10" style="plain" />
-            <to year="2016"  month="05" style="plain" />
+            <to year="2016"  month="06" style="plain" />
             <description>IMISnext AG&lt;br/&gt;Senior Applikationsentwickler Java &amp; Scala</description>
         </activity>
         <activity>
@@ -176,7 +176,7 @@
             <period>
                 <company name="IMISnext AG" logo="logo_imis.png" />
                 <from year="2011" month="10"/>
-                <to year="2015" month="12"/>
+                <to year="2016" month="06"/>
                 <function>Senior Applikationsentwickler in Festanstellung</function>
                 <project title="Mitglied des iShop Core Teams" id="core">
                     <activity>Analyse der architektonischen Probleme iShop Core 3 und Konzeption iShop Core 4 mit individuellen domain models</activity>
