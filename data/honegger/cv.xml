@@ -99,26 +99,37 @@
         </skillgroup>
         <skillgroup title="Frameworks">
             <solidskill etc="false">
-                <skill id="play" logo="skills/play.png">Play Framework</skill>
-                <skill id="tapestry" logo="skills/tapestry.png">Tapestry</skill>
+                <skill id="javafx">Java FX</skill>
+                <skill id="hibernate" logo="skills/hibernate.png">Hibernate</skill>
+                <skill id="spring" logo="skills/spring.png">Spring</skill>
                 <skill id="lucene">Lucene</skill>
                 <skill id="jaxws" logo="skills/jaxws.png">jaxws</skill>
-                <skill id="android" logo="skills/android.png">Android SDK</skill>
-                <skill id="spring" logo="skills/spring.png">Spring</skill>
-                <skill id="jquery" logo="skills/jquery.png">jQuery</skill>
                 <skill id="junit" logo="skills/junit.png">JUnit</skill>
+                <skill id="mockito" logo="skills/mockito.png">Mockito</skill>
             </solidskill>
             <goodskill etc="true">
-                <skill id="wicket" logo="skills/apache-wicket.png">Apache Wicket</skill>
+                <skill id="android" logo="skills/android.png">Android SDK</skill>
                 <skill id="gwt" logo="skills/gwt.png">GWT</skill>
                 <skill id="qt" logo="skills/Qt.png">Qt</skill>
-                <skill id="dotnet" logo="skills/net.png">.NET</skill>
-                <skill id="hibernate" logo="skills/hibernate.png">Hibernate</skill>
-                <skill id="mockito" logo="skills/mockito.png">Mockito</skill>
+            </goodskill>
+        </skillgroup>
+        <skillgroup title="Web">
+            <solidskill etc="false">
+                <skill id="polymer">Polymer</skill>
+                <skill id="vaadin">Vaadin 10</skill>
+                <skill id="react">React</skill>
+                <skill id="jquery" logo="skills/jquery.png">jQuery</skill>
+                <skill id="bootstrap">Bootstrap</skill>
+                <skill id="wicket" logo="skills/apache-wicket.png">Apache Wicket</skill>
+            </solidskill>
+            <goodskill etc="true">
+                <skill id="play" logo="skills/play.png">Play Framework</skill>
+                <skill id="tapestry" logo="skills/tapestry.png">Tapestry</skill>
             </goodskill>
         </skillgroup>
         <skillgroup title="Datenbanken">
             <solidskill etc="false">
+                <skill id="postgres">Postgres</skill>
                 <skill id="mssql" logo="skills/mssql.png">MSSQL</skill>
                 <skill id="oracle" logo="skills/oracle.png">Oracle</skill>
                 <skill id="db2" logo="skills/db2.png">DB2</skill>
@@ -134,12 +145,12 @@
         <skillgroup title="Programme">
             <solidskill etc="false">
                 <skill id="intellij" logo="skills/intellij.png">itelliJ</skill>
-                <skill id="rr" logo="skills/rational_rose.png">Rational Rose</skill>
                 <skill id="vp" logo="skills/visual_paradigm.png">Visual Paradigm UML</skill>
                 <skill id="ea" logo="skills/enterprise_architekt.png">Enterprise Architekt</skill>
                 <skill id="office" logo="skills/microsoftOffice.png">Office suite</skill>
             </solidskill>
             <goodskill etc="true">
+                <skill id="rr" logo="skills/rational_rose.png">Rational Rose</skill>
                 <skill id="eclipse" logo="skills/eclipse.png">Eclipse</skill>
                 <skill id="make" logo="skills/make.png">make</skill>
                 <skill id="qtcreator" logo="skills/qtcreator.png">QtCreator</skill>
@@ -309,7 +320,7 @@
             <from year="2015"/>
             <to year="2016"/>
             <title>CeeVee</title>
-            <description>CV generator: XML -> HTML und PDF&lt;br/&gt;Das Resultat wird z.Zt. kritisch betrachtet.</description>
+            <description>CV Generator: XML -> HTML und PDF&lt;br/&gt;Das Resultat wird z.Zt. kritisch betrachtet.</description>
             <skillrefs>
                 <skillref>xml</skillref>
                 <skillref>html</skillref>
@@ -318,6 +329,10 @@
     </projects>
 
     <trainings title="Weiterbildungen">
+        <activity>
+            <date year="2018" month="9"/>
+            <description>CH Open Workshop-Tage 2018</description>
+        </activity>
         <activity>
             <date year="2008" month="1"/>
             <description>Object Oriented Analysis and Design with UML (Zühlke)</description>
