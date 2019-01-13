@@ -451,6 +451,9 @@
             <xsl:text> </xsl:text>
         </xsl:if>
         <xsl:choose>
+            <xsl:when test="@style = 'text'">
+                <xsl:apply-templates select="text()"/>
+            </xsl:when>
             <xsl:when test="@month != '' and @style = 'plain'">
                 <xsl:value-of select="@month"/>
                 <xsl:text>.</xsl:text>
