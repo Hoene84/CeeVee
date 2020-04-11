@@ -179,7 +179,7 @@ div.paragraph {
 }
 
 div.inline {
-    display: inline-block;
+    display: inline-table;
 }
 
 .even
@@ -205,7 +205,7 @@ div.experiance div.period
 div.experiance div.company,
 div.experiance div.function
 {
-    display: inline-block;
+    display: inline-table;
 }
 
 div.experiance div.function,
@@ -226,7 +226,7 @@ div.project div.skillrefs
 
 dl.activity div.text
 {
-    display: inline-block;
+    display: inline-table;
 }
 
 dl.activity div.skillrefs
