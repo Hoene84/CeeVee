@@ -19,7 +19,7 @@ div.period div.description
 }
 
 div.person > div {
-    display: inline-block;
+    display: inline-table;
     vertical-align:top;
 }
 
