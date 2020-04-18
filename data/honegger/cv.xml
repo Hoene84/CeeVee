@@ -31,13 +31,18 @@
             </phone>
             <email>simon.honegger@gmail.com</email>
         </contact>
-        <experience>9</experience>
+        <experience>12</experience>
         <birthday day="22" month="7" year="1984"/>
         <hometown>Niederhasli ZH</hometown>
         <maritalStatus>ledig</maritalStatus>
         <picture>cv_honegger_photo.jpg</picture>
     </person>
     <career title="Werdegang">
+        <activity>
+            <from year="2016" month="07" style="plain" />
+            <to style="text">Aktuell</to>
+            <description>Supercomputing Systems AG&lt;br/&gt;Entwicklungsingenieur</description>
+        </activity>
         <activity>
             <from year="2011" month="10" style="plain" />
             <to year="2016"  month="06" style="plain" />
@@ -129,7 +134,7 @@
         </skillgroup>
         <skillgroup title="Datenbanken">
             <solidskill etc="false">
-                <skill id="postgres">Postgres</skill>
+                <skill id="postgres" logo="skills/postgresql.png">Postgres</skill>
                 <skill id="mssql" logo="skills/mssql.png">MSSQL</skill>
                 <skill id="oracle" logo="skills/oracle.png">Oracle</skill>
                 <skill id="db2" logo="skills/db2.png">DB2</skill>
@@ -183,6 +188,22 @@
     </certificats>
 
     <experiences title="Berufserfahrung">
+        <experiance>
+            <period>
+                <company name="Supercomputing Systems AG" logo="logo_scs.png" />
+                <from year="2016" month="07" style="plain" />
+                <to style="text">Aktuell</to>
+                <function>Entwicklungsingenieur in Festanstellung</function>
+                <project title="ZKE - Zug Kontrolleinrichtungen SBB" id="zke">
+                    <activity>Implementation eines Services zur Bestimmung der Pantographen Positionen eines Zuges im Gotthard-Basistunnel</activity>
+                    <skillrefs>
+                        <skillref>java</skillref>
+                        <skillref>spring</skillref>
+                        <skillref>postgres</skillref>
+                    </skillrefs>
+                </project>
+            </period>
+        </experiance>
         <experiance>
             <period>
                 <company name="IMISnext AG" logo="logo_imis.png" />
@@ -364,27 +385,4 @@
         <skill id="fr" level="fluent" logo="flags/flag-fr.png">Französisch</skill>
         <skill id="en" level="good" logo="flags/flag-en.png">Englisch</skill>
     </languages>
-    <!--<hobbys title="Hobbies">
-        <hobby>Unihockey</hobby>
-        <hobby>Snowboarden</hobby>
-        <hobby>Stricken</hobby>
-        <hobby>Lesen</hobby>
-    </hobbys>-->
-    <!--<references title="Referenzen" ondemande="true">-->
-        <!--&lt;!&ndash;<reference>-->
-            <!--<forename>Klara</forename>-->
-            <!--<name>Kioalafas</name>-->
-            <!--<position>Leiterin Entwicklung</position>-->
-            <!--<company>Zürcher Kantonalbank</company>-->
-        <!--</reference>-->
-        <!--<reference>-->
-            <!--<forename>Ogün</forename>-->
-            <!--<name>Cetin</name>-->
-            <!--<position>Projektleiter</position>-->
-            <!--<company>Zürcher Kantonalbank</company>-->
-        <!--</reference>&ndash;&gt;-->
-    <!--</references>-->
-    <!--<begin title="Mögliche Anstellung">-->
-        <!--<date year="2015" month="1"/>-->
-    <!--</begin>-->
 </cv>
