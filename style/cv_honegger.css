@@ -8,7 +8,8 @@ div.project.sds div.skillrefs,
 div.project.acs div.skillrefs,
 div.project.asd div.skillrefs,
 div.project.vv div.skillrefs,
-div.project.zke div.skillrefs
+div.project.zke div.skillrefs,
+div.project.denteo div.skillrefs
 {
     display: inline-block;
     margin: 8px;
@@ -25,7 +26,8 @@ div.project.sds div.value,
 div.project.acs div.value,
 div.project.asd div.value,
 div.project.vv div.value,
-div.project.zke div.value
+div.project.zke div.value,
+div.project.denteo div.value
 {
     width: 75%;
     display: inline-block;
