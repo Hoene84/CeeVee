@@ -19,10 +19,16 @@
                 <style type="text/css">
                     <xsl:value-of select="unparsed-text('../style/cv.css', 'UTF-8')" disable-output-escaping="yes"/>
                 </style>
+                <style type="text/css" media="screen">
+                    <xsl:value-of select="unparsed-text('../style/screen.css', 'UTF-8')" disable-output-escaping="yes"/>
+                </style>
+                <style type="text/css" media="print">
+                    <xsl:value-of select="unparsed-text('../style/print.css', 'UTF-8')" disable-output-escaping="yes"/>
+                </style>
                 <xsl:apply-templates mode="layout"/>
             </head>
             <body>
-                <div style="width:800px;margin: 0 auto;">
+                <div class="container">
                     <xsl:call-template name="main"/>
                 </div>
             </body>
