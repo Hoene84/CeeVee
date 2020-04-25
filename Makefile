@@ -17,7 +17,7 @@ html: validate common target src/cv_html.xsl
 	xdg-open target/cv.html &> /dev/null ;
 
 pdf: html target target/cv.html
-	wkhtmltopdf -L 10mm -R 10mm -T 20mm -B 20mm target/cv.html -> target/cv.pdf; then xdg-open target/cv.pdf &> /dev/null ;
+	chromium-browser --headless --disable-gpu --print-to-pdf=target/cv.pdf target/cv.html ; then xdg-open target/cv.pdf &> /dev/null ;
 
 example: html pdf
 	mkdir -p example
