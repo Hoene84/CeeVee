@@ -2,11 +2,6 @@ body {
     background-color: white;
 }
 
-*, body, html {
-    font-family: Arial,sans-serif;
-    font-size: 10pt;
-}
-
 div.person {
     border-radius: 20px 100px;
     overflow: hidden;
@@ -35,8 +30,6 @@ div.person h3
 {
     margin-top: 0;
     margin-bottom: 5px;
-    color: #333;
-    font-style: normal;
 }
 
 div.person div.infos
@@ -116,35 +109,16 @@ div.person div.infos div.value
 }
 
 div.project div.label,
-div.project div.header,
-dt
-{
-    font-weight: bold;
-    font-variant: small-caps;
-    letter-spacing: 2px;
-}
-
-div.project div.label,
 dt
 {
     width: 21%;
-}
-
-h1, h2, h3, h4,
-div.packeryItem
-{
-    font-weight: bold;
-    font-style: italic;
-    font-variant: small-caps;
-    letter-spacing: 3px;
 }
 
 h1,
 div.packeryItem
 {
     font-size: 25px;
-    margin-top: 2em;
-    color: #5b5b5b;
+    margin-top: 40px;
 }
 
 div.packeryItem {
@@ -154,21 +128,15 @@ div.packeryItem {
 h2
 {
     margin-top: 1.5em;
-    font-size: 12pt;
-    color: #848484;
 }
 
 h3
 {
-    font-style: normal;
-    font-size: 13px;
-    font-weight: bold;
     margin-bottom: 0.5em;
     margin-top: 0.5em;
 }
 
 h4 {
-    font-weight: bold;
     margin-bottom: 0.5em;
     margin-top: 0.5em;
 }
