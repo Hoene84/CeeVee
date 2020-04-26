@@ -158,7 +158,9 @@
     <!-- skills -->
     <xsl:template match="skills">
         <xsl:apply-templates select="@title"/>
-        <xsl:apply-templates select="skillgroup"/>
+        <div>
+            <xsl:apply-templates select="skillgroup"/>
+        </div>
     </xsl:template>
     <xsl:template match="skillgroup">
         <xsl:call-template name="tableContent"/>
