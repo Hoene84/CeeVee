@@ -336,7 +336,6 @@
                 <xs:element name="begin" type="beginType" minOccurs="0"/>
             </xs:all>
             <xs:attribute name="international" type="xs:boolean"/>
-            <xs:attribute name="theme" type="xs:string"/>
         </xs:complexType>
 
         <xs:key name="skillKey"  >
