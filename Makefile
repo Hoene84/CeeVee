@@ -12,6 +12,7 @@ common: target src/cv_common.xsl data/honegger/cv.xml
 	saxonb-xslt data/honegger/cv.xml src/cv_html.xsl > target/cv.html
 	cp -r data/honegger/res/* target/.
 	cp -r data/common/res/* target/.
+	cp -r data/theme/res/* target/.
 
 html: validate common target src/cv_html.xsl
 	xdg-open target/cv.html &> /dev/null ;
