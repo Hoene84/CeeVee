@@ -423,7 +423,7 @@
     </xsl:template>
     <!--A Table with a row for each content-->
     <xsl:template name="tableContent">
-        <ul class="table">
+        <ul class="table {local-name()}">
             <xsl:for-each select="*">
                 <xsl:if test="position() mod 2=0">
                     <li class="even">
