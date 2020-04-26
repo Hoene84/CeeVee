@@ -1,0 +1,178 @@
+@font-face {
+    font-family: Frutiger;
+    font-weight: 400;
+    font-style: normal;
+    src: url(zkb/font/FrutigerLTW02-55Roman.woff) format("woff")
+}
+
+@font-face {
+    font-family: Frutiger;
+    font-weight: 900;
+    font-style: normal;
+    src: url(zkb/font/FrutigerLTW02-75Black.woff) format("woff")
+}
+
+@font-face {
+    font-family: Frutiger;
+    font-weight: 700;
+    font-style: normal;
+    src: url(zkb/font/FrutigerLTW02-65Bold.woff) format("woff")
+}
+
+body, html {
+    font: normal 400 14px/1.25em FrutigerRegular,"Helvetica Neue",Helvetica,sans-serif;
+    /*font: normal 400 100.01%/1.25em FrutigerRegular,"Helvetica Neue",Helvetica,sans-serif;*/
+    color: #003cb4;
+}
+
+.container {
+    font-size: .9375rem;
+    font-family: Frutiger,FrutigerRegular,"Helvetica Neue",Helvetica,sans-serif;
+}
+
+
+div.person
+{
+    background-color: #003cb4;
+    color: white;
+    line-height: 1.53846em;
+    margin-bottom: 1.875em;
+    line-height: 1.53846em;
+}
+
+div.person > div.description
+{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+div.person div.infos {
+    margin-top: 0;
+}
+
+div.person h1,
+div.person h2,
+div.person h3
+{
+    margin: 0;
+}
+
+a
+{
+    color: black;
+}
+
+div.person h1,
+div.person h2
+{
+    color: white;
+}
+
+div.person h3
+{
+    color: #00bec8;
+    font-style: normal;
+}
+
+div.project div.label,
+div.project div.header,
+dt
+{
+    font-family: Frutiger,FrutigerBold,FrutigerRegular,"Helvetica Neue",Helvetica,sans-serif;
+    font-weight: 700;
+}
+
+h1, h2, h3, h4,
+div.packeryItem
+{
+
+}
+
+h1,
+div.packeryItem
+{
+    font-weight: 900;
+    font-family: Frutiger,FrutigerBold,"Helvetica Neue",Helvetica,Arial;
+    font-size: 3rem;
+    line-height: 1.27273em;
+    margin-top: 0.35714em;
+    margin-bottom: 0.35714em;
+}
+
+h2
+{
+    font-family: Frutiger,FrutigerBold,"Helvetica Neue",Helvetica,Arial;
+    font-size: 1.75rem;
+    font-weight: 900;
+    line-height: 2.125rem;
+}
+
+h3
+{
+    font-family: Frutiger,FrutigerBold,"Helvetica Neue",Helvetica,Arial;
+    font-weight: 900;
+    line-height: 2.125rem;
+}
+
+h4 {
+    font-weight: bold;
+}
+i
+{
+    font-style: normal;
+    color: #006cff;
+}
+
+.even,
+.odd
+{
+    background-color: white;
+}
+
+ul.table.skillgroup:not(:last-child),
+ul.table.trainings dt,
+ul.table.trainings dd,
+ul.table.languages dt,
+ul.table.languages dd,
+ul.table.certificats dt,
+ul.table.certificats dd {
+    border-bottom: 1px solid #003cb4;
+}
+
+div.project div.label,
+div.project div.value,
+div.project div.skillrefs,
+ul.table dt,
+dd
+{
+    padding: 4px 0;
+}
+
+.table.skillgroup dd,
+.table.skillgroup dt {
+    padding: 0;
+}
+
+.table.skillgroup {
+    padding-bottom: 1em;
+}
+
+ul:not(.table) {
+    list-style-type: none;
+    line-height: 1.53846em;
+}
+
+ul:not(.table) li {
+    margin-bottom: .30769em;
+}
+
+ul:not(.table) li:before {
+    width: 5px;
+    height: 5px;
+    margin-left: -12px;
+    display: inline-block;
+    position: absolute;
+    vertical-align: middle;
+    content: '-';
+    margin-top: 0;
+    background-color: transparent;
+}
