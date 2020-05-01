@@ -176,3 +176,7 @@ ul:not(.table) li:before {
     margin-top: 0;
     background-color: transparent;
 }
+
+.acc {
+    color: #00bec8;
+}

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../src/cv.xsd" international="false">
     <layout>
-        <theme>green</theme>
+        <theme>zkb</theme>
         <theme>honegger</theme>
         <script>ext/jquery-2.1.4</script>
         <!--<script>ext/isotope.pkgd</script>-->
@@ -41,17 +41,17 @@
         <activity>
             <from year="2019" month="06" style="plain" />
             <to style="text">Aktuell</to>
-            <description>Denteo AG, Cloudbasierte Softwarelösung für Zahnarztpraxen&lt;br/&gt;Senior Applikationsentwickler Ruby on Rails, Vue.js</description>
+            <description>Denteo AG, &lt;span class="acc"&gt;Startup mit cloudbasierter Softwarelösung für Zahnarztpraxen&lt;/span&gt;&lt;br/&gt;Senior Applikationsentwickler Ruby on Rails, Vue.js</description>
         </activity>
         <activity>
             <from year="2016" month="07" style="plain" />
             <to year="2019"  month="05" style="plain" />
-            <description>Supercomputing Systems AG, Retrofit Ticketautomaten&lt;br/&gt;Entwicklungsingenieur</description>
+            <description>Supercomputing Systems AG, &lt;span class="acc"&gt;Retrofit ÖV-Ticketautomaten&lt;/span&gt;&lt;br/&gt;Entwicklungsingenieur</description>
         </activity>
         <activity>
             <from year="2011" month="10" style="plain" />
             <to year="2016"  month="06" style="plain" />
-            <description>IMISnext AG, B2B eCommerce&lt;br/&gt;Senior Applikationsentwickler Java &amp; Scala</description>
+            <description>IMISnext AG, B2B eCommerce mit eigenem &lt;span class="acc"&gt;Onlineshop Framework&lt;/span&gt;&lt;br/&gt;Senior Applikationsentwickler Java &amp; Scala</description>
         </activity>
         <activity>
             <from year="2008" month="09" style="plain" />
@@ -204,12 +204,13 @@
                 <from year="2016" month="07" style="plain" />
                 <to year="2019" month="05"/>
                 <function>Full-Stack Senior Entwickler in Festanstellung</function>
-                <project title="Denteo - Dentalpraxis Cloud Software" id="denteo">
-                    <activity>Zukunftsorientierte Produktgestaltung der Cloud Software mit Rails/Vue.js Architektur</activity>
-                    <activity>Migration der Webapplikation vom klassischen Server-Side Rendering zu moderner Vue.js / Rest Architektur</activity>
-                    <activity>DevOps in einer CI/CD Umgebung auf Kubernetes Basis mit über 100 produktions Instanzen</activity>
-                    <activity>Integration mehrerer Inkasso/Factoring Schnittstellen</activity>
-                    <activity>Übergreifende Verantwortungen zu Bereichen wie First-/Secondlevel Support und Onboarding</activity>
+                <project title="Denteo - Dentalpraxis Cloud Software Startup" id="denteo">
+                    <activity>Zukunftsorientiertes mitgestalten des Produkts Denteo, der innovativsten Cloud Softwarelösung für Zahnarztpraxen</activity>
+                    <activity>Migration der Rails Webapplikation vom klassischen Server-Side Rendering zu einer modernen Vue.js / Rest Architektur</activity>
+                    <activity>Ausarbeiten und Verifikation von Konzepten in direkten Kontakt mit Zahnärzten und deren Assisteten</activity>
+                    <activity>DevOps in einer CI/CD Umgebung mit Kubernetes, orchestrierung von über 100 produktions Instanzen</activity>
+                    <activity>Integration mehrerer Factoring/Inkasso Schnittstellen, in engem Kontakt mit diesen Anbietern</activity>
+                    <activity>Übergreifende Verantwortungen zu Bereichen wie First-/Secondlevel Support und Onboarding, bei Engpässen diese auch übernehmen</activity>
                     <skillrefs>
                         <skillref>rails</skillref>
                         <skillref>vue</skillref>
@@ -226,8 +227,8 @@
                 <function>Entwicklungsingenieur in Festanstellung</function>
                 <project title="PTTS - Public Transport Ticketing System" id="ptts">
                     <activity>Entwicklung Ticketautomaten-Softwarelösung, in Betrieb auf 1'250 Ticketautomaten diverser schweizer Verkehrsbetriebe</activity>
-                    <activity>Software Architektur und Design: Hardware-Anbindung, Webapplikation Sortiments-Verwaltung, Tarifsystem, Zahlunsmittel-Anbindung, Fahrgastinformationssysteme</activity>
-                    <activity>Closed- und Openloop Smartcard-Applikationen unter EP2 Konformitätsnormen für Zahlterminals</activity>
+                    <activity>Software Architektur und Design: Hardware-Anbindung, Webapplikation Sortiments-Verwaltung, Tarifsystem, Zahlunsmittel-Anbindung, Schnittsetellen zu Fahrgastinformationsystemen</activity>
+                    <activity>Entwicklung von Closed- und Anbindung von Openloop Smartcard-Applikationen unter EP2 Konformitätsnormen für Zahlterminals</activity>
                     <activity>Positionierung der Ticketing-Lösung in dem sich im Umbruch befinden Markt im agilen, diversivizierten Scrum Team</activity>
                     <skillrefs>
                         <skillref>java</skillref>
@@ -273,10 +274,8 @@
                     <activity>Einführung Mandantenfähigkeit bzgl. Logik, Darstellung und Anbindung von Umsystemen</activity>
                     <activity>Entwicklung diverser Features im Front- sowie Backend in Java mithilfe des Tapestry Frameworks</activity>
                     <activity>Koordination mit Umsystemen (ERP/Pim/Mobile/Webservices)</activity>
-                    <activity>Koordination von Entwicklung, Testing, Releases und Deployments</activity>
-                    <activity>Verantwortung QS, Verifikation/Validation Merge Requests aller Entwickler</activity>
-                    <activity>Beratung der Kunden zur technischen Umsetzung ihrer fachliche Anforderungen und Wünsche</activity>
-                    <activity>Verantwortung über Infrastruktur, deren Dokumentation und für die Einhaltung des SLA</activity>
+                    <activity>Verantwortung und Koordination Entwicklung, SLA, QS, Infrastruktur, Dokumentation, Releases und Deployments</activity>
+                    <activity>Beratung der Kunden zur technischen Umsetzung ihrer fachliche Anforderungen</activity>
                     <skillrefs>
                         <skillref>java</skillref>
                         <skillref>tapestry</skillref>
@@ -284,8 +283,7 @@
                 </project>
                 <project title="Neuentwicklung www.geckoreifen.de und www.esashop.ch" id="esa">
                     <activity>Entwicklung diverser Features im Front- sowie Backend in Scala mithilfe des Play Frameworks</activity>
-                    <activity>Integration tagesaktueller SAP Daten</activity>
-                    <activity>Anbindung von REST APIs zur Erweiterung der Produktinformationen</activity>
+                    <activity>Integration tagesaktueller SAP Daten und Anbindung zahlreicher REST APIs</activity>
                     <skillrefs>
                         <skillref>scala</skillref>
                         <skillref>play</skillref>
@@ -300,8 +298,7 @@
                 <to year="2010" month="08"/>
                 <function>Applikationsentwickler auf Stundenlohnbasis</function>
                 <project title="ACS (Zutritts- und Zugriffsrechteverwaltung) Rel. 2.1" id="acs">
-                    <activity>Kundennahe Umsetzung von fachlichen Anforderungen nach Scrum Rahmenwerk</activity>
-                    <activity>Implementieren, testen und präsentieren dieser Anforderungen</activity>
+                    <activity>Fachbereichnahe Umsetzung von fachlichen Anforderungen an die Java Webapplikation ACS nach Scrum Rahmenwerk</activity>
                     <skillrefs>
                         <skillref>java</skillref>
                     </skillrefs>
@@ -380,7 +377,7 @@
         </activity>
         <activity link="https://github.com/Hoene84/CeeVee" id="ceevee">
             <from year="2015"/>
-            <to year="2016"/>
+            <to style="text">Aktuell</to>
             <title>CeeVee</title>
             <description>CV Generator: XML -> HTML und PDF&lt;br/&gt;Das Resultat wird z.Zt. kritisch betrachtet.</description>
             <skillrefs>
