@@ -71,3 +71,10 @@ i
 {
     color: #333;
 }
+
+div.experiance div.function,
+div.experiance div.function h2,
+div.experiance div.function h3
+{
+    letter-spacing: 2px;
+}
