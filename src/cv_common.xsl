@@ -218,7 +218,7 @@
     </xsl:template>
 
     <xsl:template match="activity">
-        <dl class="activity {@id}">
+        <dl class="activity {@id} {skillrefs/@location} {skillrefs/@orientation}">
             <dt>
                 <div>
                     <xsl:value-of select="title"/>
@@ -292,7 +292,7 @@
                     </div>
                 </div>
             </div>
-            <div class="content">
+            <div class="content {skillrefs/@location} {skillrefs/@orientation}"  >
                 <div class="value">
                     <div>
                         <ul>
@@ -309,20 +309,18 @@
 
     <xsl:template match="skillrefs">
         <div class="skillrefs">
-            <div class="packeryContainer">
-                <xsl:apply-templates select="key('skillref', skillref)" mode="skillref"/>
-            </div>
+            <xsl:apply-templates select="key('skillref', skillref)" mode="skillref"/>
         </div>
     </xsl:template>
 
     <xsl:template match="skill" mode="skillref">
-        <div class="packeryItem">
+        <div class="skillref">
             <xsl:choose>
                 <xsl:when test="@logo">
                     <img src="{@logo}" alt="{@id}" title="{.}"/>
                 </xsl:when>
                 <xsl:otherwise>
-                    <xsl:value-of select="." />
+                        <xsl:value-of select="." />
                 </xsl:otherwise>
             </xsl:choose>
         </div>

@@ -112,15 +112,10 @@ dt
     width: 21%;
 }
 
-h1,
-div.packeryItem
+h1
 {
     font-size: 25px;
     margin-top: 40px;
-}
-
-div.packeryItem {
-    margin-top: 0;
 }
 
 h2
@@ -183,8 +178,9 @@ div.experiance div.function h3
     margin-top: 5px;
 }
 
-div.project div.skillrefs
+.right div.skillrefs
 {
+    margin-top: 8px;
     margin-left: 20px;
     margin-bottom: 5px;
 }
@@ -194,22 +190,63 @@ dl.activity div.text
     display: inline-block;
 }
 
-dl.activity div.skillrefs
-{
-    width: 28%;
-    float: right;
-    margin: 5px;
+div.skillref {
+    font-size: 25px
 }
 
-div.period div.description > div.skillrefs
+div.skillrefs {
+    align-items: center;
+    display: flex;
+}
+
+.vertical div.skillrefs
 {
-    padding: 50px;
+    display: inline-block;
+}
+
+.horizontal div.skillrefs .skillref
+{
+    margin-left: 20px;
+}
+
+.bottom {
+    flex-direction: column;
+}
+
+.bottom div.skillrefs {
+    flex-flow: row-reverse;
+}
+
+.vertical div.skillrefs .skillref
+{
+    display: flex;
+    justify-content: center;
+}
+
+.horizontal.bottom div.skillrefs {
+    margin-bottom: 15px;
+    padding-top: 0;
+}
+
+.vertical div.skillrefs .skillref:not(:last-child) {
+    margin-bottom: 20px;
 }
 
 div.skillrefs img
 {
     max-width: 100px;
     max-height: 40px;
+}
+
+.project .content,
+.activity dd
+{
+    display: flex;
+}
+
+.project .value,
+.activity dd .text{
+    width: 100%;
 }
 
 i

@@ -36,7 +36,7 @@ dt
 }
 
 h1, h2, h3, h4,
-div.packeryItem
+div.skillref
 {
     font-weight: bold;
     font-style: italic;
@@ -45,7 +45,7 @@ div.packeryItem
 }
 
 h1,
-div.packeryItem
+div.skillref
 {
     color: #5b5b5b;
 }

@@ -80,14 +80,7 @@ h3.function
     font-weight: 700;
 }
 
-h1, h2, h3, h4,
-div.packeryItem
-{
-
-}
-
-h1,
-div.packeryItem
+h1
 {
     font-weight: 900;
     font-family: Frutiger,FrutigerBold,"Helvetica Neue",Helvetica,Arial;
@@ -97,7 +90,8 @@ div.packeryItem
     margin-bottom: 0.35714em;
 }
 
-h2
+h2,
+div.skillref
 {
     font-family: Frutiger,FrutigerBold,"Helvetica Neue",Helvetica,Arial;
     font-size: 1.75rem;

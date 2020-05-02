@@ -3,10 +3,6 @@
     <layout>
         <theme>zkb</theme>
         <theme>honegger</theme>
-        <script>ext/jquery-2.1.4</script>
-        <!--<script>ext/isotope.pkgd</script>-->
-        <script>ext/packery.pkgd</script>
-        <script>init</script>
     </layout>
     <person>
         <forename>Simon</forename>
@@ -207,7 +203,7 @@
                     <activity>DevOps in einer CI/CD Umgebung mit Kubernetes, orchestrierung von über 100 produktions Instanzen</activity>
                     <activity>Integration mehrerer Factoring/Inkasso Schnittstellen, in engem Kontakt mit diesen Anbietern</activity>
                     <activity>Übergreifende Verantwortungen zu Bereichen wie First-/Secondlevel Support und Onboarding, bei Engpässen diese auch übernehmen</activity>
-                    <skillrefs>
+                    <skillrefs location="right" orientation="vertical">
                         <skillref>rails</skillref>
                         <skillref>vue</skillref>
                         <skillref>kubernetes</skillref>
@@ -226,7 +222,7 @@
                     <activity>Software Architektur und Design: Hardware-Anbindung, Webapplikation Sortiments-Verwaltung, Tarifsystem, Zahlunsmittel-Anbindung, Schnittsetellen zu Fahrgastinformationsystemen</activity>
                     <activity>Entwicklung von Closed- und Anbindung von Openloop Smartcard-Applikationen unter EP2 Konformitätsnormen für Zahlterminals</activity>
                     <activity>Positionierung der Ticketing-Lösung in dem sich im Umbruch befinden Markt im agilen, diversivizierten Scrum Team</activity>
-                    <skillrefs>
+                    <skillrefs location="bottom" orientation="horizontal">
                         <skillref>java</skillref>
                         <skillref>postgres</skillref>
                         <skillref>c</skillref>
@@ -236,7 +232,7 @@
                 </project>
                 <project title="ZKE - Zug Kontrolleinrichtungen SBB" id="zke">
                     <activity>Implementation Positionsbestimmung der Pantographen eines Zuges im Gotthard-Basistunnel</activity>
-                    <skillrefs>
+                    <skillrefs location="right" orientation="vertical">
                         <skillref>spring</skillref>
                     </skillrefs>
                 </project>
@@ -253,7 +249,7 @@
                     <activity>Verifikation/Validation aller Merge Requests für iShop Core 3</activity>
                     <activity>Mitverantwortung Design- und Architekturentscheidungen iShop Core 3</activity>
                     <activity>Unterstützung bei Fragen, Lösungsentscheidungen und Problemen der Entwickler</activity>
-                    <skillrefs>
+                    <skillrefs location="right" orientation="vertical">
                         <skillref>java</skillref>
                         <skillref>scala</skillref>
                     </skillrefs>
@@ -262,7 +258,7 @@
                     <activity>Aufzeigen des Optimierungspotenzials der Entwicklungsprozesse mithilfe agiler Methodiken gegenüber der Geschäftsführung mittels eines verständlichen und trotzdem vertiefenden Dokuments</activity>
                     <activity>Initiierung der agilen Projektumsetzung in der IMISnext unter Berücksichtigung des Kundenumfelds und der Vorgehensweise in der internen Entwicklung.</activity>
                     <activity>Coaching eines Scrum Teams in der Scrum Master Funktion</activity>
-                    <skillrefs>
+                    <skillrefs location="right" orientation="vertical">
                         <skillref>scrum</skillref>
                     </skillrefs>
                 </project>
@@ -272,7 +268,7 @@
                     <activity>Koordination mit Umsystemen (ERP/Pim/Mobile/Webservices)</activity>
                     <activity>Verantwortung und Koordination Entwicklung, SLA, QS, Infrastruktur, Dokumentation, Releases und Deployments</activity>
                     <activity>Beratung der Kunden zur technischen Umsetzung ihrer fachliche Anforderungen</activity>
-                    <skillrefs>
+                    <skillrefs location="right" orientation="vertical">
                         <skillref>java</skillref>
                         <skillref>tapestry</skillref>
                     </skillrefs>
@@ -280,7 +276,7 @@
                 <project title="Neuentwicklung www.geckoreifen.de und www.esashop.ch" id="esa">
                     <activity>Entwicklung diverser Features im Front- sowie Backend in Scala mithilfe des Play Frameworks</activity>
                     <activity>Integration tagesaktueller SAP Daten und Anbindung zahlreicher REST APIs</activity>
-                    <skillrefs>
+                    <skillrefs location="right" orientation="vertical">
                         <skillref>scala</skillref>
                         <skillref>play</skillref>
                     </skillrefs>
@@ -295,7 +291,7 @@
                 <function>Applikationsentwickler auf Stundenlohnbasis</function>
                 <project title="ACS (Zutritts- und Zugriffsrechteverwaltung) Rel. 2.1" id="acs">
                     <activity>Fachbereichnahe Umsetzung von fachlichen Anforderungen an die Java Webapplikation ACS nach Scrum Rahmenwerk</activity>
-                    <skillrefs>
+                    <skillrefs location="right" orientation="vertical">
                         <skillref>java</skillref>
                     </skillrefs>
                 </project>
@@ -307,7 +303,7 @@
                 <function>Aushilfe auf Stundenlohnbasis</function>
                 <project title="Match E4 Testing" id="matche4">
                     <activity>Kosten-Nutzen-Analyse diverser Optimierungen im Integrationstest</activity>
-                    <skillrefs>
+                    <skillrefs location="right" orientation="vertical">
                         <skillref>office</skillref>
                     </skillrefs>
                 </project>
@@ -321,7 +317,7 @@
                     <activity>Teilprojektleitung ASD/SDS</activity>
                     <activity>Definition des bankfachlichen Modells und Konsistenzbedingungen mit dem Fachbereich</activity>
                     <activity>Implementation nach MDA (Model Driven Architecture) Ansatz</activity>
-                    <skillrefs>
+                    <skillrefs location="right" orientation="vertical">
                         <skillref>uml</skillref>
                     </skillrefs>
                 </project>
@@ -330,7 +326,7 @@
                     <activity>Spezifikation der Java Software Komponente ASD/SDS GUI und Codierung des generischen Teils</activity>
                     <activity>Abstimmung der Realisierung der fachlichen Anforderungen mit dem Fachbereich</activity>
                     <activity>Analyse, Spezifikation, Design, Implementation und Test diverser Java Softwarekomponenten</activity>
-                    <skillrefs>
+                    <skillrefs location="right" orientation="vertical">
                         <skillref>java</skillref>
                     </skillrefs>
                 </project>
@@ -340,7 +336,7 @@
                     <activity>Durchführen von Systembuilds in der Stammdatenverwaltung</activity>
                     <activity>Mitentwicklung der PL/1 Schnittstelle auf dezentrale Services (C++)</activity>
                     <activity>Modellieren und Realisieren von Interface Business Objects (XML)</activity>
-                    <skillrefs>
+                    <skillrefs location="right" orientation="vertical">
                         <skillref>java</skillref>
                         <skillref>cplusplus</skillref>
                         <skillref>pli</skillref>
@@ -356,7 +352,7 @@
             <to year="2014"/>
             <title>Turtle Player</title>
             <description>Android Musicplayer optimiert für grosse Playlisten</description>
-            <skillrefs>
+            <skillrefs location="right" orientation="horizontal">
                 <skillref>android</skillref>
                 <skillref>java</skillref>
             </skillrefs>
@@ -366,7 +362,7 @@
             <to year="2014"/>
             <title>Perzist</title>
             <description>Persistenzlayer mit Fokus auf compile time error detection</description>
-            <skillrefs>
+            <skillrefs location="right" orientation="horizontal">
                 <skillref>java</skillref>
                 <skillref>sql</skillref>
             </skillrefs>
@@ -376,7 +372,7 @@
             <to style="text">Aktuell</to>
             <title>CeeVee</title>
             <description>CV Generator: XML -> HTML und PDF&lt;br/&gt;Das Resultat wird z.Zt. kritisch betrachtet.</description>
-            <skillrefs>
+            <skillrefs location="right" orientation="horizontal">
                 <skillref>xml</skillref>
                 <skillref>html</skillref>
             </skillrefs>
