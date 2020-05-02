@@ -86,7 +86,6 @@ div.project div
     vertical-align: top;
 }
 
-div.project div.label,
 div.project div.value,
 div.project div.skillrefs,
 ul.table dt,
@@ -108,7 +107,6 @@ div.person div.infos div.value
     padding-right: 80px;
 }
 
-div.project div.label,
 dt
 {
     width: 21%;
