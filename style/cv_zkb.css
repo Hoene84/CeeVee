@@ -19,7 +19,7 @@
     src: url(zkb/font/FrutigerLTW02-65Bold.woff) format("woff")
 }
 
-body, html {
+body, html, a {
     font: normal 400 14px/1.25em FrutigerRegular,"Helvetica Neue",Helvetica,sans-serif;
     /*font: normal 400 100.01%/1.25em FrutigerRegular,"Helvetica Neue",Helvetica,sans-serif;*/
     color: #003cb4;
@@ -54,11 +54,6 @@ div.person h2,
 div.person h3
 {
     margin: 0;
-}
-
-a
-{
-    color: black;
 }
 
 div.person h1,
@@ -132,7 +127,9 @@ ul.table.trainings dd,
 ul.table.languages dt,
 ul.table.languages dd,
 ul.table.certificats dt,
-ul.table.certificats dd {
+ul.table.certificats dd,
+ul.table.projects dt,
+ul.table.projects dd {
     border-bottom: 1px solid #003cb4;
 }
 
