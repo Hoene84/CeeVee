@@ -152,7 +152,9 @@ dd
     padding: 0;
 }
 
-.table.skillgroup {
+.table.skillgroup,
+ul.table
+{
     padding-bottom: 1em;
 }
 
