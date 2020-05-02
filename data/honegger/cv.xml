@@ -77,20 +77,19 @@
         <skillgroup title="Sprachen">
             <solidskill etc="false">
                 <skill id="java" logo="skills/java_ee.png">Java</skill>
+                <skill id="html" logo="skills/html_css_js.png">HTML/CSS/JS</skill>
                 <skill id="ruby">Ruby</skill>
                 <skill id="scala" logo="skills/scala.png">Scala</skill>
-                <skill id="html" logo="skills/html_css_js.png">HTML/CSS/JS</skill>
                 <skill id="bash" logo="skills/bash.png">bash</skill>
-                <skill id="cplusplus" logo="skills/CPlusPlus.png">C/C++</skill>
-                <skill id="c" logo="skills/c.png">C/C++</skill>
-                <skill id="xml" logo="skills/xml.png">XML(XSD/XSLT/XSL)</skill>
+                <skill id="cplusplus" logo="skills/CPlusPlus.png">C++</skill>
+                <skill id="c" logo="skills/c.png">C</skill>
                 <skill id="sql" logo="skills/sql.png">SQL</skill>
-                <skill id="latex" logo="skills/latex.png">LaTeX</skill>
+                <skill id="xml" logo="skills/xml.png">XML</skill>
             </solidskill>
             <goodskill etc="true">
                 <skill id="python" logo="skills/python.png">Python</skill>
+                <skill id="latex" logo="skills/latex.png">LaTeX</skill>
                 <skill id="pli">PL/I</skill>
-                <skill id="vb" logo="skills/visual-basic.png">Visual Basic</skill>
             </goodskill>
         </skillgroup>
         <skillgroup title="Entwicklung">
@@ -106,7 +105,6 @@
             </solidskill>
             <goodskill etc="true">
                 <skill id="svn" logo="skills/svn.png">SVN</skill>
-                <skill id="synergy" logo="skills/synergy.png">Rational Synergy</skill>
                 <skill id="cvs">CVS</skill>
             </goodskill>
         </skillgroup>
@@ -114,8 +112,8 @@
             <solidskill etc="false">
                 <skill id="rails"  logo="skills/rails.png">Rails</skill>
                 <skill id="javafx">Java FX</skill>
-                <skill id="hibernate" logo="skills/hibernate.png">Hibernate</skill>
                 <skill id="spring" logo="skills/spring.png">Spring</skill>
+                <skill id="hibernate" logo="skills/hibernate.png">Hibernate</skill>
                 <skill id="lucene">Lucene</skill>
                 <skill id="jaxws" logo="skills/jaxws.png">jaxws</skill>
                 <skill id="junit" logo="skills/junit.png">JUnit</skill>
@@ -132,14 +130,14 @@
                 <skill id="vue" logo="skills/vue.png">Vue.js</skill>
                 <skill id="polymer" logo="skills/polymer.png">Polymer Project</skill>
                 <skill id="vaadinflow" logo="skills/vaadin_flow.png">Vaadin Flow</skill>
-                <skill id="react">React</skill>
                 <skill id="jquery" logo="skills/jquery.png">jQuery</skill>
                 <skill id="bootstrap">Bootstrap</skill>
-                <skill id="wicket" logo="skills/apache-wicket.png">Apache Wicket</skill>
             </solidskill>
             <goodskill etc="true">
+                <skill id="react">React</skill>
                 <skill id="play" logo="skills/play.png">Play Framework</skill>
                 <skill id="tapestry" logo="skills/tapestry.png">Tapestry</skill>
+                <skill id="wicket" logo="skills/apache-wicket.png">Apache Wicket</skill>
             </goodskill>
         </skillgroup>
         <skillgroup title="Datenbanken">
@@ -162,15 +160,13 @@
                 <skill id="intellij" logo="skills/intellij.png">itelliJ</skill>
                 <skill id="vp" logo="skills/visual_paradigm.png">Visual Paradigm UML</skill>
                 <skill id="ea" logo="skills/enterprise_architekt.png">Enterprise Architekt</skill>
-                <skill id="office" logo="skills/microsoftOffice.png">Office suite</skill>
+                <skill id="office" logo="skills/microsoftOffice.png">Office Suite</skill>
             </solidskill>
             <goodskill etc="true">
                 <skill id="rr" logo="skills/rational_rose.png">Rational Rose</skill>
                 <skill id="eclipse" logo="skills/eclipse.png">Eclipse</skill>
                 <skill id="make" logo="skills/make.png">make</skill>
                 <skill id="qtcreator" logo="skills/qtcreator.png">QtCreator</skill>
-                <skill id="vs" logo="skills/visual_studio.png">Visual Studio</skill>
-                <skill id="xcode" logo="skills/xcode.png">Xcode</skill>
             </goodskill>
         </skillgroup>
         <skillgroup title="Umgebungen">
