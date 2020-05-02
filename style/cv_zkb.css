@@ -73,8 +73,8 @@ div.person h3
     font-style: normal;
 }
 
-div.project div.header,
-dt
+dt,
+h3.function
 {
     font-family: Frutiger,FrutigerBold,FrutigerRegular,"Helvetica Neue",Helvetica,sans-serif;
     font-weight: 700;
@@ -105,11 +105,16 @@ h2
     line-height: 2.125rem;
 }
 
-h3
+h3,
+div.project div.header
 {
     font-family: Frutiger,FrutigerBold,"Helvetica Neue",Helvetica,Arial;
     font-weight: 900;
     line-height: 2.125rem;
+}
+
+div.project div.header {
+    font-size: 1.17em;
 }
 
 h4 {
