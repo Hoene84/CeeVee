@@ -177,10 +177,26 @@ ul:not(.table) li:before {
     color: #00bec8;
 }
 
-div.experiance div.function,
-div.experiance div.function h2,
-div.experiance div.function h3
-{
-    margin-bottom: 0;
-    margin-top: 0;
+.experiance > .header {
+    padding: 1.15385em 1.38462em;
+    background: #ebebeb;
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.experiance > .header .company {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.experiance > .header .function {
+    white-space: nowrap;
+}
+
+.experiance > .header::after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
 }

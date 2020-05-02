@@ -260,17 +260,19 @@
     </xsl:template>
     <xsl:template match="period">
         <div class="experiance">
-            <xsl:apply-templates select="company"/>
-            <div class="function">
-                <div>
-                    <h2>
-                        <xsl:call-template name="dateTemplate"/>
-                    </h2>
-                </div>
-                <div>
-                    <h3 class="function">
-                        <xsl:apply-templates select="function"/>
-                    </h3>
+            <div class="header">
+                <xsl:apply-templates select="company"/>
+                <div class="function">
+                    <div>
+                        <h2>
+                            <xsl:call-template name="dateTemplate"/>
+                        </h2>
+                    </div>
+                    <div>
+                        <h3 class="function">
+                            <xsl:apply-templates select="function"/>
+                        </h3>
+                    </div>
                 </div>
             </div>
             <div class="period">
