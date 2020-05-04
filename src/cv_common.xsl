@@ -311,8 +311,12 @@
 
     <xsl:template match="skillrefs">
         <div class="skillrefs">
-            <xsl:apply-templates select="key('skillref', skillref)" mode="skillref"/>
+            <xsl:apply-templates select="skillref"/>
         </div>
+    </xsl:template>
+
+    <xsl:template match="skillref">
+        <xsl:apply-templates select="key('skillref', .)" mode="skillref"/>
     </xsl:template>
 
     <xsl:template match="skill" mode="skillref">
