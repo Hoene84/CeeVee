@@ -194,6 +194,11 @@ div.experiance > .header > div {
     padding: 1.15385em 1.38462em;
 }
 
+.experiance > .header div.function > div {
+    width: 350px;
+    text-align: right;
+}
+
 div.experiance div.period {
     margin-bottom: 30px;
     margin-top: -40px;
