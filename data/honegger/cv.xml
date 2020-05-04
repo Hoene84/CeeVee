@@ -71,8 +71,8 @@
     <skills title="Kompetenzen">
         <skillgroup title="Sprachen">
             <solidskill etc="false">
-                <skill id="java" logo="skills/java_ee.png">Java</skill>
-                <skill id="html" logo="skills/html_css_js.png">HTML/CSS/JS</skill>
+                <skill id="java" logo="skills/java_ee.png">!?Java?!</skill>
+                <skill id="html" logo="skills/html_css_js.png">!?HTML/CSS/JS?!</skill>
                 <skill id="ruby">Ruby</skill>
                 <skill id="scala" logo="skills/scala.png">Scala</skill>
                 <skill id="bash" logo="skills/bash.png">bash</skill>
@@ -88,7 +88,7 @@
         </skillgroup>
         <skillgroup title="Entwicklung">
             <solidskill etc="false">
-                <skill id="scrum" logo="skills/scrum.png">Scrum</skill>
+                <skill id="scrum" logo="skills/scrum.png">!?Scrum?!</skill>
                 <skill id="git" logo="skills/git.png">GIT</skill>
                 <skill id="kubernetes" logo="skills/kubernetes.png">Kubernetes</skill>
                 <skill id="docker">Docker</skill>
@@ -111,8 +111,8 @@
                 <skill id="javafx">Java FX</skill>
                 <skill id="lucene">Lucene</skill>
                 <skill id="jaxws" logo="skills/jaxws.png">jaxws</skill>
-                <skill id="junit" logo="skills/junit.png">JUnit</skill>
-                <skill id="mockito" logo="skills/mockito.png">Mockito</skill>
+                <skill id="junit" logo="skills/junit.png">!?JUnit?!</skill>
+                <skill id="mockito" logo="skills/mockito.png">!?Mockito?!</skill>
             </solidskill>
             <goodskill etc="true">
                 <skill id="android" logo="skills/android.png">Android SDK</skill>
@@ -164,7 +164,7 @@
         </skillgroup>
         <skillgroup title="Umgebungen">
             <solidskill etc="false">
-                <skill id="linux" logo="skills/linux.png">Linux und anderen Unix basierte Systeme</skill>
+                <skill id="linux" logo="skills/linux.png">Linux und anderen !?Unix basierte Systeme?!</skill>
             </solidskill>
             <goodskill etc="false">
                 <skill id="windows" logo="skills/windows.png">Windows</skill>
@@ -194,11 +194,11 @@
                 <function>Full-Stack Senior Entwickler in Festanstellung</function>
                 <project title="Denteo - Dentalpraxis Cloud Software Startup" id="denteo">
                     <activity>Zukunftsorientiertes mitgestalten des Produkts Denteo, der innovativsten Cloud Softwarelösung für Zahnarztpraxen</activity>
-                    <activity>Migration der Rails Webapplikation vom klassischen Server-Side Rendering zu einer modernen Vue.js / Rest Architektur</activity>
-                    <activity>Ausarbeiten und Verifikation von Konzepten in direkten Kontakt mit den Zahnärzten und deren Assistenten</activity>
+                    <activity>Migration der Rails Webapplikation vom klassischen Server-Side Rendering zu einer modernen !?Vue.js / Rest Architektur!?</activity>
+                    <activity>Ausarbeiten und Verifikation von Konzepten !?in direkten Kontakt mit den Zahnärzten?!</activity>
                     <activity>DevOps in einer CI/CD Umgebung mit Kubernetes, orchestrierung von über 100 produktions Instanzen</activity>
                     <activity>Integration mehrerer Factoring/Inkasso Schnittstellen, in engem Kontakt mit diesen Anbietern</activity>
-                    <activity>Übergreifende Verantwortungen zu Bereichen wie First-/Secondlevel Support und Kunden Onboarding, bei Engpässen diese auch übernehmen</activity>
+                    <activity>!?Übergreifende Verantwortungen ?!zu Bereichen wie First-/Secondlevel Support und Kunden Onboarding, bei Engpässen diese auch übernehmen</activity>
                     <skillrefs location="right" orientation="vertical">
                         <skillref>rails</skillref>
                         <skillref>html</skillref>
@@ -216,9 +216,9 @@
                 <function>Entwicklungsingenieur in Festanstellung</function>
                 <project title="PTTS - Public Transport Ticketing System" id="ptts">
                     <activity>Entwicklung Ticketautomaten-Softwarelösung, in Betrieb auf 1'250 Ticketautomaten diverser schweizer Verkehrsbetriebe</activity>
-                    <activity>Software Architektur und Design: Hardware-Anbindung, Webapplikation Sortiments-Verwaltung, Tarifsystem, Zahlunsmittel-Anbindung, Schnittsetellen zu Fahrgastinformationsystemen</activity>
+                    <activity>!?Software Architektur und Design?!: Hardware-Anbindung, Webapplikation Sortiments-Verwaltung, Tarifsystem, Zahlunsmittel-Anbindung, Schnittsetellen zu Fahrgastinformationsystemen</activity>
                     <activity>Entwicklung von Closed- und Anbindung von Openloop Smartcard-Applikationen unter EP2 Konformitätsnormen für Zahlterminals</activity>
-                    <activity>Positionierung der Ticketing-Lösung in dem sich im Umbruch befinden Markt im agilen, diversivizierten Scrum Team</activity>
+                    <activity>Positionierung der Ticketing-Lösung in dem sich im Umbruch befinden Markt im agilen, diversivizierten !?Scrum Team?!</activity>
                     <skillrefs location="right" orientation="vertical">
                         <skillref>java</skillref>
                         <skillref>polymer</skillref>
@@ -243,7 +243,7 @@
                 <project title="Mitglied des iShop Core Teams" id="core">
                     <activity>Analyse der architektonischen Probleme iShop Core 3 und Konzeption iShop Core 4 mit individuellen domain models</activity>
                     <activity>Verifikation/Validation aller Merge Requests für iShop Core 3</activity>
-                    <activity>Mitverantwortung Design- und Architekturentscheidungen iShop Core 3</activity>
+                    <activity>!?Mitverantwortung Design- und Architekturentscheidungen?! iShop Core 3</activity>
                     <activity>Unterstützung bei Fragen, Lösungsentscheidungen und Problemen der Entwickler</activity>
                     <skillrefs location="right" orientation="vertical">
                         <skillref>java</skillref>
@@ -252,7 +252,7 @@
                 </project>
                 <project title="Einführung agile Entwicklung in der IMISnext" id="agile">
                     <activity>Aufzeigen des Optimierungspotenzials der Entwicklungsprozesse mithilfe agiler Methodiken gegenüber der Geschäftsführung mittels eines verständlichen und trotzdem vertiefenden Dokuments</activity>
-                    <activity>Initiierung der agilen Projektumsetzung in der IMISnext unter Berücksichtigung des Kundenumfelds und der Vorgehensweise in der internen Entwicklung.</activity>
+                    <activity>!?Initiierung der agilen Projektumsetzung in der IMISnext?! unter Berücksichtigung des Kundenumfelds und der Vorgehensweise in der internen Entwicklung.</activity>
                     <activity>Coaching eines Scrum Teams in der Scrum Master Funktion</activity>
                     <skillrefs location="right" orientation="vertical">
                         <skillref>scrum</skillref>
@@ -262,7 +262,7 @@
                     <activity>Einführung Mandantenfähigkeit bzgl. Logik, Darstellung und Anbindung von Umsystemen</activity>
                     <activity>Entwicklung diverser Features im Front- sowie Backend in Java mithilfe des Tapestry Frameworks</activity>
                     <activity>Koordination mit Umsystemen (ERP/Pim/Mobile/Webservices)</activity>
-                    <activity>Verantwortung und Koordination Entwicklung, SLA, QS, Infrastruktur, Dokumentation, Releases und Deployments</activity>
+                    <activity>!?Verantwortung und Koordination Entwicklung, SLA, QS, Infrastruktur, Dokumentation, Releases und Deployments?!</activity>
                     <activity>Beratung der Kunden zur technischen Umsetzung ihrer fachliche Anforderungen</activity>
                     <skillrefs location="right" orientation="vertical">
                         <skillref>java</skillref>
@@ -310,7 +310,7 @@
                 <to year="2008" month="10"/>
                 <function>Applikationsentwickler in Festanstellung</function>
                 <project title="Zentrale Führung der VV-Codierung" id="vv">
-                    <activity>Teilprojektleitung ASD/SDS</activity>
+                    <activity>!?Teilprojektleitung ASD/SDS?!</activity>
                     <activity>Definition des bankfachlichen Modells und Konsistenzbedingungen mit dem Fachbereich</activity>
                     <activity>Implementation nach MDA (Model Driven Architecture) Ansatz</activity>
                     <skillrefs location="right" orientation="vertical">
@@ -320,14 +320,14 @@
                 <project title="SDS (Stammdaten-Services) Rel. 2.0" id="sds">
                     <activity>Stellvertretung des Teilprojektleiters ASD/SDS GUI</activity>
                     <activity>Spezifikation der Java Software Komponente ASD/SDS GUI und Codierung des generischen Teils</activity>
-                    <activity>Abstimmung der Realisierung der fachlichen Anforderungen mit dem Fachbereich</activity>
+                    <activity>!?Abstimmung der Realisierung der fachlichen Anforderungen mit dem Fachbereich?!</activity>
                     <activity>Analyse, Spezifikation, Design, Implementation und Test diverser Java Softwarekomponenten</activity>
                     <skillrefs location="right" orientation="vertical">
                         <skillref>java</skillref>
                     </skillrefs>
                 </project>
                 <project title="ASD/SDV/CIF" id="asd">
-                    <activity>Realisieren eines Servicemoduls in PL/1 inkl. Regressionstests (Migration Bestandesführung Geld Rel. 2.0)</activity>
+                    <activity>Realisieren eines !?Servicemoduls in PL/1?! inkl. Regressionstests (Migration Bestandesführung Geld Rel. 2.0)</activity>
                     <activity>PSV ASD/SDV - Sicherstellen der Service Level Agreements im Bereich ADB (Datawarehouse) Belieferung</activity>
                     <activity>Durchführen von Systembuilds in der Stammdatenverwaltung</activity>
                     <activity>Mitentwicklung der PL/1 Schnittstelle auf dezentrale Services (C++)</activity>
@@ -347,7 +347,7 @@
             <from year="2012"/>
             <to year="2014"/>
             <title>Turtle Player</title>
-            <description>Android Musicplayer optimiert für grosse Playlisten</description>
+            <description>!?Android?! Musicplayer optimiert für grosse Playlisten</description>
             <skillrefs location="right" orientation="horizontal">
                 <skillref>android</skillref>
                 <skillref>java</skillref>
@@ -367,7 +367,7 @@
             <from year="2015"/>
             <to style="text">Aktuell</to>
             <title>CeeVee</title>
-            <description>CV Generator: XML -> HTML und PDF\Das Resultat wird z.Zt. kritisch betrachtet.</description>
+            <description>CV Generator: XML -> HTML und PDF\!?Das Resultat?! wird z.Zt. kritisch betrachtet.</description>
             <skillrefs location="right" orientation="horizontal">
                 <skillref>xml</skillref>
                 <skillref>html</skillref>
