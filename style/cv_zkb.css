@@ -96,6 +96,9 @@ div.skillref
     font-size: 1.75rem;
     font-weight: 900;
     line-height: 2.125rem;
+}
+
+h1, h2 {
     margin-top: 20px;
 }
 
@@ -201,4 +204,15 @@ div.experiance div.period {
     display: block;
     height: 0;
     clear: both;
+}
+
+.project .horizontal .skillrefs{
+    margin-top: -25px;
+}
+
+.vertical div.skillrefs
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
