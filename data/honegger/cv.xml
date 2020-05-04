@@ -93,13 +93,15 @@
                 <skill id="scrum" logo="skills/scrum.png">Scrum</skill>
                 <skill id="uml" logo="skills/uml.png">UML</skill>
                 <skill id="git" logo="skills/git.png">GIT</skill>
-                <skill id="kubernetes" logo="skills/kubernetes.png">Scrum</skill>
+                <skill id="kubernetes" logo="skills/kubernetes.png">Kubernetes</skill>
                 <skill id="docker">Docker</skill>
                 <skill id="maven" logo="skills/maven.png">Maven</skill>
                 <skill id="rest">REST</skill>
                 <skill id="soap">SOAP</skill>
             </solidskill>
             <goodskill etc="true">
+                <skill id="npm">Node Package Manager</skill>
+                <skill id="make" logo="skills/make.png">CMake</skill>
                 <skill id="svn" logo="skills/svn.png">SVN</skill>
                 <skill id="cvs">CVS</skill>
             </goodskill>
@@ -107,9 +109,9 @@
         <skillgroup title="Frameworks">
             <solidskill etc="false">
                 <skill id="rails"  logo="skills/rails.png">Rails</skill>
-                <skill id="javafx">Java FX</skill>
                 <skill id="spring" logo="skills/spring.png">Spring</skill>
                 <skill id="hibernate" logo="skills/hibernate.png">Hibernate</skill>
+                <skill id="javafx">Java FX</skill>
                 <skill id="lucene">Lucene</skill>
                 <skill id="jaxws" logo="skills/jaxws.png">jaxws</skill>
                 <skill id="junit" logo="skills/junit.png">JUnit</skill>
@@ -126,12 +128,10 @@
                 <skill id="vue" logo="skills/vue.png">Vue.js</skill>
                 <skill id="polymer" logo="skills/polymer.png">Polymer Project</skill>
                 <skill id="vaadinflow" logo="skills/vaadin_flow.png">Vaadin Flow</skill>
-                <skill id="jquery" logo="skills/jquery.png">jQuery</skill>
-                <skill id="bootstrap">Bootstrap</skill>
+                <skill id="play" logo="skills/play.png">Play Framework</skill>
             </solidskill>
             <goodskill etc="true">
                 <skill id="react">React</skill>
-                <skill id="play" logo="skills/play.png">Play Framework</skill>
                 <skill id="tapestry" logo="skills/tapestry.png">Tapestry</skill>
                 <skill id="wicket" logo="skills/apache-wicket.png">Apache Wicket</skill>
             </goodskill>
@@ -154,14 +154,13 @@
         <skillgroup title="Programme">
             <solidskill etc="false">
                 <skill id="intellij" logo="skills/intellij.png">itelliJ</skill>
-                <skill id="vp" logo="skills/visual_paradigm.png">Visual Paradigm UML</skill>
                 <skill id="ea" logo="skills/enterprise_architekt.png">Enterprise Architekt</skill>
+                <skill id="vp" logo="skills/visual_paradigm.png">Visual Paradigm UML</skill>
                 <skill id="office" logo="skills/microsoftOffice.png">Office Suite</skill>
             </solidskill>
             <goodskill etc="true">
                 <skill id="rr" logo="skills/rational_rose.png">Rational Rose</skill>
                 <skill id="eclipse" logo="skills/eclipse.png">Eclipse</skill>
-                <skill id="make" logo="skills/make.png">make</skill>
                 <skill id="qtcreator" logo="skills/qtcreator.png">QtCreator</skill>
             </goodskill>
         </skillgroup>
