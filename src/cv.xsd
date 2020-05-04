@@ -87,7 +87,7 @@
                     <xs:element name="contact" type="contactType"/>
                     <xs:element name="experience" type="xs:integer"/>
                     <xs:element name="birthday" type="dateType"/>
-                    <xs:element name="hometown" type="xs:string"/>
+                    <xs:element name="hometown" type="xs:string" minOccurs="0"/>
                     <xs:element name="maritalStatus" type="xs:string"/>
                     <xs:element name="picture" type="xs:anyURI"/>
                 </xs:sequence>

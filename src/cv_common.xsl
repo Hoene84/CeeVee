@@ -35,62 +35,76 @@
     <!-- text part of the person (left side) -->
     <xsl:template name="personInfos">
         <div class="infos">
-            <div class="info birthday">
+            <xsl:apply-templates select="birthday|hometown|maritalStatus|contact"/>
+        </div>
+    </xsl:template>
+
+    <xsl:template match="birthday">
+        <div class="info birthday">
+            <div class="label">
+                <xsl:text>Geburtsdatum</xsl:text>
+            </div>
+            <div class="value">
+                <xsl:call-template name="dateFormat"/>
+            </div>
+        </div>
+    </xsl:template>
+
+    <xsl:template match="hometown">
+        <div class="info hometown">
+            <div class="label">
+                <xsl:text>Heimatort</xsl:text>
+            </div>
+            <div class="value">
+                <xsl:value-of select="." />
+            </div>
+        </div>
+    </xsl:template>
+
+    <xsl:template match="maritalStatus">
+        <div class="info maritalStatus">
+            <div class="label">
+                <xsl:text>Zivilstand</xsl:text>
+            </div>
+            <div class="value">
+                <xsl:value-of select="." />
+            </div>
+        </div>
+    </xsl:template>
+
+    <xsl:template match="contact">
+        <div class="infoGroup contact">
+            <div class="info address">
                 <div class="label">
-                    <xsl:text>Geburtsdatum</xsl:text>
+                    <xsl:text>Adresse</xsl:text>
                 </div>
                 <div class="value">
-                    <xsl:apply-templates select="birthday"/>
+                    <xsl:apply-templates select="address"/>
                 </div>
             </div>
-            <div class="info hometown">
+            <div class="info phone">
                 <div class="label">
-                    <xsl:text>Heimatort</xsl:text>
+                    <xsl:text>Telefon</xsl:text>
                 </div>
                 <div class="value">
-                    <xsl:apply-templates select="hometown"/>
+                    <xsl:for-each select="phone">
+                        <xsl:apply-templates select="current()"/>
+                    </xsl:for-each>
                 </div>
             </div>
-            <div class="info maritalStatus">
+            <div class="info email">
                 <div class="label">
-                    <xsl:text>Zivilstand</xsl:text>
+                    <xsl:text>Email</xsl:text>
                 </div>
                 <div class="value">
-                    <xsl:apply-templates select="maritalStatus"/>
-                </div>
-            </div>
-            <div class="infoGroup contact">
-                <div class="info address">
-                    <div class="label">
-                        <xsl:text>Adresse</xsl:text>
-                    </div>
-                    <div class="value">
-                        <xsl:apply-templates select="contact/address"/>
-                    </div>
-                </div>
-                <div class="info phone">
-                    <div class="label">
-                        <xsl:text>Telefon</xsl:text>
-                    </div>
-                    <div class="value">
-                        <xsl:for-each select="contact/phone">
-                            <xsl:apply-templates select="current()"/>
-                        </xsl:for-each>
-                    </div>
-                </div>
-                <div class="info email">
-                    <div class="label">
-                        <xsl:text>Email</xsl:text>
-                    </div>
-                    <div class="value">
-                        <xsl:for-each select="contact/email">
-                            <xsl:apply-templates select="current()"/>
-                        </xsl:for-each>
-                    </div>
+                    <xsl:for-each select="email">
+                        <xsl:apply-templates select="current()"/>
+                    </xsl:for-each>
                 </div>
             </div>
         </div>
     </xsl:template>
+
     <xsl:template name="personHeader">
         <h1>
             <xsl:apply-templates select="forename"/>
@@ -472,9 +486,6 @@
         <xsl:apply-templates select="@year"/>
     </xsl:template>
     <xsl:template match="date">
-        <xsl:call-template name="dateFormat"/>
-    </xsl:template>
-    <xsl:template match="birthday">
         <xsl:call-template name="dateFormat"/>
     </xsl:template>
     <xsl:template match="from">
