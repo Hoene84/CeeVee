@@ -20,7 +20,7 @@
 }
 
 body, html, a {
-    font: normal 400 14px/1.25em FrutigerRegular,"Helvetica Neue",Helvetica,sans-serif;
+    font: normal 400 100.01%/1.25em FrutigerRegular,"Helvetica Neue",Helvetica,sans-serif;
     /*font: normal 400 100.01%/1.25em FrutigerRegular,"Helvetica Neue",Helvetica,sans-serif;*/
     color: #003cb4;
 }
@@ -35,9 +35,7 @@ div.person
 {
     background-color: #003cb4;
     color: white;
-    line-height: 1.53846em;
     margin-bottom: 1.875em;
-    line-height: 1.53846em;
 }
 
 div.person > div.description
@@ -62,29 +60,35 @@ div.person h2
     color: white;
 }
 
+div.person h1
+{
+    font-size: 42px;
+    line-height: 1.27273em;
+}
+
+div.person h2
+{
+    font-size: 24.5px;
+}
+
 div.person h3
 {
     color: #00bec8;
     font-style: normal;
+    font-weight: 900;
+    line-height: 2.125rem;
 }
 
 dt,
-h3.function
+h3,
+div.project div.header
 {
     font-family: Frutiger,FrutigerBold,FrutigerRegular,"Helvetica Neue",Helvetica,sans-serif;
     font-weight: 700;
+    font-size: .9375rem;
 }
 
-h1
-{
-    font-weight: 900;
-    font-family: Frutiger,FrutigerBold,"Helvetica Neue",Helvetica,Arial;
-    font-size: 3rem;
-    line-height: 1.27273em;
-    margin-top: 0.35714em;
-    margin-bottom: 0.35714em;
-}
-
+h1,
 h2,
 div.skillref
 {
@@ -92,18 +96,7 @@ div.skillref
     font-size: 1.75rem;
     font-weight: 900;
     line-height: 2.125rem;
-}
-
-h3,
-div.project div.header
-{
-    font-family: Frutiger,FrutigerBold,"Helvetica Neue",Helvetica,Arial;
-    font-weight: 900;
-    line-height: 2.125rem;
-}
-
-div.project div.header {
-    font-size: 1.17em;
+    margin-top: 20px;
 }
 
 h4 {
