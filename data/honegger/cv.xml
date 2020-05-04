@@ -37,7 +37,7 @@
         <activity>
             <from year="2019" month="06" style="plain" />
             <to year="2020" month="04" style="plain"/>
-            <description>Denteo AG, &lt;span class="acc"&gt;Startup mit cloudbasierter Softwarelösung für Zahnarztpraxen&lt;/span&gt;&lt;br/&gt;Senior Applikationsentwickler Ruby on Rails, Vue.js</description>
+            <description>Denteo AG, &lt;span class="acc"&gt;Startup mit cloudbasierter Softwarelösung für Zahnarztpraxen&lt;/span&gt;&lt;br/&gt;Senior Software Engineer Ruby on Rails, Vue.js</description>
         </activity>
         <activity>
             <from year="2016" month="07" style="plain" />
@@ -77,33 +77,31 @@
                 <skill id="ruby">Ruby</skill>
                 <skill id="scala" logo="skills/scala.png">Scala</skill>
                 <skill id="bash" logo="skills/bash.png">bash</skill>
-                <skill id="cplusplus" logo="skills/CPlusPlus.png">C++</skill>
-                <skill id="c" logo="skills/c.png">C</skill>
                 <skill id="sql" logo="skills/sql.png">SQL</skill>
                 <skill id="xml" logo="skills/xml.png">XML</skill>
             </solidskill>
             <goodskill etc="true">
+                <skill id="cplusplus" logo="skills/CPlusPlus.png">C++</skill>
+                <skill id="c" logo="skills/c.png">C</skill>
                 <skill id="python" logo="skills/python.png">Python</skill>
-                <skill id="latex" logo="skills/latex.png">LaTeX</skill>
                 <skill id="pli">PL/I</skill>
             </goodskill>
         </skillgroup>
         <skillgroup title="Entwicklung">
             <solidskill etc="false">
                 <skill id="scrum" logo="skills/scrum.png">Scrum</skill>
-                <skill id="uml" logo="skills/uml.png">UML</skill>
                 <skill id="git" logo="skills/git.png">GIT</skill>
                 <skill id="kubernetes" logo="skills/kubernetes.png">Kubernetes</skill>
                 <skill id="docker">Docker</skill>
-                <skill id="maven" logo="skills/maven.png">Maven</skill>
                 <skill id="rest">REST</skill>
-                <skill id="soap">SOAP</skill>
+                <skill id="uml" logo="skills/uml.png">UML</skill>
+                <skill id="maven" logo="skills/maven.png">Maven</skill>
             </solidskill>
             <goodskill etc="true">
                 <skill id="npm">Node Package Manager</skill>
                 <skill id="make" logo="skills/make.png">CMake</skill>
+                <skill id="soap">SOAP</skill>
                 <skill id="svn" logo="skills/svn.png">SVN</skill>
-                <skill id="cvs">CVS</skill>
             </goodskill>
         </skillgroup>
         <skillgroup title="Frameworks">
@@ -126,6 +124,7 @@
         <skillgroup title="Web">
             <solidskill etc="false">
                 <skill id="vue" logo="skills/vue.png">Vue.js</skill>
+                <skill id="vuetify">Vuetify</skill>
                 <skill id="polymer" logo="skills/polymer.png">Polymer Project</skill>
                 <skill id="vaadinflow" logo="skills/vaadin_flow.png">Vaadin Flow</skill>
                 <skill id="play" logo="skills/play.png">Play Framework</skill>
@@ -143,7 +142,7 @@
                 <skill id="oracle" logo="skills/oracle.png">Oracle</skill>
                 <skill id="db2" logo="skills/db2.png">DB2</skill>
                 <skill id="jena" logo="skills/jena.png">Jena</skill>
-                <skill id="fs">Filesystem basierte Datenhaltung</skill>
+                <skill id="fs">Filebasierte Datenhaltung</skill>
             </solidskill>
             <goodskill etc="false">
                 <skill id="hsqldb" logo="skills/hsqldb.png">HSQLDB</skill>
@@ -172,7 +171,6 @@
                 <skill id="windows" logo="skills/windows.png">Windows</skill>
                 <skill id="zos" logo="skills/zos.png">z/OS</skill>
                 <skill id="uss">USS (Unix System Services)</skill>
-                <skill id="mac" logo="skills/osx.png">Mac OS X</skill>
             </goodskill>
         </skillgroup>
     </skills>
@@ -201,9 +199,10 @@
                     <activity>Ausarbeiten und Verifikation von Konzepten in direkten Kontakt mit den Zahnärzten und deren Assistenten</activity>
                     <activity>DevOps in einer CI/CD Umgebung mit Kubernetes, orchestrierung von über 100 produktions Instanzen</activity>
                     <activity>Integration mehrerer Factoring/Inkasso Schnittstellen, in engem Kontakt mit diesen Anbietern</activity>
-                    <activity>Übergreifende Verantwortungen zu Bereichen wie First-/Secondlevel Support und Onboarding, bei Engpässen diese auch übernehmen</activity>
+                    <activity>Übergreifende Verantwortungen zu Bereichen wie First-/Secondlevel Support und Kunden Onboarding, bei Engpässen diese auch übernehmen</activity>
                     <skillrefs location="right" orientation="vertical">
                         <skillref>rails</skillref>
+                        <skillref>html</skillref>
                         <skillref>vue</skillref>
                         <skillref>kubernetes</skillref>
                     </skillrefs>
@@ -221,12 +220,11 @@
                     <activity>Software Architektur und Design: Hardware-Anbindung, Webapplikation Sortiments-Verwaltung, Tarifsystem, Zahlunsmittel-Anbindung, Schnittsetellen zu Fahrgastinformationsystemen</activity>
                     <activity>Entwicklung von Closed- und Anbindung von Openloop Smartcard-Applikationen unter EP2 Konformitätsnormen für Zahlterminals</activity>
                     <activity>Positionierung der Ticketing-Lösung in dem sich im Umbruch befinden Markt im agilen, diversivizierten Scrum Team</activity>
-                    <skillrefs location="bottom" orientation="horizontal">
+                    <skillrefs location="right" orientation="vertical">
                         <skillref>java</skillref>
-                        <skillref>postgres</skillref>
-                        <skillref>c</skillref>
                         <skillref>polymer</skillref>
                         <skillref>vaadinflow</skillref>
+                        <skillref>c</skillref>
                     </skillrefs>
                 </project>
                 <project title="ZKE - Zug Kontrolleinrichtungen SBB" id="zke">
@@ -320,7 +318,7 @@
                         <skillref>uml</skillref>
                     </skillrefs>
                 </project>
-                <project title="SDS (Stammdaten-Services) Rel. 2.0 (Folgeprojekt von SDS R1.0)" id="sds">
+                <project title="SDS (Stammdaten-Services) Rel. 2.0" id="sds">
                     <activity>Stellvertretung des Teilprojektleiters ASD/SDS GUI</activity>
                     <activity>Spezifikation der Java Software Komponente ASD/SDS GUI und Codierung des generischen Teils</activity>
                     <activity>Abstimmung der Realisierung der fachlichen Anforderungen mit dem Fachbereich</activity>
