@@ -170,11 +170,13 @@ ul:not(.table) li:before {
     color: #00bec8;
 }
 
-.experiance > .header {
-    padding: 1.15385em 1.38462em;
-    background: #ebebeb;
+div.experiance > .header {
     display: flex;
     margin-bottom: 25px;
+}
+
+div.experiance > .header > div {
+    margin: 0;
 }
 
 .experiance > .header .company {
@@ -183,8 +185,15 @@ ul:not(.table) li:before {
     align-items: center;
 }
 
-.experiance > .header .function {
+.experiance > .header div.function {
     white-space: nowrap;
+    background: #ebebeb;
+    padding: 1.15385em 1.38462em;
+}
+
+div.experiance div.period {
+    margin-bottom: 30px;
+    margin-top: -40px;
 }
 
 .experiance > .header::after {
