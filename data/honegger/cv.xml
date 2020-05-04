@@ -199,7 +199,7 @@
                 <project title="Denteo - Dentalpraxis Cloud Software Startup" id="denteo">
                     <activity>Zukunftsorientiertes mitgestalten des Produkts Denteo, der innovativsten Cloud Softwarelösung für Zahnarztpraxen</activity>
                     <activity>Migration der Rails Webapplikation vom klassischen Server-Side Rendering zu einer modernen Vue.js / Rest Architektur</activity>
-                    <activity>Ausarbeiten und Verifikation von Konzepten in direkten Kontakt mit Zahnärzten und deren Assisteten</activity>
+                    <activity>Ausarbeiten und Verifikation von Konzepten in direkten Kontakt mit den Zahnärzten und deren Assistenten</activity>
                     <activity>DevOps in einer CI/CD Umgebung mit Kubernetes, orchestrierung von über 100 produktions Instanzen</activity>
                     <activity>Integration mehrerer Factoring/Inkasso Schnittstellen, in engem Kontakt mit diesen Anbietern</activity>
                     <activity>Übergreifende Verantwortungen zu Bereichen wie First-/Secondlevel Support und Onboarding, bei Engpässen diese auch übernehmen</activity>
