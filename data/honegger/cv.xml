@@ -36,17 +36,17 @@
         <activity>
             <from year="2019" month="06" style="plain" />
             <to year="2020" month="04" style="plain"/>
-            <description>Denteo AG, &lt;span class="acc"&gt;Startup mit cloudbasierter Softwarelösung für Zahnarztpraxen&lt;/span&gt;&lt;br/&gt;Senior Software Engineer Ruby on Rails, Vue.js</description>
+            <description>Denteo AG, !?Startup mit cloudbasierter Softwarelösung für Zahnarztpraxen?!\Senior Software Engineer Ruby on Rails, Vue.js</description>
         </activity>
         <activity>
             <from year="2016" month="07" style="plain" />
             <to year="2019"  month="05" style="plain" />
-            <description>Supercomputing Systems AG, &lt;span class="acc"&gt;Retrofit ÖV-Ticketautomaten&lt;/span&gt;&lt;br/&gt;Entwicklungsingenieur</description>
+            <description>Supercomputing Systems AG, !?Retrofit ÖV-Ticketautomaten?!\Entwicklungsingenieur</description>
         </activity>
         <activity>
             <from year="2011" month="10" style="plain" />
             <to year="2016"  month="06" style="plain" />
-            <description>IMISnext AG, B2B eCommerce mit eigenem &lt;span class="acc"&gt;Onlineshop Framework&lt;/span&gt;&lt;br/&gt;Senior Applikationsentwickler Java &amp; Scala</description>
+            <description>IMISnext AG, B2B eCommerce mit eigenem !?Onlineshop Framework?!\Senior Applikationsentwickler Java &amp; Scala</description>
         </activity>
         <activity>
             <from year="2008" month="09" style="plain" />
@@ -57,7 +57,7 @@
         <activity>
             <from year="2003" month="08" style="plain" />
             <to year="2008" month="10"  style="plain" />
-            <description>Zürcher Kantonalbank&lt;br/&gt;Applikationsentwickler Java, C++, PL/1</description>
+            <description>Zürcher Kantonalbank\Applikationsentwickler Java, C++, PL/1</description>
         </activity>
         <activity>
             <from year="2000" month="08" style="plain" />
@@ -367,7 +367,7 @@
             <from year="2015"/>
             <to style="text">Aktuell</to>
             <title>CeeVee</title>
-            <description>CV Generator: XML -> HTML und PDF&lt;br/&gt;Das Resultat wird z.Zt. kritisch betrachtet.</description>
+            <description>CV Generator: XML -> HTML und PDF\Das Resultat wird z.Zt. kritisch betrachtet.</description>
             <skillrefs location="right" orientation="horizontal">
                 <skillref>xml</skillref>
                 <skillref>html</skillref>

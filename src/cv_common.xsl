@@ -10,6 +10,14 @@
 
     <xsl:key name="skillref" match="//skill" use="@id"/>
 
+
+    <xsl:template match="text()">
+        <xsl:value-of select="cv:replace(.)" disable-output-escaping="yes"/>
+    </xsl:template>
+    <xsl:template match="@*">
+        <xsl:value-of select="cv:replace(.)" disable-output-escaping="yes"/>
+    </xsl:template>
+
     <!-- do a parent for inherit default font Attrs -->
     <xsl:template name="main">
         <div>
@@ -56,7 +64,7 @@
                 <xsl:text>Heimatort</xsl:text>
             </div>
             <div class="value">
-                <xsl:value-of select="." />
+                <xsl:apply-templates />
             </div>
         </div>
     </xsl:template>
@@ -67,7 +75,7 @@
                 <xsl:text>Zivilstand</xsl:text>
             </div>
             <div class="value">
-                <xsl:value-of select="." />
+                <xsl:apply-templates />
             </div>
         </div>
     </xsl:template>
@@ -235,7 +243,7 @@
         <dl class="activity {@id} {skillrefs/@location} {skillrefs/@orientation}">
             <dt>
                 <div>
-                    <xsl:value-of select="title"/>
+                    <xsl:apply-templates select="title"/>
                 </div>
                 <div>
                     <xsl:call-template name="dateTemplate"/>
@@ -247,7 +255,7 @@
                         <img src="{@logo}" />
                     </div>
                     <div class="description">
-                        <xsl:value-of select="description" disable-output-escaping="yes"/>
+                        <xsl:value-of select="cv:replace(description)" disable-output-escaping="yes"/>
                     </div>
                     <div class="link">
                         <a href="{@link}"><xsl:value-of select="@link"/></a>
@@ -340,7 +348,7 @@
                     <img src="{@logo}" alt="{@id}" title="{.}"/>
                 </xsl:when>
                 <xsl:otherwise>
-                        <xsl:value-of select="." />
+                    <xsl:apply-templates />
                 </xsl:otherwise>
             </xsl:choose>
         </div>
@@ -349,7 +357,7 @@
     <xsl:template match="activity" mode="project">
         <li>
             <div>
-                <xsl:value-of select="current()"/>
+                <xsl:apply-templates />
             </div>
         </li>
     </xsl:template>
@@ -396,7 +404,7 @@
     <xsl:template match="hobby">
         <li>
             <div>
-                <xsl:value-of select="current()"/>
+                <xsl:apply-templates />
             </div>
         </li>
     </xsl:template>
@@ -460,6 +468,10 @@
     <xsl:function name="cv:month-name-de" as="xs:string?">
         <xsl:param name="month" as="xs:integer?"/>
         <xsl:sequence select="('Jan.', 'Feb.', 'März', 'Apr.', 'Mai', 'Juni', 'Juli', 'Aug.', 'Sep.', 'Okt.', 'Nov.', 'Dez.') [$month]"/>
+    </xsl:function>
+    <xsl:function name="cv:replace">
+        <xsl:param name="text" as="xs:string?"/>
+        <xsl:value-of select="replace(replace(replace($text, '\\', '&lt;br/&gt;'), '!\?', '&lt;span class=acc&gt;'), '\?!', '&lt;/span&gt;')" disable-output-escaping="yes"/>
     </xsl:function>
     <xsl:function name="cv:month-number">
         <xsl:param name="month"/>
