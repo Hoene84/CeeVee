@@ -193,10 +193,10 @@
                 <to year="2020" month="04" style="plain"/>
                 <function>Full-Stack Senior Entwickler in Festanstellung</function>
                 <project title="Denteo - Dentalpraxis Cloud Software Startup" id="denteo">
-                    <activity>Zukunftsorientiertes mitgestalten des Produkts Denteo, der innovativsten Cloud Softwarelösung für Zahnarztpraxen</activity>
+                    <activity>Zukunftsorientiertes Mitgestalten des Produkts Denteo, der innovativsten Cloud Softwarelösung für Zahnarztpraxen</activity>
                     <activity>Migration der Rails Webapplikation vom klassischen Server-Side Rendering zu einer modernen !?Vue.js / Rest Architektur!?</activity>
-                    <activity>Ausarbeiten und Verifikation von Konzepten !?in direkten Kontakt mit den Zahnärzten?!</activity>
-                    <activity>DevOps in einer CI/CD Umgebung mit Kubernetes, orchestrierung von über 100 produktions Instanzen</activity>
+                    <activity>Ausarbeiten und Verifikation von Konzepten !?in direktem Kontakt mit den Zahnärzten?!</activity>
+                    <activity>DevOps in einer CI/CD Umgebung mit Kubernetes, Orchestrierung von über 100 Produktions-Instanzen</activity>
                     <activity>Integration mehrerer Factoring/Inkasso Schnittstellen, in engem Kontakt mit diesen Anbietern</activity>
                     <activity>!?Übergreifende Verantwortungen ?!zu Bereichen wie First-/Secondlevel Support und Kunden Onboarding, bei Engpässen diese auch übernehmen</activity>
                     <skillrefs location="right" orientation="vertical">
@@ -215,10 +215,10 @@
                 <to year="2019" month="05"/>
                 <function>Entwicklungsingenieur in Festanstellung</function>
                 <project title="PTTS - Public Transport Ticketing System" id="ptts">
-                    <activity>Entwicklung Ticketautomaten-Softwarelösung, in Betrieb auf 1'250 Ticketautomaten diverser schweizer Verkehrsbetriebe</activity>
-                    <activity>!?Software Architektur und Design?!: Hardware-Anbindung, Webapplikation Sortiments-Verwaltung, Tarifsystem, Zahlunsmittel-Anbindung, Schnittsetellen zu Fahrgastinformationsystemen</activity>
+                    <activity>Entwicklung Ticketautomaten-Softwarelösung, in Betrieb auf 1'250 Ticketautomaten diverser Schweizer Verkehrsbetriebe</activity>
+                    <activity>!?Software Architektur und Design?!: Hardware-Anbindung, Webapplikation Sortiments-Verwaltung, Tarifsystem, Zahlungsmittel-Anbindung, Schnittstellen zu Fahrgastinformationsystemen</activity>
                     <activity>Entwicklung von Closed- und Anbindung von Openloop Smartcard-Applikationen unter EP2 Konformitätsnormen für Zahlterminals</activity>
-                    <activity>Positionierung der Ticketing-Lösung in dem sich im Umbruch befinden Markt im agilen, diversivizierten !?Scrum Team?!</activity>
+                    <activity>Positionierung der Ticketing-Lösung in dem sich im Umbruch befindenden Markt im agilen, diversifizierten !?Scrum Team?!</activity>
                     <skillrefs location="right" orientation="vertical">
                         <skillref>java</skillref>
                         <skillref>polymer</skillref>
