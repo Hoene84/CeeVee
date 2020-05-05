@@ -4,10 +4,10 @@
     <xs:element name="coverletter">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="layout" type="layoutType"  minOccurs="0"/>
+                <xs:element name="layout" type="layoutType" minOccurs="0"/>
                 <xs:element name="date" type="dateType"/>
                 <xs:element name="subject" type="xs:string"/>
-                <xs:element name="content" type="xs:string"/>
+                <xs:element name="content" type="xs:string" maxOccurs="unbounded"/>
                 <xs:element name="salutation" type="xs:string"/>
                 <xs:element name="fullname" type="xs:string"/>
             </xs:sequence>
