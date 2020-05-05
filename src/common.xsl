@@ -15,9 +15,6 @@
         <html>
             <head>
                 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-                <style type="text/css">
-                    <xsl:value-of select="unparsed-text('../style/cv.css', 'UTF-8')" disable-output-escaping="yes"/>
-                </style>
                 <style type="text/css" media="screen">
                     <xsl:value-of select="unparsed-text('../style/screen.css', 'UTF-8')" disable-output-escaping="yes"/>
                 </style>
@@ -37,6 +34,9 @@
     <xsl:template match="text()" mode="layout" />
 
     <xsl:template match="layout" mode="layout">
+        <style type="text/css">
+            <xsl:value-of select="unparsed-text(concat('../style/', @type, '.css'), 'UTF-8')" disable-output-escaping="yes"/>
+        </style>
         <xsl:apply-templates mode="layout"/>
     </xsl:template>
 

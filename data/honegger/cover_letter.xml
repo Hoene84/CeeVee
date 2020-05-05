@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <coverletter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../src/cover_letter.xsd">
-    <layout>
+    <layout type="cover_letter">
         <theme>zkb</theme>
         <theme>honegger_zkb</theme>
     </layout>
