@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <coverletter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../src/cover_letter.xsd">
     <layout type="cover_letter">
-        <theme>zkb</theme>
-        <theme>honegger_zkb</theme>
+        <theme>green</theme>
     </layout>
     <date day="05" month="5" year="2020"/>
     <subject>Bewerbung als Stelle</subject>
     <content>
         Sehr geehrte Damen und Herren,
-
+    </content>
+    <content>
         Lorem ipsum dolor sit amet, his no simul deleniti ocurreret, qui in primis insolens. Sed in ipsum labore corpora. Te vix vero vocibus praesent, pri te essent maluisset. Mea iusto postulant ne. Eam at offendit deterruisset, eam adhuc nonumy corpora no. Sit eu quem delicatissimi, elit gubergren mea et. Quo te fastidii phaedrum rationibus, nec minimum argumentum intellegebat no.
-
+    </content>
+    <content>
         Eam solum legimus in. Mel amet virtute vivendum eu, case option maiorum nam an. Pro amet debet consequuntur ei, novum inimicus facilisis eam ad, ad modus consulatu moderatius quo. Detracto incorrupte scribentur cu mei. Cu cum minimum dissentias sadipscing, qui ut porro summo reprehendunt, postea numquam blandit ei eum.
     </content>
-    <salutation>Mit besten Grüssen</salutation>
+    <salutation>Mit besten Grüssen,</salutation>
     <fullname>Simon Honegger</fullname>
 </coverletter>

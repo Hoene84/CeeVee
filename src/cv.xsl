@@ -7,7 +7,7 @@
                 xmlns:cv="http://cv">
 
     <xsl:output method="html" version="4.0" encoding="UTF-8" indent="yes"/>
-
+    <xsl:include href="common.xsl"/>
     <xsl:key name="skillref" match="//skill" use="@id"/>
 
     <!-- do a parent for inherit default font Attrs -->
@@ -456,6 +456,9 @@
             </xsl:for-each>
         </ul>
     </xsl:template>
+    <xsl:template match="date">
+        <xsl:call-template name="dateFormat"/>
+    </xsl:template>
     <xsl:function name="cv:month-number">
         <xsl:param name="month"/>
         <xsl:sequence select="$month"/>
@@ -472,6 +475,4 @@
         <xsl:apply-templates select="to"/>
         <xsl:apply-templates select="date"/>
     </xsl:template>
-
-    <xsl:include href="common.xsl"/>
 </xsl:stylesheet>

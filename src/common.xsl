@@ -55,10 +55,6 @@
     <!--________________________________________________________exclude for common-->
     <xsl:template match="layout"/>
 
-    <xsl:template match="date">
-        <xsl:call-template name="dateFormat"/>
-    </xsl:template>
-
     <xsl:template name="dateFormat">
         <xsl:if test="@day != ''">
             <xsl:apply-templates select="@day"/>

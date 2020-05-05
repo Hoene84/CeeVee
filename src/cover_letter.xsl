@@ -7,6 +7,7 @@
                 xmlns:cv="http://cv">
 
     <xsl:output method="html" version="4.0" encoding="UTF-8" indent="yes"/>
+    <xsl:include href="common.xsl"/>
 
     <xsl:template name="main">
         <xsl:apply-templates/>
@@ -14,7 +15,7 @@
 
     <xsl:template match="date|content|salutation|fullname">
         <div class="{local-name()}">
-            <xsl:apply-templates/>
+            <xsl:apply-templates select="current()" mode="content"/>
         </div>
     </xsl:template>
 
@@ -24,5 +25,8 @@
         </h2>
     </xsl:template>
 
-    <xsl:include href="common.xsl"/>
+    <xsl:template match="date" mode="content">
+        <xsl:call-template name="dateFormat"/>
+    </xsl:template>
+
 </xsl:stylesheet>
