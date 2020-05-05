@@ -8,8 +8,8 @@ target:
 validate: data/honegger/cv.xml src/cv.xsd
 	xmllint --noout data/honegger/cv.xml --schema src/cv.xsd
 
-common: target src/cv_common.xsl src/cv_html.xsl data/honegger/cv.xml
-	saxonb-xslt data/honegger/cv.xml src/cv_common.xsl > target/cv.html
+common: target src/cv.xsl src/common.xsl data/honegger/cv.xml
+	saxonb-xslt data/honegger/cv.xml src/cv.xsl > target/cv.html
 	cp -r data/honegger/res/* target/.
 	cp -r data/common/res/* target/.
 	cp -r data/theme/res/* target/.

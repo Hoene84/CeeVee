@@ -513,5 +513,5 @@
         <xsl:apply-templates select="date"/>
     </xsl:template>
 
-    <xsl:include href="cv_html.xsl"/>
+    <xsl:include href="common.xsl"/>
 </xsl:stylesheet>
