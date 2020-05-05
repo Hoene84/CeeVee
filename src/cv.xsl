@@ -10,14 +10,6 @@
 
     <xsl:key name="skillref" match="//skill" use="@id"/>
 
-
-    <xsl:template match="text()">
-        <xsl:value-of select="cv:replace(.)" disable-output-escaping="yes"/>
-    </xsl:template>
-    <xsl:template match="@*">
-        <xsl:value-of select="cv:replace(.)" disable-output-escaping="yes"/>
-    </xsl:template>
-
     <!-- do a parent for inherit default font Attrs -->
     <xsl:template name="main">
         <div>
@@ -255,7 +247,7 @@
                         <img src="{@logo}" />
                     </div>
                     <div class="description">
-                        <xsl:value-of select="cv:replace(description)" disable-output-escaping="yes"/>
+                        <xsl:apply-templates select="description"/>
                     </div>
                     <div class="link">
                         <a href="{@link}"><xsl:value-of select="@link"/></a>
@@ -464,42 +456,10 @@
             </xsl:for-each>
         </ul>
     </xsl:template>
-    <!--Dates formatting (exclusion and order garanteed by schema)-->
-    <xsl:function name="cv:month-name-de" as="xs:string?">
-        <xsl:param name="month" as="xs:integer?"/>
-        <xsl:sequence select="('Jan.', 'Feb.', 'März', 'Apr.', 'Mai', 'Juni', 'Juli', 'Aug.', 'Sep.', 'Okt.', 'Nov.', 'Dez.') [$month]"/>
-    </xsl:function>
-    <xsl:function name="cv:replace">
-        <xsl:param name="text" as="xs:string?"/>
-        <xsl:value-of select="replace(replace(replace($text, '\\', '&lt;br/&gt;'), '!\?', '&lt;span class=acc&gt;'), '\?!', '&lt;/span&gt;')" disable-output-escaping="yes"/>
-    </xsl:function>
     <xsl:function name="cv:month-number">
         <xsl:param name="month"/>
         <xsl:sequence select="$month"/>
     </xsl:function>
-    <xsl:template name="dateFormat">
-        <xsl:if test="@day != ''">
-            <xsl:apply-templates select="@day"/>
-            <xsl:text> </xsl:text>
-        </xsl:if>
-        <xsl:choose>
-            <xsl:when test="@style = 'text'">
-                <xsl:apply-templates select="text()"/>
-            </xsl:when>
-            <xsl:when test="@month != '' and @style = 'plain'">
-                <xsl:value-of select="@month"/>
-                <xsl:text>.</xsl:text>
-            </xsl:when>
-            <xsl:when test="@month != ''">
-                <xsl:value-of select="cv:month-name-de(@month)"/>
-                <xsl:text> </xsl:text>
-            </xsl:when>
-        </xsl:choose>
-        <xsl:apply-templates select="@year"/>
-    </xsl:template>
-    <xsl:template match="date">
-        <xsl:call-template name="dateFormat"/>
-    </xsl:template>
     <xsl:template match="from">
         <xsl:call-template name="dateFormat"/>
     </xsl:template>

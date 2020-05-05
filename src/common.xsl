@@ -53,6 +53,48 @@
     </xsl:template>
 
     <!--________________________________________________________exclude for common-->
-    <xsl:template match="theme"/>
+    <xsl:template match="layout"/>
+
+    <xsl:template match="date">
+        <xsl:call-template name="dateFormat"/>
+    </xsl:template>
+
+    <xsl:template name="dateFormat">
+        <xsl:if test="@day != ''">
+            <xsl:apply-templates select="@day"/>
+            <xsl:text> </xsl:text>
+        </xsl:if>
+        <xsl:choose>
+            <xsl:when test="@style = 'text'">
+                <xsl:apply-templates select="text()"/>
+            </xsl:when>
+            <xsl:when test="@month != '' and @style = 'plain'">
+                <xsl:value-of select="@month"/>
+                <xsl:text>.</xsl:text>
+            </xsl:when>
+            <xsl:when test="@month != ''">
+                <xsl:value-of select="cv:month-name-de(@month)"/>
+                <xsl:text> </xsl:text>
+            </xsl:when>
+        </xsl:choose>
+        <xsl:apply-templates select="@year"/>
+    </xsl:template>
+
+    <xsl:function name="cv:month-name-de" as="xs:string?">
+        <xsl:param name="month" as="xs:integer?"/>
+        <xsl:sequence select="('Jan.', 'Feb.', 'März', 'Apr.', 'Mai', 'Juni', 'Juli', 'Aug.', 'Sep.', 'Okt.', 'Nov.', 'Dez.') [$month]"/>
+    </xsl:function>
+
+    <xsl:template match="text()">
+        <xsl:value-of select="cv:replace(.)" disable-output-escaping="yes"/>
+    </xsl:template>
+    <xsl:template match="@*">
+        <xsl:value-of select="cv:replace(.)" disable-output-escaping="yes"/>
+    </xsl:template>
+
+    <xsl:function name="cv:replace">
+        <xsl:param name="text" as="xs:string?"/>
+        <xsl:value-of select="replace(replace(replace($text, '\\', '&lt;br/&gt;'), '!\?', '&lt;span class=acc&gt;'), '\?!', '&lt;/span&gt;')" disable-output-escaping="yes"/>
+    </xsl:function>
 
 </xsl:stylesheet>
