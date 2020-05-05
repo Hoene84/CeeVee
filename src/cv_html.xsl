@@ -8,8 +8,6 @@
     xmlns="http://www.w3.org/1999/xhtml" 
     exclude-result-prefixes="html">
 
-    <xsl:output method="html" version="4.0" encoding="UTF-8" indent="yes"/>
-
     <!--____________________________________________________main tamplate-->
     <!--to do the outline, should call main tamplate-->
     <xsl:template match="/">
@@ -53,12 +51,7 @@
         </script>
     </xsl:template>
 
-    <!--________________________________________________________include of the common-->
-    <!--processing of the xml-->
-    <xsl:include href="cv_common.xsl"/>
-
     <!--________________________________________________________exclude for common-->
     <xsl:template match="layout"/>
-
 
 </xsl:stylesheet>

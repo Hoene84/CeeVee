@@ -512,4 +512,6 @@
         <xsl:apply-templates select="to"/>
         <xsl:apply-templates select="date"/>
     </xsl:template>
+
+    <xsl:include href="cv_html.xsl"/>
 </xsl:stylesheet>
