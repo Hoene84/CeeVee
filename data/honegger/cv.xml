@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../src/cv.xsd" international="false">
+<cv xmlns:g="global" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../src/cv.xsd" international="false">
     <layout>
-        <theme>zkb</theme>
-        <theme>honegger_zkb</theme>
+        <g:theme>zkb</g:theme>
+        <g:theme>honegger_zkb</g:theme>
     </layout>
     <person>
         <forename>Simon</forename>

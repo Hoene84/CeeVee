@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?altova_samplexml cv_honegger.xml?>
-<xsl:stylesheet version="2.0" 
+<xsl:stylesheet version="2.0"
+    xpath-default-namespace="global"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:fn="http://www.w3.org/2005/xpa-functions"
@@ -52,6 +53,6 @@
     </xsl:template>
 
     <!--________________________________________________________exclude for common-->
-    <xsl:template match="layout"/>
+    <xsl:template match="theme"/>
 
 </xsl:stylesheet>

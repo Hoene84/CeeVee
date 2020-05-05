@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--W3C Schema erstellt mit XMLSpy v2010 rel. 2 (http://www.altova.com)-->
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<xs:schema xmlns:g="global" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <xs:import namespace="global" schemaLocation="globals.xsd"/>
     <xs:complexType name="phoneType">
         <xs:sequence>
             <xs:element name="countryCode">
@@ -86,7 +87,7 @@
                     <xs:element name="title" type="xs:string"/>
                     <xs:element name="contact" type="contactType"/>
                     <xs:element name="experience" type="xs:integer"/>
-                    <xs:element name="birthday" type="dateType"/>
+                    <xs:element name="birthday" type="g:dateType"/>
                     <xs:element name="hometown" type="xs:string" minOccurs="0"/>
                     <xs:element name="maritalStatus" type="xs:string"/>
                     <xs:element name="picture" type="xs:anyURI"/>
@@ -134,44 +135,6 @@
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
-    <xs:complexType name="dateType">
-        <xs:simpleContent>
-            <xs:extension base="xs:string">
-                <xs:attribute name="year">
-                    <xs:simpleType>
-                        <xs:restriction base="xs:integer">
-                            <xs:minInclusive value="1900"/>
-                            <xs:maxInclusive value="3000"/>
-                        </xs:restriction>
-                    </xs:simpleType>
-                </xs:attribute>
-                <xs:attribute name="month">
-                    <xs:simpleType>
-                        <xs:restriction base="xs:integer">
-                            <xs:minInclusive value="1"/>
-                            <xs:maxInclusive value="12"/>
-                        </xs:restriction>
-                    </xs:simpleType>
-                </xs:attribute>
-                <xs:attribute name="day">
-                    <xs:simpleType>
-                        <xs:restriction base="xs:integer">
-                            <xs:minInclusive value="1"/>
-                            <xs:maxInclusive value="31"/>
-                        </xs:restriction>
-                    </xs:simpleType>
-                </xs:attribute>
-                <xs:attribute name="style">
-                    <xs:simpleType>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="plain"/>
-                            <xs:enumeration value="text"/>
-                        </xs:restriction>
-                    </xs:simpleType>
-                </xs:attribute>
-            </xs:extension>
-        </xs:simpleContent>
-    </xs:complexType>
     <xs:complexType name="descriptionType" mixed="true">
         <xs:sequence minOccurs="0" maxOccurs="unbounded">
             <xs:element name="italic" type="xs:string"/>
@@ -181,10 +144,10 @@
     <xs:complexType name="activityType">
         <xs:sequence>
             <xs:choice minOccurs="0">
-                <xs:element name="date" type="dateType"/>
+                <xs:element name="date" type="g:dateType"/>
                 <xs:sequence>
-                    <xs:element name="from" type="dateType"/>
-                    <xs:element name="to" type="dateType"/>
+                    <xs:element name="from" type="g:dateType"/>
+                    <xs:element name="to" type="g:dateType"/>
                 </xs:sequence>
             </xs:choice>
             <xs:sequence>
@@ -225,8 +188,8 @@
     <xs:complexType name="periodType">
         <xs:sequence>
             <xs:element name="company" type="companyType"/>
-            <xs:element name="from" type="dateType"/>
-            <xs:element name="to" type="dateType"/>
+            <xs:element name="from" type="g:dateType"/>
+            <xs:element name="to" type="g:dateType"/>
             <xs:element name="function" type="xs:string"/>
             <xs:element name="project" type="projectType" maxOccurs="unbounded"/>
             <xs:element name="skillrefs" type="skillrefsType" minOccurs="0"/>
@@ -321,23 +284,16 @@
         <xs:complexContent>
             <xs:extension base="paragraphType">
                 <xs:sequence>
-                    <xs:element name="date" type="dateType" minOccurs="0"/>
+                    <xs:element name="date" type="g:dateType" minOccurs="0"/>
                 </xs:sequence>
                 <xs:attribute name="immediatly" type="xs:boolean"/>
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
-
-    <xs:complexType name="layoutType">
-        <xs:sequence>
-            <xs:element name="theme" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
-            <xs:element name="script" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
-        </xs:sequence>
-    </xs:complexType>
     <xs:element name="cv">
         <xs:complexType>
             <xs:all>
-                <xs:element name="layout" type="layoutType"  minOccurs="0"/>
+                <xs:element name="layout" type="g:layoutType"  minOccurs="0"/>
                 <xs:element name="person" type="personType"/>
                 <xs:element name="skills" type="skillsType"/>
                 <xs:element name="career" type="activitiesType" minOccurs="0" />
