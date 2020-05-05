@@ -2,7 +2,7 @@
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../src/cv.xsd" international="false">
     <layout>
         <theme>zkb</theme>
-        <theme>honegger</theme>
+        <theme>honegger_zkb</theme>
     </layout>
     <person>
         <forename>Simon</forename>

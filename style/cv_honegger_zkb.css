@@ -1,0 +1,13 @@
+/* pdf borders 17,5mm 16mm  */
+
+h1.Weiterbildungen {
+    page-break-before: always;
+}
+
+@media print {
+    h1.Werdegang,
+    h1.Kompetenzen
+    {
+        margin-top: -10px;
+    }
+}
