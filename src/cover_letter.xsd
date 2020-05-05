@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:g="global" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
-    <xs:import namespace="global" schemaLocation="globals.xsd"/>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <xs:include schemaLocation="globals.xsd"/>
     <xs:element name="coverletter">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="layout" type="g:layoutType"  minOccurs="0"/>
-                <xs:element name="date" type="g:dateType"/>
+                <xs:element name="layout" type="layoutType"  minOccurs="0"/>
+                <xs:element name="date" type="dateType"/>
                 <xs:element name="subject" type="xs:string"/>
                 <xs:element name="content" type="xs:string"/>
                 <xs:element name="salutation" type="xs:string"/>

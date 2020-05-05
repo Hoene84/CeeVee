@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverletter xmlns:g="global" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../src/cover_letter.xsd">
+<coverletter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../src/cover_letter.xsd">
     <layout>
-        <g:theme>zkb</g:theme>
-        <g:theme>honegger_zkb</g:theme>
+        <theme>zkb</theme>
+        <theme>honegger_zkb</theme>
     </layout>
     <date day="05" month="5" year="2020"/>
     <subject>Bewerbung als Stelle</subject>
