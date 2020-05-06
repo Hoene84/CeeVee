@@ -347,7 +347,7 @@
             <from year="2012"/>
             <to year="2014"/>
             <title>Turtle Player</title>
-            <description>!?Android?! Musicplayer optimiert für grosse Playlisten</description>
+            <description>!?Android?! Music Player optimiert für grosse Playlisten</description>
             <skillrefs location="right" orientation="horizontal">
                 <skillref>android</skillref>
                 <skillref>java</skillref>
