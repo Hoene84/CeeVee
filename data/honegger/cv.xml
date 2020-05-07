@@ -412,4 +412,7 @@
         <skill id="fr" level="fluent" logo="flags/flag-fr.png">Französisch</skill>
         <skill id="en" level="good" logo="flags/flag-en.png">Englisch</skill>
     </languages>
+     <begin title="Verfügbarkeit">
+         <date style="text">sofort</date>
+     </begin>
 </cv>
