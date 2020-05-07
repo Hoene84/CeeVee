@@ -47,7 +47,6 @@ ul.table
 ul.table {
     list-style-type: none;
     padding: 0;
-    page-break-inside: avoid !important;
 }
 
 dd
@@ -73,12 +72,6 @@ ul.table dt,
 dd
 {
     display: table-cell;
-}
-
-div.experiance,
-div.project
-{
-    page-break-inside: avoid !important;
 }
 
 div.project div

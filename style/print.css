@@ -1,7 +1,17 @@
-@page {
-  margin: 20mm;
-}
 /*.container {transform: scale(.7);}*/
 body {
     zoom: 80%;
+}
+@page {
+    size: 210mm 297mm;
+}
+
+ul.table {
+    page-break-inside: avoid
+}
+
+div.experiance,
+div.project
+{
+    page-break-inside: avoid
 }

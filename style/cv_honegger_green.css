@@ -1,3 +1,17 @@
-h1.Berufserfahrung {
+h1.Zertifikate
+{
     page-break-before: always;
+}
+
+.project.core,
+/*.project.agile*/
+.project.sds
+{
+    page-break-after: always;
+}
+
+@media print {
+    @page {
+        margin: 17mm;
+    }
 }

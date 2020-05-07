@@ -1,4 +1,9 @@
 /* pdf borders 17,5mm 16mm  */
+@media print {
+    @page {
+        margin: 17.5mm 16mm 17mm 16mm;
+    }
+}
 
 h1.Weiterbildungen {
     page-break-before: always;
