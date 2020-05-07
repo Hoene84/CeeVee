@@ -74,21 +74,25 @@
 
     <xsl:template match="contact">
         <div class="infoGroup contact">
-            <div class="info address">
-                <div class="label">
-                    <xsl:text>Adresse</xsl:text>
+            <xsl:if test="address">
+                <div class="info address">
+                    <div class="label">
+                        <xsl:text>Adresse</xsl:text>
+                    </div>
+                    <div class="value">
+                        <xsl:apply-templates select="address"/>
+                    </div>
                 </div>
-                <div class="value">
-                    <xsl:apply-templates select="address"/>
-                </div>
-            </div>
+            </xsl:if>
             <div class="info phone">
                 <div class="label">
                     <xsl:text>Telefon</xsl:text>
                 </div>
                 <div class="value">
                     <xsl:for-each select="phone">
-                        <xsl:apply-templates select="current()"/>
+                        <div>
+                            <xsl:apply-templates select="current()"/>
+                        </div>
                     </xsl:for-each>
                 </div>
             </div>
@@ -103,6 +107,12 @@
                 </div>
             </div>
         </div>
+    </xsl:template>
+
+    <xsl:template match="contact" mode="reference">
+        <xsl:apply-templates select="email"/>
+        <xsl:text>, Tel: </xsl:text>
+        <xsl:apply-templates select="phone"/>
     </xsl:template>
 
     <xsl:template name="personHeader">
@@ -146,28 +156,26 @@
         <xsl:apply-templates/>
     </xsl:template>
     <xsl:template match="phone">
-        <div>
-            <!--xsl:choose>
-                <xsl:when test="@type = 'homePhone'">
-                    <xsl:text>Privat: </xsl:text>
-                </xsl:when>
-                <xsl:when test="@type = 'cellPhone'">
-                    <xsl:text>Mobile: </xsl:text>
-                </xsl:when>
-                <xsl:when test="@type = 'businessPhone'">
-                    <xsl:text>Geschäft: </xsl:text>
-                </xsl:when>
-            </xsl:choose-->
+        <!--xsl:choose>
+            <xsl:when test="@type = 'homePhone'">
+                <xsl:text>Privat: </xsl:text>
+            </xsl:when>
+            <xsl:when test="@type = 'cellPhone'">
+                <xsl:text>Mobile: </xsl:text>
+            </xsl:when>
+            <xsl:when test="@type = 'businessPhone'">
+                <xsl:text>Geschäft: </xsl:text>
+            </xsl:when>
+        </xsl:choose-->
+        <xsl:text>0</xsl:text>
+        <xsl:if test="/cv/@international=true()">
             <xsl:text>0</xsl:text>
-            <xsl:if test="/cv/@international=true()">
-                <xsl:text>0</xsl:text>
-                <xsl:apply-templates select="countryCode"/>
-                <xsl:text>-(0)</xsl:text>
-            </xsl:if>
-            <xsl:apply-templates select="areaCode"/>
-            <xsl:text> </xsl:text>
-            <xsl:apply-templates select="number"/>
-        </div>
+            <xsl:apply-templates select="countryCode"/>
+            <xsl:text>-(0)</xsl:text>
+        </xsl:if>
+        <xsl:apply-templates select="areaCode"/>
+        <xsl:text> </xsl:text>
+        <xsl:apply-templates select="number"/>
     </xsl:template>
     <!-- skills -->
     <xsl:template match="skills">
@@ -356,7 +364,7 @@
 
     <xsl:template match="company">
         <div class="company">
-            <div class="logo">
+            <div class="logo {@name}">
                 <img src="{@logo}" />
             </div>
         </div>
@@ -402,26 +410,47 @@
     </xsl:template>
     <!-- references -->
     <xsl:template match="references">
-        <div class="paragraph">
+        <div class="references">
             <xsl:apply-templates select="@title"/>
             <xsl:if test="@ondemande = true()">
                 <xsl:text>Auf Anfrage</xsl:text>
             </xsl:if>
+            <ul>
             <xsl:for-each select="reference">
+                <li>
                 <xsl:apply-templates select="current()"/>
+                </li>
             </xsl:for-each>
+            </ul>
         </div>
     </xsl:template>
 
     <xsl:template match="reference">
-        <xsl:apply-templates select="name"/>
-        <xsl:text> </xsl:text>
-        <xsl:apply-templates select="forename"/>
-        <xsl:text>, </xsl:text>
-        <xsl:apply-templates select="position"/>
-        <xsl:text>, </xsl:text>
-        <xsl:apply-templates select="company"/>
-        <xsl:text> </xsl:text>
+        <div class="referenceentry">
+            <div class="reference">
+                <div class="name">
+                    <xsl:apply-templates select="forename"/>
+                    <xsl:text> </xsl:text>
+                    <xsl:apply-templates select="name"/>
+                </div>
+                <div class="position">
+                    <xsl:apply-templates select="position"/>
+                </div>
+                <div class="contact">
+                    <xsl:apply-templates select="contact" mode="reference"/>
+                </div>
+            </div>
+            <div class="company {company/@name}">
+                <xsl:choose>
+                    <xsl:when test="company/@logo">
+                        <img src="{company/@logo}" title="{company/@name}"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:apply-templates select="company/@name"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </div>
+        </div>
     </xsl:template>
     <!-- begin -->
     <xsl:template match="begin">

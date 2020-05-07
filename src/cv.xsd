@@ -61,7 +61,7 @@
     </xs:complexType>
     <xs:complexType name="contactType">
         <xs:sequence>
-            <xs:element name="address" type="addressType"/>
+            <xs:element name="address" type="addressType" minOccurs="0"/>
             <xs:sequence maxOccurs="unbounded">
                 <xs:element name="phone" type="phoneType"/>
             </xs:sequence>
@@ -265,6 +265,7 @@
             <xs:extension base="basePersonType">
                 <xs:sequence>
                     <xs:element name="position" type="xs:string"/>
+                    <xs:element name="contact" type="contactType" minOccurs="0"/>
                     <xs:element name="company" type="companyType"/>
                 </xs:sequence>
             </xs:extension>

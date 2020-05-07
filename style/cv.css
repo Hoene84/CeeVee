@@ -134,11 +134,6 @@ h4 {
     margin-top: 0.5em;
 }
 
-div.paragraph {
-    padding-top: 2mm;
-    padding-bottom: 2mm
-}
-
 div.inline {
     display: inline-block;
 }
@@ -239,17 +234,29 @@ div.skillrefs img
 }
 
 .project .content,
-.activity dd
+.activity dd,
+.referenceentry
 {
     display: flex;
 }
 
 .project .value,
-.activity dd .text{
+.activity dd .text,
+.referenceentry .reference
+{
     width: 100%;
 }
 
 i
 {
     color: #333;
+}
+
+referenceentry .reference .contact {
+    display: flex;
+}
+
+.references li:not(:last-child)
+{
+    padding-bottom: 2em;
 }

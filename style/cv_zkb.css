@@ -81,7 +81,8 @@ div.person h3
 
 dt,
 h3,
-div.project div.header
+div.project div.header,
+div.referenceentry .name
 {
     font-family: Frutiger,FrutigerBold,FrutigerRegular,"Helvetica Neue",Helvetica,sans-serif;
     font-weight: 700;
@@ -143,7 +144,8 @@ dd
 }
 
 .table.skillgroup,
-ul.table
+ul.table,
+div.container div.references li
 {
     padding-bottom: 1em;
 }
@@ -220,4 +222,9 @@ div.experiance div.period {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.referenceentry .company {
+    align-items: flex-end;
+    display: flex;
 }
