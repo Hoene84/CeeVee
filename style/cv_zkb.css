@@ -40,8 +40,8 @@ div.person
 
 div.person > div.description
 {
-    margin-left: 30px;
-    margin-top: 10px;
+    padding-left: 30px;
+    padding-top: 10px;
 }
 div.person div.infos {
     margin-top: 5px;

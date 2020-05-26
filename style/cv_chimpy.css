@@ -12,13 +12,13 @@ div.person
 }
 
 div.person div.infos {
-    margin-top: 10px;
+    margin: 10px auto 0 auto;
     line-height: 20px;
 }
 
 div.person div.description{
-    margin-left: 25px;
-    margin-top: 25px;
+    padding-left: 25px;
+    padding-top: 25px;
 }
 
 div.person h1,

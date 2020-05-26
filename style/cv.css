@@ -5,6 +5,8 @@ body {
 div.person {
     border-radius: 20px 100px;
     overflow: hidden;
+    display: inline-table;
+    width: 100%;
 }
 
 div.period div.description
@@ -14,14 +16,15 @@ div.period div.description
 }
 
 div.person > div {
-    display: inline-table;
+    display: table-cell;
     vertical-align:top;
 }
 
 div.person > div.description
 {
-    margin-left: 50px;
-    margin-top: 27px;
+    padding-left: 50px;
+    padding-top: 27px;
+    width: 100%;
 }
 
 div.person h1,
@@ -41,6 +44,10 @@ div.person div.infos,
 ul.table
 {
     display:table;
+}
+
+ul.table
+{
     width:100%;
 }
 
