@@ -5,7 +5,7 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:fn="http://www.w3.org/2005/xpa-functions"
     xmlns:html="http://www.w3.org/1999/xhtml"
-    xmlns="http://www.w3.org/1999/xhtml" 
+    xmlns="http://www.w3.org/1999/xhtml"
     exclude-result-prefixes="html"
     xmlns:cv="http://cv">
 
@@ -50,6 +50,10 @@
         <script type="text/javascript">
             <xsl:value-of select="unparsed-text(concat('../js/', /current(), '.js'), 'UTF-8')" disable-output-escaping="yes"/>
         </script>
+    </xsl:template>
+
+    <xsl:template match="extScript" mode="layout">
+        <script type="text/javascript" src="{current()}" />
     </xsl:template>
 
     <!--________________________________________________________exclude for common-->
