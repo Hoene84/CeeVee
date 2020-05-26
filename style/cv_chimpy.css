@@ -27,6 +27,7 @@ div.person h3 {
     -webkit-text-fill-color: white;
     color: white;
     margin: 0 auto 5px auto;
+    text-align: center;
 }
 
 div.person h1 {
@@ -80,3 +81,54 @@ a
     color: black;
 }
 
+
+ul.table dt,
+dd
+{
+    border-bottom: 2px solid rgba(0, 172, 77, 0.5) ;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+.skillgroup .odd dt,
+.skillgroup .odd dd {
+    border: none;
+}
+
+.table.skillgroup {
+    margin: 0;
+}
+
+.even
+{
+    background-color: white;
+}
+
+.odd
+{
+    background-color: white;
+}
+
+
+i
+{
+    color: #5b5b5b;
+}
+
+.acc {
+    background-image:linear-gradient(80deg, rgb(0, 172, 77) 11%, rgb(214, 223, 35) 150%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /*color: #D6DF23;*/
+    font-weight:500;
+}
+
+.skillgroup .acc {
+    text-transform:uppercase;
+}
+
+.right div.skillrefs {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
