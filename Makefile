@@ -17,7 +17,7 @@ common: target src/$(PRODUCT).xsl src/common.xsl data/$(DATA)
 	cp -r data/theme/res/* target/.
 
 html: validate common target
-	xdg-open target/$(PRODUCT).html &> /dev/null ;
+# 	xdg-open target/$(PRODUCT).html &> /dev/null ;
 
 pdf: html target target/$(PRODUCT).html
 	chromium-browser --headless --disable-gpu --print-to-pdf=target/$(PRODUCT).pdf target/$(PRODUCT).html ; then xdg-open target/$(PRODUCT).pdf &> /dev/null ;
