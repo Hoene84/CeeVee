@@ -16,12 +16,17 @@ div.person div.infos {
     line-height: 20px;
 }
 
+div.person div.description{
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
 div.person h1,
-h2,
-h3 {
+div.person h2,
+div.person h3 {
     -webkit-text-fill-color: white;
     color: white;
-    text-transform: uppercase;
+    margin: 0 auto 5px auto;
 }
 
 div.person h1 {
@@ -33,6 +38,7 @@ div.person h1 {
 h2 {
     font-size:24px;
     font-weight: 200;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -40,6 +46,9 @@ h3 {
     font-weight:700;
     letter-spacing: 2px;
     text-transform: none;
+    background-image:linear-gradient(80deg, rgb(0, 172, 77) 11%, rgb(214, 223, 35) 93%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 h1 {
@@ -51,6 +60,7 @@ h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-transform:uppercase;
+    margin: 40px auto
 }
 
 .header.odd
@@ -65,4 +75,8 @@ h1 {
     padding: 5px 20px;
 }
 
+a
+{
+    color: black;
+}
 
