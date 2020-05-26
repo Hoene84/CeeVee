@@ -1,0 +1,68 @@
+body, html, a {
+    font-family: "Rubik";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+div.person
+{
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #00AC4D 0%, #D6DF23 100%);
+}
+
+div.person div.infos {
+    margin-top: 10px;
+    line-height: 20px;
+}
+
+div.person h1,
+h2,
+h3 {
+    -webkit-text-fill-color: white;
+    color: white;
+    text-transform: uppercase;
+}
+
+div.person h1 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size:24px;
+    font-weight: 200;
+}
+
+h3 {
+    font-size:16px;
+    font-weight:700;
+    letter-spacing: 2px;
+    text-transform: none;
+}
+
+h1 {
+    font-size:70px;
+    font-weight:700;
+    line-height:70px;
+    width: fit-content;
+    background-image:linear-gradient(80deg, rgb(0, 172, 77) 11%, rgb(214, 223, 35) 93%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform:uppercase;
+}
+
+.header.odd
+{
+    background-color: #D6DF23;
+    background-image: linear-gradient(90deg, #D6DF23 0%, #00AC4D 100%);
+    color: white;
+    border-radius: 3px;
+    font-size: 17px;
+    font-weight: 400;
+    text-transform:uppercase;
+    padding: 5px 20px;
+}
+
+
