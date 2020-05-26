@@ -217,7 +217,7 @@
                 <function>Entwicklungsingenieur in Festanstellung</function>
                 <project title="PTTS - Public Transport Ticketing System" id="ptts">
                     <activity>Entwicklung Ticketautomaten-Softwarelösung, in Betrieb auf 1'250 Ticketautomaten diverser Schweizer Verkehrsbetriebe</activity>
-                    <activity>!?Software Architektur und Design?!: Hardware-Anbindung, Webapplikation Sortiments-Verwaltung, Tarifsystem, Zahlungsmittel-Anbindung, Schnittstellen zu Fahrgastinformationsystemen</activity>
+                    <activity>!?Software Architektur und Design:?! Hardware-Anbindung, Webapplikation Sortiments-Verwaltung, Tarifsystem, Zahlungsmittel-Anbindung, Schnittstellen zu Fahrgastinformationsystemen</activity>
                     <activity>Entwicklung von Closed- und Anbindung von Openloop Smartcard-Applikationen unter EP2 Konformitätsnormen für Zahlterminals</activity>
                     <activity>Positionierung der Ticketing-Lösung in dem sich im Umbruch befindenden Markt im agilen, diversifizierten !?Scrum Team?!</activity>
                     <skillrefs location="right" orientation="vertical">
@@ -283,8 +283,8 @@
         <experiance>
             <period>
                 <company name="Zürcher Kantonalbank" logo="logo_zkb.png"/>
-                <from year="2010" month="06"/>
-                <to year="2010" month="08"/>
+                <from year="2010" month="07"/>
+                <to year="2010" month="09"/>
                 <function>Applikationsentwickler auf Stundenlohnbasis</function>
                 <project title="ACS (Zutritts- und Zugriffsrechteverwaltung) Rel. 2.1" id="acs">
                     <activity>Fachbereichnahe Umsetzung von fachlichen Anforderungen an die Java Webapplikation ACS nach Scrum Rahmenwerk</activity>
@@ -308,7 +308,7 @@
             <period>
                 <company name="Zürcher Kantonalbank" logo="logo_zkb.png"/>
                 <from year="2003" month="08"/>
-                <to year="2008" month="10"/>
+                <to year="2008" month="08"/>
                 <function>Applikationsentwickler in Festanstellung</function>
                 <project title="Zentrale Führung der VV-Codierung" id="vv">
                     <activity>!?Teilprojektleitung ASD/SDS?!</activity>
