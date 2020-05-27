@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="generator" content="Hugo 0.58.2" />
+
+
+<title>Janik Vonrotz - React image loader with a spinner</title>
+<meta property="og:title" content="Janik Vonrotz - React image loader with a spinner">
+
+
+
+
+<link rel="icon" href="/images/logo.png" type="image/x-icon"/>
+<link rel="stylesheet" href="/css/normalize.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400|Lato:400,400italic,700">
+
+
+    <meta property="og:title" content="React image loader with a spinner" />
+<meta property="og:description" content="hey there, I&rsquo;ve spent as usual a lot of time with React, Mantra and Meteor. While building a simple app I checked out the new Meteor standard for file handling Meteor-Files. It works great, I really recommend this awesome package. But that&rsquo;s not what I want to show you. The app I&rsquo;m working on loads pictures form the dropbox api. Downloading the pictures always takes a while. To make sure the user doesn&rsquo;t get impatient the app is now displaying a spinner when the image is loading. I would to like to show you how I&rsquo;ve built this image loader and spinner component." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://janikvonrotz.ch/2016/07/23/react-image-loader-with-a-spinner/" />
+
+<meta property="og:image" content="https://janikvonrotz.ch/wp-content/uploads/2014/04/React-Logo.png" />
+<meta property="article:published_time" content="2016-07-23T04:19:06+00:00" />
+<meta property="article:modified_time" content="2016-07-23T04:19:06+00:00" />
+
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://janikvonrotz.ch/wp-content/uploads/2014/04/React-Logo.png"/>
+
+<meta name="twitter:title" content="React image loader with a spinner"/>
+<meta name="twitter:description" content="hey there, I&rsquo;ve spent as usual a lot of time with React, Mantra and Meteor. While building a simple app I checked out the new Meteor standard for file handling Meteor-Files. It works great, I really recommend this awesome package. But that&rsquo;s not what I want to show you. The app I&rsquo;m working on loads pictures form the dropbox api. Downloading the pictures always takes a while. To make sure the user doesn&rsquo;t get impatient the app is now displaying a spinner when the image is loading. I would to like to show you how I&rsquo;ve built this image loader and spinner component."/>
+
+    <meta itemprop="name" content="React image loader with a spinner">
+<meta itemprop="description" content="hey there, I&rsquo;ve spent as usual a lot of time with React, Mantra and Meteor. While building a simple app I checked out the new Meteor standard for file handling Meteor-Files. It works great, I really recommend this awesome package. But that&rsquo;s not what I want to show you. The app I&rsquo;m working on loads pictures form the dropbox api. Downloading the pictures always takes a while. To make sure the user doesn&rsquo;t get impatient the app is now displaying a spinner when the image is loading. I would to like to show you how I&rsquo;ve built this image loader and spinner component.">
+
+
+<meta itemprop="datePublished" content="2016-07-23T04:19:06&#43;00:00" />
+<meta itemprop="dateModified" content="2016-07-23T04:19:06&#43;00:00" />
+<meta itemprop="wordCount" content="558">
+
+  <meta itemprop="image" content="https://janikvonrotz.ch/wp-content/uploads/2014/04/React-Logo.png">
+
+
+
+<meta itemprop="keywords" content="react," />
+
+
+  </head>
+  <body>
+    <header>
+      <nav>
+
+  <a href="https://janikvonrotz.ch/" class="logo">
+    <img src="/images/logo.png" 
+      width="50" 
+      height="50" 
+      alt="Logo">
+  </a>
+
+  <ul class="links">
+    
+    <li><a href="/">Home</a></li>
+    
+    <li><a href="/projects/">Projects</a></li>
+    
+    <li><a href="/downloads/">DL</a></li>
+    
+    <li><a href="/about/">About</a></li>
+    
+    <li><a href="/cv/">CV</a></li>
+    
+    <li><a href="/contact/">Contact</a></li>
+    
+
+    
+    <li><a href="/search/" class="search">
+      <img src="/images/search.svg" alt="Search">
+    </a></li>
+    
+
+  </ul>
+
+</nav>
+
+    </header>
+
+
+<main role="main">
+
+<section class="post">
+    
+    <article>
+
+        
+<img class="featured" src=" /wp-content/uploads/2014/04/React-Logo.png" />
+
+
+        <p class="duration">3 min read</p>
+
+        <h1 class="title">React image loader with a spinner</h1>
+
+        <p class="date">July 23, 2016</p>
+
+        <section>
+            <p>hey there, I&rsquo;ve spent as usual a lot of time with React, Mantra and Meteor. While building a simple app I checked out the new Meteor standard for file handling <a href="https://github.com/VeliovGroup/Meteor-Files">Meteor-Files</a>. It works great, I really recommend this awesome package. But that&rsquo;s not what I want to show you. The app I&rsquo;m working on loads pictures form the dropbox api. Downloading the pictures always takes a while. To make sure the user doesn&rsquo;t get impatient the app is now displaying a spinner when the image is loading. I would to like to show you how I&rsquo;ve built this image loader and spinner component.</p>
+
+<p>First a preview of what we&rsquo;ll build:</p>
+
+<p><img src="/wp-content/uploads/2016/07/React-Image-Loader.png" alt="React Image Loader" /></p>
+
+<p>The spinner and the image in the screenshot are part of ImageLoader component. This components only purpose is to display either the image, a loading spinner or a error message.</p>
+
+<p>The code should be straight forward.</p>
+
+<p><strong>image_loader.jsx</strong></p>
+
+<pre><code>import React from 'react'
+import Spinner from './spinner.jsx'
+
+const style = {
+  verticalAlign: 'top',
+  maxWidth: '100%',
+  minWidth: '100%',
+  width: '100%'
+}
+
+class ImageLoader extends React.Component {
+
+  constructor(props) {
+    super(props)
+    this.state = {
+      fileStatus: props.src ? 'loading' : 'no image to load'
+    }
+  }
+
+  setFileStatus(status) {
+    this.setState({ fileStatus: status })
+  }
+
+  componentWillReceiveProps(nextProps){
+    if(this.props.src != nextProps.src){
+      this.setState({
+        fileStatus: nextProps.src ? 'loading' : 'no image to load'
+      })
+    }
+  }
+
+  render() {
+    return (
+      &lt;div&gt;
+        {(()=&gt;{
+          var status = {
+            'loading': () =&gt; {
+              return (&lt;Spinner /&gt;)
+            },
+            'loaded': () =&gt; {
+              return null
+            },
+            'failed to load': () =&gt; {
+              return (&lt;p&gt;{this.state.fileStatus}&lt;/p&gt;)
+            },
+            'no image to load': () =&gt; {
+              return (&lt;p&gt;{this.state.fileStatus}&lt;/p&gt;)
+            },
+          }
+          return status[this.state.fileStatus]()
+        })()}
+        &lt;img
+          style={style}
+          src={this.props.src}
+          onLoad={this.setFileStatus.bind(this, 'loaded')}
+          onError={this.setFileStatus.bind(this, 'failed to load')}
+        /&gt;
+      &lt;/div&gt;
+    )
+  }
+}
+
+export default ImageLoader
+</code></pre>
+
+<p>The syntax, which is used to wrap the file status render, might be new to you. Nevertheless it&rsquo;s a common patter I&rsquo;ve copied from the facebook react blog.</p>
+
+<p>Next is the spinner, which is inclued in the ImageLoader and which is basically a keyframe animated div box.</p>
+
+<p><strong>spinner.jsx</strong></p>
+
+<pre><code>import React, { PropTypes } from 'react'
+import {grey400} from 'material-ui/styles/colors'
+
+class Spinner extends React.Component {
+
+  constructor(props) {
+    super(props)
+  }
+
+  render() {
+
+    const style = {
+      width: this.props.width,
+      height: this.props.height,
+      borderColor: this.props.borderColor
+    }
+
+    return (
+      &lt;div
+        className='react-spinner'
+        style={style}
+      /&gt;
+    )
+  }
+}
+
+Spinner.propTypes = {
+  width: PropTypes.string,
+  height: PropTypes.string,
+  borderColor: PropTypes.string
+}
+
+Spinner.defaultProps = {
+  width: '40px',
+  height: '40px',
+  borderColor: grey400
+}
+
+export default Spinner
+</code></pre>
+
+<p>I&rsquo;m not an expert in css animations, however, without the css code below the component is totally useless.</p>
+
+<p><strong>spinner.css</strong></p>
+
+<pre><code>.react-spinner {
+  width: 15px;
+  height: 15px;
+  border: 2px solid;
+  border-bottom-color: transparent !important;
+  border-radius: 50%;
+  -webkit-animation: react-infinite-spinner linear 1.2s infinite;
+  -moz-animation: react-infinite-spinner linear 1.2s infinite;
+  -o-animation: react-infinite-spinner linear 1.2s infinite;
+  animation: react-infinite-spinner linear 1.2s infinite;
+}
+
+@keyframes react-infinite-spinner {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes react-infinite-spinner {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes react-infinite-spinner {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-o-keyframes react-infinite-spinner {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+</code></pre>
+
+<p>I hope you liked my approach, let me know what you think in the comment section.</p>
+            <p class="categories">Categories:&nbsp;
+    
+        
+        <a href="/categories/javascript-development">JavaScript development</a>
+    
+</p>
+            <p class="tags">Tags:&nbsp;
+    
+        
+        <a href="/tags/react">react</a>
+    
+</p>
+        </section>
+
+    </article>
+
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "janikvonrotz-1" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</section>
+
+</main>
+
+<footer>
+
+		<ul class="links">
+
+			
+			<li>
+				<a href="/search/">Search</a>
+			</li>
+			
+			
+			<li>
+				<a href="/archive/">Archive</a>
+			</li>
+			
+			<li>
+				<a href="/categories">Categories</a>
+			</li>
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			<li>
+				<a href="https://janikvonrotz.ch/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+			</li>
+			<li>
+				<a href="https://gohugo.io/" class="links-kudos">Made with <img src="/images/hugo-logo.png" width="22" height="22"></a>
+			</li>
+		</ul>
+
+	</footer>
+
+	
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-31105856-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+</body>
+</html>
+
