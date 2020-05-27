@@ -126,7 +126,7 @@
                 <skill id="vue" logo="skills/vue.png">Vue.js</skill>
                 <skill id="vuetify">Vuetify</skill>
                 <skill id="react" logo="skills/react.png">React</skill>
-                <skill id="polymer" logo="skills/polymer.png">Polymer Project</skill>
+                <skill id="polymer" logo="skills/polymer.png">Polymer</skill>
                 <skill id="node"  logo="skills/rails.png">Node.js</skill>
                 <skill id="vaadinflow" logo="skills/vaadin_flow.png">Vaadin Flow</skill>
                 <skill id="redux" logo="skills/redux.png">Redux</skill>
