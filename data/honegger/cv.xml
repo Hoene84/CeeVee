@@ -125,12 +125,15 @@
             <solidskill etc="false">
                 <skill id="vue" logo="skills/vue.png">Vue.js</skill>
                 <skill id="vuetify">Vuetify</skill>
+                <skill id="react" logo="skills/react.png">React</skill>
                 <skill id="polymer" logo="skills/polymer.png">Polymer Project</skill>
+                <skill id="node"  logo="skills/rails.png">Node.js</skill>
                 <skill id="vaadinflow" logo="skills/vaadin_flow.png">Vaadin Flow</skill>
-                <skill id="play" logo="skills/play.png">Play Framework</skill>
+                <skill id="redux" logo="skills/redux.png">Redux</skill>
+                <skill id="vuex">Vuex</skill>
             </solidskill>
             <goodskill etc="true">
-                <skill id="react">React</skill>
+                <skill id="play" logo="skills/play.png">Play Framework</skill>
                 <skill id="tapestry" logo="skills/tapestry.png">Tapestry</skill>
                 <skill id="wicket" logo="skills/apache-wicket.png">Apache Wicket</skill>
             </goodskill>
@@ -342,8 +345,28 @@
             </period>
         </experiance>
     </experiences>
-    
+
     <projects title="Private Projekte">
+        <activity link="https://github.com/Hoene84/jitsi-poker" id="poker">
+            <from year="2020"/>
+            <to style="text">Aktuell</to>
+            <title>Jitsi Poker</title>
+            <description>Texas Hold’em Erweiterung für die Open Source Webkonferenzlösungen Jitsi</description>
+            <skillrefs location="right" orientation="horizontal">
+                <skillref>react</skillref>
+                <skillref>redux</skillref>
+            </skillrefs>
+        </activity>
+        <activity link="https://github.com/Hoene84/CeeVee" id="ceevee">
+            <from year="2015"/>
+            <to style="text">Aktuell</to>
+            <title>CeeVee</title>
+            <description>CV Generator: XML -> HTML und PDF\!?Das Resultat?! wird z.Zt. kritisch betrachtet.</description>
+            <skillrefs location="right" orientation="horizontal">
+                <skillref>xml</skillref>
+                <skillref>html</skillref>
+            </skillrefs>
+        </activity>
         <activity link="http://www.turtle-player.co.uk/" id="turtleplayer">
             <from year="2012"/>
             <to year="2014"/>
@@ -362,16 +385,6 @@
             <skillrefs location="right" orientation="horizontal">
                 <skillref>java</skillref>
                 <skillref>sql</skillref>
-            </skillrefs>
-        </activity>
-        <activity link="https://github.com/Hoene84/CeeVee" id="ceevee">
-            <from year="2015"/>
-            <to style="text">Aktuell</to>
-            <title>CeeVee</title>
-            <description>CV Generator: XML -> HTML und PDF\!?Das Resultat?! wird z.Zt. kritisch betrachtet.</description>
-            <skillrefs location="right" orientation="horizontal">
-                <skillref>xml</skillref>
-                <skillref>html</skillref>
             </skillrefs>
         </activity>
     </projects>
