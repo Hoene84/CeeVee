@@ -1,0 +1,338 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fn="http://www.w3.org/2005/xpa-functions" xmlns:cv="http://cv" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><style type="text/css" media="screen">.container {
+  width: 800px;
+  margin: 50px auto;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+}
+</style><style type="text/css" media="print">/*.container {transform: scale(.7);}*/
+body {
+    zoom: 80%;
+}
+@page {
+    size: 210mm 297mm;
+    margin: 20mm;
+}
+
+ul.table {
+    page-break-inside: avoid
+}
+
+div.experiance,
+div.project
+{
+    page-break-inside: avoid
+}</style><style type="text/css">body
+{
+    margin-top: 150px;
+}
+
+@media print {
+    body {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+.date
+{
+    margin-bottom: 50px;
+}
+
+h2
+{
+    margin-bottom: 60px;
+}
+
+.content
+{
+    margin-bottom: 30px;
+}
+
+.salutation
+{
+    padding-top: 60px;
+}</style><style type="text/css">@font-face {
+    font-family: Frutiger;
+    font-weight: 400;
+    font-style: normal;
+    src: url(zkb/font/FrutigerLTW02-55Roman.woff) format("woff")
+}
+
+@font-face {
+    font-family: Frutiger;
+    font-weight: 900;
+    font-style: normal;
+    src: url(zkb/font/FrutigerLTW02-75Black.woff) format("woff")
+}
+
+@font-face {
+    font-family: Frutiger;
+    font-weight: 700;
+    font-style: normal;
+    src: url(zkb/font/FrutigerLTW02-65Bold.woff) format("woff")
+}
+
+body, html, a {
+    font: normal 400 100.01%/1.25em FrutigerRegular,"Helvetica Neue",Helvetica,sans-serif;
+    /*font: normal 400 100.01%/1.25em FrutigerRegular,"Helvetica Neue",Helvetica,sans-serif;*/
+    color: #003cb4;
+}
+
+.container {
+    font-size: .9375rem;
+    font-family: Frutiger,FrutigerRegular,"Helvetica Neue",Helvetica,sans-serif;
+}
+
+
+div.person
+{
+    background-color: #003cb4;
+    color: white;
+    margin-bottom: 1.875em;
+}
+
+div.person > div.description
+{
+    padding-left: 30px;
+    padding-top: 10px;
+}
+div.person div.infos {
+    margin-top: 5px;
+}
+
+div.person h1,
+div.person h2,
+div.person h3
+{
+    margin: 0;
+}
+
+div.person h1,
+div.person h2
+{
+    color: white;
+}
+
+div.person h1
+{
+    font-size: 42px;
+    line-height: 1.27273em;
+}
+
+div.person h2
+{
+    font-size: 24.5px;
+}
+
+div.person h3
+{
+    color: #00bec8;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 2.125rem;
+}
+
+dt,
+h3,
+div.project div.header,
+div.referenceentry .name
+{
+    font-family: Frutiger,FrutigerBold,FrutigerRegular,"Helvetica Neue",Helvetica,sans-serif;
+    font-weight: 700;
+    font-size: .9375rem;
+}
+
+h1,
+h2,
+div.skillref
+{
+    font-family: Frutiger,FrutigerBold,"Helvetica Neue",Helvetica,Arial;
+    font-size: 1.75rem;
+    font-weight: 900;
+    line-height: 2.125rem;
+}
+
+h1, h2 {
+    margin-top: 20px;
+}
+
+h4 {
+    font-weight: bold;
+}
+i
+{
+    font-style: normal;
+    color: #006cff;
+}
+
+.even,
+.odd
+{
+    background-color: white;
+}
+
+ul.table.skillgroup:not(:last-child),
+ul.table.trainings dt,
+ul.table.trainings dd,
+ul.table.languages dt,
+ul.table.languages dd,
+ul.table.certificats dt,
+ul.table.certificats dd,
+ul.table.projects dt,
+ul.table.projects dd {
+    border-bottom: 1px solid #003cb4;
+}
+
+div.project div.value,
+div.project div.skillrefs,
+ul.table dt,
+dd
+{
+    padding: 4px 0;
+}
+
+.table.skillgroup dd,
+.table.skillgroup dt {
+    padding: 0;
+}
+
+.table.skillgroup,
+ul.table,
+div.container div.references li
+{
+    padding-bottom: 1em;
+}
+
+ul:not(.table) {
+    list-style-type: none;
+    line-height: 1.53846em;
+}
+
+ul:not(.table) li {
+    margin-bottom: .30769em;
+}
+
+ul:not(.table) li:before {
+    width: 5px;
+    height: 5px;
+    margin-left: -12px;
+    display: inline-block;
+    position: absolute;
+    vertical-align: middle;
+    content: '-';
+    margin-top: 0;
+    background-color: transparent;
+}
+
+.acc {
+    color: #00bec8;
+}
+
+div.experiance > .header {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+div.experiance > .header > div {
+    margin: 0;
+}
+
+.experiance > .header .company {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.experiance > .header div.function {
+    white-space: nowrap;
+    background: #ebebeb;
+    padding: 1.15385em 1.38462em;
+}
+
+.experiance > .header div.function > div {
+    width: 350px;
+    text-align: right;
+}
+
+div.experiance div.period {
+    margin-bottom: 30px;
+    margin-top: -40px;
+}
+
+.experiance > .header::after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.project .horizontal .skillrefs{
+    margin-top: -25px;
+}
+
+.vertical div.skillrefs
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.referenceentry .company {
+    align-items: flex-end;
+    display: flex;
+}
+</style></head>
+   <body>
+      <div class="container">
+         
+         
+         <div class="date">05 Mai 2020</div>
+         
+         <h2>Bewerbung als <span class=acc>Full Stack-Entwickler</span></h2>
+         
+         <div class="content">
+            Sehr geehrte Damen und Herren,
+            
+         </div>
+         
+         <div class="content">
+            Lorem ipsum dolor sit amet, his no simul deleniti ocurreret, qui in primis insolens. Sed in ipsum labore corpora. Te vix vero
+            vocibus praesent, pri te essent maluisset. Mea iusto postulant ne. Eam at offendit deterruisset, eam adhuc nonumy corpora
+            no. Sit eu quem delicatissimi, elit gubergren mea et. Quo te fastidii phaedrum rationibus, nec minimum argumentum intellegebat
+            no.
+            
+         </div>
+         
+         <div class="content">
+            Eam solum legimus in. Mel amet virtute vivendum eu, case option maiorum nam an. Pro amet debet consequuntur ei, novum inimicus
+            facilisis eam ad, ad modus consulatu moderatius quo. Detracto incorrupte scribentur cu mei. Cu cum minimum dissentias sadipscing,
+            qui ut porro summo reprehendunt, postea numquam blandit ei eum.
+            
+         </div>
+         
+         <div class="content">
+            Pri ex aliquip argumentum inciderint, eius ignota cum ea. Accusam cotidieque qui id. Ne reque homero accommodare pro, molestie
+            percipit per ea. Duo ludus malorum et, in everti saperet nam. Zril possim in eam, mea et wisi cotidieque, qui sale utroque
+            te. No nostrud sanctus constituto pri, pro ut quas omnis euismod.
+            
+         </div>
+         
+         <div class="content">
+            Nobis nullam pertinax te eum, velit philosophia ne vis, verear salutandi consequuntur at nec. Ut habeo causae facilis eam,
+            inani.
+            
+         </div>
+         
+         <div class="salutation">Mit besten Grüssen,</div>
+         
+         <div class="fullname">Simon Honegger</div>
+         
+      </div>
+   </body>
+</html>
