@@ -1,7 +1,15 @@
+{:toc}
+
 # CeeVee
 Theme-able CV Generator
 
 Generates PDF and HTML for a CV written in XML
+
+### Table of Contents
+**[Examples](#examples)**<br>
+**[Required](#required)**<br>
+**[Getting started](#getting-started)**<br>
+**[Directories](#directories)**<br>
 
 ## Examples
 
