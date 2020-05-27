@@ -351,7 +351,7 @@
             <from year="2020"/>
             <to style="text">Aktuell</to>
             <title>Jitsi Poker</title>
-            <description>Texas Hold’em Erweiterung für die Open Source Webkonferenzlösungen Jitsi</description>
+            <description>Texas Hold’em Erweiterung für die Open Source !?Webkonferenzlösungen Jitsi?!</description>
             <skillrefs location="right" orientation="horizontal">
                 <skillref>react</skillref>
                 <skillref>redux</skillref>
