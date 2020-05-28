@@ -263,15 +263,43 @@ therefore, to apply some custom style for highlighting, add some css attributes 
 ```css
 .acc {
     color: #00bec8;
+    font-weight: 600;
 }
 ```
 
 you get:
 
-<div style="background-color: white">
-    Some <span style="color: #00bec8">highlighted</span> text
+<div style="background-color: white; padding: 25px; border: 1px solid lightgray; border-radius: 10px;">
+    Some <span style="color: #00bec8; font-weight: 600;">highlighted</span> text
 </div>
 
+#### Line break
+
+To add a line break, use the backslash notation:
+
+```xml
+...
+<content>
+    A line brak after this\word
+</content>
+...
+```
+
+this will transform to:
+
+```html
+...
+<div>
+    A line brak after this<br/>word
+</div>
+...
+```
+
+you get:
+
+<div style="background-color: white; padding: 25px; border: 1px solid lightgray; border-radius: 10px;">
+    A line brak after this<br/>word
+</div>
 
 ### Add scripts
 
