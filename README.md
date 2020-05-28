@@ -234,6 +234,44 @@ Multiple themes are allowed and applied in the order as declared
     </layout>
     ...
 ```
+### Built-in Formatting
+
+#### Highlighting
+
+To highlight any passage in your CV, use the `!?` and `?!` notation:
+
+```xml
+...
+<content>
+    Some !?highlighted?! text
+</content>
+...
+```
+
+this will transform to:
+
+```html
+...
+<div>
+    Some <span class=acc>highlighted</span> text
+</div>
+...
+```
+
+therefore, to apply some custom style for highlighting, add some css attributes to the `.acc` class:
+
+```css
+.acc {
+    color: #00bec8;
+}
+```
+
+you get:
+
+<div style="background-color: white">
+    Some <span style="color: #00bec8">highlighted</span> text
+</div>
+
 
 ### Add scripts
 
