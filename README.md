@@ -1,17 +1,30 @@
-{:toc}
-
 # CeeVee
 Theme-able CV Generator
 
 Generates PDF and HTML for a CV written in XML
 
-### Table of Contents
-**[Examples](#examples)**<br>
-**[Required](#required)**<br>
-**[Getting started](#getting-started)**<br>
-**[Directories](#directories)**<br>
+## Table of Contents
 
-## Examples
+1. **[CV and Cover Letter Examples](#cv-and-cover-letter-examples)**
+1. **[Required Packages](#required-packages)**
+
+   [On a Linux System](#on-a-linux-system)
+
+1. **[Getting Started](#getting-started)**
+
+   [Write your CV](#write-your-cv)
+   
+   [Generate HTML and PDF from your Content](#generate-html-and-pdf-from-your-content)
+   
+   [Apply your own Style](#apply-your-own-style)
+   
+   [Built-in Formatting](#built-in-formatting)
+   
+   [Adding Scripts](#adding-scripts)
+
+1. **[Directory Structure](#directory-structure)**
+
+## CV and Cover Letter Examples
 
 
 |  Theme       | CV           | Cover Letter  |
@@ -22,8 +35,8 @@ Generates PDF and HTML for a CV written in XML
 | None      | [![alt text](example/honegger/none/cv_thumb.png "No Theme")](http://hoene84.github.io/CeeVee/example/honegger/none/cv/cv.html) <br> [PDF](http://hoene84.github.io/CeeVee/example/honegger/none/cv/cv.pdf) | [![alt text](example/honegger/none/cover_letter_thumb.png "No Theme")](http://hoene84.github.io/CeeVee/example/honegger/none/cover_letter/cover_letter.html) <br> [PDF](http://hoene84.github.io/CeeVee/example/honegger/none/cover_letter/cover_letter.pdf) |
 
 
-## Required
-### Linux System
+## Required Packages
+### On a Linux System
 
 Only 3 standard packages are required:
 
@@ -31,7 +44,7 @@ Only 3 standard packages are required:
 sudo apt-get install libsaxonb-java libxml2-utils make`
 ```
 
-## Getting started
+## Getting Started
 
 ### Write your CV
 
@@ -167,7 +180,7 @@ Here is an example of a cover_letter XML:
 </coverletter>
 ```
 
-### Generate
+### Generate HTML and PDF from your Content
 
 To generate, use on top level the command :
 ```
@@ -187,7 +200,7 @@ make DATA=yourname
 ```  
 generates `target/cv.html` and `target/cv.pdf` using `data/yourname/cv.xml`
 
-#### Publish
+#### Publish to GitHub Pages
 
 The target folder is excluded for git. If you want to publish the artifact use:
 ```
@@ -198,14 +211,14 @@ This regenerates the artifact and puts them in the example folder under `data_na
 
 After pushing, you can access the artifact under http://hoene84.github.io/CeeVee/example/[data_name]/[first_theme]/[product]/[product].html
 
-#### Other valid make targets
+#### Other Valid Make Targets
 
 validate: only validates the source xml  
 html: only generates html  
 pdf: generates pdf (and html as pre-step)  
 example: regenerates artifacts and puts them in the example folder under `data_name/first_theme/product`  
 
-### Your own style
+### Apply your own Style
 
 create a css file `style/theme_name.css`
 
@@ -301,7 +314,7 @@ you get:
     A line brak after this<br/>word
 </div>
 
-### Add scripts
+### Adding Scripts
 
 create a js file `js/alerter.js`
 
@@ -330,7 +343,7 @@ To include external script, use:
 Also here, the declaration order matters. 
 
 
-## Directories
+## Directory Structure
 
 1. `data` 
   * the content of your CV or cover letter in XML
