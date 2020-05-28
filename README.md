@@ -200,6 +200,18 @@ make DATA=yourname
 ```  
 generates `target/cv.html` and `target/cv.pdf` using `data/yourname/cv.xml`
 
+#### Hot Swap
+
+Executing make after every change to check the results can be annoying. If you use IntelliJ
+to modify your source, the 'File Watchers' Plugin helps out here.
+
+Just configure it to execute make on each save using this configuration: 
+
+File type: Any  
+Scope: All Changed Files  
+Program: make  
+Program: html  
+
 #### Publish to GitHub Pages
 
 The target folder is excluded for git. If you want to publish the artifact use:
