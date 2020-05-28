@@ -357,11 +357,11 @@
                 <skillref>redux</skillref>
             </skillrefs>
         </activity>
-        <activity link="https://github.com/Hoene84/CeeVee" id="ceevee">
+        <activity link="http://hoene84.github.io/CeeVee/" id="ceevee">
             <from year="2015"/>
             <to style="text">Aktuell</to>
             <title>CeeVee</title>
-            <description>CV Generator: XML -> HTML und PDF\!?Das Resultat?! wird z.Zt. kritisch betrachtet.</description>
+            <description>Theme-able CV Generator: XML to HTML/PDF\!?Das Resultat?! wird z.Zt. kritisch betrachtet.</description>
             <skillrefs location="right" orientation="horizontal">
                 <skillref>xml</skillref>
                 <skillref>html</skillref>
