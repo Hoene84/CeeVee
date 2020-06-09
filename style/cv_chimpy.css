@@ -47,9 +47,7 @@ h3 {
     font-weight:700;
     letter-spacing: 2px;
     text-transform: none;
-    background-image:linear-gradient(80deg, rgb(0, 172, 77) 11%, rgb(214, 223, 35) 93%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+
 }
 
 h1 {
@@ -57,9 +55,7 @@ h1 {
     font-weight:700;
     line-height:70px;
     width: fit-content;
-    background-image:linear-gradient(80deg, rgb(0, 172, 77) 11%, rgb(214, 223, 35) 93%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+
     text-transform:uppercase;
     margin: 40px auto
 }
@@ -117,9 +113,6 @@ i
 }
 
 .acc {
-    background-image:linear-gradient(80deg, rgb(0, 172, 77) 11%, rgb(214, 223, 35) 150%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     /*color: #D6DF23;*/
     font-weight:500;
 }
@@ -131,4 +124,30 @@ i
 .right div.skillrefs {
     margin-top: 20px;
     margin-bottom: 0;
+}
+
+@media screen {
+    h1, h3, .acc {
+        background-image:linear-gradient(80deg, rgb(0, 172, 77) 11%, rgb(214, 223, 35) 93%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .acc {
+        background-image:linear-gradient(80deg, rgb(0, 172, 77) 11%, rgb(214, 223, 35) 150%);
+    }
+}
+
+@media print {
+
+    @page {
+        margin: 17.5mm 16mm 17mm 16mm;
+    }
+
+    h1, h3, .acc {
+        color: rgb(0, 172, 77)
+    }
+
+    body {
+        zoom: 70%;
+    }
 }
