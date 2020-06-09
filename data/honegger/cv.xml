@@ -3,6 +3,7 @@
     <layout type="cv">
         <theme>chimpy</theme>
         <theme>honegger</theme>
+        <theme>honegger_chimpy</theme>
         <extScript>https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js</extScript>
         <script>webfont</script>
     </layout>
@@ -53,7 +54,7 @@
         <activity>
             <from year="2008" month="09" style="plain" />
             <to year="2011" month="11" style="plain" />
-            <description>Zweisprachiges Vollzeitstudium an der Ecole d'ingénieurs et d'architectes de Fribourg</description>
+            <description>!?Zweisprachiges?! Vollzeitstudium an der Ecole d'ingénieurs et d'architectes de Fribourg</description>
             <certificate>Bachelor of Science HES-SO in Informatik (bilingue Franz./Deutsch)</certificate>
         </activity>
         <activity>
@@ -73,9 +74,9 @@
     <skills title="Kompetenzen">
         <skillgroup title="Sprachen">
             <solidskill etc="false">
-                <skill id="java" logo="skills/java_ee.png">!?Java?!</skill>
-                <skill id="html" logo="skills/html_css_js.png">!?HTML/CSS/JS?!</skill>
-                <skill id="ruby">Ruby</skill>
+                <skill id="html" logo="skills/html_css_js.png">!?JS/HTML/CSS?!</skill>
+                <skill id="ruby">!?Ruby?!</skill>
+                <skill id="java" logo="skills/java_ee.png">Java</skill>
                 <skill id="scala" logo="skills/scala.png">Scala</skill>
                 <skill id="bash" logo="skills/bash.png">bash</skill>
                 <skill id="sql" logo="skills/sql.png">SQL</skill>
@@ -91,12 +92,12 @@
         <skillgroup title="Entwicklung">
             <solidskill etc="false">
                 <skill id="scrum" logo="skills/scrum.png">!?Scrum?!</skill>
+                <skill id="cicd" logo="skills/maven.png">!?CI/CD?!</skill>
                 <skill id="git" logo="skills/git.png">GIT</skill>
                 <skill id="kubernetes" logo="skills/kubernetes.png">Kubernetes</skill>
                 <skill id="docker">Docker</skill>
                 <skill id="rest">REST</skill>
                 <skill id="uml" logo="skills/uml.png">UML</skill>
-                <skill id="maven" logo="skills/maven.png">Maven</skill>
             </solidskill>
             <goodskill etc="true">
                 <skill id="npm">Node Package Manager</skill>
@@ -107,31 +108,32 @@
         </skillgroup>
         <skillgroup title="Frameworks">
             <solidskill etc="false">
-                <skill id="rails"  logo="skills/rails.png">Rails</skill>
+                <skill id="rails"  logo="skills/rails.png">!?Rails?!</skill>
                 <skill id="spring" logo="skills/spring.png">Spring</skill>
-                <skill id="hibernate" logo="skills/hibernate.png">Hibernate</skill>
-                <skill id="javafx">Java FX</skill>
+                <skill id="redux" logo="skills/redux.png">!?Redux?!</skill>
+                <skill id="vaadinflow" logo="skills/vaadin_flow.png">Vaadin Flow</skill>
+                <skill id="polymer" logo="skills/polymer.png">Polymer</skill>
+                <skill id="vuex">Vuex</skill>
+                <skill id="vuetify">Vuetify</skill>
                 <skill id="lucene">Lucene</skill>
-                <skill id="jaxws" logo="skills/jaxws.png">jaxws</skill>
-                <skill id="junit" logo="skills/junit.png">!?JUnit?!</skill>
-                <skill id="mockito" logo="skills/mockito.png">!?Mockito?!</skill>
             </solidskill>
             <goodskill etc="true">
+                <skill id="javafx">Java FX</skill>
                 <skill id="android" logo="skills/android.png">Android SDK</skill>
+                <skill id="hibernate" logo="skills/hibernate.png">Hibernate</skill>
                 <skill id="gwt" logo="skills/gwt.png">GWT</skill>
                 <skill id="qt" logo="skills/Qt.png">Qt</skill>
+                <skill id="jaxws" logo="skills/jaxws.png">JAX-WS</skill>
+                <skill id="junit" logo="skills/junit.png">JUnit</skill>
+                <skill id="mockito" logo="skills/mockito.png">Mockito</skill>
             </goodskill>
         </skillgroup>
         <skillgroup title="Web">
             <solidskill etc="false">
                 <skill id="vue" logo="skills/vue.png">Vue.js</skill>
-                <skill id="vuetify">Vuetify</skill>
-                <skill id="react" logo="skills/react.png">React</skill>
-                <skill id="polymer" logo="skills/polymer.png">Polymer</skill>
-                <skill id="node"  logo="skills/rails.png">Node.js</skill>
-                <skill id="vaadinflow" logo="skills/vaadin_flow.png">Vaadin Flow</skill>
-                <skill id="redux" logo="skills/redux.png">Redux</skill>
-                <skill id="vuex">Vuex</skill>
+                <skill id="react" logo="skills/react.png">!?React?!</skill>
+                <skill id="webcomponents" logo="webcomponents.png">Web Components</skill>
+                <skill id="node" logo="skills/rails.png">Node.js</skill>
             </solidskill>
             <goodskill etc="true">
                 <skill id="play" logo="skills/play.png">Play Framework</skill>
@@ -156,7 +158,7 @@
         </skillgroup>
         <skillgroup title="Programme">
             <solidskill etc="false">
-                <skill id="intellij" logo="skills/intellij.png">itelliJ</skill>
+                <skill id="rubymine">RubyMine</skill>
                 <skill id="ea" logo="skills/enterprise_architekt.png">Enterprise Architekt</skill>
                 <skill id="vp" logo="skills/visual_paradigm.png">Visual Paradigm UML</skill>
                 <skill id="office" logo="skills/microsoftOffice.png">Office Suite</skill>
@@ -265,7 +267,7 @@
                 </project>
                 <project title="Projektverantwortlicher Webshops Sonepar CH/AT" id="sonepar">
                     <activity>Einführung Mandantenfähigkeit bzgl. Logik, Darstellung und Anbindung von Umsystemen</activity>
-                    <activity>Entwicklung diverser Features im Front- sowie Backend in Java mithilfe des Tapestry Frameworks</activity>
+                    <activity>Entwicklung diverser Features !?im Front- sowie Backend in Java?! mithilfe des Tapestry Frameworks</activity>
                     <activity>Koordination mit Umsystemen (ERP/Pim/Mobile/Webservices)</activity>
                     <activity>!?Verantwortung und Koordination Entwicklung, SLA, QS, Infrastruktur, Dokumentation, Releases und Deployments?!</activity>
                     <activity>Beratung der Kunden zur technischen Umsetzung ihrer fachliche Anforderungen</activity>
@@ -275,7 +277,7 @@
                     </skillrefs>
                 </project>
                 <project title="Neuentwicklung www.geckoreifen.de und www.esashop.ch" id="esa">
-                    <activity>Entwicklung diverser Features im Front- sowie Backend in Scala mithilfe des Play Frameworks</activity>
+                    <activity>Entwicklung diverser Features !?im Front- sowie Backend in Scala?! mithilfe des Play Frameworks</activity>
                     <activity>Integration tagesaktueller SAP Daten und Anbindung zahlreicher REST APIs</activity>
                     <skillrefs location="right" orientation="vertical">
                         <skillref>scala</skillref>
