@@ -338,9 +338,7 @@ h3 {
     font-weight:700;
     letter-spacing: 2px;
     text-transform: none;
-    background-image:linear-gradient(80deg, rgb(0, 172, 77) 11%, rgb(214, 223, 35) 93%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+
 }
 
 h1 {
@@ -348,9 +346,7 @@ h1 {
     font-weight:700;
     line-height:70px;
     width: fit-content;
-    background-image:linear-gradient(80deg, rgb(0, 172, 77) 11%, rgb(214, 223, 35) 93%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+
     text-transform:uppercase;
     margin: 40px auto
 }
@@ -408,9 +404,6 @@ i
 }
 
 .acc {
-    background-image:linear-gradient(80deg, rgb(0, 172, 77) 11%, rgb(214, 223, 35) 150%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     /*color: #D6DF23;*/
     font-weight:500;
 }
@@ -423,9 +416,38 @@ i
     margin-top: 20px;
     margin-bottom: 0;
 }
+
+@media screen {
+    h1, h3, .acc {
+        background-image:linear-gradient(80deg, rgb(0, 172, 77) 11%, rgb(214, 223, 35) 93%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .acc {
+        background-image:linear-gradient(80deg, rgb(0, 172, 77) 11%, rgb(214, 223, 35) 150%);
+    }
+}
+
+@media print {
+
+    @page {
+        margin: 17.5mm 16mm 17mm 16mm;
+    }
+
+    h1, h3, .acc {
+        color: rgb(0, 172, 77)
+    }
+
+    body {
+        zoom: 70%;
+    }
+}
 </style><style type="text/css">.Denteo > img
 {
         height: 40px;
+}
+</style><style type="text/css">h1.Weiterbildungen {
+    page-break-before: always;
 }
 </style><script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script><script type="text/javascript">
 WebFont.load({
@@ -542,7 +564,7 @@ WebFont.load({
                      <dd>
                         <div class="text">
                            <div class="logo"><img src=""></img></div>
-                           <div class="description">Zweisprachiges Vollzeitstudium an der Ecole d'ingénieurs et d'architectes de Fribourg</div>
+                           <div class="description"><span class=acc>Zweisprachiges</span> Vollzeitstudium an der Ecole d'ingénieurs et d'architectes de Fribourg</div>
                            <div class="link"><a href=""></a></div>
                            <div><i>Zertifikat: </i>Bachelor of Science HES-SO in Informatik (bilingue Franz./Deutsch)
                            </div>
@@ -596,7 +618,7 @@ WebFont.load({
                            <div>Sprachen</div>
                         </dt>
                         <dd>
-                           <div><i>Solide Kenntnisse in: </i><span class=acc>Java</span>, <span class=acc>HTML/CSS/JS</span>, Ruby, Scala, bash, SQL, XML
+                           <div><i>Solide Kenntnisse in: </i><span class=acc>JS/HTML/CSS</span>, <span class=acc>Ruby</span>, Java, Scala, bash, SQL, XML
                            </div>
                         </dd>
                      </dl>
@@ -620,7 +642,7 @@ WebFont.load({
                            <div>Entwicklung</div>
                         </dt>
                         <dd>
-                           <div><i>Solide Kenntnisse in: </i><span class=acc>Scrum</span>, GIT, Kubernetes, Docker, REST, UML, Maven
+                           <div><i>Solide Kenntnisse in: </i><span class=acc>Scrum</span>, <span class=acc>CI/CD</span>, GIT, Kubernetes, Docker, REST, UML
                            </div>
                         </dd>
                      </dl>
@@ -644,7 +666,7 @@ WebFont.load({
                            <div>Frameworks</div>
                         </dt>
                         <dd>
-                           <div><i>Solide Kenntnisse in: </i>Rails, Spring, Hibernate, Java FX, Lucene, jaxws, <span class=acc>JUnit</span>, <span class=acc>Mockito</span>
+                           <div><i>Solide Kenntnisse in: </i><span class=acc>Rails</span>, Spring, <span class=acc>Redux</span>, Vaadin Flow, Polymer, Vuex, Vuetify, Lucene
                            </div>
                         </dd>
                      </dl>
@@ -655,7 +677,7 @@ WebFont.load({
                            <div></div>
                         </dt>
                         <dd>
-                           <div><i>Gute Kenntnisse in: </i>Android SDK, GWT, Qt, etc.
+                           <div><i>Gute Kenntnisse in: </i>Java FX, Android SDK, Hibernate, GWT, Qt, JAX-WS, JUnit, Mockito, etc.
                            </div>
                         </dd>
                      </dl>
@@ -668,7 +690,7 @@ WebFont.load({
                            <div>Web</div>
                         </dt>
                         <dd>
-                           <div><i>Solide Kenntnisse in: </i>Vue.js, Vuetify, React, Polymer, Node.js, Vaadin Flow, Redux, Vuex
+                           <div><i>Solide Kenntnisse in: </i>Vue.js, <span class=acc>React</span>, Web Components, Node.js
                            </div>
                         </dd>
                      </dl>
@@ -716,7 +738,7 @@ WebFont.load({
                            <div>Programme</div>
                         </dt>
                         <dd>
-                           <div><i>Solide Kenntnisse in: </i>itelliJ, Enterprise Architekt, Visual Paradigm UML, Office Suite
+                           <div><i>Solide Kenntnisse in: </i>RubyMine, Enterprise Architekt, Visual Paradigm UML, Office Suite
                            </div>
                         </dd>
                      </dl>
@@ -850,8 +872,8 @@ WebFont.load({
                                  </div>
                               </div>
                               <div class="skillrefs">
-                                 <div class="skillref"><img src="skills/rails.png" alt="rails" title="Rails"></img></div>
-                                 <div class="skillref"><img src="skills/html_css_js.png" alt="html" title="!?HTML/CSS/JS?!"></img></div>
+                                 <div class="skillref"><img src="skills/rails.png" alt="rails" title="!?Rails?!"></img></div>
+                                 <div class="skillref"><img src="skills/html_css_js.png" alt="html" title="!?JS/HTML/CSS?!"></img></div>
                                  <div class="skillref"><img src="skills/vue.png" alt="vue" title="Vue.js"></img></div>
                                  <div class="skillref"><img src="skills/kubernetes.png" alt="kubernetes" title="Kubernetes"></img></div>
                               </div>
@@ -909,7 +931,7 @@ WebFont.load({
                                  </div>
                               </div>
                               <div class="skillrefs">
-                                 <div class="skillref"><img src="skills/java_ee.png" alt="java" title="!?Java?!"></img></div>
+                                 <div class="skillref"><img src="skills/java_ee.png" alt="java" title="Java"></img></div>
                                  <div class="skillref"><img src="skills/polymer.png" alt="polymer" title="Polymer"></img></div>
                                  <div class="skillref"><img src="skills/vaadin_flow.png" alt="vaadinflow" title="Vaadin Flow"></img></div>
                                  <div class="skillref"><img src="skills/c.png" alt="c" title="C"></img></div>
@@ -985,7 +1007,7 @@ WebFont.load({
                                  </div>
                               </div>
                               <div class="skillrefs">
-                                 <div class="skillref"><img src="skills/java_ee.png" alt="java" title="!?Java?!"></img></div>
+                                 <div class="skillref"><img src="skills/java_ee.png" alt="java" title="Java"></img></div>
                                  <div class="skillref"><img src="skills/scala.png" alt="scala" title="Scala"></img></div>
                               </div>
                            </div>
@@ -1035,7 +1057,7 @@ WebFont.load({
                                           <div>Einführung Mandantenfähigkeit bzgl. Logik, Darstellung und Anbindung von Umsystemen</div>
                                        </li>
                                        <li>
-                                          <div>Entwicklung diverser Features im Front- sowie Backend in Java mithilfe des Tapestry Frameworks</div>
+                                          <div>Entwicklung diverser Features <span class=acc>im Front- sowie Backend in Java</span> mithilfe des Tapestry Frameworks</div>
                                        </li>
                                        <li>
                                           <div>Koordination mit Umsystemen (ERP/Pim/Mobile/Webservices)</div>
@@ -1050,7 +1072,7 @@ WebFont.load({
                                  </div>
                               </div>
                               <div class="skillrefs">
-                                 <div class="skillref"><img src="skills/java_ee.png" alt="java" title="!?Java?!"></img></div>
+                                 <div class="skillref"><img src="skills/java_ee.png" alt="java" title="Java"></img></div>
                                  <div class="skillref"><img src="skills/tapestry.png" alt="tapestry" title="Tapestry"></img></div>
                               </div>
                            </div>
@@ -1066,7 +1088,7 @@ WebFont.load({
                                  <div>
                                     <ul>
                                        <li>
-                                          <div>Entwicklung diverser Features im Front- sowie Backend in Scala mithilfe des Play Frameworks</div>
+                                          <div>Entwicklung diverser Features <span class=acc>im Front- sowie Backend in Scala</span> mithilfe des Play Frameworks</div>
                                        </li>
                                        <li>
                                           <div>Integration tagesaktueller SAP Daten und Anbindung zahlreicher REST APIs</div>
@@ -1119,7 +1141,7 @@ WebFont.load({
                                  </div>
                               </div>
                               <div class="skillrefs">
-                                 <div class="skillref"><img src="skills/java_ee.png" alt="java" title="!?Java?!"></img></div>
+                                 <div class="skillref"><img src="skills/java_ee.png" alt="java" title="Java"></img></div>
                               </div>
                            </div>
                         </div>
@@ -1239,7 +1261,7 @@ WebFont.load({
                                  </div>
                               </div>
                               <div class="skillrefs">
-                                 <div class="skillref"><img src="skills/java_ee.png" alt="java" title="!?Java?!"></img></div>
+                                 <div class="skillref"><img src="skills/java_ee.png" alt="java" title="Java"></img></div>
                               </div>
                            </div>
                         </div>
@@ -1274,7 +1296,7 @@ WebFont.load({
                                  </div>
                               </div>
                               <div class="skillrefs">
-                                 <div class="skillref"><img src="skills/java_ee.png" alt="java" title="!?Java?!"></img></div>
+                                 <div class="skillref"><img src="skills/java_ee.png" alt="java" title="Java"></img></div>
                                  <div class="skillref"><img src="skills/CPlusPlus.png" alt="cplusplus" title="C++"></img></div>
                                  <div class="skillref">PL/I</div>
                               </div>
@@ -1302,8 +1324,8 @@ WebFont.load({
                            <div class="link"><a href="https://github.com/Hoene84/jitsi-poker">https://github.com/Hoene84/jitsi-poker</a></div>
                         </div>
                         <div class="skillrefs">
-                           <div class="skillref"><img src="skills/react.png" alt="react" title="React"></img></div>
-                           <div class="skillref"><img src="skills/redux.png" alt="redux" title="Redux"></img></div>
+                           <div class="skillref"><img src="skills/react.png" alt="react" title="!?React?!"></img></div>
+                           <div class="skillref"><img src="skills/redux.png" alt="redux" title="!?Redux?!"></img></div>
                         </div>
                      </dd>
                   </dl>
@@ -1317,12 +1339,12 @@ WebFont.load({
                      <dd>
                         <div class="text">
                            <div class="logo"><img src=""></img></div>
-                           <div class="description">CV Generator: XML -> HTML und PDF<br/><span class=acc>Das Resultat</span> wird z.Zt. kritisch betrachtet.</div>
-                           <div class="link"><a href="https://github.com/Hoene84/CeeVee">https://github.com/Hoene84/CeeVee</a></div>
+                           <div class="description">Theme-able CV Generator: XML to HTML/PDF<br/><span class=acc>Das Resultat</span> wird z.Zt. kritisch betrachtet.</div>
+                           <div class="link"><a href="http://hoene84.github.io/CeeVee/">http://hoene84.github.io/CeeVee/</a></div>
                         </div>
                         <div class="skillrefs">
                            <div class="skillref"><img src="skills/xml.png" alt="xml" title="XML"></img></div>
-                           <div class="skillref"><img src="skills/html_css_js.png" alt="html" title="!?HTML/CSS/JS?!"></img></div>
+                           <div class="skillref"><img src="skills/html_css_js.png" alt="html" title="!?JS/HTML/CSS?!"></img></div>
                         </div>
                      </dd>
                   </dl>
@@ -1341,7 +1363,7 @@ WebFont.load({
                         </div>
                         <div class="skillrefs">
                            <div class="skillref"><img src="skills/android.png" alt="android" title="Android SDK"></img></div>
-                           <div class="skillref"><img src="skills/java_ee.png" alt="java" title="!?Java?!"></img></div>
+                           <div class="skillref"><img src="skills/java_ee.png" alt="java" title="Java"></img></div>
                         </div>
                      </dd>
                   </dl>
@@ -1359,7 +1381,7 @@ WebFont.load({
                            <div class="link"><a href="https://github.com/Hoene84/perzist">https://github.com/Hoene84/perzist</a></div>
                         </div>
                         <div class="skillrefs">
-                           <div class="skillref"><img src="skills/java_ee.png" alt="java" title="!?Java?!"></img></div>
+                           <div class="skillref"><img src="skills/java_ee.png" alt="java" title="Java"></img></div>
                            <div class="skillref"><img src="skills/sql.png" alt="sql" title="SQL"></img></div>
                         </div>
                      </dd>
