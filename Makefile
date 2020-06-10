@@ -19,7 +19,7 @@ html: validate common target
 # 	xdg-open target/$(PRODUCT).html &> /dev/null ;
 
 pdf: html target target/$(PRODUCT).html
-	chromium-browser --headless --disable-gpu --print-to-pdf=target/$(PRODUCT).pdf target/$(PRODUCT).html ; then xdg-open target/$(PRODUCT).pdf &> /dev/null ;
+	chromium-browser --headless --disable-gpu --virtual-time-budget=100 --print-to-pdf=target/$(PRODUCT).pdf target/$(PRODUCT).html ; then xdg-open target/$(PRODUCT).pdf &> /dev/null ;
 
 example: clean html pdf
 	THEME=$$(xmllint --xpath '(//theme)[1]/text()' data/honegger/cv.xml); \
