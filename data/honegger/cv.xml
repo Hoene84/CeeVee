@@ -73,7 +73,7 @@
         <skillgroup title="Sprachen">
             <solidskill etc="false">
                 <skill id="java" logo="skills/java_ee.png">!?Java?!</skill>
-                <skill id="html" logo="skills/html_css_js.png">!?HTML/CSS/JS?!</skill>
+                <skill id="html" logo="skills/html_css_js.png">!?JS/HTML/CSS?!</skill>
                 <skill id="ruby">Ruby</skill>
                 <skill id="scala" logo="skills/scala.png">Scala</skill>
                 <skill id="bash" logo="skills/bash.png">bash</skill>
@@ -90,6 +90,7 @@
         <skillgroup title="Entwicklung">
             <solidskill etc="false">
                 <skill id="scrum" logo="skills/scrum.png">!?Scrum?!</skill>
+                <skill id="cicd">!?CI/CD?!</skill>
                 <skill id="git" logo="skills/git.png">GIT</skill>
                 <skill id="kubernetes" logo="skills/kubernetes.png">Kubernetes</skill>
                 <skill id="docker">Docker</skill>
@@ -127,6 +128,7 @@
                 <skill id="vuetify">Vuetify</skill>
                 <skill id="react" logo="skills/react.png">React</skill>
                 <skill id="polymer" logo="skills/polymer.png">Polymer</skill>
+                <skill id="webcomponents" logo="webcomponents.png">Web Components</skill>
                 <skill id="node"  logo="skills/rails.png">Node.js</skill>
                 <skill id="vaadinflow" logo="skills/vaadin_flow.png">Vaadin Flow</skill>
                 <skill id="redux" logo="skills/redux.png">Redux</skill>
@@ -264,7 +266,7 @@
                 </project>
                 <project title="Projektverantwortlicher Webshops Sonepar CH/AT" id="sonepar">
                     <activity>Einführung Mandantenfähigkeit bzgl. Logik, Darstellung und Anbindung von Umsystemen</activity>
-                    <activity>Entwicklung diverser Features im Front- sowie Backend in Java mithilfe des Tapestry Frameworks</activity>
+                    <activity>Entwicklung diverser Features !?im Front- sowie Backend in Java?! mithilfe des Tapestry Frameworks</activity>
                     <activity>Koordination mit Umsystemen (ERP/Pim/Mobile/Webservices)</activity>
                     <activity>!?Verantwortung und Koordination Entwicklung, SLA, QS, Infrastruktur, Dokumentation, Releases und Deployments?!</activity>
                     <activity>Beratung der Kunden zur technischen Umsetzung ihrer fachliche Anforderungen</activity>
@@ -274,7 +276,7 @@
                     </skillrefs>
                 </project>
                 <project title="Neuentwicklung www.geckoreifen.de und www.esashop.ch" id="esa">
-                    <activity>Entwicklung diverser Features im Front- sowie Backend in Scala mithilfe des Play Frameworks</activity>
+                    <activity>Entwicklung diverser Features !?im Front- sowie Backend in Scala?! mithilfe des Play Frameworks</activity>
                     <activity>Integration tagesaktueller SAP Daten und Anbindung zahlreicher REST APIs</activity>
                     <skillrefs location="right" orientation="vertical">
                         <skillref>scala</skillref>
