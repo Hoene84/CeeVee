@@ -107,9 +107,8 @@ div.person div.infos div.value
     padding-right: 80px;
 }
 
-dt
-{
-    width: 21%;
+dt {
+    width: 180px;
 }
 
 h1
