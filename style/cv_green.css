@@ -1,6 +1,6 @@
-*, body, html {
-    font-family: Arial,sans-serif;
-    font-size: 11pt;
+body, html {
+    font-family: "Raleway",Arial,sans-serif;;
+    font-size: 15px;
     line-height: 22px;
 }
 
@@ -39,6 +39,7 @@ dt
     font-weight: bold;
     font-variant: small-caps;
     letter-spacing: 2px;
+    font-family: Arial,sans-serif;
 }
 
 h1, h2, h3, h4,
@@ -48,6 +49,7 @@ div.skillref
     font-style: italic;
     font-variant: small-caps;
     letter-spacing: 3px;
+    font-family: Arial,sans-serif;
 }
 
 h1,
@@ -87,11 +89,16 @@ div.experiance div.function h2,
 div.experiance div.function h3
 {
     letter-spacing: 2px;
+    font-family: Arial,sans-serif;
 }
 
 @media print {
     body {
         zoom: 75%;
+    }
+
+    body, html {
+        font-family: Arial,sans-serif;
     }
 }
 

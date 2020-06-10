@@ -4,6 +4,8 @@
         <theme>green</theme>
         <theme>honegger</theme>
         <theme>honegger_green</theme>
+        <extScript>https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js</extScript>
+        <script>webfont</script>
     </layout>
     <person>
         <forename>Simon</forename>
