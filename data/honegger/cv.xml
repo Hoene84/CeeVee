@@ -92,7 +92,7 @@
         <skillgroup title="Entwicklung">
             <solidskill etc="false">
                 <skill id="scrum" logo="skills/scrum.png">!?Scrum?!</skill>
-                <skill id="cicd" logo="skills/maven.png">!?CI/CD?!</skill>
+                <skill id="cicd">!?CI/CD?!</skill>
                 <skill id="git" logo="skills/git.png">GIT</skill>
                 <skill id="kubernetes" logo="skills/kubernetes.png">Kubernetes</skill>
                 <skill id="docker">Docker</skill>
