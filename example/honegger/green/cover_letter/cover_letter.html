@@ -59,7 +59,8 @@ h2
     padding-top: 60px;
 }</style><style type="text/css">*, body, html {
     font-family: Arial,sans-serif;
-    font-size: 10pt;
+    font-size: 11pt;
+    line-height: 22px;
 }
 
 .odd
@@ -73,6 +74,10 @@ div.person
     background-color: #e6ffb2;
 }
 
+div.person > div.description {
+    padding-top: 18px;
+}
+
 a
 {
     color: black;
@@ -84,6 +89,7 @@ div.person h3
 {
     color: #333;
     font-style: normal;
+    line-height: initial;
 }
 
 div.project div.header,
@@ -109,16 +115,21 @@ div.skillref
     color: #5b5b5b;
 }
 
+h1
+{
+    font-size: 33px;
+}
+
 h2
 {
-    font-size: 12pt;
+    font-size: 22px;
     color: #848484;
 }
 
 h3
 {
     font-style: normal;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: bold;
 }
 
@@ -135,7 +146,14 @@ div.experiance div.function h2,
 div.experiance div.function h3
 {
     letter-spacing: 2px;
-}</style></head>
+}
+
+@media print {
+    body {
+        zoom: 75%;
+    }
+}
+</style></head>
    <body>
       <div class="container">
          

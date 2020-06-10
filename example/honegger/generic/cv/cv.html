@@ -136,9 +136,8 @@ div.person div.infos div.value
     padding-right: 80px;
 }
 
-dt
-{
-    width: 21%;
+dt {
+    width: 180px;
 }
 
 h1
@@ -291,7 +290,8 @@ referenceentry .reference .contact {
 }
 </style><style type="text/css">*, body, html {
     font-family: Arial,sans-serif;
-    font-size: 10pt;
+    font-size: 11pt;
+    line-height: 22px;
 }
 
 .odd
@@ -305,6 +305,10 @@ div.person
     background-color: #e6ffb2;
 }
 
+div.person > div.description {
+    padding-top: 18px;
+}
+
 a
 {
     color: black;
@@ -316,6 +320,7 @@ div.person h3
 {
     color: #333;
     font-style: normal;
+    line-height: initial;
 }
 
 div.project div.header,
@@ -341,16 +346,21 @@ div.skillref
     color: #5b5b5b;
 }
 
+h1
+{
+    font-size: 33px;
+}
+
 h2
 {
-    font-size: 12pt;
+    font-size: 22px;
     color: #848484;
 }
 
 h3
 {
     font-style: normal;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: bold;
 }
 
@@ -367,7 +377,14 @@ div.experiance div.function h2,
 div.experiance div.function h3
 {
     letter-spacing: 2px;
-}</style><style type="text/css">.Denteo > img
+}
+
+@media print {
+    body {
+        zoom: 75%;
+    }
+}
+</style><style type="text/css">.Denteo > img
 {
         height: 40px;
 }
@@ -387,7 +404,8 @@ div.experiance div.function h3
     @page {
         margin: 17mm;
     }
-}</style></head>
+}
+</style></head>
    <body>
       <div class="container">
          <div>
@@ -598,7 +616,7 @@ div.experiance div.function h3
                            <div>Frameworks</div>
                         </dt>
                         <dd>
-                           <div><i>Solide Kenntnisse in: </i>Rails, Spring, Hibernate, Java FX, Lucene, jaxws, <span class=acc>JUnit</span>, <span class=acc>Mockito</span>
+                           <div><i>Solide Kenntnisse in: </i>Rails, Spring, Java FX, Lucene, Polymer, Vaadin Flow, Vuetify
                            </div>
                         </dd>
                      </dl>
@@ -609,7 +627,7 @@ div.experiance div.function h3
                            <div></div>
                         </dt>
                         <dd>
-                           <div><i>Gute Kenntnisse in: </i>Android SDK, GWT, Qt, etc.
+                           <div><i>Gute Kenntnisse in: </i>Hibernate, jaxws, <span class=acc>JUnit</span>, <span class=acc>Mockito</span>, Android SDK, GWT, Qt, etc.
                            </div>
                         </dd>
                      </dl>
@@ -622,7 +640,7 @@ div.experiance div.function h3
                            <div>Web</div>
                         </dt>
                         <dd>
-                           <div><i>Solide Kenntnisse in: </i>Vue.js, Vuetify, React, Polymer, Web Components, Node.js, Vaadin Flow, Redux, Vuex
+                           <div><i>Solide Kenntnisse in: </i>Vue.js, React, Web Components, Node.js, Redux, Vuex
                            </div>
                         </dd>
                      </dl>
