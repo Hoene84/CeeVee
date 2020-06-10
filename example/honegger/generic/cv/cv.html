@@ -288,9 +288,9 @@ referenceentry .reference .contact {
 {
     padding-bottom: 2em;
 }
-</style><style type="text/css">*, body, html {
-    font-family: Arial,sans-serif;
-    font-size: 11pt;
+</style><style type="text/css">body, html {
+    font-family: "Raleway",Arial,sans-serif;;
+    font-size: 15px;
     line-height: 22px;
 }
 
@@ -329,6 +329,7 @@ dt
     font-weight: bold;
     font-variant: small-caps;
     letter-spacing: 2px;
+    font-family: Arial,sans-serif;
 }
 
 h1, h2, h3, h4,
@@ -338,6 +339,7 @@ div.skillref
     font-style: italic;
     font-variant: small-caps;
     letter-spacing: 3px;
+    font-family: Arial,sans-serif;
 }
 
 h1,
@@ -377,11 +379,16 @@ div.experiance div.function h2,
 div.experiance div.function h3
 {
     letter-spacing: 2px;
+    font-family: Arial,sans-serif;
 }
 
 @media print {
     body {
         zoom: 75%;
+    }
+
+    body, html {
+        font-family: Arial,sans-serif;
     }
 }
 
@@ -410,7 +417,13 @@ div.experiance div.function h3
         margin: 17mm;
     }
 }
-</style></head>
+</style><script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script><script type="text/javascript">
+WebFont.load({
+    google: {
+        families: ['Raleway']
+    }
+});
+</script></head>
    <body>
       <div class="container">
          <div>
