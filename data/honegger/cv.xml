@@ -109,14 +109,14 @@
             <solidskill etc="false">
                 <skill id="rails"  logo="skills/rails.png">Rails</skill>
                 <skill id="spring" logo="skills/spring.png">Spring</skill>
-                <skill id="hibernate" logo="skills/hibernate.png">Hibernate</skill>
                 <skill id="javafx">Java FX</skill>
                 <skill id="lucene">Lucene</skill>
+            </solidskill>
+            <goodskill etc="true">
+                <skill id="hibernate" logo="skills/hibernate.png">Hibernate</skill>
                 <skill id="jaxws" logo="skills/jaxws.png">jaxws</skill>
                 <skill id="junit" logo="skills/junit.png">!?JUnit?!</skill>
                 <skill id="mockito" logo="skills/mockito.png">!?Mockito?!</skill>
-            </solidskill>
-            <goodskill etc="true">
                 <skill id="android" logo="skills/android.png">Android SDK</skill>
                 <skill id="gwt" logo="skills/gwt.png">GWT</skill>
                 <skill id="qt" logo="skills/Qt.png">Qt</skill>
