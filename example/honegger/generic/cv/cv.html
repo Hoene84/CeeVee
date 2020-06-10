@@ -1,0 +1,1474 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fn="http://www.w3.org/2005/xpa-functions" xmlns:cv="http://cv" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><style type="text/css" media="screen">.container {
+  width: 800px;
+  margin: 50px auto;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+}
+</style><style type="text/css" media="print">/*.container {transform: scale(.7);}*/
+body {
+    zoom: 80%;
+}
+@page {
+    size: 210mm 297mm;
+    margin: 20mm;
+}
+
+ul.table {
+    page-break-inside: avoid
+}
+
+div.experiance,
+div.project
+{
+    page-break-inside: avoid
+}</style><style type="text/css">body {
+    background-color: white;
+}
+
+div.person {
+    border-radius: 20px 100px;
+    overflow: hidden;
+    display: inline-table;
+    width: 100%;
+}
+
+div.period div.description
+{
+    overflow: hidden;
+    width: 100%;
+}
+
+div.person > div {
+    display: table-cell;
+    vertical-align:top;
+}
+
+div.person > div.description
+{
+    padding-left: 50px;
+    padding-top: 27px;
+    width: 100%;
+}
+
+div.person h1,
+div.person h2,
+div.person h3
+{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+div.person div.infos
+{
+    margin-top: 20px;
+}
+
+div.person div.infos,
+ul.table
+{
+    display:table;
+}
+
+ul.table
+{
+    width:100%;
+}
+
+ul.table {
+    list-style-type: none;
+    padding: 0;
+}
+
+dd
+{
+    margin: 0;
+}
+
+div.person div.infos div.infoGroup,
+ul.table > li
+{
+    display: table-row-group;
+}
+
+div.person div.infos div.info,
+dl
+{
+    display:table-row;
+}
+
+div.person div.infos div.label,
+div.person div.infos div.value,
+ul.table dt,
+dd
+{
+    display: table-cell;
+}
+
+div.project div
+{
+    vertical-align: top;
+}
+
+div.project div.value,
+div.project div.skillrefs,
+ul.table dt,
+dd
+{
+    padding: 4px 8px;
+}
+
+ul.table dt,
+dd
+{
+    vertical-align:top;
+    border: 1px solid white;
+}
+
+div.person div.infos div.label,
+div.person div.infos div.value
+{
+    padding-right: 80px;
+}
+
+dt
+{
+    width: 21%;
+}
+
+h1
+{
+    font-size: 25px;
+    margin-top: 40px;
+}
+
+h2
+{
+    margin-top: 1.5em;
+}
+
+h3
+{
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+h4 {
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+div.inline {
+    display: inline-block;
+}
+
+.even
+{
+    background-color:#FFFFEE
+}
+
+.odd
+{
+    background-color:#FFFFDD
+}
+
+.person img
+{
+    width: 200px;
+}
+
+div.experiance div.period
+{
+    margin-bottom: 30px;
+}
+
+div.experiance div.company,
+div.experiance div.function
+{
+    display: inline-block;
+}
+
+div.experiance div.function,
+div.experiance div.function h2,
+div.experiance div.function h3
+{
+    float: right;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.right div.skillrefs
+{
+    margin-top: 8px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+dl.activity div.text
+{
+    display: inline-block;
+}
+
+div.skillref {
+    font-size: 25px
+}
+
+div.skillrefs {
+    align-items: center;
+    display: flex;
+}
+
+.vertical div.skillrefs
+{
+    display: inline-block;
+}
+
+.horizontal div.skillrefs .skillref
+{
+    margin-left: 20px;
+}
+
+.bottom {
+    flex-direction: column;
+}
+
+.bottom div.skillrefs {
+    flex-flow: row-reverse;
+}
+
+.vertical div.skillrefs .skillref
+{
+    display: flex;
+    justify-content: center;
+}
+
+.horizontal.bottom div.skillrefs {
+    margin-bottom: 15px;
+    padding-top: 0;
+}
+
+.vertical div.skillrefs .skillref:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+div.skillrefs img
+{
+    max-width: 100px;
+    max-height: 40px;
+}
+
+.project .content,
+.activity dd,
+.referenceentry
+{
+    display: flex;
+}
+
+.project .value,
+.activity dd .text,
+.referenceentry .reference
+{
+    width: 100%;
+}
+
+i
+{
+    color: #333;
+}
+
+referenceentry .reference .contact {
+    display: flex;
+}
+
+.references li:not(:last-child)
+{
+    padding-bottom: 2em;
+}
+</style><style type="text/css">*, body, html {
+    font-family: Arial,sans-serif;
+    font-size: 10pt;
+}
+
+.odd
+{
+    background-color: #c9ef8f;
+}
+
+.even,
+div.person
+{
+    background-color: #e6ffb2;
+}
+
+a
+{
+    color: black;
+}
+
+div.person h1,
+div.person h2,
+div.person h3
+{
+    color: #333;
+    font-style: normal;
+}
+
+div.project div.header,
+dt
+{
+    font-weight: bold;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+}
+
+h1, h2, h3, h4,
+div.skillref
+{
+    font-weight: bold;
+    font-style: italic;
+    font-variant: small-caps;
+    letter-spacing: 3px;
+}
+
+h1,
+div.skillref
+{
+    color: #5b5b5b;
+}
+
+h2
+{
+    font-size: 12pt;
+    color: #848484;
+}
+
+h3
+{
+    font-style: normal;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+h4 {
+    font-weight: bold;
+}
+i
+{
+    color: #333;
+}
+
+div.experiance div.function,
+div.experiance div.function h2,
+div.experiance div.function h3
+{
+    letter-spacing: 2px;
+}</style><style type="text/css">.Denteo > img
+{
+        height: 40px;
+}
+</style><style type="text/css">h1.Zertifikate
+{
+    page-break-before: always;
+}
+
+.project.core,
+/*.project.agile*/
+.project.sds
+{
+    page-break-after: always;
+}
+
+@media print {
+    @page {
+        margin: 17mm;
+    }
+}</style></head>
+   <body>
+      <div class="container">
+         <div>
+            
+            
+            <div class="person">
+               <div class="image">
+                  <div class="centered"><img src="cv_honegger_photo.jpg"></img></div>
+               </div>
+               <div class="description">
+                  <div>
+                     <h1>Simon Honegger</h1>
+                     <h2>Bachelor of Science HES-SO in Informatik</h2>
+                     <h3>12 Jahre Berufserfahrung</h3>
+                  </div>
+                  <div>
+                     <div class="infos">
+                        <div class="infoGroup contact">
+                           <div class="info address">
+                              <div class="label">Adresse</div>
+                              <div class="value">
+                                 <div>Hinterdorfstrasse 10, 8157 Dielsdorf</div>
+                              </div>
+                           </div>
+                           <div class="info phone">
+                              <div class="label">Telefon</div>
+                              <div class="value">
+                                 <div>076 386 82 56</div>
+                              </div>
+                           </div>
+                           <div class="info email">
+                              <div class="label">Email</div>
+                              <div class="value">simon.honegger@gmail.com</div>
+                           </div>
+                        </div>
+                        <div class="info birthday">
+                           <div class="label">Geburtsdatum</div>
+                           <div class="value">22 Juli 1984</div>
+                        </div>
+                        <div class="info maritalStatus">
+                           <div class="label">Zivilstand</div>
+                           <div class="value">ledig</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            
+            <h1 class="Werdegang">Werdegang</h1>
+            <ul class="table career">
+               <li class="odd">
+                  <dl class="activity   ">
+                     <dt>
+                        <div></div>
+                        <div>06.2019 - 04.2020</div>
+                     </dt>
+                     <dd>
+                        <div class="text">
+                           <div class="logo"><img src=""></img></div>
+                           <div class="description">Denteo AG, <span class=acc>Startup mit cloudbasierter Softwarelösung für Zahnarztpraxen</span><br/>Senior Software Engineer
+                              Ruby on Rails, Vue.js
+                           </div>
+                           <div class="link"><a href=""></a></div>
+                        </div>
+                     </dd>
+                  </dl>
+               </li>
+               <li class="even">
+                  <dl class="activity   ">
+                     <dt>
+                        <div></div>
+                        <div>07.2016 - 05.2019</div>
+                     </dt>
+                     <dd>
+                        <div class="text">
+                           <div class="logo"><img src=""></img></div>
+                           <div class="description">Supercomputing Systems AG, <span class=acc>Retrofit ÖV-Ticketautomaten</span><br/>Entwicklungsingenieur</div>
+                           <div class="link"><a href=""></a></div>
+                        </div>
+                     </dd>
+                  </dl>
+               </li>
+               <li class="odd">
+                  <dl class="activity   ">
+                     <dt>
+                        <div></div>
+                        <div>10.2011 - 06.2016</div>
+                     </dt>
+                     <dd>
+                        <div class="text">
+                           <div class="logo"><img src=""></img></div>
+                           <div class="description">IMISnext AG, B2B eCommerce mit eigenem <span class=acc>Onlineshop Framework</span><br/>Senior Applikationsentwickler Java
+                              & Scala
+                           </div>
+                           <div class="link"><a href=""></a></div>
+                        </div>
+                     </dd>
+                  </dl>
+               </li>
+               <li class="even">
+                  <dl class="activity   ">
+                     <dt>
+                        <div></div>
+                        <div>09.2008 - 11.2011</div>
+                     </dt>
+                     <dd>
+                        <div class="text">
+                           <div class="logo"><img src=""></img></div>
+                           <div class="description">Zweisprachiges Vollzeitstudium an der Ecole d'ingénieurs et d'architectes de Fribourg</div>
+                           <div class="link"><a href=""></a></div>
+                           <div><i>Zertifikat: </i>Bachelor of Science HES-SO in Informatik (bilingue Franz./Deutsch)
+                           </div>
+                        </div>
+                     </dd>
+                  </dl>
+               </li>
+               <li class="odd">
+                  <dl class="activity   ">
+                     <dt>
+                        <div></div>
+                        <div>08.2003 - 10.2008</div>
+                     </dt>
+                     <dd>
+                        <div class="text">
+                           <div class="logo"><img src=""></img></div>
+                           <div class="description">Zürcher Kantonalbank<br/>Applikationsentwickler Java, C++, PL/1</div>
+                           <div class="link"><a href=""></a></div>
+                        </div>
+                     </dd>
+                  </dl>
+               </li>
+               <li class="even">
+                  <dl class="activity   ">
+                     <dt>
+                        <div></div>
+                        <div>08.2000 - 08.2003</div>
+                     </dt>
+                     <dd>
+                        <div class="text">
+                           <div class="logo"><img src=""></img></div>
+                           <div class="description">Lehre als KV-Informatiker in der Zürcher Kantonalbank</div>
+                           <div class="link"><a href=""></a></div>
+                           <div><i>Zertifikat: </i>Fähigkeitsausweis Branche Informatik-Anwendungsentwicklung
+                           </div>
+                           <div><i>Zertifikat: </i>Kaufmännische Berufsmaturität - KV Zürich Business School
+                           </div>
+                        </div>
+                     </dd>
+                  </dl>
+               </li>
+            </ul>
+            
+            
+            <h1 class="Kompetenzen">Kompetenzen</h1>
+            <div>
+               <ul class="table skillgroup">
+                  <li class="odd">
+                     <dl>
+                        <dt>
+                           <div>Sprachen</div>
+                        </dt>
+                        <dd>
+                           <div><i>Solide Kenntnisse in: </i><span class=acc>Java</span>, <span class=acc>JS/HTML/CSS</span>, Ruby, Scala, bash, SQL, XML
+                           </div>
+                        </dd>
+                     </dl>
+                  </li>
+                  <li class="even">
+                     <dl>
+                        <dt>
+                           <div></div>
+                        </dt>
+                        <dd>
+                           <div><i>Gute Kenntnisse in: </i>C++, C, Python, PL/I, etc.
+                           </div>
+                        </dd>
+                     </dl>
+                  </li>
+               </ul>
+               <ul class="table skillgroup">
+                  <li class="odd">
+                     <dl>
+                        <dt>
+                           <div>Entwicklung</div>
+                        </dt>
+                        <dd>
+                           <div><i>Solide Kenntnisse in: </i><span class=acc>Scrum</span>, <span class=acc>CI/CD</span>, GIT, Kubernetes, Docker, REST, UML, Maven
+                           </div>
+                        </dd>
+                     </dl>
+                  </li>
+                  <li class="even">
+                     <dl>
+                        <dt>
+                           <div></div>
+                        </dt>
+                        <dd>
+                           <div><i>Gute Kenntnisse in: </i>Node Package Manager, CMake, SOAP, SVN, etc.
+                           </div>
+                        </dd>
+                     </dl>
+                  </li>
+               </ul>
+               <ul class="table skillgroup">
+                  <li class="odd">
+                     <dl>
+                        <dt>
+                           <div>Frameworks</div>
+                        </dt>
+                        <dd>
+                           <div><i>Solide Kenntnisse in: </i>Rails, Spring, Hibernate, Java FX, Lucene, jaxws, <span class=acc>JUnit</span>, <span class=acc>Mockito</span>
+                           </div>
+                        </dd>
+                     </dl>
+                  </li>
+                  <li class="even">
+                     <dl>
+                        <dt>
+                           <div></div>
+                        </dt>
+                        <dd>
+                           <div><i>Gute Kenntnisse in: </i>Android SDK, GWT, Qt, etc.
+                           </div>
+                        </dd>
+                     </dl>
+                  </li>
+               </ul>
+               <ul class="table skillgroup">
+                  <li class="odd">
+                     <dl>
+                        <dt>
+                           <div>Web</div>
+                        </dt>
+                        <dd>
+                           <div><i>Solide Kenntnisse in: </i>Vue.js, Vuetify, React, Polymer, Web Components, Node.js, Vaadin Flow, Redux, Vuex
+                           </div>
+                        </dd>
+                     </dl>
+                  </li>
+                  <li class="even">
+                     <dl>
+                        <dt>
+                           <div></div>
+                        </dt>
+                        <dd>
+                           <div><i>Gute Kenntnisse in: </i>Play Framework, Tapestry, Apache Wicket, etc.
+                           </div>
+                        </dd>
+                     </dl>
+                  </li>
+               </ul>
+               <ul class="table skillgroup">
+                  <li class="odd">
+                     <dl>
+                        <dt>
+                           <div>Datenbanken</div>
+                        </dt>
+                        <dd>
+                           <div><i>Solide Kenntnisse in: </i>Postgres, MSSQL, Oracle, DB2, Jena, Filebasierte Datenhaltung
+                           </div>
+                        </dd>
+                     </dl>
+                  </li>
+                  <li class="even">
+                     <dl>
+                        <dt>
+                           <div></div>
+                        </dt>
+                        <dd>
+                           <div><i>Gute Kenntnisse in: </i>HSQLDB, MySQL, LDAP
+                           </div>
+                        </dd>
+                     </dl>
+                  </li>
+               </ul>
+               <ul class="table skillgroup">
+                  <li class="odd">
+                     <dl>
+                        <dt>
+                           <div>Programme</div>
+                        </dt>
+                        <dd>
+                           <div><i>Solide Kenntnisse in: </i>itelliJ, Enterprise Architekt, Visual Paradigm UML, Office Suite
+                           </div>
+                        </dd>
+                     </dl>
+                  </li>
+                  <li class="even">
+                     <dl>
+                        <dt>
+                           <div></div>
+                        </dt>
+                        <dd>
+                           <div><i>Gute Kenntnisse in: </i>Rational Rose, Eclipse, QtCreator, etc.
+                           </div>
+                        </dd>
+                     </dl>
+                  </li>
+               </ul>
+               <ul class="table skillgroup">
+                  <li class="odd">
+                     <dl>
+                        <dt>
+                           <div>Umgebungen</div>
+                        </dt>
+                        <dd>
+                           <div><i>Solide Kenntnisse in: </i>Linux und anderen <span class=acc>Unix basierte Systeme</span>
+                           </div>
+                        </dd>
+                     </dl>
+                  </li>
+                  <li class="even">
+                     <dl>
+                        <dt>
+                           <div></div>
+                        </dt>
+                        <dd>
+                           <div><i>Gute Kenntnisse in: </i>Windows, z/OS, USS (Unix System Services)
+                           </div>
+                        </dd>
+                     </dl>
+                  </li>
+               </ul>
+            </div>
+            
+            
+            <h1 class="Zertifikate">Zertifikate</h1>
+            <ul class="table certificats">
+               <li class="odd">
+                  <dl class="activity   ">
+                     <dt>
+                        <div></div>
+                        <div>2011</div>
+                     </dt>
+                     <dd>
+                        <div class="text">
+                           <div class="logo"><img src=""></img></div>
+                           <div class="description">Certified Secure Web Developer (CSWD)</div>
+                           <div class="link"><a href=""></a></div>
+                        </div>
+                     </dd>
+                  </dl>
+               </li>
+               <li class="even">
+                  <dl class="activity   ">
+                     <dt>
+                        <div></div>
+                        <div>2005</div>
+                     </dt>
+                     <dd>
+                        <div class="text">
+                           <div class="logo"><img src=""></img></div>
+                           <div class="description">OMG-Certified UML Professionals (OCUP)</div>
+                           <div class="link"><a href=""></a></div>
+                        </div>
+                     </dd>
+                  </dl>
+               </li>
+            </ul>
+            
+            
+            <h1 class="Berufserfahrung">Berufserfahrung</h1>
+            
+            <div class="experiance">
+               <div class="header">
+                  <div class="company">
+                     <div class="logo Denteo AG"><img src="logo_denteo.png"></img></div>
+                  </div>
+                  <div class="function">
+                     <div>
+                        <h2>06.2019 - 04.2020</h2>
+                     </div>
+                     <div>
+                        <h3 class="function">Full-Stack Senior Entwickler in Festanstellung</h3>
+                     </div>
+                  </div>
+               </div>
+               <div class="period">
+                  <div class="description">
+                     <div class="projects">
+                        <div class="project denteo">
+                           <div class="header odd">
+                              <div class="value">
+                                 <div>Denteo - Dentalpraxis Cloud Software Startup</div>
+                              </div>
+                           </div>
+                           <div class="content right vertical">
+                              <div class="value">
+                                 <div>
+                                    <ul>
+                                       <li>
+                                          <div>Zukunftsorientiertes Mitgestalten des Produkts Denteo, der innovativsten Cloud Softwarelösung für Zahnarztpraxen</div>
+                                       </li>
+                                       <li>
+                                          <div>Migration der Rails Webapplikation vom klassischen Server-Side Rendering zu einer modernen <span class=acc>Vue.js / Rest Architektur<span
+                                             class=acc>
+                                          </div>
+                                       </li>
+                                       <li>
+                                          <div>Ausarbeiten und Verifikation von Konzepten <span class=acc>in direktem Kontakt mit den Zahnärzten</span></div>
+                                       </li>
+                                       <li>
+                                          <div>DevOps in einer CI/CD Umgebung mit Kubernetes, Orchestrierung von über 100 Produktions-Instanzen</div>
+                                       </li>
+                                       <li>
+                                          <div>Integration mehrerer Factoring/Inkasso Schnittstellen, in engem Kontakt mit diesen Anbietern</div>
+                                       </li>
+                                       <li>
+                                          <div><span class=acc>Übergreifende Verantwortungen </span>zu Bereichen wie First-/Secondlevel Support und Kunden Onboarding, bei
+                                             Engpässen diese auch übernehmen
+                                          </div>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="skillrefs">
+                                 <div class="skillref"><img src="skills/rails.png" alt="rails" title="Rails"></img></div>
+                                 <div class="skillref"><img src="skills/html_css_js.png" alt="html" title="!?JS/HTML/CSS?!"></img></div>
+                                 <div class="skillref"><img src="skills/vue.png" alt="vue" title="Vue.js"></img></div>
+                                 <div class="skillref"><img src="skills/kubernetes.png" alt="kubernetes" title="Kubernetes"></img></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            
+            <div class="experiance">
+               <div class="header">
+                  <div class="company">
+                     <div class="logo Supercomputing Systems AG"><img src="logo_scs.png"></img></div>
+                  </div>
+                  <div class="function">
+                     <div>
+                        <h2>Juli 2016 - Mai 2019</h2>
+                     </div>
+                     <div>
+                        <h3 class="function">Entwicklungsingenieur in Festanstellung</h3>
+                     </div>
+                  </div>
+               </div>
+               <div class="period">
+                  <div class="description">
+                     <div class="projects">
+                        <div class="project ptts">
+                           <div class="header odd">
+                              <div class="value">
+                                 <div>PTTS - Public Transport Ticketing System</div>
+                              </div>
+                           </div>
+                           <div class="content right vertical">
+                              <div class="value">
+                                 <div>
+                                    <ul>
+                                       <li>
+                                          <div>Entwicklung Ticketautomaten-Softwarelösung, in Betrieb auf 1'250 Ticketautomaten diverser Schweizer Verkehrsbetriebe</div>
+                                       </li>
+                                       <li>
+                                          <div><span class=acc>Software Architektur und Design:</span> Hardware-Anbindung, Webapplikation Sortiments-Verwaltung, Tarifsystem,
+                                             Zahlungsmittel-Anbindung, Schnittstellen zu Fahrgastinformationsystemen
+                                          </div>
+                                       </li>
+                                       <li>
+                                          <div>Entwicklung von Closed- und Anbindung von Openloop Smartcard-Applikationen unter EP2 Konformitätsnormen für Zahlterminals</div>
+                                       </li>
+                                       <li>
+                                          <div>Positionierung der Ticketing-Lösung in dem sich im Umbruch befindenden Markt im agilen, diversifizierten <span class=acc>Scrum
+                                             Team</span>
+                                          </div>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="skillrefs">
+                                 <div class="skillref"><img src="skills/java_ee.png" alt="java" title="!?Java?!"></img></div>
+                                 <div class="skillref"><img src="skills/polymer.png" alt="polymer" title="Polymer"></img></div>
+                                 <div class="skillref"><img src="skills/vaadin_flow.png" alt="vaadinflow" title="Vaadin Flow"></img></div>
+                                 <div class="skillref"><img src="skills/c.png" alt="c" title="C"></img></div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="project zke">
+                           <div class="header odd">
+                              <div class="value">
+                                 <div>ZKE - Zug Kontrolleinrichtungen SBB</div>
+                              </div>
+                           </div>
+                           <div class="content right vertical">
+                              <div class="value">
+                                 <div>
+                                    <ul>
+                                       <li>
+                                          <div>Implementation Positionsbestimmung der Pantographen eines Zuges im Gotthard-Basistunnel</div>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="skillrefs">
+                                 <div class="skillref"><img src="skills/spring.png" alt="spring" title="Spring"></img></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            
+            <div class="experiance">
+               <div class="header">
+                  <div class="company">
+                     <div class="logo IMISnext AG"><img src="logo_imis.png"></img></div>
+                  </div>
+                  <div class="function">
+                     <div>
+                        <h2>Okt. 2011 - Juni 2016</h2>
+                     </div>
+                     <div>
+                        <h3 class="function">Senior Applikationsentwickler in Festanstellung</h3>
+                     </div>
+                  </div>
+               </div>
+               <div class="period">
+                  <div class="description">
+                     <div class="projects">
+                        <div class="project core">
+                           <div class="header odd">
+                              <div class="value">
+                                 <div>Mitglied des iShop Core Teams</div>
+                              </div>
+                           </div>
+                           <div class="content right vertical">
+                              <div class="value">
+                                 <div>
+                                    <ul>
+                                       <li>
+                                          <div>Analyse der architektonischen Probleme iShop Core 3 und Konzeption iShop Core 4 mit individuellen domain models</div>
+                                       </li>
+                                       <li>
+                                          <div>Verifikation/Validation aller Merge Requests für iShop Core 3</div>
+                                       </li>
+                                       <li>
+                                          <div><span class=acc>Mitverantwortung Design- und Architekturentscheidungen</span> iShop Core 3</div>
+                                       </li>
+                                       <li>
+                                          <div>Unterstützung bei Fragen, Lösungsentscheidungen und Problemen der Entwickler</div>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="skillrefs">
+                                 <div class="skillref"><img src="skills/java_ee.png" alt="java" title="!?Java?!"></img></div>
+                                 <div class="skillref"><img src="skills/scala.png" alt="scala" title="Scala"></img></div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="project agile">
+                           <div class="header odd">
+                              <div class="value">
+                                 <div>Einführung agile Entwicklung in der IMISnext</div>
+                              </div>
+                           </div>
+                           <div class="content right vertical">
+                              <div class="value">
+                                 <div>
+                                    <ul>
+                                       <li>
+                                          <div>Aufzeigen des Optimierungspotenzials der Entwicklungsprozesse mithilfe agiler Methodiken gegenüber der Geschäftsführung mittels
+                                             eines verständlichen und trotzdem vertiefenden Dokuments
+                                          </div>
+                                       </li>
+                                       <li>
+                                          <div><span class=acc>Initiierung der agilen Projektumsetzung in der IMISnext</span> unter Berücksichtigung des Kundenumfelds und
+                                             der Vorgehensweise in der internen Entwicklung.
+                                          </div>
+                                       </li>
+                                       <li>
+                                          <div>Coaching eines Scrum Teams in der Scrum Master Funktion</div>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="skillrefs">
+                                 <div class="skillref"><img src="skills/scrum.png" alt="scrum" title="!?Scrum?!"></img></div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="project sonepar">
+                           <div class="header odd">
+                              <div class="value">
+                                 <div>Projektverantwortlicher Webshops Sonepar CH/AT</div>
+                              </div>
+                           </div>
+                           <div class="content right vertical">
+                              <div class="value">
+                                 <div>
+                                    <ul>
+                                       <li>
+                                          <div>Einführung Mandantenfähigkeit bzgl. Logik, Darstellung und Anbindung von Umsystemen</div>
+                                       </li>
+                                       <li>
+                                          <div>Entwicklung diverser Features <span class=acc>im Front- sowie Backend in Java</span> mithilfe des Tapestry Frameworks</div>
+                                       </li>
+                                       <li>
+                                          <div>Koordination mit Umsystemen (ERP/Pim/Mobile/Webservices)</div>
+                                       </li>
+                                       <li>
+                                          <div><span class=acc>Verantwortung und Koordination Entwicklung, SLA, QS, Infrastruktur, Dokumentation, Releases und Deployments</span></div>
+                                       </li>
+                                       <li>
+                                          <div>Beratung der Kunden zur technischen Umsetzung ihrer fachliche Anforderungen</div>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="skillrefs">
+                                 <div class="skillref"><img src="skills/java_ee.png" alt="java" title="!?Java?!"></img></div>
+                                 <div class="skillref"><img src="skills/tapestry.png" alt="tapestry" title="Tapestry"></img></div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="project esa">
+                           <div class="header odd">
+                              <div class="value">
+                                 <div>Neuentwicklung www.geckoreifen.de und www.esashop.ch</div>
+                              </div>
+                           </div>
+                           <div class="content right vertical">
+                              <div class="value">
+                                 <div>
+                                    <ul>
+                                       <li>
+                                          <div>Entwicklung diverser Features <span class=acc>im Front- sowie Backend in Scala</span> mithilfe des Play Frameworks</div>
+                                       </li>
+                                       <li>
+                                          <div>Integration tagesaktueller SAP Daten und Anbindung zahlreicher REST APIs</div>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="skillrefs">
+                                 <div class="skillref"><img src="skills/scala.png" alt="scala" title="Scala"></img></div>
+                                 <div class="skillref"><img src="skills/play.png" alt="play" title="Play Framework"></img></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            
+            <div class="experiance">
+               <div class="header">
+                  <div class="company">
+                     <div class="logo Zürcher Kantonalbank"><img src="logo_zkb.png"></img></div>
+                  </div>
+                  <div class="function">
+                     <div>
+                        <h2>Juli 2010 - Sep. 2010</h2>
+                     </div>
+                     <div>
+                        <h3 class="function">Applikationsentwickler auf Stundenlohnbasis</h3>
+                     </div>
+                  </div>
+               </div>
+               <div class="period">
+                  <div class="description">
+                     <div class="projects">
+                        <div class="project acs">
+                           <div class="header odd">
+                              <div class="value">
+                                 <div>ACS (Zutritts- und Zugriffsrechteverwaltung) Rel. 2.1</div>
+                              </div>
+                           </div>
+                           <div class="content right vertical">
+                              <div class="value">
+                                 <div>
+                                    <ul>
+                                       <li>
+                                          <div>Fachbereichnahe Umsetzung von fachlichen Anforderungen an die Java Webapplikation ACS nach Scrum Rahmenwerk</div>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="skillrefs">
+                                 <div class="skillref"><img src="skills/java_ee.png" alt="java" title="!?Java?!"></img></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="experiance">
+               <div class="header">
+                  <div class="company">
+                     <div class="logo Zürcher Kantonalbank"><img src="logo_zkb.png"></img></div>
+                  </div>
+                  <div class="function">
+                     <div>
+                        <h2>Jan. 2010 - Feb. 2010</h2>
+                     </div>
+                     <div>
+                        <h3 class="function">Aushilfe auf Stundenlohnbasis</h3>
+                     </div>
+                  </div>
+               </div>
+               <div class="period">
+                  <div class="description">
+                     <div class="projects">
+                        <div class="project matche4">
+                           <div class="header odd">
+                              <div class="value">
+                                 <div>Match E4 Testing</div>
+                              </div>
+                           </div>
+                           <div class="content right vertical">
+                              <div class="value">
+                                 <div>
+                                    <ul>
+                                       <li>
+                                          <div>Kosten-Nutzen-Analyse diverser Optimierungen im Integrationstest</div>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="skillrefs">
+                                 <div class="skillref"><img src="skills/microsoftOffice.png" alt="office" title="Office Suite"></img></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="experiance">
+               <div class="header">
+                  <div class="company">
+                     <div class="logo Zürcher Kantonalbank"><img src="logo_zkb.png"></img></div>
+                  </div>
+                  <div class="function">
+                     <div>
+                        <h2>Aug. 2003 - Aug. 2008</h2>
+                     </div>
+                     <div>
+                        <h3 class="function">Applikationsentwickler in Festanstellung</h3>
+                     </div>
+                  </div>
+               </div>
+               <div class="period">
+                  <div class="description">
+                     <div class="projects">
+                        <div class="project vv">
+                           <div class="header odd">
+                              <div class="value">
+                                 <div>Zentrale Führung der VV-Codierung</div>
+                              </div>
+                           </div>
+                           <div class="content right vertical">
+                              <div class="value">
+                                 <div>
+                                    <ul>
+                                       <li>
+                                          <div><span class=acc>Teilprojektleitung ASD/SDS</span></div>
+                                       </li>
+                                       <li>
+                                          <div>Definition des bankfachlichen Modells und Konsistenzbedingungen mit dem Fachbereich</div>
+                                       </li>
+                                       <li>
+                                          <div>Implementation nach MDA (Model Driven Architecture) Ansatz</div>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="skillrefs">
+                                 <div class="skillref"><img src="skills/uml.png" alt="uml" title="UML"></img></div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="project sds">
+                           <div class="header odd">
+                              <div class="value">
+                                 <div>SDS (Stammdaten-Services) Rel. 2.0</div>
+                              </div>
+                           </div>
+                           <div class="content right vertical">
+                              <div class="value">
+                                 <div>
+                                    <ul>
+                                       <li>
+                                          <div>Stellvertretung des Teilprojektleiters ASD/SDS GUI</div>
+                                       </li>
+                                       <li>
+                                          <div>Spezifikation der Java Software Komponente ASD/SDS GUI und Codierung des generischen Teils</div>
+                                       </li>
+                                       <li>
+                                          <div><span class=acc>Abstimmung der Realisierung der fachlichen Anforderungen mit dem Fachbereich</span></div>
+                                       </li>
+                                       <li>
+                                          <div>Analyse, Spezifikation, Design, Implementation und Test diverser Java Softwarekomponenten</div>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="skillrefs">
+                                 <div class="skillref"><img src="skills/java_ee.png" alt="java" title="!?Java?!"></img></div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="project asd">
+                           <div class="header odd">
+                              <div class="value">
+                                 <div>ASD/SDV/CIF</div>
+                              </div>
+                           </div>
+                           <div class="content right vertical">
+                              <div class="value">
+                                 <div>
+                                    <ul>
+                                       <li>
+                                          <div>Realisieren eines <span class=acc>Servicemoduls in PL/1</span> inkl. Regressionstests (Migration Bestandesführung Geld Rel.
+                                             2.0)
+                                          </div>
+                                       </li>
+                                       <li>
+                                          <div>PSV ASD/SDV - Sicherstellen der Service Level Agreements im Bereich ADB (Datawarehouse) Belieferung</div>
+                                       </li>
+                                       <li>
+                                          <div>Durchführen von Systembuilds in der Stammdatenverwaltung</div>
+                                       </li>
+                                       <li>
+                                          <div>Mitentwicklung der PL/1 Schnittstelle auf dezentrale Services (C++)</div>
+                                       </li>
+                                       <li>
+                                          <div>Modellieren und Realisieren von Interface Business Objects (XML)</div>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="skillrefs">
+                                 <div class="skillref"><img src="skills/java_ee.png" alt="java" title="!?Java?!"></img></div>
+                                 <div class="skillref"><img src="skills/CPlusPlus.png" alt="cplusplus" title="C++"></img></div>
+                                 <div class="skillref">PL/I</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            
+            
+            
+            <h1 class="Private Projekte">Private Projekte</h1>
+            <ul class="table projects">
+               <li class="odd">
+                  <dl class="activity poker right horizontal">
+                     <dt>
+                        <div>Jitsi Poker</div>
+                        <div>2020 - Aktuell</div>
+                     </dt>
+                     <dd>
+                        <div class="text">
+                           <div class="logo"><img src=""></img></div>
+                           <div class="description">Texas Hold’em Erweiterung für die Open Source <span class=acc>Webkonferenzlösungen Jitsi</span></div>
+                           <div class="link"><a href="https://github.com/Hoene84/jitsi-poker">https://github.com/Hoene84/jitsi-poker</a></div>
+                        </div>
+                        <div class="skillrefs">
+                           <div class="skillref"><img src="skills/react.png" alt="react" title="React"></img></div>
+                           <div class="skillref"><img src="skills/redux.png" alt="redux" title="Redux"></img></div>
+                        </div>
+                     </dd>
+                  </dl>
+               </li>
+               <li class="even">
+                  <dl class="activity ceevee right horizontal">
+                     <dt>
+                        <div>CeeVee</div>
+                        <div>2015 - Aktuell</div>
+                     </dt>
+                     <dd>
+                        <div class="text">
+                           <div class="logo"><img src=""></img></div>
+                           <div class="description">Theme-able CV Generator: XML to HTML/PDF<br/><span class=acc>Das Resultat</span> wird z.Zt. kritisch betrachtet.</div>
+                           <div class="link"><a href="http://hoene84.github.io/CeeVee/">http://hoene84.github.io/CeeVee/</a></div>
+                        </div>
+                        <div class="skillrefs">
+                           <div class="skillref"><img src="skills/xml.png" alt="xml" title="XML"></img></div>
+                           <div class="skillref"><img src="skills/html_css_js.png" alt="html" title="!?JS/HTML/CSS?!"></img></div>
+                        </div>
+                     </dd>
+                  </dl>
+               </li>
+               <li class="odd">
+                  <dl class="activity turtleplayer right horizontal">
+                     <dt>
+                        <div>Turtle Player</div>
+                        <div>2012 - 2014</div>
+                     </dt>
+                     <dd>
+                        <div class="text">
+                           <div class="logo"><img src=""></img></div>
+                           <div class="description"><span class=acc>Android</span> Music Player optimiert für grosse Playlisten</div>
+                           <div class="link"><a href="http://www.turtle-player.co.uk/">http://www.turtle-player.co.uk/</a></div>
+                        </div>
+                        <div class="skillrefs">
+                           <div class="skillref"><img src="skills/android.png" alt="android" title="Android SDK"></img></div>
+                           <div class="skillref"><img src="skills/java_ee.png" alt="java" title="!?Java?!"></img></div>
+                        </div>
+                     </dd>
+                  </dl>
+               </li>
+               <li class="even">
+                  <dl class="activity perzist right horizontal">
+                     <dt>
+                        <div>Perzist</div>
+                        <div>2014 - 2014</div>
+                     </dt>
+                     <dd>
+                        <div class="text">
+                           <div class="logo"><img src=""></img></div>
+                           <div class="description">Persistenzlayer mit Fokus auf compile time error detection</div>
+                           <div class="link"><a href="https://github.com/Hoene84/perzist">https://github.com/Hoene84/perzist</a></div>
+                        </div>
+                        <div class="skillrefs">
+                           <div class="skillref"><img src="skills/java_ee.png" alt="java" title="!?Java?!"></img></div>
+                           <div class="skillref"><img src="skills/sql.png" alt="sql" title="SQL"></img></div>
+                        </div>
+                     </dd>
+                  </dl>
+               </li>
+            </ul>
+            
+            
+            <h1 class="Weiterbildungen">Weiterbildungen</h1>
+            <ul class="table trainings">
+               <li class="odd">
+                  <dl class="activity   ">
+                     <dt>
+                        <div></div>
+                        <div>Sep. 2018</div>
+                     </dt>
+                     <dd>
+                        <div class="text">
+                           <div class="logo"><img src=""></img></div>
+                           <div class="description">CH Open Workshop-Tage 2018</div>
+                           <div class="link"><a href=""></a></div>
+                        </div>
+                     </dd>
+                  </dl>
+               </li>
+               <li class="even">
+                  <dl class="activity   ">
+                     <dt>
+                        <div></div>
+                        <div>Jan. 2008</div>
+                     </dt>
+                     <dd>
+                        <div class="text">
+                           <div class="logo"><img src=""></img></div>
+                           <div class="description">Object Oriented Analysis and Design with UML (Zühlke)</div>
+                           <div class="link"><a href=""></a></div>
+                        </div>
+                     </dd>
+                  </dl>
+               </li>
+               <li class="odd">
+                  <dl class="activity   ">
+                     <dt>
+                        <div></div>
+                        <div>Juli 2007</div>
+                     </dt>
+                     <dd>
+                        <div class="text">
+                           <div class="logo"><img src=""></img></div>
+                           <div class="description">Synergy Ugrade 6.5 (Telelogic)</div>
+                           <div class="link"><a href=""></a></div>
+                        </div>
+                     </dd>
+                  </dl>
+               </li>
+               <li class="even">
+                  <dl class="activity   ">
+                     <dt>
+                        <div></div>
+                        <div>Nov. 2006</div>
+                     </dt>
+                     <dd>
+                        <div class="text">
+                           <div class="logo"><img src=""></img></div>
+                           <div class="description">Java - Design Patterns (IBM)</div>
+                           <div class="link"><a href=""></a></div>
+                        </div>
+                     </dd>
+                  </dl>
+               </li>
+               <li class="odd">
+                  <dl class="activity   ">
+                     <dt>
+                        <div></div>
+                        <div>Nov. 2005</div>
+                     </dt>
+                     <dd>
+                        <div class="text">
+                           <div class="logo"><img src=""></img></div>
+                           <div class="description">DB2 UDB for z/OS - Anwendungsprogrammierung (IBM)</div>
+                           <div class="link"><a href=""></a></div>
+                        </div>
+                     </dd>
+                  </dl>
+               </li>
+               <li class="even">
+                  <dl class="activity   ">
+                     <dt>
+                        <div></div>
+                        <div>Apr. 2005</div>
+                     </dt>
+                     <dd>
+                        <div class="text">
+                           <div class="logo"><img src=""></img></div>
+                           <div class="description">PL/1 Grundlagen (IFA)</div>
+                           <div class="link"><a href=""></a></div>
+                        </div>
+                     </dd>
+                  </dl>
+               </li>
+               <li class="odd">
+                  <dl class="activity   ">
+                     <dt>
+                        <div></div>
+                        <div>März 2004</div>
+                     </dt>
+                     <dd>
+                        <div class="text">
+                           <div class="logo"><img src=""></img></div>
+                           <div class="description">Synergy / CM Build-Manager (Telelogic)</div>
+                           <div class="link"><a href=""></a></div>
+                        </div>
+                     </dd>
+                  </dl>
+               </li>
+            </ul>
+            
+            
+            <h1 class="Sprachen">Sprachen</h1>
+            <ul class="table languages">
+               <li class="odd">
+                  <dl>
+                     <dt>
+                        <div>Deutsch</div>
+                     </dt>
+                     <dd>
+                        <div>Muttersprache</div>
+                     </dd>
+                  </dl>
+               </li>
+               <li class="even">
+                  <dl>
+                     <dt>
+                        <div>Französisch</div>
+                     </dt>
+                     <dd>
+                        <div>Schriftlich und mündlich fliessend</div>
+                     </dd>
+                  </dl>
+               </li>
+               <li class="odd">
+                  <dl>
+                     <dt>
+                        <div>Englisch</div>
+                     </dt>
+                     <dd>
+                        <div>Schriftlich und mündlich gut</div>
+                     </dd>
+                  </dl>
+               </li>
+            </ul>
+            
+            <h1 class="Verfügbarkeit">Verfügbarkeit</h1>Nach Vereinbarung, ab sofort verfügbar
+            
+         </div>
+      </div>
+   </body>
+</html>
